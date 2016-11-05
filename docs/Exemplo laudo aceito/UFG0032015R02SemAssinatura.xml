@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Laudo Versao="1.0">
+<Mensagem>
+<Numero>R2UFG0032015</Numero>
+<EmiteNfe>true</EmiteNfe>
+<Desenvolvedora>
+<RazaoSocial>SIAGRI SISTEMAS DE GESTAO LTDA</RazaoSocial>
+<Cnpj>02435301000173</Cnpj>
+<Ie>103599797</Ie>
+<Endereco>
+<Logradouro>Rua Joaquim Fonseca</Logradouro>
+<Numero>377</Numero>
+<Complemento></Complemento>
+<Bairro>BAIRRO ODILIA</Bairro>
+<Municipio>RIO VERDE</Municipio>
+<Uf>GO</Uf>
+<Cep>75908730</Cep>
+</Endereco>
+<Contato>
+<Nome>FRANCISCO ROGRIGUES FILHO </Nome>
+<Cpf>42748135334</Cpf>
+<Telefone>6232671500</Telefone>
+<Email>contratos@siagri.com.br</Email>
+</Contato>
+<ResponsavelAcompanhamentoTestes>FELIPE AUGUSTO LACERDA GIROTO</ResponsavelAcompanhamentoTestes>
+</Desenvolvedora>
+<Otc>
+<RazaoSocial>UNIVERSIDADE FEDERAL DE GOIAS - CENTRO TECNOLOGICO DE SOFTWARE - INF/UFG</RazaoSocial>
+<Cnpj>01567601000143</Cnpj>
+<Ie>Isento</Ie>
+<Endereco>
+<Logradouro>Rua Alameda Palmeiras</Logradouro>
+<Numero>1</Numero>
+<Complemento>Quadra D - Campus II Samambaia</Complemento>
+<Bairro>Itatiaia</Bairro>
+<Municipio>Goiania</Municipio>
+<Uf>GO</Uf>
+<Cep>74001970</Cep>
+</Endereco>
+<PeriodoAnalise>
+<DataInicio>2015-04-01</DataInicio>
+<DataFim>2015-04-08</DataFim>
+</PeriodoAnalise>
+<VersaoEspecificacaoRequisitos>02.02</VersaoEspecificacaoRequisitos>
+</Otc>
+<IdentificacaoPaf>
+<NomeComercial>SIAGRI AGRIBUSINESS PONTO DE VENDAS</NomeComercial>
+<Versao>3.5.17.2</Versao>
+<ArquivoExecutavelPrincipal>
+<Nome>SAgrVecf.exe</Nome>
+<Md5>69878722b61836d8feeef9cff95c358b</Md5>
+</ArquivoExecutavelPrincipal>
+<ArquivoRelacaoExecutaveis>
+<Nome>MD5_Formatado_PAF.txt</Nome>
+<Md5>19bca7c8f53d0f4e5db7649b077b8f2d</Md5>
+</ArquivoRelacaoExecutaveis>
+<ArquivosExecutaveis>
+<ArquivoExecutavel>
+<Nome>AssinaNFe.exe</Nome>
+<Md5>6de507486cd2b75468a78da4f01dd328</Md5>
+</ArquivoExecutavel>
+<ArquivoExecutavel>
+<Nome>AssinarPAF.exe</Nome>
+<Md5>4525e2e9d27222b21b9d113f42d030fd</Md5>
+</ArquivoExecutavel>
+<ArquivoExecutavel>
+<Nome>oraociicus11.dll</Nome>
+<Md5>cb1ae57b8b03f0e65fe425f633248384</Md5>
+</ArquivoExecutavel>
+<ArquivoExecutavel>
+<Nome>mfc71.dll</Nome>
+<Md5>f35a584e947a5b401feb0fe01db4a0d7</Md5>
+</ArquivoExecutavel>
+</ArquivosExecutaveis>
+<ArquivosOutros>
+<ArquivoOutro>
+<Nome>relacaoexe.txt</Nome>
+<Md5>19bca7c8f53d0f4e5db7649b077b8f2d</Md5>
+</ArquivoOutro>
+</ArquivosOutros>
+<EnvelopeSeguranca>
+<Marca>ELC BRASIL</Marca>
+<Modelo>SLML 31</Modelo>
+<Numero>3449127</Numero>
+</EnvelopeSeguranca>
+<PerfisRequisitos>
+<PerfilRequisito>V</PerfilRequisito>
+<PerfilRequisito>W</PerfilRequisito>
+<PerfilRequisito>Y</PerfilRequisito>
+<PerfilRequisito>Z</PerfilRequisito>
+</PerfisRequisitos>
+</IdentificacaoPaf>
+<CaracteristicasPaf>
+<LinguagemProgramacao>Delphi</LinguagemProgramacao>
+<SistemaOperacional>Windows</SistemaOperacional>
+<GerenciadorBancoDados>Firebird</GerenciadorBancoDados>
+<GerenciadorBancoDados>Oracle</GerenciadorBancoDados>
+<TipoDesenvolvimento>Comercializável</TipoDesenvolvimento>
+<TipoFuncionamento>Parametrizável</TipoFuncionamento>
+<MeioGeracaoArquivoSintegraEfd> 
+ <Modo>Pelo PAF-ECF</Modo> 
+ </MeioGeracaoArquivoSintegraEfd>
+<IntegracaoPaf>Com sistema de gestão ou retaguarda</IntegracaoPaf>
+<FormaImpressao>
+<Modo>Concomitante</Modo>
+<Modo>Não concomitante, com emissão de DAV</Modo>
+<Modo>Não concomitante, com controle de pré-venda</Modo>
+<Modo>DAV - emitido sem possibilidade de impressão</Modo>
+</FormaImpressao>
+<TratamentoInterrupcao>
+<Modo>Recuperação de dados</Modo>
+</TratamentoInterrupcao>
+<AplicacoesEspeciais>
+<AplicacaoEspecial>Demais atividades</AplicacaoEspecial>
+</AplicacoesEspeciais>
+</CaracteristicasPaf>
+<SistemasGestao>
+<SistemaGestao>
+<Nome>SIAGRI AGRIBUSINESS PONTO DE VENDAS</Nome>
+<EmpresaDesenvolvedora>
+<RazaoSocial>SIAGRI SISTEMAS DE GESTAO LTDA.</RazaoSocial>
+<Cnpj>02435301000173</Cnpj>
+</EmpresaDesenvolvedora>
+<ArquivosExecutaveis>
+<ArquivoExecutavel>
+<Nome>AssinaNFe.exe</Nome>
+<Md5>6de507486cd2b75468a78da4f01dd328</Md5>
+<RequisitosExecutados>
+<RequisitoExecutado>XXVIII</RequisitoExecutado>
+</RequisitosExecutados>
+</ArquivoExecutavel>
+</ArquivosExecutaveis>
+</SistemaGestao>
+<SistemaGestao>
+<Nome>SIAGRI AGRIBUSINESS PONTO DE VENDAS</Nome>
+<EmpresaDesenvolvedora>
+<RazaoSocial>SIAGRI SISTEMAS DE GESTAO LTDA.</RazaoSocial>
+<Cnpj>02435301000173</Cnpj>
+</EmpresaDesenvolvedora>
+<ArquivosExecutaveis>
+<ArquivoExecutavel>
+<Nome>AssinarPAF.exe</Nome>
+<Md5>4525e2e9d27222b21b9d113f42d030fd</Md5>
+<RequisitosExecutados>
+<RequisitoExecutado>REQUISITO VI</RequisitoExecutado>
+</RequisitosExecutados>
+</ArquivoExecutavel>
+</ArquivosExecutaveis>
+</SistemaGestao>
+</SistemasGestao>
+<SistemasPed>
+</SistemasPed>
+<SistemasPedNfe>
+</SistemasPedNfe>
+<EcfAnaliseFuncional>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>MP-4000 TH FI</Modelo>
+</MarcaModelo>
+</EcfAnaliseFuncional>
+<MarcasModelosCompativeis>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>ECF-IF MP 2000 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>MP-2100 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>MP-3000 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>MP-4000 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>MP-4200 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>ECF-IF MP 6000 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>MP-6100 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>BEMATECH</Marca>
+<Modelo>MP-7000 TH FI</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>DARUMA AUTOMACAO</Marca>
+<Modelo>FS345</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>DARUMA AUTOMACAO</Marca>
+<Modelo>FS600</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>DARUMA AUTOMACAO</Marca>
+<Modelo>FS700 H</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>DARUMA AUTOMACAO</Marca>
+<Modelo>FS700 M</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>DARUMA AUTOMACAO</Marca>
+<Modelo>FS700 L</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>DARUMA AUTOMACAO</Marca>
+<Modelo>FS2100 T</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>SWEDA</Marca>
+<Modelo>IF ST120</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>SWEDA</Marca>
+<Modelo>IF ST200</Modelo>
+</MarcaModelo>
+<MarcaModelo>
+<Marca>SWEDA</Marca>
+<Modelo>IF ST2000</Modelo>
+</MarcaModelo>
+</MarcasModelosCompativeis>
+<VersaoErPaf>02.02</VersaoErPaf>
+<RoteiroAnalise>
+<VersaoRoteiro>1.0 aplicavel a 02.02</VersaoRoteiro>
+<Mes>08</Mes>
+<Ano>2013</Ano>
+</RoteiroAnalise>
+<NaoConformidades>
+</NaoConformidades>
+<ComentarioOtc>
+</ComentarioOtc>
+<Declaracao>false</Declaracao>
+<Emissao>
+<Data>2015-07-21</Data>
+<Local>Goiania, GO</Local>
+</Emissao>
+<ExecucaoTestes>
+<Nome>Paulo de Oliveira Neto</Nome>
+<Cargo>Gerente de Testes</Cargo>
+<Cpf>70020987137</Cpf>
+</ExecucaoTestes>
+<AprovacaoRelatorio>
+<Nome>Juliana Pereira de Souza Zinader</Nome>
+<Cargo>Coordenador de Testes</Cargo>
+<Cpf>31239711808</Cpf>
+</AprovacaoRelatorio>
+</Mensagem>
+</Laudo>

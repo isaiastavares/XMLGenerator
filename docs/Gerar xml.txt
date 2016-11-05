@@ -1,0 +1,2 @@
+listagem de impressoras: https://tributario.sef.sc.gov.br/tax.net/sat.cei.web/ecf/listagem.aspx
+regras xml: https://tributario.sef.sc.gov.br/tax.net/sat.cei.web/laudo.xsd
