@@ -1,7 +1,9 @@
-package Interface;
+package br.inf.ufg.generator.view;
 
-import geradorxml.*;
 import javax.swing.JOptionPane;
+
+import br.inf.ufg.generator.CorretorOrtografico;
+import br.inf.ufg.generator.XML;
 
 /**
  *
@@ -528,21 +530,21 @@ public class E_CaracteristicasPAF extends javax.swing.JFrame {
                 && impressao7 == false)) {
             JOptionPane.showMessageDialog(null, "EXISTE(M) CAMPO(S) EM BRANCO(S)!", "Aviso de erro!!!", JOptionPane.PLAIN_MESSAGE);
         } else {
-            
+
             XML.setTipoDesenvolvimento(tipoDesenvolvimento);
             XML.setTipoFuncionamento(tipoFuncionamento);
             XML.setGerarArquivo(gerarArquivo);
             XML.setIntegracaoPAF(integracaoPAF);
             XML.setInterrupcao(interrupcao);
-            
+
             String correto;
-            
+
             correto = CorretorOrtografico.corretor(linguagem.getText());
             XML.setLinguagem(correto);
-            
+
             correto = CorretorOrtografico.corretor(so.getText());
             XML.setSo(correto);
-            
+
             correto = CorretorOrtografico.corretor(bd.getText());
             XML.setBd(correto);
 
@@ -686,7 +688,7 @@ public class E_CaracteristicasPAF extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

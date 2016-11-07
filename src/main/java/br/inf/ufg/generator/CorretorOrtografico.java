@@ -1,4 +1,4 @@
-package geradorxml;
+package br.inf.ufg.generator;
 
 public class CorretorOrtografico {
 
@@ -8,7 +8,7 @@ public class CorretorOrtografico {
 
         for (int i = 0; i < fim.length(); i++) {
             char c = fim.charAt(i);
-            
+
             //Para a letra A
             if(c == 'á' || c == 'ã' || c == 'â'){
                 emChar[i] = 'a';
@@ -32,7 +32,7 @@ public class CorretorOrtografico {
             if (c == 'Í' || c == 'Î') {
                 emChar[i] = 'I';
             }
-            
+
             //Para a letra O
             if (c == 'ó' || c == 'õ' || c == 'ô') {
                 emChar[i] = 'o';
@@ -40,7 +40,7 @@ public class CorretorOrtografico {
             if (c == 'Ó' || c == 'Õ' || c == 'Ô') {
                 emChar[i] = 'O';
             }
-            
+
             //Para a letra U
             if (c == 'ú' || c == 'û') {
                 emChar[i] = 'u';
@@ -48,7 +48,7 @@ public class CorretorOrtografico {
             if (c == 'Ú' || c == 'Û') {
                 emChar[i] = 'U';
             }
-            
+
             //Para o ç
             if (c == 'ç') {
                 emChar[i] = 'c';

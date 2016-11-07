@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Interface;
+package br.inf.ufg.generator.view;
 
-import geradorxml.CorretorOrtografico;
-import geradorxml.XML;
 import javax.swing.JOptionPane;
+
+import br.inf.ufg.generator.CorretorOrtografico;
+import br.inf.ufg.generator.XML;
 
 /**
  *
@@ -258,13 +259,13 @@ public class M_RoteiroAnalise extends javax.swing.JFrame {
 
             correto = CorretorOrtografico.corretor(versaoAto.getText());
             XML.setVersaoAto(correto);
-            
+
             correto = CorretorOrtografico.corretor(versaoRoteiro.getText());
             XML.setVersaoRoteiro(correto);
-            
+
             correto = CorretorOrtografico.corretor(ano.getText());
             XML.setAno(correto);
-            
+
             XML.setDeclaracaoConfomidade(declaracaoConfomidade);
 
             M_RoteiroAnalise.setFlag(true);
@@ -331,7 +332,7 @@ public class M_RoteiroAnalise extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

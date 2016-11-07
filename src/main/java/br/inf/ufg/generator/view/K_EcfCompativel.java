@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Interface;
+package br.inf.ufg.generator.view;
 
 import javax.swing.JOptionPane;
 

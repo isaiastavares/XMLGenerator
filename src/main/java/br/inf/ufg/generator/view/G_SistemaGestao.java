@@ -3,21 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Interface;
+package br.inf.ufg.generator.view;
 
-import geradorxml.*;
 import javax.swing.JOptionPane;
+
+import br.inf.ufg.generator.CorretorOrtografico;
+import br.inf.ufg.generator.XML;
 
 /**
  *
  * @author Hiago
  */
-public class H_SistemaPED extends javax.swing.JFrame {
+public class G_SistemaGestao extends javax.swing.JFrame {
 
     static boolean flag = false;
 
     public static void setFlag(boolean flag) {
-        H_SistemaPED.flag = flag;
+        G_SistemaGestao.flag = flag;
     }
 
     public static boolean isFlag() {
@@ -27,12 +29,12 @@ public class H_SistemaPED extends javax.swing.JFrame {
     /**
      * Creates new form G_SistemaGestao
      */
-    public H_SistemaPED() {
+    public G_SistemaGestao() {
         initComponents();
         this.setLocationRelativeTo(null);
-        pedNome.setText(D_IdentificacaoPAF.getNomeComercial());
-        pedCnpj.setText(B_EmpresaDesenvolvedora.getCnpj());
-        pedRazao.setText(B_EmpresaDesenvolvedora.getRazaoSocial());
+        retNome.setText(D_IdentificacaoPAF.getNomeComercial());
+        retCnpj.setText(B_EmpresaDesenvolvedora.getCnpj());
+        retRazao.setText(B_EmpresaDesenvolvedora.getRazaoSocial());
 
         this.setVisible(true);
     }
@@ -49,23 +51,23 @@ public class H_SistemaPED extends javax.swing.JFrame {
         ok = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        pedNome = new javax.swing.JTextField();
+        retNome = new javax.swing.JTextField();
         jLabelAplicacao = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        pedRazao = new javax.swing.JTextField();
+        retRazao = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        pedCnpj = new javax.swing.JTextField();
+        retCnpj = new javax.swing.JTextField();
         jLabelAplicacao2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        pedNomeExe = new javax.swing.JTextField();
-        pedMd = new javax.swing.JTextField();
-        pedFuncao = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        retNomeExe = new javax.swing.JTextField();
+        retMd = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        retReqExe = new javax.swing.JTextField();
         jLabelAplicacao1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema PED");
+        setTitle("Sistemas de Gestão ou Retaguarda");
 
         ok.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
         ok.setText("OK");
@@ -79,9 +81,9 @@ public class H_SistemaPED extends javax.swing.JFrame {
 
         jLabel1.setText("Nome do Sistema");
 
-        pedNome.addActionListener(new java.awt.event.ActionListener() {
+        retNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pedNomeActionPerformed(evt);
+                retNomeActionPerformed(evt);
             }
         });
 
@@ -101,22 +103,20 @@ public class H_SistemaPED extends javax.swing.JFrame {
 
         jLabel5.setText("MD-5");
 
-        pedNomeExe.addActionListener(new java.awt.event.ActionListener() {
+        retNomeExe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pedNomeExeActionPerformed(evt);
+                retNomeExeActionPerformed(evt);
             }
         });
 
-        pedFuncao.setText("Gerar Sintegra e Sped");
-
-        jLabel7.setText("Função");
+        jLabel6.setText("Requisito Executado");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(42, Short.MAX_VALUE)
+                .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
@@ -124,9 +124,9 @@ public class H_SistemaPED extends javax.swing.JFrame {
                         .addGap(59, 59, 59)
                         .addComponent(jLabel3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(pedRazao, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(retRazao, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pedCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(retCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addComponent(jLabelAplicacao, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -141,23 +141,20 @@ public class H_SistemaPED extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(58, 58, 58)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pedNome, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(retNome, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(22, 22, 22)
                                 .addComponent(jLabel1))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(pedNomeExe, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pedMd, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(retNomeExe, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(retMd))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(46, 46, 46)
+                            .addComponent(jLabel6))
+                        .addComponent(retReqExe, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(44, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(124, 124, 124)
-                .addComponent(jLabel7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(pedFuncao, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +162,7 @@ public class H_SistemaPED extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pedNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(retNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelAplicacao)
                 .addGap(18, 18, 18)
@@ -174,8 +171,8 @@ public class H_SistemaPED extends javax.swing.JFrame {
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pedRazao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pedCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(retRazao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(retCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabelAplicacao2)
                 .addGap(18, 18, 18)
@@ -184,17 +181,17 @@ public class H_SistemaPED extends javax.swing.JFrame {
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pedNomeExe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pedMd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pedFuncao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(retNomeExe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(retMd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
+                .addComponent(retReqExe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
         jLabelAplicacao1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
-        jLabelAplicacao1.setText("Sistema PED");
+        jLabelAplicacao1.setText("Sistemas de Gestão ou Retaguarda");
         jLabelAplicacao1.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -202,25 +199,22 @@ public class H_SistemaPED extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap(59, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelAplicacao1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(121, 121, 121)
                 .addComponent(ok, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(56, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabelAplicacao1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(112, 112, 112))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelAplicacao1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addComponent(ok, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -232,43 +226,44 @@ public class H_SistemaPED extends javax.swing.JFrame {
 
     private void okActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okActionPerformed
 
-        if ("".equals(pedNome.getText()) || "".equals(pedRazao.getText()) || "".equals(pedCnpj.getText())
-                || "".equals(pedNomeExe.getText()) || "".equals(pedMd.getText()) || "".equals(pedFuncao.getText())) {
+        if ("".equals(retCnpj.getText()) || "".equals(retNome.getText()) || "".equals(retMd.getText())
+                || "".equals(retNome.getText()) || "".equals(retRazao.getText()) || "".equals(retReqExe.getText())
+                || "".equals(retNomeExe.getText())) {
             JOptionPane.showMessageDialog(null, "EXISTE(M) CAMPO(S) EM BRANCO(S)!", "Aviso de erro!!!", JOptionPane.PLAIN_MESSAGE);
         } else {
 
             String correto;
-            
-            correto = CorretorOrtografico.corretor(pedNome.getText());
-            XML.setPedNome(correto);
-            
-            correto = CorretorOrtografico.corretor(pedRazao.getText());
-            XML.setPedRazao(correto);
-            
-            correto = CorretorOrtografico.corretor(pedCnpj.getText());
-            XML.setPedCnpj(correto);
-            
-            correto = CorretorOrtografico.corretor(pedNomeExe.getText());
-            XML.setPedNomeArquivo(correto);
-            
-            correto = CorretorOrtografico.corretor(pedMd.getText());
-            XML.setPedMd5(correto);
-            
-            correto = CorretorOrtografico.corretor(pedFuncao.getText());
-            XML.setPedReq(correto);
 
-            H_SistemaPED.setFlag(true);
+            correto = CorretorOrtografico.corretor(retCnpj.getText());
+            XML.setRetCnpj(correto);
+
+            correto = CorretorOrtografico.corretor(retMd.getText());
+            XML.setRetMd(correto);
+
+            correto = CorretorOrtografico.corretor(retNome.getText());
+            XML.setRetNome(correto);
+
+            correto = CorretorOrtografico.corretor(retRazao.getText());
+            XML.setRetRazao(correto);
+
+            correto = CorretorOrtografico.corretor(retReqExe.getText());
+            XML.setRetReqExe(correto);
+
+            correto = CorretorOrtografico.corretor(retNomeExe.getText());
+            XML.setRetNomeExe(correto);
+
+            G_SistemaGestao.setFlag(true);
             dispose();
         }
     }//GEN-LAST:event_okActionPerformed
 
-    private void pedNomeExeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pedNomeExeActionPerformed
+    private void retNomeExeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_retNomeExeActionPerformed
 
-    }//GEN-LAST:event_pedNomeExeActionPerformed
+    }//GEN-LAST:event_retNomeExeActionPerformed
 
-    private void pedNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pedNomeActionPerformed
+    private void retNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_retNomeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_pedNomeActionPerformed
+    }//GEN-LAST:event_retNomeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -277,7 +272,7 @@ public class H_SistemaPED extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -287,21 +282,20 @@ public class H_SistemaPED extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(H_SistemaPED.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(G_SistemaGestao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(H_SistemaPED.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(G_SistemaGestao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(H_SistemaPED.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(G_SistemaGestao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(H_SistemaPED.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(G_SistemaGestao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new H_SistemaPED().setVisible(true);
+                new G_SistemaGestao().setVisible(true);
             }
         });
     }
@@ -312,17 +306,17 @@ public class H_SistemaPED extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabelAplicacao;
     private javax.swing.JLabel jLabelAplicacao1;
     private javax.swing.JLabel jLabelAplicacao2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton ok;
-    private javax.swing.JTextField pedCnpj;
-    private javax.swing.JTextField pedFuncao;
-    private javax.swing.JTextField pedMd;
-    private javax.swing.JTextField pedNome;
-    private javax.swing.JTextField pedNomeExe;
-    private javax.swing.JTextField pedRazao;
+    private javax.swing.JTextField retCnpj;
+    private javax.swing.JTextField retMd;
+    private javax.swing.JTextField retNome;
+    private javax.swing.JTextField retNomeExe;
+    private javax.swing.JTextField retRazao;
+    private javax.swing.JTextField retReqExe;
     // End of variables declaration//GEN-END:variables
 }

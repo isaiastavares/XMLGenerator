@@ -1,4 +1,4 @@
-package Interface;
+package br.inf.ufg.generator.view;
 
 import javax.swing.JOptionPane;
 

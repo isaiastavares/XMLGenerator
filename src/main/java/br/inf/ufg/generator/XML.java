@@ -1,13 +1,23 @@
-package geradorxml;
-
-import Interface.*;
-import gravador.GravarXML;
+package br.inf.ufg.generator;
 
 import java.awt.HeadlessException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 import javax.swing.JOptionPane;
+
+import br.inf.ufg.generator.view.A_JanelaInicial;
+import br.inf.ufg.generator.view.B_EmpresaDesenvolvedora;
+import br.inf.ufg.generator.view.C_OTC;
+import br.inf.ufg.generator.view.D_IdentificacaoPAF;
+import br.inf.ufg.generator.view.E_CaracteristicasPAF;
+import br.inf.ufg.generator.view.F_AplicacoesEspeciais;
+import br.inf.ufg.generator.view.G_SistemaGestao;
+import br.inf.ufg.generator.view.H_SistemaPED;
+import br.inf.ufg.generator.view.I_SistemaPedNfe;
+import br.inf.ufg.generator.view.J_EcfHomologacao;
+import br.inf.ufg.generator.view.K_EcfCompativel;
+import br.inf.ufg.generator.view.L_EcfCompativelExtra;
+import br.inf.ufg.generator.view.M_RoteiroAnalise;
+import br.inf.ufg.generator.view.N_Final;
 
 /**
  *
@@ -542,7 +552,7 @@ public class XML {
             }
         }
         arquivo.roteiro(VersaoAto, versaoRoteiro, M_RoteiroAnalise.getMes(), ano, declaracaoConfomidade);
-//        Gerando dados para o roteiro de analise 
+//        Gerando dados para o roteiro de analise
         N_Final finalizando = new N_Final();
 
         while (N_Final.isFlag() == false) {

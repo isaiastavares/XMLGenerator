@@ -1,12 +1,14 @@
-package gravador;
+package br.inf.ufg.generator;
 
-import Interface.N_Final;
 import java.io.FileNotFoundException;
 import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
+
 import javax.swing.JOptionPane;
+
+import br.inf.ufg.generator.view.N_Final;
 
 /**
  *

@@ -1,4 +1,4 @@
-package geradorxml;
+package br.inf.ufg.generator;
 
 /**
  *

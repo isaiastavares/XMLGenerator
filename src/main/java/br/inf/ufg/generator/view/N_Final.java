@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Interface;
+package br.inf.ufg.generator.view;
 
-import geradorxml.CorretorOrtografico;
-import geradorxml.XML;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import javax.swing.JOptionPane;
+
+import br.inf.ufg.generator.CorretorOrtografico;
+import br.inf.ufg.generator.XML;
 
 /**
  *
@@ -434,16 +436,16 @@ public class N_Final extends javax.swing.JFrame {
 
             correto = CorretorOrtografico.corretor(jTDia.getText());
             N_Final.setDiaAtual(correto);
-            
+
             correto = CorretorOrtografico.corretor(jTMes.getText());
             N_Final.setMesAtual(correto);
-            
+
             correto = CorretorOrtografico.corretor(jTAno.getText());
             N_Final.setAnoAtual(correto);
-            
+
             correto = CorretorOrtografico.corretor(jTlocal.getText());
             N_Final.setLocal(correto);
-            
+
             nomeG = CorretorOrtografico.corretor(nomeGerente.getText());
             cpfG = cpfGerente.getText();
 
@@ -453,7 +455,7 @@ public class N_Final extends javax.swing.JFrame {
             XML.setDiaAtual(diaAtual);
             XML.setMesAtual(mesAtual);
             XML.setAnoAtual(anoAtual);
-            
+
             correto = CorretorOrtografico.corretor(local);
             XML.setLocal(correto);
 
@@ -614,7 +616,7 @@ public class N_Final extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
