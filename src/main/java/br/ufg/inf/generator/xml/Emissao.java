@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.xml;
 
+import org.joda.time.LocalDate;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -7,16 +8,16 @@ import org.simpleframework.xml.Root;
 public class Emissao extends LaudoBase {
 
 	@Element(name = "Data", required = true)
-    private String data;
+    private LocalDate data;
 
 	@Element(name = "Local", required = true)
     private String local;
 
-	public String getData() {
+	public LocalDate getData() {
 		return data;
 	}
 
-	public void setData(String data) {
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
 

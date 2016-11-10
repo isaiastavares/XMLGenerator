@@ -10,7 +10,7 @@ public class Mensagem extends LaudoBase {
     private String numero;
 
 	@Element(name = "EmiteNfe", required = true)
-    private String emiteNFe;
+    private Boolean emiteNFe;
 
 	@Element(name = "Desenvolvedora", required = true)
     private Desenvolvedora desenvolvedora;
@@ -38,11 +38,11 @@ public class Mensagem extends LaudoBase {
 		this.numero = numero;
 	}
 
-	public String getEmiteNFe() {
+	public Boolean getEmiteNFe() {
 		return emiteNFe;
 	}
 
-	public void setEmiteNFe(String emiteNFe) {
+	public void setEmiteNFe(Boolean emiteNFe) {
 		this.emiteNFe = emiteNFe;
 	}
 

@@ -3,6 +3,9 @@ package br.ufg.inf.generator.xml;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+import br.ufg.inf.generator.validadores.StringValidador;
+import br.ufg.inf.generator.xml.enuns.UnidadeFederativa;
+
 @Root(name = "Endereco")
 public class Endereco extends LaudoBase {
 
@@ -32,6 +35,7 @@ public class Endereco extends LaudoBase {
 	}
 
 	public void setLogradouro(String logradouro) {
+		StringValidador.tamanho255(logradouro);
 		this.logradouro = logradouro;
 	}
 
@@ -40,6 +44,7 @@ public class Endereco extends LaudoBase {
 	}
 
 	public void setNumero(String numero) {
+		StringValidador.tamanho25(numero);
 		this.numero = numero;
 	}
 
@@ -48,6 +53,7 @@ public class Endereco extends LaudoBase {
 	}
 
 	public void setComplemento(String complemento) {
+		StringValidador.tamanho0ate255(complemento);
 		this.complemento = complemento;
 	}
 
@@ -56,6 +62,7 @@ public class Endereco extends LaudoBase {
 	}
 
 	public void setBairro(String bairro) {
+		StringValidador.tamanho255(bairro);
 		this.bairro = bairro;
 	}
 
@@ -64,6 +71,7 @@ public class Endereco extends LaudoBase {
 	}
 
 	public void setMunicipio(String municipio) {
+		StringValidador.tamanho255(municipio);
 		this.municipio = municipio;
 	}
 
@@ -71,8 +79,8 @@ public class Endereco extends LaudoBase {
 		return uf;
 	}
 
-	public void setUf(String uf) {
-		this.uf = uf;
+	public void setUf(final UnidadeFederativa uf) {
+		this.uf = uf.getCodigo();
 	}
 
 	public String getCep() {
@@ -80,6 +88,7 @@ public class Endereco extends LaudoBase {
 	}
 
 	public void setCep(String cep) {
+		StringValidador.exatamente8N(cep);
 		this.cep = cep;
 	}
 }

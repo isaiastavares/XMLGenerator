@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.xml;
 
+import org.joda.time.LocalDate;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -7,24 +8,25 @@ import org.simpleframework.xml.Root;
 public class PeriodoAnalise extends LaudoBase {
 
 	@Element(name = "DataInicio", required = true)
-    private String dataInicio;
+    private LocalDate dataInicio;
 
 	@Element(name = "DataFim", required = true)
-    private String dataFim;
+    private LocalDate dataFim;
 
-	public String getDataInicio() {
+	public LocalDate getDataInicio() {
 		return dataInicio;
 	}
 
-	public void setDataInicio(String dataInicio) {
+	public void setDataInicio(LocalDate dataInicio) {
 		this.dataInicio = dataInicio;
 	}
 
-	public String getDataFim() {
+	public LocalDate getDataFim() {
 		return dataFim;
 	}
 
-	public void setDataFim(String dataFim) {
+	public void setDataFim(LocalDate dataFim) {
 		this.dataFim = dataFim;
 	}
+
 }

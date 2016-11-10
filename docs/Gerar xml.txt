@@ -1,2 +1,6 @@
 listagem de impressoras: https://tributario.sef.sc.gov.br/tax.net/sat.cei.web/ecf/listagem.aspx
 regras xml: https://tributario.sef.sc.gov.br/tax.net/sat.cei.web/laudo.xsd
+
+Documentação Técnica: 
+
+http://app1.sefaz.mt.gov.br/Sistema/Legislacao/legislacaotribut.nsf/7c7b6a9347c50f55032569140065ebbf/38118eb16511ade684257c9400542c2a/$FILE/Anexo%20II%20-%20Leiaute%20do%20Arquivo%20do%20Laudo%20do%20PAF-ECF%20em%20XML.pdf

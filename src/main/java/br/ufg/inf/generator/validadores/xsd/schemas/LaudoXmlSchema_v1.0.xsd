@@ -1,0 +1,604 @@
+﻿<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:app1="http://www.w3.org/2000/09/xmldsig#">
+  <xsd:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd" />
+  <xsd:element name="Laudo" type="LaudoType"/>
+  <xsd:complexType name="EnderecoType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Logradouro"/>
+      <xsd:element type="EnderecoNumeroType" name="Numero" />
+      <xsd:element type="NullOrString4000Type" name="Complemento" />
+      <xsd:element type="String4000Type" name="Bairro"/>
+      <xsd:element type="String4000Type" name="Municipio"/>
+      <xsd:element type="EnderecoUfType" name="Uf"/>
+      <xsd:element type="EnderecoCepType" name="Cep"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ContatoType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="CpfType" name="Cpf"/>
+      <xsd:element type="TelefoneType" name="Telefone"/>
+      <xsd:element type="EmailType" name="Email"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DesenvolvedoraType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="RazaoSocial"/>
+      <xsd:element type="CnpjType" name="Cnpj"/>
+      <xsd:element type="IeType" name="Ie"/>
+      <xsd:element type="EnderecoType" name="Endereco"/>
+      <xsd:element type="ContatoType" name="Contato"/>
+      <xsd:element type="String4000Type" name="ResponsavelAcompanhamentoTestes"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PeriodoAnaliseType">
+    <xsd:sequence>
+      <xsd:element type="xsd:date" name="DataInicio"/>
+      <xsd:element type="xsd:date" name="DataFim"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="OtcType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="RazaoSocial"/>
+      <xsd:element type="CnpjType" name="Cnpj"/>
+      <xsd:element type="IeType" name="Ie"/>
+      <xsd:element type="EnderecoType" name="Endereco"/>
+      <xsd:element type="PeriodoAnaliseType" name="PeriodoAnalise"/>
+      <xsd:element name="VersaoEspecificacaoRequisitos">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="02.01"/>
+            <xsd:enumeration value="02.02"/>
+            <xsd:enumeration value="02.03"/>
+            <xsd:enumeration value="02.04"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivoExecutavelPrincipalType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="Md5Type" name="Md5"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivoRelacaoExecutaveisType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="Md5Type" name="Md5"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivoExecutavelSemFuncaoType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="Md5Type" name="Md5"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivosExecutaveisSemFuncaoType">
+    <xsd:sequence>
+      <xsd:element type="ArquivoExecutavelSemFuncaoType" name="ArquivoExecutavel" maxOccurs="40000"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivoExecutavelComFuncaoType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="Md5Type" name="Md5"/>
+      <xsd:element type="String4000Type" name="Funcao"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivosExecutaveisComFuncaoType">
+    <xsd:sequence>
+      <xsd:element type="ArquivoExecutavelComFuncaoType" name="ArquivoExecutavel" maxOccurs="40000"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivoOutroType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="Md5Type" name="Md5"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivosOutrosType">
+    <xsd:sequence>
+      <xsd:element type="ArquivoOutroType" name="ArquivoOutro" minOccurs="0" maxOccurs="40000"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EnvelopeSegurancaType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Marca"/>
+      <xsd:element type="String4000Type" name="Modelo"/>
+      <xsd:element type="Number255Type" name="Numero"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PerfisRequisitosType">
+    <xsd:sequence>
+      <!--Fonte: https://www1.fazenda.gov.br/confaz/confaz/Atos/Despacho/2013/dp054_13.htm
+                 https://www1.fazenda.gov.br/confaz/confaz/Atos/Despacho/2013/dp195_13.htm
+                 https://www1.fazenda.gov.br/confaz/confaz/atos/despacho/2014/dp162_14.htm -->
+      <xsd:element name="PerfilRequisito" maxOccurs="14">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="A"/>
+            <xsd:enumeration value="B"/>
+            <xsd:enumeration value="C"/>
+            <xsd:enumeration value="D"/>
+            <xsd:enumeration value="E"/>
+            <xsd:enumeration value="F"/>
+            <xsd:enumeration value="G"/> 
+            <xsd:enumeration value="H"/>
+            <xsd:enumeration value="I"/>
+            <xsd:enumeration value="J"/>
+            <xsd:enumeration value="R"/>
+            <xsd:enumeration value="S"/>
+            <xsd:enumeration value="T"/>
+            <xsd:enumeration value="U"/>
+            <xsd:enumeration value="V"/>
+            <xsd:enumeration value="W"/>
+            <xsd:enumeration value="X"/>
+            <xsd:enumeration value="Y"/>
+            <xsd:enumeration value="Z"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="IdentificacaoPafType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="NomeComercial"/>
+      <xsd:element type="String4000Type" name="Versao"/>
+      <xsd:element type="ArquivoExecutavelPrincipalType" name="ArquivoExecutavelPrincipal" />
+      <xsd:element type="ArquivoRelacaoExecutaveisType" name="ArquivoRelacaoExecutaveis" />
+      <xsd:element type="ArquivosExecutaveisSemFuncaoType" name="ArquivosExecutaveis"/>
+      <xsd:element type="ArquivosOutrosType" name="ArquivosOutros"/>
+      <xsd:element type="EnvelopeSegurancaType" name="EnvelopeSeguranca"/>
+      <xsd:element type="PerfisRequisitosType" name="PerfisRequisitos"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MeioGeracaoArquivoSintegraEfdType">
+    <xsd:sequence>
+      <xsd:element name="Modo" maxOccurs="3">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Pelo PAF-ECF"/>
+            <xsd:enumeration value="Pelo sistema de retaguarda"/>
+            <xsd:enumeration value="Pelo sistema PED ou EFD"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FormaImpressaoType">
+    <xsd:sequence>
+      <xsd:element name="Modo" maxOccurs="7">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Concomitante"/>
+            <xsd:enumeration value="Não concomitante, com emissão de DAV"/>
+            <xsd:enumeration value="Não concomitante, com controle de pré-venda"/>
+            <xsd:enumeration value="Não concomitante, com controle de conta de cliente"/>
+            <xsd:enumeration value="DAV - emitido sem possibilidade de impressão"/>
+            <xsd:enumeration value="DAV - impresso em impressora não fiscal"/>
+            <xsd:enumeration value="DAV - impresso em ECF"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TratamentoInterrupcaoType">
+    <xsd:sequence>
+      <xsd:element name="Modo" maxOccurs="3">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Recuperação de dados"/>
+            <xsd:enumeration value="Cancelamento automático"/>
+            <xsd:enumeration value="Bloqueio de funções"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AplicacoesEspeciaisType">
+    <xsd:sequence>
+      <xsd:element name="AplicacaoEspecial" maxOccurs="15">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Posto de pedágio"/>
+            <xsd:enumeration value="Transporte de passageiros"/>
+            <xsd:enumeration value="Farmácia de manipulação"/>
+            <xsd:enumeration value="Oficina de conserto com DAV-OS"/>
+            <xsd:enumeration value="Oficina de conserto com conta de cliente"/>
+            <xsd:enumeration value="Bar, restaurante e estabelecimento similar com utilização de ECF-restaurante e balança interligada"/>
+            <xsd:enumeration value="Bar, restaurante e estabelecimento similar com utilização de ECF-normal e balança interligada"/>
+            <xsd:enumeration value="Bar, restaurante e estabelecimento similar com utilização de ECF-restaurante e sem balança interligada"/>
+            <xsd:enumeration value="Bar, restaurante e estabelecimento similar com utilização de ECF-normal e sem balança interligada"/>
+            <xsd:enumeration value="Posto revendedor de combustível com sistema de interligação de bombas"/>
+            <xsd:enumeration value="Posto revendedor de combustível sem sistema de interligação de bombas"/>
+            <xsd:enumeration value="Estacionamento, motéis e similares, que pratiquem o controle de tráfego de veículos ou pessoas"/>
+            <xsd:enumeration value="Prestador de serviço de cinema, espetáculos ou similares"/>
+            <xsd:enumeration value="Demais atividades"/>
+            <xsd:enumeration value="Estabelecimento enquadrado no simples nacional (art. 5º do ato cotepe da ER-PAF-ECF)"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CaracteristicasPafType">
+    <xsd:sequence>
+      <xsd:element name="LinguagemProgramacao">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="AdvPL"/>
+            <xsd:enumeration value="4GL/4Js"/>
+            <xsd:enumeration value="C"/>
+            <xsd:enumeration value="C++"/>
+            <xsd:enumeration value="C#"/>
+            <xsd:enumeration value="Clarion"/>
+            <xsd:enumeration value="Cobol"/>
+            <xsd:enumeration value="DataFlex"/>
+            <xsd:enumeration value="Delphi"/>
+            <xsd:enumeration value="Java"/>
+            <xsd:enumeration value="Proprietária"/>
+            <xsd:enumeration value="Object Pascal"/>
+            <xsd:enumeration value="Objective C"/>
+            <xsd:enumeration value="PL/SQL"/>
+            <xsd:enumeration value="PHP"/>
+            <xsd:enumeration value="PowerBuilder"/>
+            <xsd:enumeration value="Progress"/>
+            <xsd:enumeration value="Python"/>
+            <xsd:enumeration value="uniPaaS"/>
+            <xsd:enumeration value="Visual Basic"/>
+            <xsd:enumeration value="Visual Basic .NET"/>
+            <xsd:enumeration value="Visual FoxPro"/>
+            <xsd:enumeration value="xHarbour"/>
+            <xsd:enumeration value="WLanguage"/>
+            <xsd:enumeration value="ZIM"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="SistemaOperacional">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="MS-DOS"/>
+            <xsd:enumeration value="Windows"/>
+            <xsd:enumeration value="Linux"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="GerenciadorBancoDados"  maxOccurs="5">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Access"/>
+            <xsd:enumeration value="Advantage Database Server"/>
+            <xsd:enumeration value="Arquivo plano"/>
+            <xsd:enumeration value="ASE"/>
+            <xsd:enumeration value="Caché"/>            
+            <xsd:enumeration value="DataFlex"/>
+            <xsd:enumeration value="dBase"/>
+            <xsd:enumeration value="DB2"/>
+            <xsd:enumeration value="DBISAM"/>
+            <xsd:enumeration value="Derby"/>
+            <xsd:enumeration value="Firebird"/>
+            <xsd:enumeration value="FoxPro"/>
+            <xsd:enumeration value="H2"/>
+            <xsd:enumeration value="Informix"/>
+            <xsd:enumeration value="InterBase"/>
+            <xsd:enumeration value="MongoDB"/>
+            <xsd:enumeration value="MySQL"/>
+            <xsd:enumeration value="NexusDB"/>
+            <xsd:enumeration value="OpenEdge"/>
+            <xsd:enumeration value="Oracle"/>
+            <xsd:enumeration value="Paradox"/>
+            <xsd:enumeration value="PostgreSQL"/>           
+            <xsd:enumeration value="Progress"/>
+            <xsd:enumeration value="Proprietário"/>
+            <xsd:enumeration value="SQL Anywhere"/>
+            <xsd:enumeration value="SQL Server"/>
+            <xsd:enumeration value="SQLite"/>
+            <xsd:enumeration value="TopSpeed"/>
+            <xsd:enumeration value="XML"/>
+            <xsd:enumeration value="ZIM"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="TipoDesenvolvimento">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Comercializável"/>
+            <xsd:enumeration value="Exclusivo próprio"/>
+            <xsd:enumeration value="Exclusivo terceirizado"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="TipoFuncionamento">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Exclusivamente stand alone"/>
+            <xsd:enumeration value="Em rede"/>
+            <xsd:enumeration value="Parametrizável"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element type="MeioGeracaoArquivoSintegraEfdType" name="MeioGeracaoArquivoSintegraEfd"/>
+      <xsd:element name="IntegracaoPaf">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Com sistema de gestão ou retaguarda"/>
+            <xsd:enumeration value="Com sistema PED"/>
+            <xsd:enumeration value="Com ambos"/>
+            <xsd:enumeration value="Não integrado"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element type="FormaImpressaoType" name="FormaImpressao"/>
+      <xsd:element type="TratamentoInterrupcaoType" name="TratamentoInterrupcao"/>
+      <xsd:element type="AplicacoesEspeciaisType" name="AplicacoesEspeciais"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EmpresaDesenvolvedoraType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="RazaoSocial"/>
+      <xsd:element type="CnpjType" name="Cnpj"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RequisitosExecutadosType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="RequisitoExecutado" maxOccurs="255"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivoExecutavelType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome" />
+      <xsd:element type="Md5Type" name="Md5"/>
+      <xsd:element type="RequisitosExecutadosType" name="RequisitosExecutados"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArquivosExecutaveisType">
+    <xsd:sequence>
+      <xsd:element type="ArquivoExecutavelType" name="ArquivoExecutavel" maxOccurs="255"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SistemaGestaoType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="EmpresaDesenvolvedoraType" name="EmpresaDesenvolvedora"/>
+      <xsd:element type="ArquivosExecutaveisType" name="ArquivosExecutaveis"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SistemasGestaoType">
+    <xsd:sequence>
+      <xsd:element type="SistemaGestaoType" name="SistemaGestao" minOccurs="0" maxOccurs="255"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SistemaPedType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="EmpresaDesenvolvedoraType" name="EmpresaDesenvolvedora"/>
+      <xsd:element type="ArquivosExecutaveisComFuncaoType" name="ArquivosExecutaveis"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SistemasPedType">
+    <xsd:sequence>
+      <xsd:element type="SistemaPedType" name="SistemaPed" minOccurs="0" maxOccurs="255"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SistemaPedNfeType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="EmpresaDesenvolvedoraType" name="EmpresaDesenvolvedora"/>
+      <xsd:element type="ArquivosExecutaveisComFuncaoType" name="ArquivosExecutaveis"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SistemasPedNfeType">
+    <xsd:sequence>
+      <xsd:element type="SistemaPedNfeType" name="SistemaPedNfe" minOccurs="0" maxOccurs="255"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MarcaModeloType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Marca"/>
+      <xsd:element type="String4000Type" name="Modelo"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EcfAnaliseFuncionalType">
+    <xsd:sequence>
+      <xsd:element type="MarcaModeloType" name="MarcaModelo" maxOccurs="255"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MarcasModelosCompativeisType">
+    <xsd:sequence>
+      <xsd:element type="MarcaModeloType" name="MarcaModelo" maxOccurs="4000"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RoteiroAnaliseType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="VersaoRoteiro"/>
+      <xsd:element type="MesType" name="Mes"/>
+      <xsd:element type="AnoType" name="Ano"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NaoConformidadeType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Requisito"/>
+      <xsd:element type="String4000Type" name="Item"/>
+      <xsd:element type="String4000Type" name="Descricao"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NaoConformidadesType">
+    <xsd:sequence>
+      <xsd:element type="NaoConformidadeType" name="NaoConformidade" minOccurs="0" maxOccurs="255"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EmissaoType">
+    <xsd:sequence>
+      <xsd:element type="xsd:date" name="Data"/>
+      <xsd:element type="String4000Type" name="Local"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ExecucaoTestesType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="String4000Type" name="Cargo"/>
+      <xsd:element type="CpfType" name="Cpf"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AprovacaoRelatorioType">
+    <xsd:sequence>
+      <xsd:element type="String4000Type" name="Nome"/>
+      <xsd:element type="String4000Type" name="Cargo"/>
+      <xsd:element type="CpfType" name="Cpf"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MensagemType">
+    <xsd:sequence>
+      <xsd:element name="Numero">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:token">
+            <xsd:pattern value="(R\d)?[A-Z]{3}\d{7}"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element type="xsd:boolean" name="EmiteNfe"/>
+      <xsd:element type="DesenvolvedoraType" name="Desenvolvedora"/>
+      <xsd:element type="OtcType" name="Otc"/>
+      <xsd:element type="IdentificacaoPafType" name="IdentificacaoPaf"/>
+      <xsd:element type="CaracteristicasPafType" name="CaracteristicasPaf"/>
+      <xsd:element type="SistemasGestaoType" name="SistemasGestao"/>
+      <xsd:element type="SistemasPedType" name="SistemasPed"/>
+      <xsd:element type="SistemasPedNfeType" name="SistemasPedNfe"/>
+      <xsd:element type="EcfAnaliseFuncionalType" name="EcfAnaliseFuncional"/>
+      <xsd:element type="MarcasModelosCompativeisType" name="MarcasModelosCompativeis"/>
+      <xsd:element type="String4000Type" name="VersaoErPaf"/>
+      <xsd:element type="RoteiroAnaliseType" name="RoteiroAnalise"/>
+      <xsd:element type="NaoConformidadesType" name="NaoConformidades"/>
+      <xsd:element name="ComentarioOtc">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:minLength value="0"/>
+            <xsd:maxLength value="50000"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element type="xsd:boolean" name="Declaracao"/>
+      <xsd:element type="EmissaoType" name="Emissao"/>
+      <xsd:element type="ExecucaoTestesType" name="ExecucaoTestes"/>
+      <xsd:element type="AprovacaoRelatorioType" name="AprovacaoRelatorio"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="LaudoType">
+    <xsd:sequence>
+      <xsd:element type="MensagemType" name="Mensagem"/>
+      <xsd:element ref="app1:Signature" />
+    </xsd:sequence>
+    <xsd:attribute type="xsd:string" name="Versao" fixed="1.0"/>
+  </xsd:complexType>
+
+  <!-- String com length min de 0 e max de 4000 -->
+  <xsd:simpleType name="NullOrString4000Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="0"/>
+      <xsd:maxLength value="4000"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- String com length min de 1 e max de 4000 -->
+  <xsd:simpleType name="String4000Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="4000"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- String com length min e max de 1 -->
+  <xsd:simpleType name="String1Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Número com length min de 1 e max de 255 -->
+  <xsd:simpleType name="Number255Type">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="\d{1,255}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Mês
+       Fonte: https://stackoverflow.com/questions/2137929/how-can-i-use-a-regular-expression-to-validate-month-input -->
+  <xsd:simpleType name="MesType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="(0?[1-9]|1[012])"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Ano
+       Fonte: https://stackoverflow.com/questions/4374185/regular-expression-match-to-test-for-a-valid-year -->
+  <xsd:simpleType name="AnoType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="(19[789]\d|20[01]\d)"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Cpf -->
+  <xsd:simpleType name="CpfType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="\d{11}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Telefone -->
+  <xsd:simpleType name="TelefoneType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="\d{1,15}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Email
+       Fonte: https://stackoverflow.com/questions/201323/using-a-regular-expression-to-validate-an-email-address -->
+  <xsd:simpleType name="EmailType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="\S+@\S+\.\S+"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Cnpj -->
+  <xsd:simpleType name="CnpjType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="\d{14}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Ie -->
+  <xsd:simpleType name="IeType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="\d{1,20}|Isento"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Md5 -->
+  <xsd:simpleType name="Md5Type">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="[0-9A-Fa-f]{32}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Endereço -->
+  <!-- Número -->
+  <xsd:simpleType name="EnderecoNumeroType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="25"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- Cep -->
+  <xsd:simpleType name="EnderecoCepType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="\d{8}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!-- Uf -->
+  <xsd:simpleType name="EnderecoUfType">
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value="[A-Z]{2}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
