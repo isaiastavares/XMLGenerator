@@ -7,8 +7,6 @@ import org.apache.commons.lang3.StringUtils;
 
 public class StringValidador {
 
-	private String teste;
-
     private StringValidador() {
     }
 
