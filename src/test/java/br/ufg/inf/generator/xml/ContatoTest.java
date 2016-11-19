@@ -1,13 +1,14 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generatorEmpresaDesenv.xml.Contato;
 import org.junit.Test;
 
 public class ContatoTest {
 
-	private static final String NOME = "dfkjdsfjkds";
-	private static final String CPF = "dfkjdsfjkds";
-	private static final String TELEFONE = "dfkjdsfjkds";
-	private static final String EMAIL = "dfkjdsfjkds";
+    private static final String NOME = "dfkjdsfjkds";
+    private static final String CPF = "dfkjdsfjkds";
+    private static final String TELEFONE = "dfkjdsfjkds";
+    private static final String EMAIL = "dfkjdsfjkds";
 
     @Test(expected = IllegalStateException.class)
     public void naoDevePermitirNomeNulo() {

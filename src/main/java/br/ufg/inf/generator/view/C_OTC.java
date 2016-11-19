@@ -2,7 +2,7 @@ package br.ufg.inf.generator.view;
 
 import javax.swing.JOptionPane;
 
-import br.ufg.inf.generator.CorretorOrtografico;
+import br.ufg.inf.corretor.CorretorOrtografico;
 import br.ufg.inf.generator.XML;
 
 /**
@@ -364,14 +364,15 @@ public class C_OTC extends javax.swing.JFrame {
                     .addComponent(jLabel14)
                     .addComponent(jLabel13))
                 .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel17)
-                    .addComponent(jLabel16)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel20)
                         .addComponent(jLabel21)
-                        .addComponent(jLabel22)))
+                        .addComponent(jLabel22))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel18)
+                        .addComponent(jLabel17)
+                        .addComponent(jLabel16)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(dataFimDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)

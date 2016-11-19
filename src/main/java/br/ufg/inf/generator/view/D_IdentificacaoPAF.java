@@ -7,7 +7,7 @@ package br.ufg.inf.generator.view;
 
 import javax.swing.JOptionPane;
 
-import br.ufg.inf.generator.CorretorOrtografico;
+import br.ufg.inf.corretor.CorretorOrtografico;
 import br.ufg.inf.generator.XML;
 
 /**
@@ -1336,8 +1336,7 @@ public class D_IdentificacaoPAF extends javax.swing.JFrame {
             }
 
             correto = CorretorOrtografico.corretor(nomeRelacao.getText());
-            XML.setNomeRelacao(correto)
-                    ;
+            XML.setNomeRelacao(correto);
             correto = CorretorOrtografico.corretor(mdRelacao.getText());
             XML.setMdRelacao(correto);
 

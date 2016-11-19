@@ -8,7 +8,7 @@ public class LocalDateTransformerTest {
 
     @Test
     public void deveTransformarDataStringEmLocalDate() throws Exception {
-    	Assert.assertEquals("2016-08-11", new LocalDateTransformer().read("2016-08-11").toString());
+        Assert.assertEquals("2016-08-11", new LocalDateTransformer().read("2016-08-11").toString());
     }
 
     @Test

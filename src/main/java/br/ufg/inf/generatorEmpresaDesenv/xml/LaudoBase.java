@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generatorEmpresaDesenv.xml;
 
 import java.io.StringWriter;
 
@@ -9,9 +9,9 @@ import br.ufg.inf.generator.xml.transformers.LaudoRegistryMatcher;
 
 public abstract class LaudoBase {
 
-	private static final String CABECALHO = "<?xml version=\"1.0\" encoding= \"UTF-8\"?>";
+    private static final String CABECALHO = "<?xml version=\"1.0\" encoding= \"UTF-8\"?>";
 
-	@Override
+    @Override
     public String toString() {
         final Persister persister = new Persister(new LaudoRegistryMatcher(), new Format(CABECALHO));
         try (StringWriter writer = new StringWriter()) {

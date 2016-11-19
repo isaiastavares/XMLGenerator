@@ -9,7 +9,7 @@ import java.awt.Color;
 
 import javax.swing.JOptionPane;
 
-import br.ufg.inf.generator.CorretorOrtografico;
+import br.ufg.inf.corretor.CorretorOrtografico;
 import br.ufg.inf.generator.XML;
 
 /**
@@ -356,8 +356,6 @@ public class B_EmpresaDesenvolvedora extends javax.swing.JFrame {
         } else {
 
             razaoSocialt = CorretorOrtografico.corretor(razaoSocial.getText());
-
-
 
             cnpjt = CorretorOrtografico.corretor(cnpj.getText());
 

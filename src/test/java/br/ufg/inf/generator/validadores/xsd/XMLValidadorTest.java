@@ -5,17 +5,17 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import br.ufg.inf.generator.xml.Laudo;
+import br.ufg.inf.generatorEmpresaDesenv.xml.Laudo;
 
 @Ignore
 public class XMLValidadorTest {
 
-	private static Laudo laudo;
+    private static Laudo laudo;
 
-	@Before
-	private void init() {
-		laudo = new Laudo();
-	}
+    @Before
+    private void init() {
+        laudo = new Laudo();
+    }
 
     @Test
     public void deveValidarLaudo() throws Exception {
