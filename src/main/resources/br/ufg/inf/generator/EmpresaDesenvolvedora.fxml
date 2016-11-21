@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.WizardEmpresaDesenvolvedoraCtrl">
+	<center>
+		<StackPane BorderPane.alignment="CENTER">
+			<children>
+				<VBox spacing="15.0">
+					<children>
+                  <HBox>
+                     <children>
+                        <JFXTextField labelFloat="true" promptText="Laudo" />
+                     </children>
+                  </HBox>
+						<VBox>
+							<children>
+								<Label styleClass="label-separator" text="Informações da Empresa Desenvolvedora Requerente" textFill="#e4e4e4">
+									<font>
+										<Font name="System Italic" size="12.0" />
+									</font>
+								</Label>
+								<Separator maxHeight="-Infinity" minWidth="400.0" prefHeight="2.0" />
+							</children>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+						</VBox>
+						<HBox spacing="10.0">
+							<children>
+                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="271.0" promptText="Razão Social" />
+                        <JFXTextField labelFloat="true" promptText="CNPJ" />
+                        <JFXTextField labelFloat="true" promptText="Inscrição Estadual" />
+							</children>
+						</HBox>
+						<VBox>
+							<children>
+								<Label styleClass="label-separator" text="Informações do Endereço" textFill="#e4e4e4">
+									<font>
+										<Font name="System Italic" size="12.0" />
+									</font>
+								</Label>
+								<Separator maxHeight="-Infinity" minWidth="400.0" prefHeight="2.0" />
+							</children>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+						</VBox>
+						<HBox spacing="10.0">
+							<children>
+                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="195.0" promptText="Rua" />
+                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="80.0" promptText="Número" />
+                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="295.0" promptText="Complemento" />
+							</children>
+						</HBox>
+						<HBox spacing="10.0">
+							<children>
+                        <JFXTextField labelFloat="true" maxWidth="193.0" minWidth="193.0" prefHeight="31.0" prefWidth="193.0" promptText="Bairro" />
+                        <JFXTextField labelFloat="true" maxWidth="192.0" minWidth="184.0" prefHeight="31.0" prefWidth="184.0" promptText="Municipio" />
+                        <JFXTextField labelFloat="true" maxWidth="65.0" minWidth="65.0" prefHeight="31.0" prefWidth="65.0" promptText="UF" />
+                        <JFXTextField labelFloat="true" maxWidth="117.0" minWidth="117.0" prefHeight="31.0" prefWidth="117.0" promptText="CEP" />
+							</children>
+						</HBox>
+						<VBox>
+							<children>
+								<Label styleClass="label-separator" text="Informações de Contato" textFill="#e4e4e4">
+									<font>
+										<Font name="System Italic" size="12.0" />
+									</font>
+								</Label>
+								<Separator maxHeight="-Infinity" minWidth="400.0" prefHeight="2.0" />
+							</children>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+						</VBox>
+						<HBox spacing="10.0">
+							<children>
+                        <JFXTextField labelFloat="true" promptText="Nome" />
+                        <JFXTextField labelFloat="true" maxWidth="105.0" minWidth="105.0" prefHeight="31.0" prefWidth="105.0" promptText="CPF" />
+                        <JFXTextField labelFloat="true" maxWidth="105.0" minWidth="105.0" prefHeight="31.0" prefWidth="105.0" promptText="Telefone" />
+                        <JFXTextField labelFloat="true" maxWidth="199.0" minWidth="199.0" prefHeight="31.0" prefWidth="199.0" promptText="Email" />
+							</children>
+						</HBox>
+						<HBox spacing="10.0">
+							<children>
+                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="587.0" promptText="Responsável pelo Acompanhamento dos Testes" />
+							</children>
+						</HBox>
+					</children>
+					<padding>
+						<Insets left="10.0" top="10.0" />
+					</padding>
+               <StackPane.margin>
+                  <Insets top="8.0" />
+               </StackPane.margin>
+				</VBox>
+			</children>
+		</StackPane>
+	</center>
+	<bottom>
+		<HBox alignment="BOTTOM_RIGHT" spacing="12.0" BorderPane.alignment="BOTTOM_RIGHT">
+			<children>
+				<JFXButton fx:id="backButton" buttonType="RAISED" text="Anterior" />
+				<JFXButton fx:id="nextButton" buttonType="RAISED" text="Próximo" />
+				<JFXButton fx:id="finishButton" buttonType="RAISED" text="Encerrar" />
+			</children>
+			<padding>
+				<Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+			</padding>
+		</HBox>
+	</bottom>
+</BorderPane>
