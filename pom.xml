@@ -23,68 +23,6 @@
         <simple.xml.version>2.7.1</simple.xml.version>
     </properties>
 
-<<<<<<< HEAD
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0</version>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>cobertura-maven-plugin</artifactId>
-				<version>2.5.2</version>
-				<configuration>
-					<formats>
-						<format>xml</format>
-					</formats>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19.1</version>
-				<executions>
-					<execution>
-						<id>unit-tests</id>
-						<phase>test</phase>
-						<goals>
-							<goal>test</goal>
-						</goals>
-						<configuration>
-							<skip>false</skip>
-							<excludes>
-								<exclude>**/*ITCase.java</exclude>
-							</excludes>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>geradorxml.GeradorXML</mainClass>
-						</manifest>
-					</archive>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>attached</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
-=======
     <build>
         <plugins>
             <plugin>
@@ -117,7 +55,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>geradorxml.GeradorXML</mainClass>
+                            <mainClass>br.ufg.inf.generator.GeradorXML</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -135,7 +73,6 @@
             </plugin>
         </plugins>
     </build>
->>>>>>> master
 
     <dependencies>
         <!-- JUnit -->
@@ -160,7 +97,6 @@
             <version>${joda.version}</version>
         </dependency>
 
-<<<<<<< HEAD
 		<!-- Simple Xml Framework -->
 		<dependency>
 			<groupId>org.simpleframework</groupId>
@@ -202,13 +138,4 @@
 			<version>8.6</version>
 		</dependency>
 	</dependencies>
-=======
-        <!-- Simple Xml Framework -->
-        <dependency>
-            <groupId>org.simpleframework</groupId>
-            <artifactId>simple-xml</artifactId>
-            <version>${simple.xml.version}</version>
-        </dependency>
-    </dependencies>
->>>>>>> master
 </project>
