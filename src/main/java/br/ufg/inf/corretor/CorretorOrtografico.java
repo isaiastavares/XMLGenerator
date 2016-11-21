@@ -1,5 +1,6 @@
-package br.ufg.inf.generator;
+package br.ufg.inf.corretor;
 
+// Classe responsavel por remover acentos ortograficos
 public class CorretorOrtografico {
 
     public static String corretor(String inicio) {
@@ -10,7 +11,7 @@ public class CorretorOrtografico {
             char c = fim.charAt(i);
 
             //Para a letra A
-            if(c == 'á' || c == 'ã' || c == 'â'){
+            if (c == 'á' || c == 'ã' || c == 'â') {
                 emChar[i] = 'a';
             }
             if (c == 'Á' || c == 'Ã' || c == 'Á') {
@@ -18,7 +19,7 @@ public class CorretorOrtografico {
             }
 
             //Para a letra E
-            if (c == 'é' || c == 'ê'){
+            if (c == 'é' || c == 'ê') {
                 emChar[i] = 'e';
             }
             if (c == 'É' || c == 'Ê') {

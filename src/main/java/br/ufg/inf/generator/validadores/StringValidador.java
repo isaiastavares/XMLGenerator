@@ -38,7 +38,7 @@ public class StringValidador {
     }
 
     public static void telefone(final String telefone) {
-    	if (telefone != null) {
+        if (telefone != null) {
             final Matcher matcher = Pattern.compile("^[0-9]{6,14}$").matcher(telefone);
             if (!matcher.find()) {
                 throw new IllegalStateException(String.format("Telefone de tamanho invalido (%s)", telefone));
@@ -47,20 +47,20 @@ public class StringValidador {
     }
 
     public static void exatamente8N(final String string) {
-    	if (string != null) {
-    		StringValidador.apenasNumerico(string);
+        if (string != null) {
+            StringValidador.apenasNumerico(string);
             StringValidador.validaTamanhoExato(string, 8);
         }
     }
 
     public static void tamanho0ate255(final String string) {
-    	if (string != null) {
+        if (string != null) {
             StringValidador.intervalo(string, 0, 255);
         }
     }
 
     public static void tamanho255(final String string) {
-    	if (string != null) {
+        if (string != null) {
             StringValidador.validaTamanhoMaximo(string, 255);
         }
     }

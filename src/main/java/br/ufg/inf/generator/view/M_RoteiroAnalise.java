@@ -7,7 +7,7 @@ package br.ufg.inf.generator.view;
 
 import javax.swing.JOptionPane;
 
-import br.ufg.inf.generator.CorretorOrtografico;
+import br.ufg.inf.corretor.CorretorOrtografico;
 import br.ufg.inf.generator.XML;
 
 /**

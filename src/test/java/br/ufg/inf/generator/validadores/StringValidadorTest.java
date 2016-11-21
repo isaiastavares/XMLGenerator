@@ -5,12 +5,12 @@ import org.junit.Test;
 
 public class StringValidadorTest {
 
-	private static final String STRING_TAMANHO_256 = "ll8DABEZYq9OrSPlxxYlfUN9tOfpNPZ4n6K5tJ2qw2P4OXey2IkREQXzwZrA6yFLF6MtUZbu0fGqmr67RjPaHuptcEg0CpCBoSJ30P6lIeeJG3o2JLeKFzYGoaTcgQws0XqsUe0nAuX4DWWQYTMhWmlgQ60NNuaQkkS10bfDhawLK4zQAZZQzU8C6aIjApFNSMqHNWXNP3rGhvEir6SB2rsm5bcgCLyGLXTJwBl8nqZoJms3bH6wToVdjfsjfkjs";
-	private static final String STRING_TAMANHO_255 = "ll8DABEZYq9OrSPlxxYlfUN9tOfpNPZ4n6K5tJ2qw2P4OXey2IkREQXzwZrA6yFLF6MtUZbu0fGqmr67RjPaHuptcEg0CpCBoSJ30P6lIeeJG3o2JLeKFzYGoaTcgQws0XqsUe0nAuX4DWWQYTMhWmlgQ60NNuaQkkS10bfDhawLK4zQAZZQzU8C6aIjApFNSMqHNWXNP3rGhvEir6SB2rsm5bcgCLyGLXTJwBl8nqZoJms3bH6wToVdjfsjfkj";
-	private static final String STRING_TAMANHO_26 = "ll8DABEZYq9OrSPlxxYlfUN944";
-	private static final String STRING_TAMANHO_25 = "ll8DABEZYq9OrSPlxxYlfUN94";
+    private static final String STRING_TAMANHO_256 = "ll8DABEZYq9OrSPlxxYlfUN9tOfpNPZ4n6K5tJ2qw2P4OXey2IkREQXzwZrA6yFLF6MtUZbu0fGqmr67RjPaHuptcEg0CpCBoSJ30P6lIeeJG3o2JLeKFzYGoaTcgQws0XqsUe0nAuX4DWWQYTMhWmlgQ60NNuaQkkS10bfDhawLK4zQAZZQzU8C6aIjApFNSMqHNWXNP3rGhvEir6SB2rsm5bcgCLyGLXTJwBl8nqZoJms3bH6wToVdjfsjfkjs";
+    private static final String STRING_TAMANHO_255 = "ll8DABEZYq9OrSPlxxYlfUN9tOfpNPZ4n6K5tJ2qw2P4OXey2IkREQXzwZrA6yFLF6MtUZbu0fGqmr67RjPaHuptcEg0CpCBoSJ30P6lIeeJG3o2JLeKFzYGoaTcgQws0XqsUe0nAuX4DWWQYTMhWmlgQ60NNuaQkkS10bfDhawLK4zQAZZQzU8C6aIjApFNSMqHNWXNP3rGhvEir6SB2rsm5bcgCLyGLXTJwBl8nqZoJms3bH6wToVdjfsjfkj";
+    private static final String STRING_TAMANHO_26 = "ll8DABEZYq9OrSPlxxYlfUN944";
+    private static final String STRING_TAMANHO_25 = "ll8DABEZYq9OrSPlxxYlfUN94";
 
-	@Test(expected = IllegalStateException.class)
+    @Test(expected = IllegalStateException.class)
     public void naoDeveValidarCNPJCasoNaoPossua14Caracteres() {
         try {
             StringValidador.cnpj("1234567890123");
@@ -21,7 +21,7 @@ public class StringValidadorTest {
         Assert.fail("Validacao nao funcionou");
     }
 
-	@Test(expected = IllegalStateException.class)
+    @Test(expected = IllegalStateException.class)
     public void naoDeveValidarCPFCasoNaoPossua11Caracteres() {
         try {
             StringValidador.cpf("1234567890");
@@ -32,7 +32,7 @@ public class StringValidadorTest {
         Assert.fail("Validacao nao funcionou");
     }
 
-	@Test
+    @Test
     public void deveValidarInscricaoEstadualCasoEstejaNoPadrao() {
         StringValidador.inscricaoEstadual("Isento");
         StringValidador.inscricaoEstadual("1");
@@ -60,12 +60,12 @@ public class StringValidadorTest {
 
     @Test(expected = IllegalStateException.class)
     public void naoDevePermitirExtrapolarTamanho8N() {
-    	StringValidador.exatamente8N("123456789");
+        StringValidador.exatamente8N("123456789");
     }
 
     @Test(expected = IllegalStateException.class)
     public void naoDevePermitirTamanhoMenorQue8() {
-    	StringValidador.exatamente8N("1");
+        StringValidador.exatamente8N("1");
     }
 
     @Test
@@ -76,7 +76,7 @@ public class StringValidadorTest {
 
     @Test(expected = IllegalStateException.class)
     public void deveLancarExcecaoCasoEstejaForaDoIntervalo0ate255() {
-    	StringValidador.tamanho0ate255(STRING_TAMANHO_256);
+        StringValidador.tamanho0ate255(STRING_TAMANHO_256);
     }
 
     @Test

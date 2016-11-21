@@ -70,22 +70,24 @@ public enum UnidadeFederativa {
 
     /**
      * Retorna apenas os Estados de fato
+     *
      * @return uma lista com os Estados
      */
     public static List<UnidadeFederativa> getApenasEstados() {
-    	List<UnidadeFederativa> listUFs = new ArrayList<UnidadeFederativa>();
-    	for (final UnidadeFederativa uf : UnidadeFederativa.values()) {
-    		if (!(uf.equals(UnidadeFederativa.NACIONAL)
-    			|| uf.equals(UnidadeFederativa.RFB)
-    			|| uf.equals(UnidadeFederativa.EX))) {
-    			listUFs.add(uf);
-    		}
-    	}
-    	return listUFs;
+        List<UnidadeFederativa> listUFs = new ArrayList<UnidadeFederativa>();
+        for (final UnidadeFederativa uf : UnidadeFederativa.values()) {
+            if (!(uf.equals(UnidadeFederativa.NACIONAL)
+                    || uf.equals(UnidadeFederativa.RFB)
+                    || uf.equals(UnidadeFederativa.EX))) {
+                listUFs.add(uf);
+            }
+        }
+        return listUFs;
     }
 
     /**
      * Identifica a UF pela sigla ou pelo codigo IBGE.
+     *
      * @param codigo Sigla ou codigo IBGE da UF.
      * @return Objeto da UF.
      */

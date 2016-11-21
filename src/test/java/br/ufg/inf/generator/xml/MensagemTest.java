@@ -6,7 +6,7 @@ import org.junit.Test;
 @Ignore
 public class MensagemTest {
 
-	@Test(expected = IllegalStateException.class)
+    @Test(expected = IllegalStateException.class)
     public void naoDevePermitirNumeroNulo() {
     }
 }
