@@ -1,110 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text fx:id="empresaDesenv" layoutX="241.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora Requerente">
+      <Text fx:id="empresaDesenv" layoutX="191.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora Requerente">
          <font>
-            <Font size="16.0" />
+            <Font size="23.0" />
          </font>
       </Text>
-      <Text layoutX="302.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações da empresa" />
-      <Text layoutX="68.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField layoutX="29.0" layoutY="124.0" />
-      <Text layoutX="350.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
+      <Text fx:id="infoEmpresa" layoutX="302.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações da empresa" />
+      <Text fx:id="lblRazaoSocial" layoutX="29.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField layoutX="290.0" layoutY="125.0" />
-      <Text layoutX="572.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IE - Inscrição Estadual">
+      <TextField fx:id="txtRazaoSocial" layoutX="29.0" layoutY="124.0" prefHeight="24.0" prefWidth="342.0" />
+      <Text fx:id="lblCnpj" layoutX="405.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField layoutX="559.0" layoutY="125.0" />
-      <Text layoutX="300.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de endereço" />
-      <Text layoutX="43.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
+      <TextField fx:id="txtCnpj" layoutX="403.0" layoutY="125.0" />
+      <Text fx:id="lblInscEstad" layoutX="584.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IE - Inscrição Estadual">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="118.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
+      <TextField fx:id="txtInscEstad" layoutX="582.0" layoutY="124.0" />
+      <Text fx:id="lblInfoEndereco" layoutX="300.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de endereço" />
+      <Text fx:id="lblRua" layoutX="29.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="202.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento">
+      <Text fx:id="lblNumero" layoutX="258.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="347.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
+      <Text fx:id="lblComplemento" layoutX="343.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="487.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Município">
+      <Text fx:id="lblBairro" layoutX="575.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="610.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
+      <Text fx:id="lblMunicipio" layoutX="33.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Município">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="673.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP">
+      <Text fx:id="lblUf" layoutX="257.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField layoutX="19.0" layoutY="249.0" prefHeight="25.0" prefWidth="70.0" />
-      <TextField layoutX="113.0" layoutY="249.0" prefHeight="25.0" prefWidth="57.0" />
-      <TextField layoutX="190.0" layoutY="249.0" prefHeight="25.0" prefWidth="103.0" />
-      <TextField layoutX="313.0" layoutY="247.0" prefHeight="29.0" prefWidth="122.0" />
-      <TextField layoutX="454.0" layoutY="247.0" prefHeight="29.0" prefWidth="122.0" />
-      <TextField layoutX="594.0" layoutY="247.0" prefHeight="29.0" prefWidth="46.0" />
-      <TextField layoutX="655.0" layoutY="247.0" prefHeight="29.0" prefWidth="80.0" />
-      <Text layoutX="311.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de contato" />
-      <Text layoutX="72.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+      <Text fx:id="lblCep" layoutX="343.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="21.24609375">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField layoutX="18.0" layoutY="362.0" prefHeight="25.0" prefWidth="142.0" />
-      <Text layoutX="262.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+      <TextField fx:id="txtRua" layoutX="30.0" layoutY="226.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtNumero" layoutX="256.0" layoutY="225.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="txtComplemento" layoutX="341.0" layoutY="224.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtBairro" layoutX="573.0" layoutY="221.0" prefHeight="29.0" prefWidth="157.0" />
+      <TextField fx:id="txtMunicipio" layoutX="30.0" layoutY="297.0" prefHeight="29.0" prefWidth="197.0" />
+      <TextField fx:id="txtUf" layoutX="256.0" layoutY="297.0" prefHeight="29.0" prefWidth="57.0" />
+      <TextField fx:id="txtCep" layoutX="341.0" layoutY="297.0" prefHeight="29.0" prefWidth="157.0" />
+      <Text fx:id="lblInfoContato" layoutX="313.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de contato" />
+      <Text fx:id="lblNome" layoutX="22.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="454.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone">
+      <TextField fx:id="txtNome" layoutX="20.0" layoutY="418.0" prefHeight="25.0" prefWidth="342.0" />
+      <Text fx:id="lblCpf" layoutX="396.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="637.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+      <Text fx:id="lblTelefone" layoutX="399.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField layoutX="202.0" layoutY="362.0" prefHeight="25.0" prefWidth="142.0" />
-      <TextField layoutX="408.0" layoutY="362.0" prefHeight="25.0" prefWidth="142.0" />
-      <TextField layoutX="584.0" layoutY="362.0" prefHeight="25.0" prefWidth="142.0" />
-      <Text layoutX="250.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsavel pelo acompanhamento de testes">
+      <Text fx:id="lblEmail" layoutX="22.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField layoutX="231.0" layoutY="457.0" prefHeight="25.0" prefWidth="300.0" />
+      <TextField fx:id="txtCpf" layoutX="394.0" layoutY="418.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtTelefone" layoutX="396.0" layoutY="475.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtEmail" layoutX="19.0" layoutY="469.0" prefHeight="25.0" prefWidth="342.0" />
+      <Text fx:id="lblResponsavel" layoutX="249.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsavel pelo acompanhamento de testes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtResponsavel" layoutX="233.0" layoutY="534.0" prefHeight="25.0" prefWidth="300.0" />
+      <Button fx:id="bttnOk" layoutX="343.0" layoutY="568.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
