@@ -5,7 +5,11 @@ package br.ufg.inf.generator.corretor;
  *
  * @author Hiago Koziel
  */
-public class CorretorOrtografico {
+public final class CorretorOrtografico {
+
+	private CorretorOrtografico() {
+		// Do nothing
+	}
 
     public static String corretor(String inicio) {
         String fim = inicio;

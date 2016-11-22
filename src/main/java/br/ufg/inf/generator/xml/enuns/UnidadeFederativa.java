@@ -74,7 +74,7 @@ public enum UnidadeFederativa {
      * @return uma lista com os Estados
      */
     public static List<UnidadeFederativa> getApenasEstados() {
-        List<UnidadeFederativa> listUFs = new ArrayList<UnidadeFederativa>();
+        List<UnidadeFederativa> listUFs = new ArrayList<>();
         for (final UnidadeFederativa uf : UnidadeFederativa.values()) {
             if (!(uf.equals(UnidadeFederativa.NACIONAL)
                     || uf.equals(UnidadeFederativa.RFB)
@@ -93,9 +93,8 @@ public enum UnidadeFederativa {
      */
     public static UnidadeFederativa valueOfCodigo(final String codigo) {
         for (final UnidadeFederativa uf : UnidadeFederativa.values()) {
-            if (uf.getCodigo().equalsIgnoreCase(codigo)) {
-                return uf;
-            } else if (uf.getCodigoIbge().equalsIgnoreCase(codigo)) {
+            if (uf.getCodigo().equalsIgnoreCase(codigo) ||
+            		uf.getCodigoIbge().equalsIgnoreCase(codigo)) {
                 return uf;
             }
         }

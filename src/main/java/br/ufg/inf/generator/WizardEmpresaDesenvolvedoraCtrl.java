@@ -30,7 +30,7 @@ public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implemen
 
 	@Override
 	void next() {
-		myController.setScreen(XMLGeneratorMain.idOtc);
+		myController.setScreen(XMLGeneratorMain.ID_OTC);
 	}
 
 	@Override

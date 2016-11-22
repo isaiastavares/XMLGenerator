@@ -21,12 +21,12 @@ public class WizardOtcCtrl  extends AbstractWizardCtrl implements ControlledScre
 
 	@Override
 	void back() {
-		myController.setScreen(XMLGeneratorMain.idEmpresaDesenvolvedora);
+		myController.setScreen(XMLGeneratorMain.ID_EMPRESA_DESENVOLVEDORA);
 	}
 
 	@Override
 	void next() {
-		myController.setScreen(XMLGeneratorMain.idLaudoFinal);
+		myController.setScreen(XMLGeneratorMain.ID_LAUDO_FINAL);
 	}
 
 	@Override
