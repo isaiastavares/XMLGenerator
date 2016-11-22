@@ -9,29 +9,10 @@
 <?import javafx.scene.layout.*?>
 <?import com.jfoenix.controls.*?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.WizardLaudoFinalCtrl">
-	<center>
-		<StackPane BorderPane.alignment="CENTER">
-			<children>
-				<VBox alignment="CENTER">
-					<children>
-						<FontAwesomeIconView fill="#3498db" glyphName="CHECK" size="100.0" textAlignment="CENTER" />
-						<Label text="Laudo Gerado com sucesso!" />
-					</children>
-				</VBox>
-			</children>
-		</StackPane>
-	</center>
-	<bottom>
-		<HBox alignment="BOTTOM_RIGHT" spacing="12.0" BorderPane.alignment="BOTTOM_RIGHT">
-			<children>
-				<JFXButton fx:id="backButton" buttonType="RAISED" text="Anterior" />
-				<JFXButton fx:id="nextButton" buttonType="RAISED" text="Próximo" />
-				<JFXButton fx:id="finishButton" buttonType="RAISED" text="Encerrar" />
-			</children>
-			<padding>
-				<Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-			</padding>
-		</HBox>
-	</bottom>
-</BorderPane>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="113.0" layoutY="56.0" text="Laudo gerado com sucesso!" />
+      <Button layoutX="154.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="OK" />
+   </children>
+</Pane>
