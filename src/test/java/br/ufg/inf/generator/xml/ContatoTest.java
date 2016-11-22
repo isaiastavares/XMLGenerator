@@ -1,6 +1,7 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generatorEmpresaDesenv.xml.Contato;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class ContatoTest {
@@ -44,5 +45,33 @@ public class ContatoTest {
         contato.setCpf(CPF);
         contato.setTelefone(TELEFONE);
         contato.toString();
+    }
+
+    @Test
+    public void deveRetornarNomeCorretamente() {
+        final Contato contato = new Contato();
+        contato.setNome(NOME);
+        assertEquals(NOME, contato.getNome());
+    }
+
+    @Test
+    public void deveRetornarCpfCorretamente() {
+        final Contato contato = new Contato();
+        contato.setCpf(CPF);
+        assertEquals(CPF, contato.getCpf());
+    }
+
+    @Test
+    public void deveRetornarEmailCorretamente() {
+        final Contato contato = new Contato();
+        contato.setEmail(EMAIL);
+        assertEquals(EMAIL, contato.getEmail());
+    }
+
+    @Test
+    public void deveRetornarTelefoneCorretamente() {
+        final Contato contato = new Contato();
+        contato.setTelefone(TELEFONE);
+        assertEquals(TELEFONE, contato.getTelefone());
     }
 }

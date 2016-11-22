@@ -10,6 +10,11 @@ public class StringValidadorTest {
     private static final String STRING_TAMANHO_26 = "ll8DABEZYq9OrSPlxxYlfUN944";
     private static final String STRING_TAMANHO_25 = "ll8DABEZYq9OrSPlxxYlfUN94";
 
+    @Test
+    public void deveValidarCNPJ() {
+        StringValidador.cnpj("07364111000102");
+    }
+
     @Test(expected = IllegalStateException.class)
     public void naoDeveValidarCNPJCasoNaoPossua14Caracteres() {
         try {
@@ -19,6 +24,11 @@ public class StringValidadorTest {
             StringValidador.cnpj("123456789012345");
         }
         Assert.fail("Validacao nao funcionou");
+    }
+
+    @Test
+    public void deveValidarCPF() {
+        StringValidador.cpf("04396208138");
     }
 
     @Test(expected = IllegalStateException.class)
@@ -45,6 +55,21 @@ public class StringValidadorTest {
             StringValidador.inscricaoEstadual("");
         } catch (final IllegalStateException e) {
             StringValidador.inscricaoEstadual("123456789012345678901");
+        }
+    }
+
+    @Test
+    public void deveValidarTelefoneCasoEstejaNoPadrao() {
+        StringValidador.telefone("123456");
+        StringValidador.telefone("12345678901234");
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void naoDeveValidarTelefoneCasoNaoEstejaNoTamanho() {
+        try {
+            StringValidador.telefone("12345");
+        } catch (final IllegalStateException e) {
+            StringValidador.telefone("123456789012345");
         }
     }
 

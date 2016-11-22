@@ -1,4 +1,4 @@
-package br.ufg.inf.generatorEmpresaDesenv.xml;
+package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;

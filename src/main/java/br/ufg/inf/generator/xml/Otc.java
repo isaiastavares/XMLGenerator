@@ -1,10 +1,10 @@
-package br.ufg.inf.generatorEmpresaDesenv.xml;
+package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name = "Desenvolvedora")
-public class Desenvolvedora extends LaudoBase {
+@Root(name = "Otc")
+public class Otc extends LaudoBase {
 
     @Element(name = "RazaoSocial", required = true)
     private String razaoSocial;
@@ -18,11 +18,11 @@ public class Desenvolvedora extends LaudoBase {
     @Element(name = "Endereco", required = true)
     private Endereco endereco;
 
-    @Element(name = "Contato", required = true)
-    private Contato contato;
+    @Element(name = "PeriodoAnalise", required = true)
+    private PeriodoAnalise periodoAnalise;
 
-    @Element(name = "ResponsavelAcompanhamentoTestes", required = true)
-    private String respAcompTestes;
+    @Element(name = "VersaoEspecificacaoRequisitos", required = true)
+    private String versaoEspecifRequisitos;
 
     public String getRazaoSocial() {
         return razaoSocial;
@@ -56,19 +56,19 @@ public class Desenvolvedora extends LaudoBase {
         this.endereco = endereco;
     }
 
-    public Contato getContato() {
-        return contato;
+    public PeriodoAnalise getPeriodoAnalise() {
+        return periodoAnalise;
     }
 
-    public void setContato(Contato contato) {
-        this.contato = contato;
+    public void setPeriodoAnalise(PeriodoAnalise periodoAnalise) {
+        this.periodoAnalise = periodoAnalise;
     }
 
-    public String getRespAcompTestes() {
-        return respAcompTestes;
+    public String getVersaoEspecifRequisitos() {
+        return versaoEspecifRequisitos;
     }
 
-    public void setRespAcompTestes(String respAcompTestes) {
-        this.respAcompTestes = respAcompTestes;
+    public void setVersaoEspecifRequisitos(String versaoEspecifRequisitos) {
+        this.versaoEspecifRequisitos = versaoEspecifRequisitos;
     }
 }

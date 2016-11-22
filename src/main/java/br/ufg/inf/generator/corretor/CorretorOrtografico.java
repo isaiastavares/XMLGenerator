@@ -1,6 +1,10 @@
-package br.ufg.inf.corretor;
+package br.ufg.inf.generator.corretor;
 
-// Classe responsavel por remover acentos ortograficos
+/**
+ * Classe responsavel por remover acentos ortograficos
+ *
+ * @author Hiago Koziel
+ */
 public class CorretorOrtografico {
 
     public static String corretor(String inicio) {
@@ -14,7 +18,7 @@ public class CorretorOrtografico {
             if (c == 'á' || c == 'ã' || c == 'â') {
                 emChar[i] = 'a';
             }
-            if (c == 'Á' || c == 'Ã' || c == 'Á') {
+            if (c == 'Á' || c == 'Ã' || c == 'Â') {
                 emChar[i] = 'A';
             }
 

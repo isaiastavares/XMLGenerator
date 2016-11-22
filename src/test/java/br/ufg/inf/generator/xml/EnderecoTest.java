@@ -1,6 +1,7 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generatorEmpresaDesenv.xml.Endereco;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 import br.ufg.inf.generator.xml.enuns.UnidadeFederativa;
@@ -155,5 +156,54 @@ public class EnderecoTest {
         endereco.setMunicipio(MUNICIPIO);
         endereco.setUf(UnidadeFederativa.GO);
         endereco.toString();
+    }
+
+    @Test
+    public void deveRetornarLogradouroCorretamente() {
+    	final Endereco endereco = new Endereco();
+        endereco.setLogradouro(LOGRADOURO);
+        assertEquals(LOGRADOURO, endereco.getLogradouro());
+    }
+
+    @Test
+    public void deveRetornarNumeroCorretamente() {
+    	final Endereco endereco = new Endereco();
+        endereco.setNumero(NUMERO);
+        assertEquals(NUMERO, endereco.getNumero());
+    }
+
+    @Test
+    public void deveRetornarComplementoCorretamente() {
+    	final Endereco endereco = new Endereco();
+        endereco.setComplemento(COMPLEMENTO);
+        assertEquals(COMPLEMENTO, endereco.getComplemento());
+    }
+
+    @Test
+    public void deveRetornarBairroCorretamente() {
+    	final Endereco endereco = new Endereco();
+        endereco.setBairro(BAIRRO);
+        assertEquals(BAIRRO, endereco.getBairro());
+    }
+
+    @Test
+    public void deveRetornarMunicipioCorretamente() {
+    	final Endereco endereco = new Endereco();
+        endereco.setMunicipio(MUNICIPIO);
+        assertEquals(MUNICIPIO, endereco.getMunicipio());
+    }
+
+    @Test
+    public void deveRetornarUfCorretamente() {
+    	final Endereco endereco = new Endereco();
+        endereco.setUf(UnidadeFederativa.GO);
+        assertEquals("GO", endereco.getUf());
+    }
+
+    @Test
+    public void deveRetornarCepCorretamente() {
+    	final Endereco endereco = new Endereco();
+        endereco.setCep(CEP);
+        assertEquals(CEP, endereco.getCep());
     }
 }

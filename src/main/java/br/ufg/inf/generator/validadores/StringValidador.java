@@ -8,6 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 public class StringValidador {
 
     private StringValidador() {
+    	// Do nothing
     }
 
     public static void cnpj(final String cnpj) {

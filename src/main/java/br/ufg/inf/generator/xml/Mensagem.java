@@ -1,4 +1,4 @@
-package br.ufg.inf.generatorEmpresaDesenv.xml;
+package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
@@ -29,6 +29,12 @@ public class Mensagem extends LaudoBase {
 
     @Element(name = "Emissao", required = true)
     private Emissao emissao;
+
+    @Element(name = "ExecucaoTestes", required = true)
+    private ExecucaoTestes execucaoTestes;
+
+    @Element(name = "AprovacaoRelatorio", required = true)
+    private AprovacaoRelatorio aprovacaoRelatorio;
 
     public String getNumero() {
         return numero;
@@ -93,4 +99,20 @@ public class Mensagem extends LaudoBase {
     public void setEmissao(Emissao emissao) {
         this.emissao = emissao;
     }
+
+	public ExecucaoTestes getExecucaoTestes() {
+		return execucaoTestes;
+	}
+
+	public void setExecucaoTestes(ExecucaoTestes execucaoTestes) {
+		this.execucaoTestes = execucaoTestes;
+	}
+
+	public AprovacaoRelatorio getAprovacaoRelatorio() {
+		return aprovacaoRelatorio;
+	}
+
+	public void setAprovacaoRelatorio(AprovacaoRelatorio aprovacaoRelatorio) {
+		this.aprovacaoRelatorio = aprovacaoRelatorio;
+	}
 }

@@ -1,13 +1,16 @@
-package br.ufg.inf.generatorEmpresaDesenv.xml;
+package br.ufg.inf.generator.xml;
 
 import java.io.StringWriter;
 
+import org.apache.log4j.Logger;
 import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
 import br.ufg.inf.generator.xml.transformers.LaudoRegistryMatcher;
 
 public abstract class LaudoBase {
+
+	private static final Logger LOG = Logger.getLogger(LaudoBase.class);
 
     private static final String CABECALHO = "<?xml version=\"1.0\" encoding= \"UTF-8\"?>";
 
@@ -18,6 +21,7 @@ public abstract class LaudoBase {
             persister.write(this, writer);
             return writer.toString();
         } catch (final Exception e) {
+        	LOG.error(e.getMessage(), e);
             throw new IllegalStateException(e.getMessage());
         }
     }

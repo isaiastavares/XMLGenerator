@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import br.ufg.inf.generatorEmpresaDesenv.xml.Laudo;
+import br.ufg.inf.generator.xml.Laudo;
 
 @Ignore
 public class XMLValidadorTest {

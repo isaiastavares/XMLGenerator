@@ -9,6 +9,10 @@ import javax.xml.validation.SchemaFactory;
 
 public final class XMLValidador {
 
+	private XMLValidador() {
+		// Do nothing
+	}
+
     private static boolean validaXml(final String xml, final String xsd) throws Exception {
         final URL xsdPath = XMLValidador.class.getResource(String.format("schemas/%s", xsd));
         final SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
