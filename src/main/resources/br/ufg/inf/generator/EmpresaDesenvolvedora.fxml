@@ -1,120 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.*?>
-<?import javafx.geometry.*?>
 <?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-<?import com.jfoenix.controls.*?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.WizardEmpresaDesenvolvedoraCtrl">
-	<center>
-		<StackPane BorderPane.alignment="CENTER">
-			<children>
-				<VBox spacing="15.0">
-					<children>
-                  <HBox>
-                     <children>
-                        <JFXTextField labelFloat="true" promptText="Laudo" />
-                     </children>
-                  </HBox>
-						<VBox>
-							<children>
-								<Label styleClass="label-separator" text="Informações da Empresa Desenvolvedora Requerente" textFill="#e4e4e4">
-									<font>
-										<Font name="System Italic" size="12.0" />
-									</font>
-								</Label>
-								<Separator maxHeight="-Infinity" minWidth="400.0" prefHeight="2.0" />
-							</children>
-                     <VBox.margin>
-                        <Insets left="8.0" />
-                     </VBox.margin>
-						</VBox>
-						<HBox spacing="10.0">
-							<children>
-                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="271.0" promptText="Razão Social" />
-                        <JFXTextField labelFloat="true" promptText="CNPJ" />
-                        <JFXTextField labelFloat="true" promptText="Inscrição Estadual" />
-							</children>
-						</HBox>
-						<VBox>
-							<children>
-								<Label styleClass="label-separator" text="Informações do Endereço" textFill="#e4e4e4">
-									<font>
-										<Font name="System Italic" size="12.0" />
-									</font>
-								</Label>
-								<Separator maxHeight="-Infinity" minWidth="400.0" prefHeight="2.0" />
-							</children>
-                     <VBox.margin>
-                        <Insets left="8.0" />
-                     </VBox.margin>
-						</VBox>
-						<HBox spacing="10.0">
-							<children>
-                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="195.0" promptText="Rua" />
-                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="80.0" promptText="Número" />
-                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="295.0" promptText="Complemento" />
-							</children>
-						</HBox>
-						<HBox spacing="10.0">
-							<children>
-                        <JFXTextField labelFloat="true" maxWidth="193.0" minWidth="193.0" prefHeight="31.0" prefWidth="193.0" promptText="Bairro" />
-                        <JFXTextField labelFloat="true" maxWidth="192.0" minWidth="184.0" prefHeight="31.0" prefWidth="184.0" promptText="Municipio" />
-                        <JFXTextField labelFloat="true" maxWidth="65.0" minWidth="65.0" prefHeight="31.0" prefWidth="65.0" promptText="UF" />
-                        <JFXTextField labelFloat="true" maxWidth="117.0" minWidth="117.0" prefHeight="31.0" prefWidth="117.0" promptText="CEP" />
-							</children>
-						</HBox>
-						<VBox>
-							<children>
-								<Label styleClass="label-separator" text="Informações de Contato" textFill="#e4e4e4">
-									<font>
-										<Font name="System Italic" size="12.0" />
-									</font>
-								</Label>
-								<Separator maxHeight="-Infinity" minWidth="400.0" prefHeight="2.0" />
-							</children>
-                     <VBox.margin>
-                        <Insets left="8.0" />
-                     </VBox.margin>
-						</VBox>
-						<HBox spacing="10.0">
-							<children>
-                        <JFXTextField labelFloat="true" promptText="Nome" />
-                        <JFXTextField labelFloat="true" maxWidth="105.0" minWidth="105.0" prefHeight="31.0" prefWidth="105.0" promptText="CPF" />
-                        <JFXTextField labelFloat="true" maxWidth="105.0" minWidth="105.0" prefHeight="31.0" prefWidth="105.0" promptText="Telefone" />
-                        <JFXTextField labelFloat="true" maxWidth="199.0" minWidth="199.0" prefHeight="31.0" prefWidth="199.0" promptText="Email" />
-							</children>
-						</HBox>
-						<HBox spacing="10.0">
-							<children>
-                        <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="587.0" promptText="Responsável pelo Acompanhamento dos Testes" />
-							</children>
-						</HBox>
-					</children>
-					<padding>
-						<Insets left="10.0" top="10.0" />
-					</padding>
-               <StackPane.margin>
-                  <Insets top="8.0" />
-               </StackPane.margin>
-				</VBox>
-			</children>
-		</StackPane>
-	</center>
-	<bottom>
-		<HBox alignment="BOTTOM_RIGHT" spacing="12.0" BorderPane.alignment="BOTTOM_RIGHT">
-			<children>
-				<JFXButton fx:id="backButton" buttonType="RAISED" text="Anterior" />
-				<JFXButton fx:id="nextButton" buttonType="RAISED" text="Próximo" />
-				<JFXButton fx:id="finishButton" buttonType="RAISED" text="Encerrar" />
-			</children>
-			<padding>
-				<Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-			</padding>
-		</HBox>
-	</bottom>
-</BorderPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="empresaDesenv" layoutX="191.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora Requerente">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblRazaoSocial" layoutX="29.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtRazaoSocial" layoutX="29.0" layoutY="117.0" prefHeight="24.0" prefWidth="342.0" />
+      <Text fx:id="lblCnpj" layoutX="405.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCnpj" layoutX="403.0" layoutY="118.0" />
+      <Text fx:id="lblInscEstad" layoutX="584.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IE - Inscrição Estadual">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtInscEstad" layoutX="582.0" layoutY="117.0" />
+      <Text fx:id="lblInfoEndereco" layoutX="306.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de endereço">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Text>
+      <Text fx:id="lblRua" layoutX="29.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblNumero" layoutX="258.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblComplemento" layoutX="343.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblBairro" layoutX="575.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblMunicipio" layoutX="33.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Município">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblUf" layoutX="257.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblCep" layoutX="343.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="21.24609375">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtRua" layoutX="30.0" layoutY="228.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtNumero" layoutX="256.0" layoutY="227.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="txtComplemento" layoutX="341.0" layoutY="226.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtBairro" layoutX="573.0" layoutY="223.0" prefHeight="29.0" prefWidth="157.0" />
+      <TextField fx:id="txtMunicipio" layoutX="30.0" layoutY="284.0" prefHeight="29.0" prefWidth="197.0" />
+      <TextField fx:id="txtUf" layoutX="256.0" layoutY="284.0" prefHeight="29.0" prefWidth="57.0" />
+      <TextField fx:id="txtCep" layoutX="341.0" layoutY="284.0" prefHeight="29.0" prefWidth="157.0" />
+      <Text fx:id="lblInfoContato" layoutX="313.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de contato">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Text>
+      <Text fx:id="lblNome" layoutX="29.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNome" layoutX="27.0" layoutY="407.0" prefHeight="25.0" prefWidth="342.0" />
+      <Text fx:id="lblCpf" layoutX="403.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblTelefone" layoutX="406.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblEmail" layoutX="29.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCpf" layoutX="401.0" layoutY="407.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtEmail" layoutX="26.0" layoutY="472.0" prefHeight="25.0" prefWidth="342.0" />
+      <TextField fx:id="txtTelefone" layoutX="403.0" layoutY="478.0" prefHeight="25.0" prefWidth="142.0" />
+      <Text fx:id="lblResponsavel" layoutX="256.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsavel pelo acompanhamento de testes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtResponsavel" layoutX="240.0" layoutY="537.0" prefHeight="25.0" prefWidth="300.0" />
+      <Button fx:id="bttnOk" layoutX="350.0" layoutY="586.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="29.0" layoutY="157.0" prefHeight="1.0" prefWidth="702.0" />
+      <Separator layoutX="28.0" layoutY="329.0" prefHeight="1.0" prefWidth="702.0" />
+      <Text fx:id="lblInfoEndereco1" layoutX="266.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações da empresa desenvolvedora">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="32.0" layoutY="50.0" prefHeight="1.0" prefWidth="702.0" />
+   </children>
+</Pane>
