@@ -5,10 +5,9 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text fx:id="lblInfoPaf" layoutX="218.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do Sistema PAF">
+      <Text layoutX="218.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do Sistema PAF">
          <font>
             <Font size="23.0" />
          </font>
@@ -21,7 +20,7 @@
                     <items>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <Label fx:id="lblRetaguarda" layoutX="37.0" layoutY="14.0" text="Retaguarda / .dll = &quot;relacaoexe.txt&quot;">
+                              <Label layoutX="37.0" layoutY="14.0" text="Retaguarda / .dll = &quot;relacaoexe.txt&quot;">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
@@ -33,7 +32,7 @@
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <Label fx:id="lblPerfisRequisito" layoutX="117.0" layoutY="14.0" text="Perfis de Requisito">
+                              <Label layoutX="117.0" layoutY="14.0" text="Perfis de Requisito">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
@@ -49,34 +48,34 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Label fx:id="lblArquivoRelacaoExe" layoutX="32.0" layoutY="14.0" text="Arquivo da relação dos executáveis &quot;lista.txt&quot;">
+                  <Label layoutX="32.0" layoutY="14.0" text="Arquivo da relação dos executáveis &quot;lista.txt&quot;">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblNomeLista" layoutX="15.0" layoutY="48.0" text="Nome" />
+                  <Label layoutX="15.0" layoutY="48.0" text="Nome" />
                   <TextField fx:id="txtNomeLista" layoutX="14.0" layoutY="69.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label fx:id="lblMdLista" layoutX="199.0" layoutY="46.0" text="MD-5" />
+                  <Label layoutX="199.0" layoutY="46.0" text="MD-5" />
                   <TextField fx:id="txtMdLista" layoutX="199.0" layoutY="67.0" prefHeight="25.0" prefWidth="178.0" />
-                  <Label fx:id="lblInfoArquivoRelacaoExe" layoutX="435.0" layoutY="14.0" text="Informações do arquivo &quot;relacaoexe.txt&quot;">
+                  <Label layoutX="435.0" layoutY="14.0" text="Informações do arquivo &quot;relacaoexe.txt&quot;">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblNomeRelacaoExe" layoutX="419.0" layoutY="47.0" text="Nome" />
+                  <Label layoutX="419.0" layoutY="47.0" text="Nome" />
                   <TextField fx:id="txtNomeRelacaoExe" layoutX="418.0" layoutY="68.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label fx:id="lblMdRelacaoExe" layoutX="603.0" layoutY="45.0" text="MD-5" />
+                  <Label layoutX="603.0" layoutY="45.0" text="MD-5" />
                   <TextField fx:id="txtMdRelacaoExe" layoutX="603.0" layoutY="66.0" prefHeight="25.0" prefWidth="178.0" />
-                  <Label fx:id="lblInfoEnvelope" layoutX="306.0" layoutY="117.0" text="Informações do envelope">
+                  <Label layoutX="306.0" layoutY="117.0" text="Informações do envelope">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblMarcaEnvelope" layoutX="123.0" layoutY="163.0" text="Marca" />
+                  <Label layoutX="123.0" layoutY="163.0" text="Marca" />
                   <TextField fx:id="txtMarcaEnvelope" layoutX="122.0" layoutY="184.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label fx:id="lblModeloEnvelope" layoutX="320.0" layoutY="161.0" text="Modelo" />
+                  <Label layoutX="320.0" layoutY="161.0" text="Modelo" />
                   <TextField fx:id="txtModeloEnvelope" layoutX="319.0" layoutY="182.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label fx:id="lblNumeroEnvelope" layoutX="518.0" layoutY="161.0" text="Número" />
+                  <Label layoutX="518.0" layoutY="161.0" text="Número" />
                   <TextField fx:id="txtNumeroEnvelope" layoutX="517.0" layoutY="182.0" prefHeight="25.0" prefWidth="124.0" />
                   <Button fx:id="bttnOk" layoutX="359.0" layoutY="253.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="OK">
                      <font>
