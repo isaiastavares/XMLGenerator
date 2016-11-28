@@ -11,46 +11,38 @@ public class StringValidadorTest {
     private static final String STRING_TAMANHO_25 = "ll8DABEZYq9OrSPlxxYlfUN94";
 
     @Test
-    public void deveValidarCNPJ() {
+    public void testCnpjValido() {
         StringValidador.cnpj("07364111000102");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDeveValidarCNPJCasoNaoPossua14Caracteres() {
-        try {
-            StringValidador.cnpj("1234567890123");
-            Assert.fail("Validacao nao funcionou");
-        } catch (final IllegalStateException e) {
-            StringValidador.cnpj("123456789012345");
-        }
+    public void testCnpjInvalidoTamanhoMenor() {
+        StringValidador.cnpj("1234567890123");
         Assert.fail("Validacao nao funcionou");
+
     }
 
     @Test
-    public void deveValidarCPF() {
+    public void testCpfValido() {
         StringValidador.cpf("04396208138");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDeveValidarCPFCasoNaoPossua11Caracteres() {
-        try {
-            StringValidador.cpf("1234567890");
-            Assert.fail("Validacao nao funcionou");
-        } catch (final IllegalStateException e) {
-            StringValidador.cpf("123456789012");
-        }
+    public void testCpfInvalidoTamanhoMenor() {
+        StringValidador.cpf("1234567890");
         Assert.fail("Validacao nao funcionou");
+
     }
 
     @Test
-    public void deveValidarInscricaoEstadualCasoEstejaNoPadrao() {
+    public void testInscricaoEstadualValido() {
         StringValidador.inscricaoEstadual("Isento");
         StringValidador.inscricaoEstadual("1");
         StringValidador.inscricaoEstadual("12345678901234567890");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDeveValidarInscricaoEstadualCasoNaoEstejaNoTamanho() {
+    public void testInscricaoEstadualInvalido() {
         try {
             StringValidador.inscricaoEstadual("");
         } catch (final IllegalStateException e) {
@@ -59,82 +51,68 @@ public class StringValidadorTest {
     }
 
     @Test
-    public void deveValidarTelefoneCasoEstejaNoPadrao() {
+    public void testTelefoneValido() {
         StringValidador.telefone("123456");
         StringValidador.telefone("12345678901234");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDeveValidarTelefoneCasoNaoEstejaNoTamanho() {
-        try {
-            StringValidador.telefone("12345");
-        } catch (final IllegalStateException e) {
-            StringValidador.telefone("123456789012345");
-        }
+    public void testTelefoneInvalido() {
+        StringValidador.telefone("12345");
     }
 
     @Test
-    public void deveValidarTamanho8N() {
+    public void testTamanho8NValido() {
         StringValidador.exatamente8N("12345678");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirNaoNumerosParaTamanho8N() {
+    public void testTamanho8NInvalido() {
         StringValidador.exatamente8N("1234567N");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirExtrapolarTamanho8N() {
+    public void testTamanho8NInvalidoMaior() {
         StringValidador.exatamente8N("123456789");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirTamanhoMenorQue8() {
+    public void testTamanho8NInvalidoMenor() {
         StringValidador.exatamente8N("1");
     }
 
     @Test
-    public void deveValidarTamanhoDeStringCasoEstejaDentroIntervalo0ate255() {
+    public void testTamanho255Valido() {
         StringValidador.tamanho0ate255(STRING_TAMANHO_255);
         StringValidador.tamanho0ate255("");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void deveLancarExcecaoCasoEstejaForaDoIntervalo0ate255() {
+    public void testTamanho255Invalido() {
         StringValidador.tamanho0ate255(STRING_TAMANHO_256);
     }
 
     @Test
-    public void deveValidarTamanhoDeStringCasoEstejaDentroIntervalo255() {
+    public void testTamanhoAte255Valido() {
         StringValidador.tamanho255(STRING_TAMANHO_255);
         StringValidador.tamanho255("o");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void deveLancarExcecaoCasoEstejaForaDoIntervalo255() {
-        try {
-            StringValidador.tamanho255(STRING_TAMANHO_256);
-            Assert.fail("Validacao falhou");
-        } catch (final IllegalStateException e) {
-            StringValidador.tamanho255("");
-        }
+    public void testTamanho255InvalidoMenor() {
+        StringValidador.tamanho255(STRING_TAMANHO_256);
         Assert.fail("Validacao falhou");
     }
 
     @Test
-    public void deveValidarTamanhoDeStringCasoEstejaDentroIntervalo25() {
+    public void testTamanho25Valido() {
         StringValidador.tamanho25(STRING_TAMANHO_25);
         StringValidador.tamanho25("o");
     }
 
     @Test(expected = IllegalStateException.class)
-    public void deveLancarExcecaoCasoEstejaForaDoIntervalo25() {
-        try {
-            StringValidador.tamanho25(STRING_TAMANHO_26);
-            Assert.fail("Validacao falhou");
-        } catch (final IllegalStateException e) {
-            StringValidador.tamanho25("");
-        }
+    public void testTamanhoSuperior25Invalido() {
+        StringValidador.tamanho25(STRING_TAMANHO_26);
         Assert.fail("Validacao falhou");
     }
 }
