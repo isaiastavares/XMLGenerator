@@ -18,7 +18,7 @@ import javafx.util.Duration;
 
 public class ScreensController extends StackPane {
 
-	private static final Logger LOG = Logger.getLogger(ScreensController.class);
+    private static final Logger LOG = Logger.getLogger(ScreensController.class);
 
     private HashMap<String, Node> screens = new HashMap<>();
 
@@ -43,7 +43,7 @@ public class ScreensController extends StackPane {
             addScreen(name, loadScreen);
             return true;
         } catch (Exception e) {
-        	LOG.error(e.getMessage(), e);
+            LOG.error(e.getMessage(), e);
             return false;
         }
     }
@@ -56,16 +56,16 @@ public class ScreensController extends StackPane {
                 Timeline fade = new Timeline(
                         new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
                         new KeyFrame(new Duration(400), new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent t) {
-                        getChildren().remove(0);
-                        getChildren().add(0, screens.get(name));
-                        Timeline fadeIn = new Timeline(
-                                new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-                                new KeyFrame(new Duration(300), new KeyValue(opacity, 1.0)));
-                        fadeIn.play();
-                    }
-                }, new KeyValue(opacity, 0.0)));
+                            @Override
+                            public void handle(ActionEvent t) {
+                                getChildren().remove(0);
+                                getChildren().add(0, screens.get(name));
+                                Timeline fadeIn = new Timeline(
+                                        new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
+                                        new KeyFrame(new Duration(300), new KeyValue(opacity, 1.0)));
+                                fadeIn.play();
+                            }
+                        }, new KeyValue(opacity, 0.0)));
                 fade.play();
 
             } else {
@@ -78,14 +78,14 @@ public class ScreensController extends StackPane {
             }
             return true;
         } else {
-        	LOG.info("Não foi possível carregar a tela!");
+            LOG.info("Não foi possível carregar a tela!");
             return false;
         }
     }
 
     public boolean unloadScreen(String name) {
         if (screens.remove(name) == null) {
-        	LOG.info("Tela não existe");
+            LOG.info("Tela não existe");
             return false;
         } else {
             return true;

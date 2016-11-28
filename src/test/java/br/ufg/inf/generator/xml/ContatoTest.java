@@ -1,7 +1,6 @@
 package br.ufg.inf.generator.xml;
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
 public class ContatoTest {
@@ -12,7 +11,7 @@ public class ContatoTest {
     private static final String EMAIL = "dfkjdsfjkds";
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirNomeNulo() {
+    public void testNomeNuloInvalido() {
         final Contato contato = new Contato();
         contato.setCpf(CPF);
         contato.setTelefone(TELEFONE);
@@ -21,7 +20,7 @@ public class ContatoTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirCpfNulo() {
+    public void testCpfNuloInvalido() {
         final Contato contato = new Contato();
         contato.setNome(NOME);
         contato.setTelefone(TELEFONE);
@@ -30,7 +29,7 @@ public class ContatoTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirTelefoneNulo() {
+    public void testTelefoneNuloInvalido() {
         final Contato contato = new Contato();
         contato.setNome(NOME);
         contato.setCpf(CPF);
@@ -39,7 +38,7 @@ public class ContatoTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirEmailNulo() {
+    public void testEmailNuloInvalido() {
         final Contato contato = new Contato();
         contato.setNome(NOME);
         contato.setCpf(CPF);
@@ -48,28 +47,28 @@ public class ContatoTest {
     }
 
     @Test
-    public void deveRetornarNomeCorretamente() {
+    public void testNomeValido() {
         final Contato contato = new Contato();
         contato.setNome(NOME);
         assertEquals(NOME, contato.getNome());
     }
 
     @Test
-    public void deveRetornarCpfCorretamente() {
+    public void testCpfValido() {
         final Contato contato = new Contato();
         contato.setCpf(CPF);
         assertEquals(CPF, contato.getCpf());
     }
 
     @Test
-    public void deveRetornarEmailCorretamente() {
+    public void testEmailValido() {
         final Contato contato = new Contato();
         contato.setEmail(EMAIL);
         assertEquals(EMAIL, contato.getEmail());
     }
 
     @Test
-    public void deveRetornarTelefoneCorretamente() {
+    public void testTelefoneValido() {
         final Contato contato = new Contato();
         contato.setTelefone(TELEFONE);
         assertEquals(TELEFONE, contato.getTelefone());

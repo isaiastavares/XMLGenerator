@@ -6,30 +6,30 @@ import javafx.fxml.FXML;
 
 public abstract class AbstractWizardCtrl {
 
-	@FXML
-	private JFXButton backButton;
+    @FXML
+    private JFXButton backButton;
 
-	@FXML
-	private JFXButton nextButton;
+    @FXML
+    private JFXButton nextButton;
 
-	@FXML
-	private JFXButton finishButton;
+    @FXML
+    private JFXButton finishButton;
 
-	public JFXButton getBackButton() {
-		return backButton;
-	}
+    public JFXButton getBackButton() {
+        return backButton;
+    }
 
-	public JFXButton getNextButton() {
-		return nextButton;
-	}
+    public JFXButton getNextButton() {
+        return nextButton;
+    }
 
-	public JFXButton getFinishButton() {
-		return finishButton;
-	}
+    public JFXButton getFinishButton() {
+        return finishButton;
+    }
 
-	abstract void back();
+    abstract void back();
 
-	abstract void next();
+    abstract void next();
 
-	abstract void finish();
+    abstract void finish();
 }
