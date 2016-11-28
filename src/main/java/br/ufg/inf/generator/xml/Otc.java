@@ -21,9 +21,6 @@ public class Otc extends LaudoBase {
     @Element(name = "PeriodoAnalise", required = true)
     private PeriodoAnalise periodoAnalise;
 
-    @Element(name = "VersaoEspecificacaoRequisitos", required = true)
-    private String versaoEspecifRequisitos;
-
     public String getRazaoSocial() {
         return razaoSocial;
     }
@@ -62,13 +59,5 @@ public class Otc extends LaudoBase {
 
     public void setPeriodoAnalise(PeriodoAnalise periodoAnalise) {
         this.periodoAnalise = periodoAnalise;
-    }
-
-    public String getVersaoEspecifRequisitos() {
-        return versaoEspecifRequisitos;
-    }
-
-    public void setVersaoEspecifRequisitos(String versaoEspecifRequisitos) {
-        this.versaoEspecifRequisitos = versaoEspecifRequisitos;
     }
 }
