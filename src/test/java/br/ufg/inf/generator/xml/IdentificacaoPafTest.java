@@ -87,7 +87,7 @@ public class IdentificacaoPafTest {
     public void testGetSetArquivoRelacaoExecutaveis() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
-        ArquivoExecutavelPrincipal result = instance.getArquivoExecutavelPrincipal();
+        ArquivoRelacaoExecutaveis result = instance.getArquivoRelacaoExevutaveis();
         assertEquals(ARQUIVORELACAOEXECUTAVEIS, result);
     }
 
