@@ -9,12 +9,11 @@ public class RequisitosExecutados {
     @Element(name = "Nome", required = true)
     private String nome;
 
-    public String getRequisitoExecutado() {
+    public String getNome() {
         return nome;
     }
 
-    public void setRequisitoExecutado(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
-
 }
