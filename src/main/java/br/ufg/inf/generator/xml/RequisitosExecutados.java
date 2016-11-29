@@ -6,15 +6,15 @@ import org.simpleframework.xml.Root;
 @Root(name = "RequisitosExecutados")
 public class RequisitosExecutados {
 
-    @Element(name = "RequisitoExecutado", required = true)
-    private String requisitoExecutado;
+    @Element(name = "Nome", required = true)
+    private String nome;
 
     public String getRequisitoExecutado() {
-        return requisitoExecutado;
+        return nome;
     }
 
-    public void setRequisitoExecutado(String requisitoExecutado) {
-        this.requisitoExecutado = requisitoExecutado;
+    public void setRequisitoExecutado(String nome) {
+        this.nome = nome;
     }
-    
+
 }

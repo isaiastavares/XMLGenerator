@@ -15,6 +15,9 @@ public class ArquivoExecutavel extends NomeMD5 {
     @Element(name = "RequisitosExecutados", required = false)
     private RequisitosExecutados requisitosExecutados;
 
+    @Element(name = "Funcao", required = false)
+    private String funcao;
+
     public String getNome() {
         return nome;
     }
@@ -37,5 +40,13 @@ public class ArquivoExecutavel extends NomeMD5 {
 
     public void setRequisitosExecutados(RequisitosExecutados requisitosExecutados) {
         this.requisitosExecutados = requisitosExecutados;
+    }
+
+    public String getFuncao() {
+        return funcao;
+    }
+
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
     }
 }
