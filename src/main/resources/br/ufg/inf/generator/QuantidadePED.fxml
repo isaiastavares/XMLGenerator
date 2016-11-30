@@ -8,12 +8,12 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text fx:id="quantidadePED" layoutX="22.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Sistemas PED">
+      <Text layoutX="22.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Sistemas PED">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <Text fx:id="lblQuantidadePED" layoutX="33.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de Sistemas PED">
+      <Text layoutX="33.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de Sistemas PED">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

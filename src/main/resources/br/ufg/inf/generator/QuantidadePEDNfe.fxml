@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="22.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Sistemas PED Nfe">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de Sistemas PED Nfe">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtQuantidadePED" layoutX="125.0" layoutY="79.0" prefHeight="25.0" prefWidth="57.0" />
+      <Button fx:id="bttnOk" layoutX="69.0" layoutY="122.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="bttnCancelar" layoutX="162.0" layoutY="122.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
