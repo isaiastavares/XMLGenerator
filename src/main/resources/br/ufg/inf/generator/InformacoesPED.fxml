@@ -8,12 +8,12 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text fx:id="empresaDesenv" layoutX="65.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistemas de Gestão ou Retaguarda">
+      <Text fx:id="retaguardas" layoutX="65.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistemas de Gestão ou Retaguarda">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
-      <Text fx:id="lblInfoEndereco1" fill="#757070" layoutX="142.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora" textAlignment="CENTER">
+      <Text fx:id="empresaDesenvolvedora" fill="#757070" layoutX="142.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
@@ -24,42 +24,42 @@
          </font>
       </Text>
       <TextField fx:id="txtRazaoSocial" layoutX="71.0" layoutY="104.0" prefHeight="24.0" prefWidth="342.0" />
-      <Text fx:id="lblRua" layoutX="98.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
+      <Text fx:id="lblRazaoDesenvolvedora" layoutX="98.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="txtRua" layoutX="35.0" layoutY="222.0" prefHeight="25.0" prefWidth="197.0" />
-      <Text fx:id="lblNumero" layoutX="334.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
+      <TextField fx:id="txtRazaoDesenvolvedora" layoutX="35.0" layoutY="222.0" prefHeight="25.0" prefWidth="197.0" />
+      <Text fx:id="lblCnpj" layoutX="334.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="txtNumero" layoutX="257.0" layoutY="222.0" prefHeight="25.0" prefWidth="186.0" />
-      <Text fx:id="lblComplemento" layoutX="223.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função">
+      <TextField fx:id="txtCnpj" layoutX="257.0" layoutY="222.0" prefHeight="25.0" prefWidth="186.0" />
+      <Text fx:id="lblFuncao" layoutX="223.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="txtComplemento" layoutX="144.0" layoutY="426.0" prefHeight="25.0" prefWidth="197.0" />
-      <Text fx:id="lblMunicipio" layoutX="116.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+      <TextField fx:id="txtFuncao" layoutX="144.0" layoutY="426.0" prefHeight="25.0" prefWidth="197.0" />
+      <Text fx:id="lblNomeArquivo" layoutX="116.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="txtMunicipio" layoutX="35.0" layoutY="337.0" prefHeight="29.0" prefWidth="197.0" />
-      <Text fx:id="lblUf" layoutX="334.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD-5">
+      <TextField fx:id="txtNomeArquivo" layoutX="35.0" layoutY="337.0" prefHeight="29.0" prefWidth="197.0" />
+      <Text fx:id="lblMd5" layoutX="334.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD-5">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="txtUf" layoutX="257.0" layoutY="337.0" prefHeight="29.0" prefWidth="186.0" />
+      <TextField fx:id="txtMd5" layoutX="257.0" layoutY="337.0" prefHeight="29.0" prefWidth="186.0" />
       <Button fx:id="bttnOk" layoutX="203.0" layoutY="489.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="OK">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Text fx:id="lblInfoEndereco11" fill="#757070" layoutX="165.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arquivo Executável" textAlignment="CENTER">
+      <Text fx:id="arquivoExecutavel" fill="#757070" layoutX="165.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arquivo Executável" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
