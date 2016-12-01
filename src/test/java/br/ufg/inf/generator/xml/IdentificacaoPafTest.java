@@ -59,7 +59,7 @@ public class IdentificacaoPafTest {
         
     }
     @Test
-    public void testGetSetNomeComercial() {
+    public void testNomeComercialValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setNomeComercial(NOMECOMERCIAL);
         String result = instance.getNomeComercial();
@@ -67,7 +67,7 @@ public class IdentificacaoPafTest {
     }
 
     @Test
-    public void testGetSetVersao() {
+    public void testVersaoValida() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setVersao(VERSAO);
         String result = instance.getVersao();
@@ -76,7 +76,7 @@ public class IdentificacaoPafTest {
 
 
     @Test
-    public void testGetSetArquivoExecutavelPrincipal() {
+    public void testArquivoExecutavelPrincipalValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setArquivoExecutavelPrincipal(ARQUIVOEXECUTAVELPRINCIPAL);
         ArquivoExecutavelPrincipal result = instance.getArquivoExecutavelPrincipal();
@@ -84,7 +84,7 @@ public class IdentificacaoPafTest {
     }
     
     @Test
-    public void testGetSetArquivoRelacaoExecutaveis() {
+    public void testArquivoRelacaoExecutaveisValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
         ArquivoRelacaoExecutaveis result = instance.getArquivoRelacaoExevutaveis();
@@ -92,7 +92,7 @@ public class IdentificacaoPafTest {
     }
 
     @Test
-    public void testGetSetArquivosExecutaveis() {
+    public void testArquivosExecutaveisValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setArquivosExecutaveis(ARQUIVOSEXECUTAVEIS);
         ArrayList<ArquivoExecutavel> result = instance.getArquivosExecutaveis();
@@ -100,7 +100,7 @@ public class IdentificacaoPafTest {
     }
 
     @Test
-    public void testGetSetArquivosOutros() {
+    public void testArquivosOutrosValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setArquivosOutros(ARQUIVOSOUTROS);
         ArrayList<ArquivoOutro> result = instance.getArquivosOutros();
@@ -108,7 +108,7 @@ public class IdentificacaoPafTest {
     }
 
     @Test
-    public void testGetSetEnvelopeSeguranca() {
+    public void testEnvelopeSegurancaValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setEnvelopeSeguranca(ENVELOPESEGURANCA);
         EnvelopeSeguranca result = instance.getEnvelopeSeguranca();
@@ -116,7 +116,7 @@ public class IdentificacaoPafTest {
     }
 
     @Test
-    public void testGetSetPerfisRequisito() {
+    public void testPerfisRequisitoValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setPerfisRequisito(PERFISREQUISITOS);
         PerfisRequisito result = instance.getPerfisRequisito();

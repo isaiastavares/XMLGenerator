@@ -23,7 +23,7 @@ public class EcfAnaliseFuncionalTest {
     }
 
     @Test
-    public void testGetSetMarcaModelo() {
+    public void testMarcaModeloValido() {
         EcfAnaliseFuncional instance = new EcfAnaliseFuncional();
         instance.setMarcaModelo(MARCAMODELO);
         MarcaModelo result = instance.getMarcaModelo();

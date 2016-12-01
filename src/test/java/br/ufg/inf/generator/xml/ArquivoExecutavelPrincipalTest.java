@@ -7,18 +7,25 @@ package br.ufg.inf.generator.xml;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
  * @author Kalyn
  */
 public class ArquivoExecutavelPrincipalTest {
-    private static final String NOME = "Venda.exe";
-    private static final String MD5 = "a1207371072bb6436b29110542a419d5";
-    
-    
+
+    private String NOME;
+    private String MD5;
+
+    @Before
+    public void beforeMethod() {
+        NOME = "Venda.exe";
+        MD5 = "a1207371072bb6436b29110542a419d5";
+    }
+
     @Test
-    public void testGetSetNome() {
+    public void testNomeValido() {
         ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
         instance.setNome(NOME);
         String result = instance.getNome();
@@ -26,11 +33,11 @@ public class ArquivoExecutavelPrincipalTest {
     }
 
     @Test
-    public void testGetSetMd5() {
+    public void testMd5Valido() {
         ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
         instance.setMd5(MD5);
         String result = instance.getMd5();
         assertEquals(MD5, result);
     }
-    
+
 }

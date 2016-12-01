@@ -2,17 +2,25 @@ package br.ufg.inf.generator.xml;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
  * @author Kalyn
  */
 public class MarcaModeloTest {
-    private String MARCA = "Marca";
-    private String MODELO = "Modelo";
+
+    private String MARCA;
+    private String MODELO;
+
+    @Before
+    public void beforeMethod() {
+        MARCA = "Marca";
+        MODELO = "Modelo";
+    }
 
     @Test
-    public void testGeSettMarca() {
+    public void testMarcaValida() {
         MarcaModelo instance = new MarcaModelo();
         instance.setMarca(MARCA);
         String result = instance.getMarca();
@@ -20,11 +28,11 @@ public class MarcaModeloTest {
     }
 
     @Test
-    public void testGeSettModelo() {
+    public void testModeloValido() {
         MarcaModelo instance = new MarcaModelo();
         instance.setModelo(MODELO);
         String result = instance.getModelo();
         assertEquals(MODELO, result);
     }
-    
+
 }
