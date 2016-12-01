@@ -2,6 +2,7 @@ package br.ufg.inf.generator.xml;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
@@ -12,6 +13,14 @@ public class RoteiroAnaliseTest {
     private String VERSAOERPAF;
     private String MES;
     private String ANO;
+    
+    @Before
+    public void beforeMethod(){
+        VERSAOROTEIRO = "1";
+        VERSAOERPAF = "1";
+        MES = "12";
+        ANO = "2013";
+    }
     
     @Test
     public void testVersaoRoteiroValido() {
