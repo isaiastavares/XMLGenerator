@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="90.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECF Utilizada na Homologação" textAlignment="CENTER" wrappingWidth="319.521484375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Separator layoutX="14.0" layoutY="50.0" prefHeight="5.0" prefWidth="469.0" />
+      <TextField layoutX="90.0" layoutY="138.0" text="BEMATECH" />
+      <TextField layoutX="275.0" layoutY="138.0" text="MP-4000 TH FI" />
+      <Button fx:id="bttnOk" layoutX="200.0" layoutY="230.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="90.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="275.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
