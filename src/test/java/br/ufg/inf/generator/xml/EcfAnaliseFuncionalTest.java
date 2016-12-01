@@ -23,10 +23,17 @@ public class EcfAnaliseFuncionalTest {
     }
 
     @Test
-    public void testMarcaModeloValido() {
+    public void testMarcaModeloValido(){
         EcfAnaliseFuncional instance = new EcfAnaliseFuncional();
         instance.setMarcaModelo(MARCAMODELO);
-        MarcaModelo result = instance.getMarcaModelo();
-        assertEquals(MARCAMODELO, result);
+        MarcaModelo marcaModelo = instance.getMarcaModelo();
+        assertEquals(MARCAMODELO, marcaModelo);
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testMarcaModeloNulo(){
+        EcfAnaliseFuncional instance = new EcfAnaliseFuncional();
+        instance.setMarcaModelo(null);
+        instance.toString();
     }
 }

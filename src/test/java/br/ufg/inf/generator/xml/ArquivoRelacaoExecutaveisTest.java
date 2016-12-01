@@ -35,4 +35,17 @@ public class ArquivoRelacaoExecutaveisTest {
         assertEquals(MD5, result);
     }
 
+    @Test(expected = IllegalStateException.class)
+    public void testNomeNulo() {
+        ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        instance.setNome(null);
+        instance.setMd5(MD5);
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testMd5Nulo() {
+        ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        instance.setNome(NOME);
+        instance.setMd5(null);
+    }
 }

@@ -45,4 +45,30 @@ public class AprovacaoRelatorioTest {
         assertEquals(CPF, result);
     }
     
+    @Test(expected = IllegalStateException.class)
+    public void testNomeNulo() {
+        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        instance.setNome(null);
+        instance.setCargo(CARGO);
+        instance.setCpf(CPF);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testCargoNulo() {
+        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        instance.setNome(NOME);
+        instance.setCargo(null);
+        instance.setCpf(CPF);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testCpfNulo() {
+        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        instance.setNome(NOME);
+        instance.setCargo(CARGO);
+        instance.setCpf(null);
+        instance.toString();
+    }
 }

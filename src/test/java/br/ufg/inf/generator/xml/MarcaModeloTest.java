@@ -34,5 +34,21 @@ public class MarcaModeloTest {
         String result = instance.getModelo();
         assertEquals(MODELO, result);
     }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testMarcaNulo() {
+        MarcaModelo instance = new MarcaModelo();
+        instance.setMarca(null);
+        instance.setModelo(MODELO);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testModeloNulo() {
+        MarcaModelo instance = new MarcaModelo();
+        instance.setMarca(MARCA);
+        instance.setModelo(null);
+        instance.toString();
+    }
 
 }

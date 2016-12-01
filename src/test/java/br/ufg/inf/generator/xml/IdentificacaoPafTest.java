@@ -123,4 +123,94 @@ public class IdentificacaoPafTest {
         assertEquals(PERFISREQUISITOS, result);
     }
 
+    @Test(expected = IllegalStateException.class)
+    public void testNomeComercialNulo() {
+        IdentificacaoPaf instance = new IdentificacaoPaf();
+        instance.setNomeComercial(null);
+        instance.setVersao(VERSAO);
+        instance.setArquivoExecutavelPrincipal(ARQUIVOEXECUTAVELPRINCIPAL);
+        instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
+        instance.setArquivosOutros(ARQUIVOSOUTROS);
+        instance.setEnvelopeSeguranca(ENVELOPESEGURANCA);
+        instance.setPerfisRequisito(PERFISREQUISITOS);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testVersaoNulo() {
+        IdentificacaoPaf instance = new IdentificacaoPaf();
+        instance.setNomeComercial(NOMECOMERCIAL);
+        instance.setVersao(null);
+        instance.setArquivoExecutavelPrincipal(ARQUIVOEXECUTAVELPRINCIPAL);
+        instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
+        instance.setArquivosOutros(ARQUIVOSOUTROS);
+        instance.setEnvelopeSeguranca(ENVELOPESEGURANCA);
+        instance.setPerfisRequisito(PERFISREQUISITOS);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testArquivoExecutavelPrincipalNulo() {
+        IdentificacaoPaf instance = new IdentificacaoPaf();
+        instance.setNomeComercial(NOMECOMERCIAL);
+        instance.setVersao(VERSAO);
+        instance.setArquivoExecutavelPrincipal(null);
+        instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
+        instance.setArquivosOutros(ARQUIVOSOUTROS);
+        instance.setEnvelopeSeguranca(ENVELOPESEGURANCA);
+        instance.setPerfisRequisito(PERFISREQUISITOS);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testArquivoRelacaoExecutaveisNulo() {
+        IdentificacaoPaf instance = new IdentificacaoPaf();
+        instance.setNomeComercial(NOMECOMERCIAL);
+        instance.setVersao(VERSAO);
+        instance.setArquivoExecutavelPrincipal(ARQUIVOEXECUTAVELPRINCIPAL);
+        instance.setArquivoRelacaoExevutaveis(null);
+        instance.setArquivosOutros(ARQUIVOSOUTROS);
+        instance.setEnvelopeSeguranca(ENVELOPESEGURANCA);
+        instance.setPerfisRequisito(PERFISREQUISITOS);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testArquivoOutrosNulo() {
+        IdentificacaoPaf instance = new IdentificacaoPaf();
+        instance.setNomeComercial(NOMECOMERCIAL);
+        instance.setVersao(VERSAO);
+        instance.setArquivoExecutavelPrincipal(ARQUIVOEXECUTAVELPRINCIPAL);
+        instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
+        instance.setArquivosOutros(null);
+        instance.setEnvelopeSeguranca(ENVELOPESEGURANCA);
+        instance.setPerfisRequisito(PERFISREQUISITOS);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testEnvelopeSegurancaNulo() {
+        IdentificacaoPaf instance = new IdentificacaoPaf();
+        instance.setNomeComercial(NOMECOMERCIAL);
+        instance.setVersao(VERSAO);
+        instance.setArquivoExecutavelPrincipal(ARQUIVOEXECUTAVELPRINCIPAL);
+        instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
+        instance.setArquivosOutros(ARQUIVOSOUTROS);
+        instance.setEnvelopeSeguranca(null);
+        instance.setPerfisRequisito(PERFISREQUISITOS);
+        instance.toString();
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testPerfilRequisitoNulo() {
+        IdentificacaoPaf instance = new IdentificacaoPaf();
+        instance.setNomeComercial(NOMECOMERCIAL);
+        instance.setVersao(VERSAO);
+        instance.setArquivoExecutavelPrincipal(ARQUIVOEXECUTAVELPRINCIPAL);
+        instance.setArquivoRelacaoExevutaveis(ARQUIVORELACAOEXECUTAVEIS);
+        instance.setArquivosOutros(ARQUIVOSOUTROS);
+        instance.setEnvelopeSeguranca(ENVELOPESEGURANCA);
+        instance.setPerfisRequisito(null);
+        instance.toString();
+    }
 }

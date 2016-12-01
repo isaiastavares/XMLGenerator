@@ -39,5 +39,19 @@ public class ArquivoExecutavelPrincipalTest {
         String result = instance.getMd5();
         assertEquals(MD5, result);
     }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testNomeNulo() {
+        ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
+        instance.setNome(null);
+        instance.setMd5(MD5);
+    }
+    
+    @Test(expected = IllegalStateException.class)
+    public void testMd5Nulo() {
+        ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
+        instance.setNome(NOME);
+        instance.setMd5(null);
+    }
 
 }
