@@ -4,14 +4,14 @@ import org.simpleframework.xml.Text;
 
 public class Modo extends LaudoBase {
 
-	@Text(required = true)
+    @Text(required = true)
     private String modo;
 
-	public String getModo() {
-		return modo;
-	}
+    public String getModo() {
+        return modo;
+    }
 
-	public void setModo(String modo) {
-		this.modo = modo;
-	}
+    public void setModo(String modo) {
+        this.modo = modo;
+    }
 }

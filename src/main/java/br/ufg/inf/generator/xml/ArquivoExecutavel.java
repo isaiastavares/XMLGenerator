@@ -1,6 +1,8 @@
 package br.ufg.inf.generator.xml;
 
+import java.util.ArrayList;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 
 public class ArquivoExecutavel extends NomeMD5 {
 
@@ -10,8 +12,8 @@ public class ArquivoExecutavel extends NomeMD5 {
     @Element(name = "Md5", required = true)
     private String md5;
 
-    @Element(name = "RequisitosExecutados", required = false)
-    private RequisitosExecutados requisitosExecutados;
+    @ElementList(name = "RequisitosExecutados", required = false)
+    private ArrayList<RequisitoExecutado> requisitosExecutados;
 
     @Element(name = "Funcao", required = false)
     private String funcao;
@@ -32,11 +34,11 @@ public class ArquivoExecutavel extends NomeMD5 {
         this.md5 = md5;
     }
 
-    public RequisitosExecutados getRequisitosExecutados() {
+    public ArrayList<RequisitoExecutado> getRequisitosExecutados() {
         return requisitosExecutados;
     }
 
-    public void setRequisitosExecutados(RequisitosExecutados requisitosExecutados) {
+    public void setRequisitosExecutados(ArrayList<RequisitoExecutado> requisitosExecutados) {
         this.requisitosExecutados = requisitosExecutados;
     }
 

@@ -21,7 +21,7 @@ public class IdentificacaoPafTest {
     private ArrayList<ArquivoExecutavel> ARQUIVOSEXECUTAVEIS;
     private ArrayList<ArquivoOutro> ARQUIVOSOUTROS;
     private EnvelopeSeguranca ENVELOPESEGURANCA;
-    private PerfisRequisito PERFISREQUISITOS;
+    private ArrayList<PerfilRequisito> PERFISREQUISITOS;
     
     @Before
     public void beforeMethod(){
@@ -54,9 +54,10 @@ public class IdentificacaoPafTest {
         ENVELOPESEGURANCA.setModelo("Modelo");
         ENVELOPESEGURANCA.setNumero("123456");
         
-        PERFISREQUISITOS = new PerfisRequisito();
-        PERFISREQUISITOS.setPerfilRequisito("A");
-        
+        PerfilRequisito perfil = new PerfilRequisito();
+        perfil.setPerfil("V");
+        PERFISREQUISITOS = new ArrayList<>();
+        PERFISREQUISITOS .add(perfil);
     }
     @Test
     public void testNomeComercialValido() {
@@ -119,7 +120,7 @@ public class IdentificacaoPafTest {
     public void testPerfisRequisitoValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setPerfisRequisito(PERFISREQUISITOS);
-        PerfisRequisito result = instance.getPerfisRequisito();
+        ArrayList<PerfilRequisito> result = instance.getPerfisRequisito();
         assertEquals(PERFISREQUISITOS, result);
     }
 

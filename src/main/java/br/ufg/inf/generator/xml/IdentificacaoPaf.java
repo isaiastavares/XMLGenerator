@@ -2,6 +2,7 @@ package br.ufg.inf.generator.xml;
 
 import java.util.ArrayList;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 
 public class IdentificacaoPaf {
     @Element(name = "NomeComercial", required = true)
@@ -12,14 +13,14 @@ public class IdentificacaoPaf {
     private ArquivoExecutavelPrincipal arquivoExecutavelPrincipal;
     @Element(name = "ArquivoRelacaoExecutaveis", required = true)
     private ArquivoRelacaoExecutaveis arquivoRelacaoExevutaveis;
-    @Element(name = "ArquivosExecutaveis", required = true)
+    @ElementList(name = "ArquivosExecutaveis", required = true)
     private ArrayList<ArquivoExecutavel> arquivosExecutaveis;
-    @Element(name = "ArquivosOutros", required = true)
+    @ElementList(name = "ArquivosOutros", required = true)
     private ArrayList<ArquivoOutro> arquivosOutros;
     @Element(name = "EnvelopeSeguranca", required = true)
     private EnvelopeSeguranca envelopeSeguranca;
-    @Element(name = "PerfisRequisito", required = true)
-    private PerfisRequisito perfisRequisito;
+    @ElementList(name = "PerfisRequisito", required = true)
+    private ArrayList<PerfilRequisito> perfisRequisito;
 
     public String getNomeComercial() {
         return nomeComercial;
@@ -77,13 +78,14 @@ public class IdentificacaoPaf {
         this.envelopeSeguranca = envelopeSeguranca;
     }
 
-    public PerfisRequisito getPerfisRequisito() {
+    public ArrayList<PerfilRequisito> getPerfisRequisito() {
         return perfisRequisito;
     }
 
-    public void setPerfisRequisito(PerfisRequisito perfisRequisito) {
+    public void setPerfisRequisito(ArrayList<PerfilRequisito> perfisRequisito) {
         this.perfisRequisito = perfisRequisito;
     }
-    
+
+
     
 }
