@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="213.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprovação do Laudo">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#757070" layoutX="270.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local e Data" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="87.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dia">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDia" layoutX="74.0" layoutY="149.0" prefHeight="25.0" prefWidth="44.0" />
+      <Button fx:id="bttnOk" layoutX="279.0" layoutY="504.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="144.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mês">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtMes" layoutX="134.0" layoutY="149.0" prefHeight="25.0" prefWidth="44.0" />
+      <Text layoutX="212.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAno" layoutX="194.0" layoutY="149.0" prefHeight="25.0" prefWidth="59.0" />
+      <Text layoutX="471.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtLocal" layoutX="425.0" layoutY="148.0" prefHeight="25.0" prefWidth="122.0" />
+      <Text fill="#757070" layoutX="251.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerente de Teste" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtLocal1" layoutX="111.0" layoutY="261.0" prefHeight="25.0" prefWidth="459.0" />
+      <Text layoutX="68.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtLocal2" layoutX="111.0" layoutY="299.0" prefHeight="25.0" prefWidth="233.0" />
+      <Text layoutX="70.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#757070" layoutX="163.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprovação do Relatório - Coordenador" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtLocal21" layoutX="118.0" layoutY="432.0" prefHeight="25.0" prefWidth="233.0" />
+      <Text layoutX="75.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtLocal11" layoutX="118.0" layoutY="394.0" prefHeight="25.0" prefWidth="459.0" />
+   </children>
+</Pane>
