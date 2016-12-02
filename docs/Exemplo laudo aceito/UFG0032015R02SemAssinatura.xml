@@ -246,12 +246,12 @@
         <ExecucaoTestes>
             <Nome>Paulo de Oliveira Neto</Nome>
             <Cargo>Gerente de Testes</Cargo>
-            <Cpf>70020987137</Cpf>
+            <Cpf>66666666666</Cpf>
         </ExecucaoTestes>
         <AprovacaoRelatorio>
             <Nome>Juliana Pereira de Souza Zinader</Nome>
             <Cargo>Coordenador de Testes</Cargo>
-            <Cpf>31239711808</Cpf>
+            <Cpf>77777777777</Cpf>
         </AprovacaoRelatorio>
     </Mensagem>
 </Laudo>
