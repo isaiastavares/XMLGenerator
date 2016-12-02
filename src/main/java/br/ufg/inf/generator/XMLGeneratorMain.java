@@ -1,9 +1,17 @@
 package br.ufg.inf.generator;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class XMLGeneratorMain extends Application {
 
@@ -26,20 +34,24 @@ public class XMLGeneratorMain extends Application {
         launch(args);
     }
 
+    Button btnOk;
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        ScreensController mainContainer = new ScreensController();
-        mainContainer.loadScreen(ID_EMPRESA_DESENVOLVEDORA, VIEW_EMPRESA_DESENVOLVEDORA);
-        mainContainer.loadScreen(ID_OTC, VIEW_OTC);
-        mainContainer.loadScreen(ID_LAUDO_FINAL, VIEW_LAUDO_FINAL);
+        primaryStage.initStyle(StageStyle.DECORATED);
+        Parent root = FXMLLoader.load(getClass().getResource("LaudoInicial.fxml"));
 
-        mainContainer.setScreen(ID_EMPRESA_DESENVOLVEDORA);
+        Scene scene = new Scene(root, Color.TRANSPARENT);
 
-        Group root = new Group();
-        root.getChildren().addAll(mainContainer);
-        Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.show();
-    }
 
+        primaryStage.show();
+
+//        btnOk.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent t) {
+//                System.exit(0);
+//            }
+//        });
+    }
 }
