@@ -1,13 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-/**
- *
- * @author Kalyn
- */
-@Root(name = "ArquivoRelacaoExecutaveis")
 public class ArquivoRelacaoExecutaveis {
     @Element(name = "Nome", required = true)
     private String nome;

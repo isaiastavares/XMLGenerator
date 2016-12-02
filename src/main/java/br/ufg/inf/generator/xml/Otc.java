@@ -1,9 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-@Root(name = "Otc")
 public class Otc extends LaudoBase {
 
     @Element(name = "RazaoSocial", required = true)

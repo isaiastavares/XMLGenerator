@@ -1,13 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-/**
- *
- * @author hiago
- */
-@Root(name = "SistemaPed")
 public class SistemaPed extends LaudoBase {
 
     @Element(name = "Nome", required = true)

@@ -1,9 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-@Root(name = "EmpresaDesenvolvedora")
 public class EmpresaDesenvolvedora extends LaudoBase {
 
     @Element(name = "RazaoSocial", required = true)

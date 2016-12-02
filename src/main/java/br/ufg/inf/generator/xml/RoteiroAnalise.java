@@ -1,9 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-@Root(name = "RoteiroAnalise")
 public class RoteiroAnalise extends LaudoBase {
 
     @Element(name = "VersaoRoteiro", required = true)

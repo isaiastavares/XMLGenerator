@@ -2,9 +2,7 @@ package br.ufg.inf.generator.xml;
 
 import org.joda.time.LocalDate;
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-@Root(name = "PeriodoAnalise")
 public class PeriodoAnalise extends LaudoBase {
 
     @Element(name = "DataInicio", required = true)

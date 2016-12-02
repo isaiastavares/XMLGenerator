@@ -1,13 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-/**
- *
- * @author Kalyn
- */
-@Root(name = "MarcaModelo")
 public class MarcaModelo {
     @Element(name = "Marca", required = true)
     private String marca;

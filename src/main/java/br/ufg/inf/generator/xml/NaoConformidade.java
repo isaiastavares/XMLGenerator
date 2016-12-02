@@ -1,9 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
-@Root (name = "NaoConformidades")
 public class NaoConformidade {
     
     @Element (name = "Requisito", required = true)

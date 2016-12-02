@@ -2,12 +2,7 @@ package br.ufg.inf.generator.xml;
 
 import java.util.ArrayList;
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
-/**
- *
- * @author Kalyn
- */
-@Root(name = "IdentificacaoPaf")
+
 public class IdentificacaoPaf {
     @Element(name = "NomeComercial", required = true)
     private String nomeComercial;

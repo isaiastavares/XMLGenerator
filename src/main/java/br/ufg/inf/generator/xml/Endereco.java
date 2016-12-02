@@ -1,12 +1,10 @@
 package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
 
 import br.ufg.inf.generator.validadores.StringValidador;
 import br.ufg.inf.generator.xml.enuns.UnidadeFederativa;
 
-@Root(name = "Endereco")
 public class Endereco extends LaudoBase {
 
     @Element(name = "Logradouro", required = true)

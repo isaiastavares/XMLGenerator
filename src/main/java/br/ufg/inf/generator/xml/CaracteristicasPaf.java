@@ -4,9 +4,7 @@ import java.util.List;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
-import org.simpleframework.xml.Root;
 
-@Root(name = "CaracteristicasPaf")
 public class CaracteristicasPaf extends LaudoBase {
 
 	@Element(name = "LinguagemProgramacao", required = true)
