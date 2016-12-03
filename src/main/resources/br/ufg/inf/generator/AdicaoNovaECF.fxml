@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="184.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECF Compatível com o Sistema PAF" textAlignment="CENTER" wrappingWidth="392.521484375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Separator layoutX="15.0" layoutY="55.0" prefHeight="8.0" prefWidth="731.0" />
+      <TextField layoutX="126.0" layoutY="301.0" prefHeight="34.0" prefWidth="219.0" />
+      <TextField layoutX="413.0" layoutY="301.0" prefHeight="34.0" prefWidth="219.0" />
+      <Button fx:id="bttnAdd" layoutX="320.0" layoutY="472.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="122.0" text="ADICIONAR">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="126.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="413.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preencha os campos abaixo para adicionar uma nova  ECF:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
