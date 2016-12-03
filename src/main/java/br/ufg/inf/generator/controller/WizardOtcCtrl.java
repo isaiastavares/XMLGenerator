@@ -1,4 +1,4 @@
-package br.ufg.inf.generator;
+package br.ufg.inf.generator.controller;
 
 import javafx.fxml.FXML;
 
@@ -10,8 +10,7 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
     public void initialize() {
         getBackButton().setOnAction(event -> back());
         getNextButton().setOnAction(event -> next());
-
-        getFinishButton().setDisable(true);
+        initializeFinishButton();initializeFinishButton();
     }
 
     @Override
@@ -21,17 +20,12 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
 
     @Override
     void back() {
-        myController.setScreen(XMLGeneratorMain.ID_EMPRESA_DESENVOLVEDORA);
+        myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
     }
 
     @Override
     void next() {
-        myController.setScreen(XMLGeneratorMain.ID_LAUDO_FINAL);
-    }
-
-    @Override
-    void finish() {
-        // Do Nothing
+    	// Falta Implementar
     }
 
 }

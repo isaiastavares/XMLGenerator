@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.layout.*?>
-<?import java.lang.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="66.0" layoutY="27.0" prefHeight="17.0" prefWidth="263.0" text="Digite o número do laudo. Ex.: &quot;UFG0012016&quot;" />
-      <TextField fx:id="txtNumLaudo" layoutX="123.0" layoutY="76.0" />
-      <Button fx:id="btnOk" layoutX="90.0" layoutY="133.0" mnemonicParsing="false" text="OK" />
-      <Button fx:id="btnCancela" layoutX="272.0" layoutY="133.0" mnemonicParsing="false" text="Cancela" />
-   </children>
-</Pane>
+<BorderPane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardLaudoInicialCtrl">
+	<bottom> 
+		<FlowPane alignment="BOTTOM_RIGHT" columnHalignment="RIGHT" rowValignment="BOTTOM" BorderPane.alignment="BOTTOM_RIGHT">
+			<children>
+				<HBox alignment="BOTTOM_RIGHT" spacing="12.0" BorderPane.alignment="BOTTOM_RIGHT"> 
+					<children>
+						<Button fx:id="backButton" text="Anterior" /> 
+						<Button fx:id="nextButton" text="Próximo" />
+						<Button fx:id="finishButton" text="Cancelar" />
+					</children>
+					<padding>
+						<Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+					</padding>
+				</HBox>
+			</children>
+		</FlowPane> 
+	</bottom>
+	<center>
+		<VBox spacing="10.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label text="Digite o número do laudo. Ex.: &quot;UFG0012016&quot;" />
+				<TextField fx:id="nomeLaudo" />
+			</children>
+			<padding>
+				<Insets left="20.0" right="20.0" top="20.0" />
+			</padding>
+		</VBox>
+	</center> 
+</BorderPane>

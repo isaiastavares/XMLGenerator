@@ -1,9 +1,10 @@
-package br.ufg.inf.generator;
+package br.ufg.inf.generator.controller;
 
 import java.util.HashMap;
 
 import org.apache.log4j.Logger;
 
+import br.ufg.inf.generator.XMLGeneratorMain;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -36,7 +37,7 @@ public class ScreensController extends StackPane {
 
     public boolean loadScreen(String name, String resource) {
         try {
-            FXMLLoader myLoader = new FXMLLoader(getClass().getResource(resource));
+            FXMLLoader myLoader = new FXMLLoader(XMLGeneratorMain.class.getResource(resource));
             Parent loadScreen = (Parent) myLoader.load();
             ControlledScreen myScreenControler = (ControlledScreen) myLoader.getController();
             myScreenControler.setScreenParent(this);

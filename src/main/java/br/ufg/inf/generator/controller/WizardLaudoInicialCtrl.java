@@ -1,21 +1,20 @@
-package br.ufg.inf.generator;
+package br.ufg.inf.generator.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implements ControlledScreen {
+public class WizardLaudoInicialCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
 	@FXML
-	private TextField tfRazaoSocial;
+	private TextField nomeLaudo;
 
 	ScreensController myController;
 
 	@FXML
 	public void initialize() {
 		getNextButton().setOnAction(event -> next());
-
-		getBackButton().setDisable(true);
-		getFinishButton().setDisable(true);
+		getBackButton().setVisible(false);
+		initializeFinishButton();
     }
 
 	@Override
@@ -30,12 +29,7 @@ public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implemen
 
 	@Override
 	void next() {
-		myController.setScreen(XMLGeneratorMain.ID_OTC);
-	}
-
-	@Override
-	void finish() {
-		// Do Nothing
+		myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
 	}
 
 }

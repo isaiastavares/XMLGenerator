@@ -1,4 +1,4 @@
-package br.ufg.inf.generator;
+package br.ufg.inf.generator.controller;
 
 @FunctionalInterface
 public interface ControlledScreen {
