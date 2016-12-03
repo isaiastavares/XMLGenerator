@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import com.jfoenix.controls.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="113.0" layoutY="56.0" text="Laudo gerado com sucesso!" />
       <Button fx:id="btnOk" layoutX="154.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="OK" />
