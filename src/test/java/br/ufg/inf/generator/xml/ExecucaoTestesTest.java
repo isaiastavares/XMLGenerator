@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.xml;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class ExecucaoTestesTest {

@@ -3,6 +3,6 @@ package br.ufg.inf.generator.controller;
 @FunctionalInterface
 public interface ControlledScreen {
 
-   public void setScreenParent(ScreensController screenPage);
+    public void setScreenParent(ScreensController screenPage);
 
 }

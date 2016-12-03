@@ -10,7 +10,8 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
     public void initialize() {
         getBackButton().setOnAction(event -> back());
         getNextButton().setOnAction(event -> next());
-        initializeFinishButton();initializeFinishButton();
+        initializeFinishButton();
+        initializeFinishButton();
     }
 
     @Override
@@ -25,7 +26,6 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
 
     @Override
     void next() {
-    	// Falta Implementar
+        // Falta Implementar
     }
-
 }

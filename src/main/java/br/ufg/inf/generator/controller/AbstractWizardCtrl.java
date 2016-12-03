@@ -31,6 +31,6 @@ public abstract class AbstractWizardCtrl {
     abstract void next();
 
     public void initializeFinishButton() {
-    	getFinishButton().setOnAction(event -> System.exit(0));
+        getFinishButton().setOnAction(event -> System.exit(0));
     }
 }

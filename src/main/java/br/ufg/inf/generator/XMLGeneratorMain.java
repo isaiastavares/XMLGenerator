@@ -11,7 +11,7 @@ import javafx.stage.StageStyle;
 
 public class XMLGeneratorMain extends Application {
 
-	private static final String TITLE_XML_GENERATOR = "XML Generator";
+    private static final String TITLE_XML_GENERATOR = "XML Generator";
 
     public static void main(String[] args) {
         launch(args);
@@ -19,9 +19,10 @@ public class XMLGeneratorMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-    	ScreensController mainContainer = new ScreensController();
+        ScreensController mainContainer = new ScreensController();
         mainContainer.loadScreen(IScreens.ID_LAUDO_INICIAL, IScreens.VIEW_LAUDO_INICIAL);
         mainContainer.loadScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA, IScreens.VIEW_EMPRESA_DESENVOLVEDORA);
+        mainContainer.loadScreen(IScreens.ID_OTC, IScreens.VIEW_OTC);
 
         mainContainer.setScreen(IScreens.ID_LAUDO_INICIAL);
 
