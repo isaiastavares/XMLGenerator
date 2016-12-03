@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardSistemaPafCtrl">
    <children>
       <Text layoutX="218.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do Sistema PAF">
          <font>
@@ -77,11 +78,16 @@
                   <TextField fx:id="txtModeloEnvelope" layoutX="319.0" layoutY="182.0" prefHeight="25.0" prefWidth="166.0" />
                   <Label layoutX="518.0" layoutY="161.0" text="Número" />
                   <TextField fx:id="txtNumeroEnvelope" layoutX="517.0" layoutY="182.0" prefHeight="25.0" prefWidth="124.0" />
-                  <Button fx:id="bttnOk" layoutX="359.0" layoutY="253.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="OK">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Button>
+                  <HBox alignment="BOTTOM_RIGHT" layoutX="504.0" layoutY="260.0" spacing="12.0">
+                     <children>
+                        <Button fx:id="backButton" text="Anterior" />
+                        <Button fx:id="nextButton" text="Próximo" />
+                        <Button fx:id="finishButton" text="Cancelar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </HBox>
                </children>
             </AnchorPane>
         </items>

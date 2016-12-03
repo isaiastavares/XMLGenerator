@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardOtcCtrl">
+<Pane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardOtcCtrl">
    <children>
       <Text layoutX="210.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Órgao Tecnico Credenciado (OTC)">
          <font>
@@ -106,10 +107,15 @@
          </font>
       </Text>
       <TextField fx:id="txtVersAtoCotepe" layoutX="585.0" layoutY="426.0" prefHeight="29.0" prefWidth="80.0" text="02.04" />
-      <Button fx:id="bttnOk" layoutX="341.0" layoutY="495.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="OK">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Button>
+      <HBox alignment="BOTTOM_RIGHT" layoutX="510.0" layoutY="550.0" spacing="12.0">
+         <children>
+            <Button fx:id="backButton" text="Anterior" />
+            <Button fx:id="nextButton" text="Próximo" />
+            <Button fx:id="finishButton" text="Cancelar" />
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </padding>
+      </HBox>
    </children>
 </Pane>

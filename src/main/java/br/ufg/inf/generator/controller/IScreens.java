@@ -8,5 +8,7 @@ public interface IScreens {
     String VIEW_EMPRESA_DESENVOLVEDORA = "EmpresaDesenvolvedora.fxml";
     String ID_OTC = "otc";
     String VIEW_OTC = "Otc.fxml";
+    String ID_SISTEMA_PAF = "sistemaPaf";
+    String VIEW_SISTEMA_PAF = "SistemaPaf.fxml";
 
 }

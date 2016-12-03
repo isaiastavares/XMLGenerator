@@ -2,7 +2,7 @@ package br.ufg.inf.generator.controller;
 
 import javafx.fxml.FXML;
 
-public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScreen {
+public class WizardSistemaPafCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     ScreensController myController;
 
@@ -21,11 +21,11 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
 
     @Override
     void back() {
-        myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
+        myController.setScreen(IScreens.ID_OTC);
     }
 
     @Override
     void next() {
-        myController.setScreen(IScreens.ID_SISTEMA_PAF);
+
     }
 }
