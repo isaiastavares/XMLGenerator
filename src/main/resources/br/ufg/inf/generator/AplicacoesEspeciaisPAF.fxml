@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardAplicacoesEspeciaisCtrl">
    <children>
-      <Text layoutX="395.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicações Especiais do PAF" textAlignment="CENTER" wrappingWidth="303.521484375">
+      <Text layoutX="211.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicações Especiais do PAF" textAlignment="CENTER" wrappingWidth="303.521484375">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
-      <Separator layoutX="12.0" layoutY="48.0" prefHeight="9.0" prefWidth="1069.0" />
-      <Button fx:id="bttnOk" layoutX="497.0" layoutY="417.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="OK">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Button>
-      <RadioButton layoutX="37.0" layoutY="83.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="191.0" text="Posto de Pedágio" />
-      <RadioButton layoutX="565.0" layoutY="83.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="162.0" text="Farmácia de Manipulação" />
-      <RadioButton layoutX="37.0" layoutY="124.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="262.0" text="Oficina de Conserto com conta de cliente" />
-      <RadioButton layoutX="565.0" layoutY="124.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="248.0" text="Oficina de Conserto com  DAV-OS" />
-      <RadioButton layoutX="37.0" layoutY="163.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="191.0" text="Transporte de Passageiro" />
-      <RadioButton layoutX="565.0" layoutY="163.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="328.0" text="Prestador de serviço de Cinema, Espetáculos e similares" />
-      <RadioButton layoutX="37.0" layoutY="201.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Estacionamentos, Motéis e similares que utilizam controle de tráfego de veículos e pessoas" />
-      <RadioButton layoutX="565.0" layoutY="201.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Estabelecimento enquadrado no Simples Nacional ( Art 5° do Ato COTEPE da ER-PAF ECF )" />
-      <RadioButton layoutX="37.0" layoutY="240.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e Balança interligada" />
-      <RadioButton layoutX="565.0" layoutY="240.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="514.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e Balança interligada" />
-      <RadioButton layoutX="37.0" layoutY="279.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e SEM Balança interligada" />
-      <RadioButton layoutX="565.0" layoutY="279.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="514.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e SEM Balança interligada" />
-      <RadioButton layoutX="37.0" layoutY="317.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Posto revendedor de combustível COM Sistema de Interligação de Bombas" />
-      <RadioButton layoutX="565.0" layoutY="317.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Posto revendedor de combustível SEM Sistema de Interligação de Bombas" />
-      <RadioButton layoutX="37.0" layoutY="358.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" selected="true" text="Demais atividades" />
+      <Separator layoutX="12.0" layoutY="48.0" prefHeight="9.0" prefWidth="888.0" />
+      <RadioButton layoutX="33.0" layoutY="87.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="191.0" text="Posto de Pedágio" />
+      <RadioButton layoutX="33.0" layoutY="125.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="191.0" text="Transporte de Passageiro" />
+      <RadioButton layoutX="33.0" layoutY="161.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="162.0" text="Farmácia de Manipulação" />
+      <RadioButton layoutX="34.0" layoutY="196.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="248.0" text="Oficina de Conserto com  DAV-OS" />
+      <RadioButton layoutX="34.0" layoutY="234.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="262.0" text="Oficina de Conserto com conta de cliente" />
+      <RadioButton layoutX="35.0" layoutY="269.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="328.0" text="Prestador de serviço de Cinema, Espetáculos e similares" />
+      <RadioButton layoutX="33.0" layoutY="307.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="248.0" selected="true" text="Demais atividades" />
+      <RadioButton layoutX="381.0" layoutY="87.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Estacionamentos, Motéis e similares que utilizam controle de tráfego de veículos e pessoas" />
+      <RadioButton layoutX="381.0" layoutY="126.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e Balança interligada" />
+      <RadioButton layoutX="381.0" layoutY="165.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e SEM Balança interligada" />
+      <RadioButton layoutX="381.0" layoutY="203.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Posto revendedor de combustível COM Sistema de Interligação de Bombas" />
+      <RadioButton layoutX="382.0" layoutY="239.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Estabelecimento enquadrado no Simples Nacional ( Art 5° do Ato COTEPE da ER-PAF ECF )" />
+      <RadioButton layoutX="382.0" layoutY="278.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="514.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e Balança interligada" />
+      <RadioButton layoutX="382.0" layoutY="317.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="514.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e SEM Balança interligada" />
+      <RadioButton layoutX="382.0" layoutY="355.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Posto revendedor de combustível SEM Sistema de Interligação de Bombas" />
+      <HBox alignment="BOTTOM_RIGHT" layoutX="655.0" layoutY="589.0" spacing="12.0">
+         <children>
+            <Button fx:id="backButton" text="Anterior" />
+            <Button fx:id="nextButton" text="Próximo" />
+            <Button fx:id="finishButton" text="Cancelar" />
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </padding>
+      </HBox>
    </children>
 </Pane>

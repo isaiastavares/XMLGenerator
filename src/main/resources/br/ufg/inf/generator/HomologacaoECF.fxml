@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="90.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECF Utilizada na Homologação" textAlignment="CENTER" wrappingWidth="319.521484375">
          <font>

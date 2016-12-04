@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-<AnchorPane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardSistemaPafCtrl">
+<AnchorPane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardSistemaPafCtrl">
    <children>
       <Text layoutX="218.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do Sistema PAF">
          <font>
@@ -26,12 +26,12 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Button fx:id="bttnAddRetaguarda" layoutX="373.0" layoutY="48.0" mnemonicParsing="false" text="ADD" />
-                              <Button fx:id="bttnRemoveRetaguarda" layoutX="364.0" layoutY="87.0" mnemonicParsing="false" text="Remove" />
                               <Label layoutX="24.0" layoutY="56.0" text="Nome:" />
                               <TextField layoutX="73.0" layoutY="52.0" prefHeight="25.0" prefWidth="270.0" />
-                              <TextField layoutX="73.0" layoutY="87.0" prefHeight="25.0" prefWidth="270.0" />
                               <Label layoutX="24.0" layoutY="91.0" text="MD-5:" />
+                              <TextField layoutX="73.0" layoutY="87.0" prefHeight="25.0" prefWidth="270.0" />
+                              <Button fx:id="bttnAddRetaguarda" layoutX="373.0" layoutY="48.0" mnemonicParsing="false" text="ADD" />
+                              <Button fx:id="bttnRemoveRetaguarda" layoutX="364.0" layoutY="87.0" mnemonicParsing="false" text="Remove" />
                               <TableView layoutX="8.0" layoutY="126.0" prefHeight="156.0" prefWidth="443.0">
                                 <columns>
                                   <TableColumn prefWidth="275.0" text="Nome" />
@@ -47,15 +47,15 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
+                              <Label layoutX="18.0" layoutY="57.0" text="Perfil:" />
+                              <TextField layoutX="67.0" layoutY="53.0" prefHeight="25.0" prefWidth="212.0" />
                               <Button fx:id="bttnAddPerfilRequisito" layoutX="76.0" layoutY="94.0" mnemonicParsing="false" text="ADD" />
                               <Button fx:id="bttnRemovePerfilRequisito" layoutX="165.0" layoutY="94.0" mnemonicParsing="false" text="Remove" />
-                              <TextField layoutX="67.0" layoutY="53.0" prefHeight="25.0" prefWidth="212.0" />
                               <TableView layoutX="5.0" layoutY="128.0" prefHeight="156.0" prefWidth="289.0">
                                 <columns>
                                   <TableColumn prefWidth="288.0" text="Perfil" />
                                 </columns>
                               </TableView>
-                              <Label layoutX="18.0" layoutY="57.0" text="Perfil:" />
                            </children>
                         </AnchorPane>
                     </items>
@@ -93,7 +93,7 @@
                   <TextField fx:id="txtModeloEnvelope" layoutX="319.0" layoutY="201.0" prefHeight="25.0" prefWidth="166.0" />
                   <Label layoutX="518.0" layoutY="180.0" text="Número" />
                   <TextField fx:id="txtNumeroEnvelope" layoutX="517.0" layoutY="201.0" prefHeight="25.0" prefWidth="124.0" />
-                  <HBox alignment="BOTTOM_RIGHT" layoutX="504.0" layoutY="260.0" spacing="12.0">
+                  <HBox alignment="BOTTOM_RIGHT" layoutX="641.0" layoutY="249.0" spacing="12.0">
                      <children>
                         <Button fx:id="backButton" text="Anterior" />
                         <Button fx:id="nextButton" text="Próximo" />

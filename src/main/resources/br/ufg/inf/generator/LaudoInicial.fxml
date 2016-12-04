@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="670.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardLaudoInicialCtrl">
+<BorderPane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardLaudoInicialCtrl">
 	<bottom> 
 		<FlowPane alignment="BOTTOM_RIGHT" columnHalignment="RIGHT" rowValignment="BOTTOM" BorderPane.alignment="BOTTOM_RIGHT">
 			<children>

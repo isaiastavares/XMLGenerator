@@ -26,6 +26,6 @@ public class WizardSistemaPafCtrl extends AbstractWizardCtrl implements Controll
 
     @Override
     void next() {
-
+        myController.setScreen(IScreens.ID_CARACTERISTICAS_PAF);
     }
 }

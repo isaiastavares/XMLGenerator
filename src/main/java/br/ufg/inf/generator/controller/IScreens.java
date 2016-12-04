@@ -10,5 +10,8 @@ public interface IScreens {
     String VIEW_OTC = "Otc.fxml";
     String ID_SISTEMA_PAF = "sistemaPaf";
     String VIEW_SISTEMA_PAF = "SistemaPaf.fxml";
-
+    String ID_CARACTERISTICAS_PAF = "caracteristicasPaf";
+    String VIEW_CARACTERISTICAS_PAF = "CaracteristicasPaf.fxml";
+    String ID_APLICACOES_ESPECIAIS = "aplicacoesEspeciais";
+    String VIEW_APLICACOES_ESPECIAIS = "AplicacoesEspeciaisPAF.fxml";
 }
