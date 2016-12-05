@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.ufg.inf.generator.controller;
 
 import java.util.Arrays;
@@ -10,14 +5,23 @@ import java.util.List;
 
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 
 public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     private ScreensController myController;
 
+    private boolean verificaFormaImpressao = false, verificaTratamentoInterrupcao = false, verificaMeioGeracao = false;
+
     @FXML
-    private ChoiceBox<String> choiceMeioGeracao;
+    private ChoiceBox<String> choiceTipoDesenvolvimento, choiceIntegracaoPaf, choiceTipoFuncionamento;
+
+    @FXML
+    private CheckBox checkFormaConcomitante, checkFormaNaoConcomitanteComDav, checkFormaNaoConcomitanteComPreVenda,
+            checkFormaNaoConcomitanteComContaCliente, checkFormaDavSemImpressao, checkFormaDavImpressoraNaoFiscal, checkFormaDavImpressoEcf;
 
     @FXML
     public void initialize() {
@@ -28,14 +32,47 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
     }
 
     private void initializeChoiceBox() {
-    	choiceMeioGeracao.setItems(FXCollections.observableArrayList(getListMeioGeracao()));
+        choiceTipoDesenvolvimento.setItems(FXCollections.observableArrayList(getListTipoDesenvolvimento()));
+        choiceIntegracaoPaf.setItems(FXCollections.observableArrayList(getListIntegracaoPaf()));
+        choiceTipoFuncionamento.setItems(FXCollections.observableArrayList(getListTipoFuncionamento()));
     }
 
-    private List<String> getListMeioGeracao() {
-    	return Arrays.asList(
-    			"Pelo PAF-ECF",
-    			"Pelo sistema de Retaguarda",
-    			"Pelo sistema PED ou EFD");
+    @FXML
+    private void handleCheckBoxFormaImpressaoAction() {
+        verificaFormaImpressao = checkFormaConcomitante.isSelected() || checkFormaNaoConcomitanteComDav.isSelected() || checkFormaNaoConcomitanteComPreVenda.isSelected()
+                || checkFormaNaoConcomitanteComContaCliente.isSelected() || checkFormaDavSemImpressao.isSelected() || checkFormaDavImpressoraNaoFiscal.isSelected()
+                || checkFormaDavImpressoEcf.isSelected();
+    }
+
+    @FXML
+    private void handleCheckBoxTratamentoInterrupcaoAction() {
+
+    }
+
+    @FXML
+    private void handleCheckBoxMeioGeracaoAction() {
+
+    }
+
+    private List<String> getListTipoDesenvolvimento() {
+        return Arrays.asList(
+                "Comercializável",
+                "Exclusivo próprop",
+                "Exclusivo terceirizado");
+    }
+
+    private List<String> getListTipoFuncionamento() {
+        return Arrays.asList(
+                "Exclusivamente stand alone",
+                "Em rede",
+                "Parametrizavel");
+    }
+
+    private List<String> getListIntegracaoPaf() {
+        return Arrays.asList(
+                "Pelo PAF-ECF",
+                "Pelo sistema de Retaguarda",
+                "Pelo sistema PED ou EFD");
     }
 
     @Override
@@ -50,6 +87,15 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
 
     @Override
     void next() {
-        myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
+        if (verificaFormaImpressao) {
+            myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Erro encontrado");
+            alert.setContentText("É preciso selecionar pelo menos uma opcao em Forma de Impressao");
+
+            alert.showAndWait();
+        }
     }
 }
