@@ -8,7 +8,7 @@ public class WizardLaudoInicialCtrl extends AbstractWizardCtrl implements Contro
     @FXML
     private TextField nomeLaudo;
 
-    ScreensController myController;
+    private ScreensController myController;
 
     @FXML
     public void initialize() {

@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 
 public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-    ScreensController myController;
+	private ScreensController myController;
 
     @FXML
     public void initialize() {

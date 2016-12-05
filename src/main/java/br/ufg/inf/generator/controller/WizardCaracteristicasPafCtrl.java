@@ -5,26 +5,37 @@
  */
 package br.ufg.inf.generator.controller;
 
+import java.util.Arrays;
+import java.util.List;
+
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.ChoiceBox;
 
 public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-    ScreensController myController;
+    private ScreensController myController;
 
     @FXML
-    private final ChoiceBox choiceMeioGeracao;
-
-    public WizardCaracteristicasPafCtrl() {
-        this.choiceMeioGeracao = new ChoiceBox(FXCollections.observableArrayList("Pelo PAF-ECF", "Pelo sistema de Retaguarda", "Pelo sistema PED ou EFD"));
-    }
+    private ChoiceBox<String> choiceMeioGeracao;
 
     @FXML
     public void initialize() {
         getNextButton().setOnAction(event -> next());
         getBackButton().setOnAction(event -> back());
         initializeFinishButton();
+        initializeChoiceBox();
+    }
+
+    private void initializeChoiceBox() {
+    	choiceMeioGeracao.setItems(FXCollections.observableArrayList(getListMeioGeracao()));
+    }
+
+    private List<String> getListMeioGeracao() {
+    	return Arrays.asList(
+    			"Pelo PAF-ECF",
+    			"Pelo sistema de Retaguarda",
+    			"Pelo sistema PED ou EFD");
     }
 
     @Override

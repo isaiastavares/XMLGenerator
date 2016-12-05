@@ -4,13 +4,12 @@ import javafx.fxml.FXML;
 
 public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-    ScreensController myController;
+	private ScreensController myController;
 
     @FXML
     public void initialize() {
         getBackButton().setOnAction(event -> back());
         getNextButton().setOnAction(event -> next());
-        initializeFinishButton();
         initializeFinishButton();
     }
 
