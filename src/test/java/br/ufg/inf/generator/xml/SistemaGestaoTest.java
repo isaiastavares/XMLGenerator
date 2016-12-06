@@ -1,7 +1,9 @@
 package br.ufg.inf.generator.xml;
 
 import static org.junit.Assert.assertEquals;
-import org.junit.Before;
+
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 /**
@@ -12,25 +14,30 @@ public class SistemaGestaoTest {
 
     private static final String NOME = "dfkjdsfjkds";
     private static final EmpresaDesenvolvedora empresa = new EmpresaDesenvolvedora();
-    private static final ArquivosExecutaveis arquivosExe = new ArquivosExecutaveis();
-    private static final ArquivoExecutavel arquivoExe = new ArquivoExecutavel();
-    private static final RequisitosExecutados requisitosExecutados = new RequisitosExecutados();
+    private static final ArrayList<ArquivoExecutavel> arquivosExe = new ArrayList<ArquivoExecutavel>();
     private final SistemaGestao sistemaGestao = new SistemaGestao();
 
-    @Before
-    public void setUp() {
-        empresa.setCnpj("01.342.657.234524/0001");
-        empresa.setRazaoSocial("Razao Social Ltda.");
-        arquivoExe.setMd5("fajbeifbaieufheaufebaiu");
-        arquivoExe.setNome("nomeArquivoExe");
-        requisitosExecutados.setNome("S");
-        arquivosExe.setArquivoExecutavel(arquivoExe);
+    @Test(expected = IllegalStateException.class)
+    public void testNomeNulo() {
+    	sistemaGestao.setNome(null);
+        sistemaGestao.setEmpresaDesenvolvedora(empresa);
+        sistemaGestao.setArquivosExecutaveis(arquivosExe);
+        sistemaGestao.toString();
     }
 
     @Test(expected = IllegalStateException.class)
-    public void testNomeNuloInvalido() {
-        sistemaGestao.setEmpresaDesenvolvedora(empresa);
+    public void testEmpresaDesenvolvedoraNulo() {
+        sistemaGestao.setNome("nomeEmpresaDesenvolvedora");
+        sistemaGestao.setEmpresaDesenvolvedora(null);
         sistemaGestao.setArquivosExecutaveis(arquivosExe);
+        sistemaGestao.toString();
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testArquivosExecutaveisNulo() {
+        sistemaGestao.setNome("nomeEmpresaDesenvolvedora");
+        sistemaGestao.setEmpresaDesenvolvedora(empresa);
+        sistemaGestao.setArquivosExecutaveis(null);
         sistemaGestao.toString();
     }
 
@@ -50,19 +57,5 @@ public class SistemaGestaoTest {
     public void testArquivosValido() {
         sistemaGestao.setArquivosExecutaveis(arquivosExe);
         assertEquals(arquivosExe, sistemaGestao.getArquivosExecutaveis());
-    }
-
-    @Test(expected = IllegalStateException.class)
-    public void testEmpresaNuloInvalido() {
-        sistemaGestao.setNome("nomeEmpresaDesenvolvedora");
-        sistemaGestao.setArquivosExecutaveis(arquivosExe);
-        sistemaGestao.toString();
-    }
-
-    @Test(expected = IllegalStateException.class)
-    public void testArquivosExeNuloInvalido() {
-        sistemaGestao.setNome("nomeEmpresaDesenvolvedora");
-        sistemaGestao.setEmpresaDesenvolvedora(empresa);
-        sistemaGestao.toString();
     }
 }
