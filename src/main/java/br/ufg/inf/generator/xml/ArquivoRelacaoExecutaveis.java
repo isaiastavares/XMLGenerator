@@ -2,9 +2,11 @@ package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
 
-public class ArquivoRelacaoExecutaveis {
+public class ArquivoRelacaoExecutaveis extends LaudoBase {
+
     @Element(name = "Nome", required = true)
     private String nome;
+
     @Element(name = "Md5", required = true)
     private String md5;
 
@@ -23,6 +25,6 @@ public class ArquivoRelacaoExecutaveis {
     public void setMd5(String md5) {
         this.md5 = md5;
     }
-    
-    
+
+
 }

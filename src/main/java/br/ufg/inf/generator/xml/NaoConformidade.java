@@ -2,14 +2,14 @@ package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
 
-public class NaoConformidade {
-    
+public class NaoConformidade extends LaudoBase {
+
     @Element (name = "Requisito", required = true)
     private String requisito;
-    
+
     @Element (name = "Item", required = true)
     private int item;
-    
+
     @Element (name = "Descrição", required = true)
     private String descricao;
 

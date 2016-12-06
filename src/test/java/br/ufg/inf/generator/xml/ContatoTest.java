@@ -13,6 +13,7 @@ public class ContatoTest {
     @Test(expected = IllegalStateException.class)
     public void testNomeNuloInvalido() {
         final Contato contato = new Contato();
+        contato.setNome(null);
         contato.setCpf(CPF);
         contato.setTelefone(TELEFONE);
         contato.setEmail(EMAIL);
@@ -23,6 +24,7 @@ public class ContatoTest {
     public void testCpfNuloInvalido() {
         final Contato contato = new Contato();
         contato.setNome(NOME);
+        contato.setCpf(null);
         contato.setTelefone(TELEFONE);
         contato.setEmail(EMAIL);
         contato.toString();
@@ -33,6 +35,7 @@ public class ContatoTest {
         final Contato contato = new Contato();
         contato.setNome(NOME);
         contato.setCpf(CPF);
+        contato.setTelefone(null);
         contato.setEmail(EMAIL);
         contato.toString();
     }
@@ -43,6 +46,7 @@ public class ContatoTest {
         contato.setNome(NOME);
         contato.setCpf(CPF);
         contato.setTelefone(TELEFONE);
+        contato.setEmail(null);
         contato.toString();
     }
 

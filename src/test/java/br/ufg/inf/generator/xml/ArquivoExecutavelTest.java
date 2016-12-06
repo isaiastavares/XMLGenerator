@@ -10,28 +10,30 @@ public class ArquivoExecutavelTest {
     private static final String MD5 = "69878722b61836d8feeef9cff95c358b";
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirNomeNulo() {
+    public void testNomeNulo() {
         final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
+        arquivoExecutavel.setNome(null);
         arquivoExecutavel.setMd5(MD5);
         arquivoExecutavel.toString();
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirMD5Nulo() {
+    public void testMD5Nulo() {
         final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
         arquivoExecutavel.setNome(NOME);
+        arquivoExecutavel.setMd5(null);
         arquivoExecutavel.toString();
     }
 
     @Test
-    public void deveRetornarNomeCorretamente() {
+    public void testNomeValido() {
     	final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
         arquivoExecutavel.setNome(NOME);
         assertEquals(NOME, arquivoExecutavel.getNome());
     }
 
     @Test
-    public void deveRetornarMD5Corretamente() {
+    public void testMD5Valido() {
     	final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
     	arquivoExecutavel.setMd5(MD5);
         assertEquals(MD5, arquivoExecutavel.getMd5());

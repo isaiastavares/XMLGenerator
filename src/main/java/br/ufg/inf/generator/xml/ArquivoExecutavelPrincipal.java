@@ -2,9 +2,11 @@ package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
 
-public class ArquivoExecutavelPrincipal {
+public class ArquivoExecutavelPrincipal extends LaudoBase {
+
     @Element(name = "Nome", required = true)
     private String nome;
+
     @Element(name = "Md5", required = true)
     private String md5;
 

@@ -9,11 +9,12 @@ import org.junit.Before;
  * @author Kalyn
  */
 public class RoteiroAnaliseTest {
-    private String VERSAOROTEIRO;
-    private String VERSAOERPAF;
-    private String MES;
-    private String ANO;
-    
+
+    private static String VERSAOROTEIRO;
+    private static String VERSAOERPAF;
+    private static String MES;
+    private static String ANO;
+
     @Before
     public void beforeMethod(){
         VERSAOROTEIRO = "1";
@@ -21,7 +22,7 @@ public class RoteiroAnaliseTest {
         MES = "12";
         ANO = "2013";
     }
-    
+
     @Test
     public void testVersaoRoteiroValido() {
         RoteiroAnalise instance = new RoteiroAnalise();
@@ -29,7 +30,7 @@ public class RoteiroAnaliseTest {
         String result = instance.getVersaoRoteiro();
         assertEquals(VERSAOROTEIRO, result);
     }
-    
+
     @Test
     public void testVersaoErPafValido() {
         RoteiroAnalise instance = new RoteiroAnalise();
@@ -53,7 +54,7 @@ public class RoteiroAnaliseTest {
         String result = instance.getAno();
         assertEquals(ANO, result);
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testVersaoRoteiroNulo(){
         RoteiroAnalise instance = new RoteiroAnalise();
@@ -63,7 +64,7 @@ public class RoteiroAnaliseTest {
         instance.setAno(ANO);
         instance.toString();
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testVersaoErPafNulo(){
         RoteiroAnalise instance = new RoteiroAnalise();
@@ -73,7 +74,7 @@ public class RoteiroAnaliseTest {
         instance.setAno(ANO);
         instance.toString();
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testMesNulo(){
         RoteiroAnalise instance = new RoteiroAnalise();
@@ -83,7 +84,7 @@ public class RoteiroAnaliseTest {
         instance.setAno(ANO);
         instance.toString();
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testAnoNulo(){
         RoteiroAnalise instance = new RoteiroAnalise();
@@ -93,5 +94,5 @@ public class RoteiroAnaliseTest {
         instance.setAno(null);
         instance.toString();
     }
-    
+
 }

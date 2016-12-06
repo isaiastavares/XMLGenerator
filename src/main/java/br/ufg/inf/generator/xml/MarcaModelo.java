@@ -2,9 +2,11 @@ package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Element;
 
-public class MarcaModelo {
+public class MarcaModelo extends LaudoBase {
+
     @Element(name = "Marca", required = true)
     private String marca;
+
     @Element(name = "Modelo", required = true)
     private String modelo;
 

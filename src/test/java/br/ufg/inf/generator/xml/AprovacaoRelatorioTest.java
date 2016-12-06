@@ -1,19 +1,20 @@
 package br.ufg.inf.generator.xml;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
+import org.junit.Test;
 
 /**
  *
  * @author Kalyn
  */
 public class AprovacaoRelatorioTest {
-    
-    private String NOME;
-    private String CARGO;
-    private String CPF;
-    
+
+    private static String NOME;
+    private static String CARGO;
+    private static String CPF;
+
     @Before
     public void beforeMethod(){
         NOME = "Nome";
@@ -44,7 +45,7 @@ public class AprovacaoRelatorioTest {
         String result = instance.getCpf();
         assertEquals(CPF, result);
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testNomeNulo() {
         AprovacaoRelatorio instance = new AprovacaoRelatorio();
@@ -53,7 +54,7 @@ public class AprovacaoRelatorioTest {
         instance.setCpf(CPF);
         instance.toString();
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testCargoNulo() {
         AprovacaoRelatorio instance = new AprovacaoRelatorio();
@@ -62,7 +63,7 @@ public class AprovacaoRelatorioTest {
         instance.setCpf(CPF);
         instance.toString();
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testCpfNulo() {
         AprovacaoRelatorio instance = new AprovacaoRelatorio();

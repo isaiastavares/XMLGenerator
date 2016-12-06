@@ -1,8 +1,9 @@
 package br.ufg.inf.generator.xml;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
+import org.junit.Test;
 
 /**
  *
@@ -10,8 +11,8 @@ import org.junit.Before;
  */
 public class MarcaModeloTest {
 
-    private String MARCA;
-    private String MODELO;
+    private static String MARCA;
+    private static String MODELO;
 
     @Before
     public void beforeMethod() {
@@ -34,7 +35,7 @@ public class MarcaModeloTest {
         String result = instance.getModelo();
         assertEquals(MODELO, result);
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testMarcaNulo() {
         MarcaModelo instance = new MarcaModelo();
@@ -42,7 +43,7 @@ public class MarcaModeloTest {
         instance.setModelo(MODELO);
         instance.toString();
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testModeloNulo() {
         MarcaModelo instance = new MarcaModelo();

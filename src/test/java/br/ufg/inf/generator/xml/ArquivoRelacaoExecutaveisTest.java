@@ -10,8 +10,8 @@ import org.junit.Before;
  */
 public class ArquivoRelacaoExecutaveisTest {
 
-    private String NOME;
-    private String MD5;
+    private static String NOME;
+    private static String MD5;
 
     @Before
     public void beforeMethod() {
@@ -21,7 +21,7 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test
     public void testNomeValido() {
-        ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+    	final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
         instance.setNome(NOME);
         String result = instance.getNome();
         assertEquals(NOME, result);
@@ -29,7 +29,7 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test
     public void testMd5Valido() {
-        ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+    	final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
         instance.setMd5(MD5);
         String result = instance.getMd5();
         assertEquals(MD5, result);
@@ -37,15 +37,17 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test(expected = IllegalStateException.class)
     public void testNomeNulo() {
-        ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+    	final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
         instance.setNome(null);
         instance.setMd5(MD5);
+        instance.toString();
     }
-    
+
     @Test(expected = IllegalStateException.class)
     public void testMd5Nulo() {
-        ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
         instance.setNome(NOME);
         instance.setMd5(null);
+        instance.toString();
     }
 }

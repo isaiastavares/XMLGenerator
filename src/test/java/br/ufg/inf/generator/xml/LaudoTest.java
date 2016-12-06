@@ -7,22 +7,15 @@ import org.junit.Test;
 public class LaudoTest {
 
 	@Test
-    public void deveRetornarMensagemCorretamente() {
+    public void testMensagemCorreto() {
 		final Laudo laudo = new Laudo();
 		Mensagem mensagem = new Mensagem();
         laudo.setMensagem(mensagem);
         assertEquals(mensagem, laudo.getMensagem());
     }
 
-    @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirVersaoNulo() {
-        final Laudo laudo = new Laudo();
-        laudo.setMensagem(new Mensagem());
-        laudo.toString();
-    }
-
     @Test
-    public void deveRetornarVersaoCorretamente() {
+    public void testVersaoCorreto() {
         final Laudo laudo = new Laudo();
         String versao = "1.10";
         laudo.setVersao(versao);
@@ -30,9 +23,18 @@ public class LaudoTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void naoDevePermitirMensagemNulo() {
+    public void testMensagemNulo() {
         final Laudo laudo = new Laudo();
+        laudo.setMensagem(null);
         laudo.setVersao("1.10");
+        laudo.toString();
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testVersaoNulo() {
+        final Laudo laudo = new Laudo();
+        laudo.setMensagem(new Mensagem());
+        laudo.setVersao(null);
         laudo.toString();
     }
 }
