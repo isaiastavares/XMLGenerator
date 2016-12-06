@@ -53,7 +53,14 @@ public class ScreensController extends StackPane {
         if (screens.get(name) != null) {
             final DoubleProperty opacity = opacityProperty();
 
-            if (!getChildren().isEmpty()) {
+            if (getChildren().isEmpty()) {
+                setOpacity(0.0);
+                getChildren().add(screens.get(name));
+                Timeline fadeIn = new Timeline(
+                        new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
+                        new KeyFrame(new Duration(1000), new KeyValue(opacity, 1.0)));
+                fadeIn.play();
+            } else {
                 Timeline fade = new Timeline(
                         new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1.0)),
                         new KeyFrame(new Duration(400), new EventHandler<ActionEvent>() {
@@ -68,14 +75,6 @@ public class ScreensController extends StackPane {
                             }
                         }, new KeyValue(opacity, 0.0)));
                 fade.play();
-
-            } else {
-                setOpacity(0.0);
-                getChildren().add(screens.get(name));
-                Timeline fadeIn = new Timeline(
-                        new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-                        new KeyFrame(new Duration(1000), new KeyValue(opacity, 1.0)));
-                fadeIn.play();
             }
             return true;
         } else {
