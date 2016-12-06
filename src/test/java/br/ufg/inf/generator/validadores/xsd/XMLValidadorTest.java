@@ -18,7 +18,7 @@ public class XMLValidadorTest {
     }
 
     @Test
-    public void deveValidarLaudo() throws Exception {
+    public void deveValidarLaudo() {
         Assert.assertTrue(XMLValidador.validaLaudo(laudo.toString()));
     }
 }
