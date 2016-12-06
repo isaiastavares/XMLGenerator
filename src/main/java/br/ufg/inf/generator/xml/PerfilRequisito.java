@@ -12,6 +12,7 @@ import org.simpleframework.xml.Text;
  * @author alunoinf
  */
 public class PerfilRequisito {
+
     @Text
     private String perfil;
 

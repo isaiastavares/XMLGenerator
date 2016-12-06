@@ -3,6 +3,7 @@ package br.ufg.inf.generator.xml;
 import org.simpleframework.xml.Text;
 
 public class RequisitoExecutado {
+
     @Text
     private String requisitoExecutado;
 
@@ -13,5 +14,5 @@ public class RequisitoExecutado {
     public void setRequisitoExecutado(String requisitoExecutado) {
         this.requisitoExecutado = requisitoExecutado;
     }
-    
+
 }

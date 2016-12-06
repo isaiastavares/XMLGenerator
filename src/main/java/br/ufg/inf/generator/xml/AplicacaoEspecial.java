@@ -3,6 +3,7 @@ package br.ufg.inf.generator.xml;
 import org.simpleframework.xml.Text;
 
 public class AplicacaoEspecial {
+
     @Text
     private String aplicacao;
 
