@@ -1,6 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import java.util.ArrayList;
+
 import org.simpleframework.xml.Element;
 
 public class SistemaPed extends LaudoBase {
