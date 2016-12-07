@@ -1,8 +1,17 @@
 package br.ufg.inf.generator.controller;
 
+import br.ufg.inf.generator.validadores.ValidationFields;
 import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
 
 public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implements ControlledScreen {
+
+	@FXML
+	private TextField txtRazaoSocial, txtCnpj, txtInscEstad;
+	@FXML
+	private TextField txtRua, txtNumero, txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep;
+	@FXML
+	private TextField txtNome, txtCpf, txtEmail, txtTelefone, txtResponsavel;
 
 	private ScreensController myController;
 
@@ -30,8 +39,9 @@ public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implemen
 
 	@Override
 	protected boolean isValido() {
-		// TODO falta implementar validacao
-		return true;
+		return ValidationFields.checkEmptyFields(txtRazaoSocial, txtCnpj, txtInscEstad, txtRua, txtNumero,
+				txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep, txtNome, txtCpf, txtEmail, txtTelefone,
+				txtResponsavel);
 	}
 
 	@Override

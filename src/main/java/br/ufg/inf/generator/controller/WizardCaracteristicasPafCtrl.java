@@ -3,7 +3,7 @@ package br.ufg.inf.generator.controller;
 import java.util.Arrays;
 import java.util.List;
 
-import br.ufg.inf.generator.alert.Dialogo;
+import br.ufg.inf.generator.validadores.ValidationFields;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
@@ -94,7 +94,7 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
 	@Override
 	protected boolean isValido() {
 		if (!verificaFormaImpressao) {
-			Dialogo.validacao("É preciso selecionar pelo menos uma opção em Forma de Impressão");
+			ValidationFields.validacao("É preciso selecionar pelo menos uma opção em Forma de Impresso");
 			return false;
 		}
 		return true;

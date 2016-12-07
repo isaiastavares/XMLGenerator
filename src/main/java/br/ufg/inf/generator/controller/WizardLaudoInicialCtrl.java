@@ -1,8 +1,6 @@
 package br.ufg.inf.generator.controller;
 
-import org.apache.commons.lang3.StringUtils;
-
-import br.ufg.inf.generator.alert.Dialogo;
+import br.ufg.inf.generator.validadores.ValidationFields;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -37,11 +35,7 @@ public class WizardLaudoInicialCtrl extends AbstractWizardCtrl implements Contro
 
 	@Override
 	protected boolean isValido() {
-		if (StringUtils.isBlank(nomeLaudo.getText())) {
-			Dialogo.validacao("O nome do laudo não pode ser vazio");
-			return false;
-		}
-		return true;
+		return ValidationFields.checkEmptyFields(nomeLaudo);
 	}
 
 	@Override
