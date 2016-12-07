@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="477.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="131.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roteiro de Análise Funcional">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do ER (Ato Cotepe)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtVersaoER" layoutX="53.0" layoutY="104.0" prefHeight="25.0" prefWidth="166.0" />
+      <Text layoutX="315.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do Roteiro de Análise Funcional">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtVersaoRoteiro" layoutX="327.0" layoutY="105.0" prefHeight="25.0" prefWidth="197.0" />
+      <Text layoutX="339.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento do Roteiro">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAnoRoteiro" layoutX="332.0" layoutY="221.0" prefHeight="25.0" prefWidth="186.0" />
+      <Text layoutX="95.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa apresentou declaração referente ao requisito XXXI?">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="bttnOk" layoutX="235.0" layoutY="420.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="101.0" layoutY="221.0" mnemonicParsing="false" text="Janeiro">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Text layoutX="48.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mês de Lançamento do Roteiro">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="161.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obs.: Integridade de Banco de Dados">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radioSim" layoutX="211.0" layoutY="377.0" mnemonicParsing="false" text="Sim" />
+      <RadioButton fx:id="radioNao" layoutX="305.0" layoutY="377.0" mnemonicParsing="false" text="Não" />
+   </children>
+</Pane>
