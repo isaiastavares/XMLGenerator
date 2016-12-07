@@ -4,8 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import br.ufg.inf.generator.xml.enuns.UnidadeFederativa;
-
 public class EnderecoTest {
 
     private static final String VAZIO = "";
@@ -14,6 +12,7 @@ public class EnderecoTest {
     private static final String COMPLEMENTO = "Fr3gSvoAeKbGpQD3r98KFeB50P3Gq14XBVsv5fpiaBvJ3HTOpREiwYGs20Xw";
     private static final String BAIRRO = "67LQFlXOBK0JqAE1rFi2CEyUGW5Z8QmmHhzmZ9GABVLKa9AbV0uFR0onl7nU";
     private static final String MUNICIPIO = "s1Cr2hWP6bptQ80A9vWBuTaODR1U82LtKQi1DEm3LsAXu9AbkSeCtfXJVTKG";
+    private static final String UF = "GO";
     private static final String CEP = "88095550";
 
     private static final String STRING_TAMANHO_256 = "ll8DABEZYq9OrSPlxxYlfUN9tOfpNPZ4n6K5tJ2qw2P4OXey2IkREQXzwZrA6yFLF6MtUZbu0fGqmr67RjPaHuptcEg0CpCBoSJ30P6lIeeJG3o2JLeKFzYGoaTcgQws0XqsUe0nAuX4DWWQYTMhWmlgQ60NNuaQkkS10bfDhawLK4zQAZZQzU8C6aIjApFNSMqHNWXNP3rGhvEir6SB2rsm5bcgCLyGLXTJwBl8nqZoJms3bH6wToVdjfsjfkjs";
@@ -88,7 +87,7 @@ public class EnderecoTest {
         endereco.setComplemento(COMPLEMENTO);
         endereco.setBairro(BAIRRO);
         endereco.setMunicipio(MUNICIPIO);
-        endereco.setUf(UnidadeFederativa.GO);
+        endereco.setUf(UF);
         endereco.setCep(CEP);
         endereco.toString();
     }
@@ -101,7 +100,7 @@ public class EnderecoTest {
         endereco.setComplemento(COMPLEMENTO);
         endereco.setBairro(BAIRRO);
         endereco.setMunicipio(MUNICIPIO);
-        endereco.setUf(UnidadeFederativa.GO);
+        endereco.setUf(UF);
         endereco.setCep(CEP);
         endereco.toString();
     }
@@ -114,7 +113,7 @@ public class EnderecoTest {
         endereco.setComplemento(null);
         endereco.setBairro(BAIRRO);
         endereco.setMunicipio(MUNICIPIO);
-        endereco.setUf(UnidadeFederativa.GO);
+        endereco.setUf(UF);
         endereco.setCep(CEP);
         endereco.toString();
     }
@@ -127,7 +126,7 @@ public class EnderecoTest {
         endereco.setComplemento(COMPLEMENTO);
         endereco.setBairro(null);
         endereco.setMunicipio(MUNICIPIO);
-        endereco.setUf(UnidadeFederativa.GO);
+        endereco.setUf(UF);
         endereco.setCep(CEP);
         endereco.toString();
     }
@@ -140,7 +139,7 @@ public class EnderecoTest {
         endereco.setComplemento(COMPLEMENTO);
         endereco.setBairro(BAIRRO);
         endereco.setMunicipio(null);
-        endereco.setUf(UnidadeFederativa.GO);
+        endereco.setUf(UF);
         endereco.setCep(CEP);
         endereco.toString();
     }
@@ -165,7 +164,7 @@ public class EnderecoTest {
         endereco.setComplemento(COMPLEMENTO);
         endereco.setBairro(BAIRRO);
         endereco.setMunicipio(MUNICIPIO);
-        endereco.setUf(UnidadeFederativa.GO);
+        endereco.setUf(UF);
         endereco.setCep(null);
         endereco.toString();
     }
@@ -208,7 +207,7 @@ public class EnderecoTest {
     @Test
     public void testUfCorreto() {
     	final Endereco endereco = new Endereco();
-        endereco.setUf(UnidadeFederativa.GO);
+        endereco.setUf(UF);
         assertEquals("GO", endereco.getUf());
     }
 

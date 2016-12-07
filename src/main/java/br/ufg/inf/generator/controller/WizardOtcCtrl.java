@@ -36,6 +36,7 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
 
 	@Override
 	protected void salvar() {
+		System.out.println(getMensagem().toString());
 		// TODO falta implementar a parte de salvar
 	}
 }

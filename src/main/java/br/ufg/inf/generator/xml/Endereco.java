@@ -3,7 +3,6 @@ package br.ufg.inf.generator.xml;
 import org.simpleframework.xml.Element;
 
 import br.ufg.inf.generator.validadores.StringValidador;
-import br.ufg.inf.generator.xml.enuns.UnidadeFederativa;
 
 public class Endereco extends LaudoBase {
 
@@ -77,8 +76,8 @@ public class Endereco extends LaudoBase {
         return uf;
     }
 
-    public void setUf(final UnidadeFederativa uf) {
-        this.uf = uf.getCodigo();
+    public void setUf(String uf) {
+        this.uf = uf;
     }
 
     public String getCep() {
