@@ -3,10 +3,9 @@ package br.ufg.inf.generator.controller;
 import java.util.Arrays;
 import java.util.List;
 
+import br.ufg.inf.generator.alert.Dialogo;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 
@@ -14,7 +13,9 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
 
     private ScreensController myController;
 
-    private boolean verificaFormaImpressao = false, verificaTratamentoInterrupcao = false, verificaMeioGeracao = false;
+    private boolean verificaFormaImpressao = false;
+    private boolean verificaTratamentoInterrupcao = false;
+    private boolean verificaMeioGeracao = false;
 
     @FXML
     private ChoiceBox<String> choiceTipoDesenvolvimento, choiceIntegracaoPaf, choiceTipoFuncionamento;
@@ -81,21 +82,26 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
     }
 
     @Override
-    void back() {
+    protected void back() {
         myController.setScreen(IScreens.ID_SISTEMA_PAF);
     }
 
-    @Override
-    void next() {
-        if (verificaFormaImpressao) {
-            myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
-        } else {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Erro encontrado");
-            alert.setContentText("É preciso selecionar pelo menos uma opcao em Forma de Impressao");
+	@Override
+	protected void nextScreen() {
+		myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
+	}
 
-            alert.showAndWait();
-        }
-    }
+	@Override
+	protected boolean isValido() {
+		if (!verificaFormaImpressao) {
+			Dialogo.validacao("É preciso selecionar pelo menos uma opção em Forma de Impressão");
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	protected void salvar() {
+		// TODO falta implementar a parte de salvar
+	}
 }

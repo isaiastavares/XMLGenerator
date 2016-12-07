@@ -19,12 +19,23 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
     }
 
     @Override
-    void back() {
+    protected void back() {
         myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
     }
 
     @Override
-    void next() {
-        myController.setScreen(IScreens.ID_SISTEMA_PAF);
-    }
+	protected void nextScreen() {
+    	myController.setScreen(IScreens.ID_SISTEMA_PAF);
+	}
+
+	@Override
+	protected boolean isValido() {
+		// TODO falta implementar validacao
+		return true;
+	}
+
+	@Override
+	protected void salvar() {
+		// TODO falta implementar a parte de salvar
+	}
 }

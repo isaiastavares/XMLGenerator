@@ -19,12 +19,23 @@ public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implemen
     }
 
     @Override
-    void back() {
+    protected void back() {
         myController.setScreen(IScreens.ID_LAUDO_INICIAL);
     }
 
-    @Override
-    void next() {
-        myController.setScreen(IScreens.ID_OTC);
-    }
+	@Override
+	protected void nextScreen() {
+		myController.setScreen(IScreens.ID_OTC);
+	}
+
+	@Override
+	protected boolean isValido() {
+		// TODO falta implementar validacao
+		return true;
+	}
+
+	@Override
+	protected void salvar() {
+		// TODO falta implementar a parte de salvar
+	}
 }

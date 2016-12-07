@@ -19,12 +19,23 @@ public class WizardSistemaPafCtrl extends AbstractWizardCtrl implements Controll
     }
 
     @Override
-    void back() {
+    protected void back() {
         myController.setScreen(IScreens.ID_OTC);
     }
 
     @Override
-    void next() {
-        myController.setScreen(IScreens.ID_CARACTERISTICAS_PAF);
-    }
+	protected void nextScreen() {
+    	myController.setScreen(IScreens.ID_CARACTERISTICAS_PAF);
+	}
+
+    @Override
+	protected boolean isValido() {
+		// TODO falta implementar validacao
+		return true;
+	}
+
+	@Override
+	protected void salvar() {
+		// TODO falta implementar a parte de salvar
+	}
 }

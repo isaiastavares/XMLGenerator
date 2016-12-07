@@ -1,7 +1,9 @@
 package br.ufg.inf.generator.controller;
 
+import org.apache.commons.lang3.StringUtils;
+
+import br.ufg.inf.generator.alert.Dialogo;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
 public class WizardLaudoInicialCtrl extends AbstractWizardCtrl implements ControlledScreen {
@@ -24,20 +26,27 @@ public class WizardLaudoInicialCtrl extends AbstractWizardCtrl implements Contro
     }
 
     @Override
-    void back() {
+    protected void back() {
         // Do Nothing
     }
 
-    @Override
-    void next() {
-        if ("".equals(nomeLaudo.getText())) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText("Erro encontrado");
-            alert.setContentText("O nome do laudo nao pode ser nulo");
-            alert.showAndWait();
-        } else {
-            myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
-        }
-    }
+	@Override
+	protected void nextScreen() {
+		myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
+	}
+
+	@Override
+	protected boolean isValido() {
+		if (StringUtils.isBlank(nomeLaudo.getText())) {
+			Dialogo.validacao("O nome do laudo não pode ser vazio");
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	protected void salvar() {
+		setNomeLaudo(nomeLaudo.getText());
+	}
+
 }

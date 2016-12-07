@@ -28,12 +28,23 @@ public class WizardAplicacoesEspeciaisCtrl  extends AbstractWizardCtrl implement
     }
 
     @Override
-    void back() {
+    protected void back() {
         myController.setScreen(IScreens.ID_CARACTERISTICAS_PAF);
     }
 
-    @Override
-    void next() {
-//        myController.setScreen(IScreens.ID_OTC);
-    }
+	@Override
+	protected void nextScreen() {
+		// TODO falta dizer a proxima tela
+	}
+
+	@Override
+	protected boolean isValido() {
+		// TODO falta implementar validacao
+		return true;
+	}
+
+	@Override
+	protected void salvar() {
+		// TODO falta implementar a parte de salvar
+	}
 }
