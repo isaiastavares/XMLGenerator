@@ -26,6 +26,8 @@ public class XMLGeneratorMain extends Application {
         mainContainer.loadScreen(IScreens.ID_SISTEMA_PAF, IScreens.VIEW_SISTEMA_PAF);
         mainContainer.loadScreen(IScreens.ID_CARACTERISTICAS_PAF, IScreens.VIEW_CARACTERISTICAS_PAF);
         mainContainer.loadScreen(IScreens.ID_APLICACOES_ESPECIAIS, IScreens.VIEW_APLICACOES_ESPECIAIS);
+        mainContainer.loadScreen(IScreens.ID_HOMOLOGACAO_ECF, IScreens.VIEW_HOMOLOGACAO_ECF);
+        mainContainer.loadScreen(IScreens.ID_QUANTIDADE_RETAGUARDA, IScreens.VIEW_QUANTIDADE_RETAGUARDA);
 
         mainContainer.setScreen(IScreens.ID_LAUDO_INICIAL);
 

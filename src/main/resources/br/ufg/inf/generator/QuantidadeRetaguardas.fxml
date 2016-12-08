@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardQuantidadeRetaguardaCtrl">
    <children>
-      <Text layoutX="26.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Retaguardas">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="37.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de retaguardas">
+      <Text layoutX="365.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de retaguardas">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="txtQuantidadeRetaguarda" layoutX="108.0" layoutY="79.0" prefHeight="25.0" prefWidth="57.0" />
-      <Button fx:id="bttnOk" layoutX="48.0" layoutY="122.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="OK">
+      <TextField fx:id="txtQuantidadeRetaguarda" layoutX="346.0" layoutY="234.0" prefHeight="25.0" prefWidth="237.0" />
+      <Separator layoutY="63.0" prefHeight="10.0" prefWidth="892.0" />
+      <Text layoutX="305.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Retaguardas" textAlignment="CENTER" wrappingWidth="319.521484375">
          <font>
-            <Font size="15.0" />
+            <Font size="23.0" />
          </font>
-      </Button>
-      <Button fx:id="bttnCancelar" layoutX="147.0" layoutY="122.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="Cancelar">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Button>
+      </Text>
+      <HBox alignment="BOTTOM_RIGHT" layoutX="671.0" layoutY="609.0" spacing="12.0">
+         <children>
+            <Button fx:id="backButton" text="Anterior" />
+            <Button fx:id="nextButton" text="Próximo" />
+            <Button fx:id="finishButton" text="Cancelar" />
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </padding>
+      </HBox>
    </children>
 </Pane>

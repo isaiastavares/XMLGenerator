@@ -1,19 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.ufg.inf.generator.controller;
 
 import javafx.fxml.FXML;
 
-/**
- *
- * @author hiago
- */
-public class WizardAplicacoesEspeciaisCtrl  extends AbstractWizardCtrl implements ControlledScreen {
+public class WizardAplicacoesEspeciaisCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-	private ScreensController myController;
+    private ScreensController myController;
 
     @FXML
     public void initialize() {
@@ -32,19 +23,23 @@ public class WizardAplicacoesEspeciaisCtrl  extends AbstractWizardCtrl implement
         myController.setScreen(IScreens.ID_CARACTERISTICAS_PAF);
     }
 
-	@Override
-	protected void nextScreen() {
-		// TODO falta dizer a proxima tela
-	}
+    @Override
+    protected void nextScreen() {
+        if (WizardCaracteristicasPafCtrl.getIntegracaoPafValue().equals("Pelo PAF-ECF")) {
+            myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
+        } else {
+            myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
+        }
+    }
 
-	@Override
-	protected boolean isValido() {
-		// TODO falta implementar validacao
-		return true;
-	}
+    @Override
+    protected boolean isValido() {
+        // TODO falta implementar validacao
+        return true;
+    }
 
-	@Override
-	protected void salvar() {
-		// TODO falta implementar a parte de salvar
-	}
+    @Override
+    protected void salvar() {
+        // TODO falta implementar a parte de salvar
+    }
 }

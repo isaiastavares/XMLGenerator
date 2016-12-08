@@ -2,14 +2,14 @@ package br.ufg.inf.generator.controller;
 
 import javafx.fxml.FXML;
 
-public class WizardSistemaPafCtrl extends AbstractWizardCtrl implements ControlledScreen {
+public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     private ScreensController myController;
 
     @FXML
     public void initialize() {
-        getBackButton().setOnAction(event -> back());
         getNextButton().setOnAction(event -> next());
+        getBackButton().setOnAction(event -> back());
         initializeFinishButton();
     }
 
@@ -20,12 +20,12 @@ public class WizardSistemaPafCtrl extends AbstractWizardCtrl implements Controll
 
     @Override
     protected void back() {
-        myController.setScreen(IScreens.ID_OTC);
+        myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
     }
 
     @Override
     protected void nextScreen() {
-        myController.setScreen(IScreens.ID_CARACTERISTICAS_PAF);
+
     }
 
     @Override

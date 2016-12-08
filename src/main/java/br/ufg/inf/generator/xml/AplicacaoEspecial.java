@@ -1,10 +1,10 @@
 package br.ufg.inf.generator.xml;
 
-import org.simpleframework.xml.Text;
+import org.simpleframework.xml.Element;
 
 public class AplicacaoEspecial {
 
-    @Text
+    @Element(name = "AplicacaoEspecial", required = true)
     private String aplicacao;
 
     public String getAplicacao() {

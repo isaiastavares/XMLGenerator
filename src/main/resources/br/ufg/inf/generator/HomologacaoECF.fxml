@@ -1,35 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardHomologacaoEcfCtrl">
    <children>
-      <Text layoutX="90.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECF Utilizada na Homologação" textAlignment="CENTER" wrappingWidth="319.521484375">
+      <Text layoutX="295.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECF Utilizada na Homologação" textAlignment="CENTER" wrappingWidth="319.521484375">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
-      <Separator layoutX="14.0" layoutY="50.0" prefHeight="5.0" prefWidth="469.0" />
-      <TextField layoutX="90.0" layoutY="138.0" text="BEMATECH" />
-      <TextField layoutX="275.0" layoutY="138.0" text="MP-4000 TH FI" />
-      <Button fx:id="bttnOk" layoutX="200.0" layoutY="230.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="OK">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Button>
-      <Text layoutX="90.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+      <Separator layoutX="14.0" layoutY="50.0" prefHeight="10.0" prefWidth="892.0" />
+      <TextField layoutX="168.0" layoutY="197.0" text="BEMATECH" />
+      <TextField layoutX="605.0" layoutY="200.0" text="MP-4000 TH FI" />
+      <Text layoutX="168.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Text>
-      <Text layoutX="275.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo">
+      <Text layoutX="605.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Text>
+      <HBox alignment="BOTTOM_RIGHT" layoutX="661.0" layoutY="599.0" spacing="12.0">
+         <children>
+            <Button fx:id="backButton" text="Anterior" />
+            <Button fx:id="nextButton" text="Próximo" />
+            <Button fx:id="finishButton" text="Cancelar" />
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </padding>
+      </HBox>
    </children>
 </Pane>

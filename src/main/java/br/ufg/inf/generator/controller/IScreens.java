@@ -14,4 +14,8 @@ public interface IScreens {
     String VIEW_CARACTERISTICAS_PAF = "CaracteristicasPaf.fxml";
     String ID_APLICACOES_ESPECIAIS = "aplicacoesEspeciais";
     String VIEW_APLICACOES_ESPECIAIS = "AplicacoesEspeciaisPAF.fxml";
+    String ID_HOMOLOGACAO_ECF = "homologacaoEcf";
+    String VIEW_HOMOLOGACAO_ECF = "HomologacaoECF.fxml";
+    String ID_QUANTIDADE_RETAGUARDA = "quantidadeRetaguardas";
+    String VIEW_QUANTIDADE_RETAGUARDA = "QuantidadeRetaguardas.fxml";
 }

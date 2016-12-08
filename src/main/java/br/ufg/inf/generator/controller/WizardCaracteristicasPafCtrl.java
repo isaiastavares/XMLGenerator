@@ -16,6 +16,7 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
     private boolean verificaFormaImpressao = false;
     private boolean verificaTratamentoInterrupcao = false;
     private boolean verificaMeioGeracao = false;
+    static String integracaoPafValue;
 
     @FXML
     private ChoiceBox<String> choiceTipoDesenvolvimento, choiceIntegracaoPaf, choiceTipoFuncionamento;
@@ -23,6 +24,12 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
     @FXML
     private CheckBox checkFormaConcomitante, checkFormaNaoConcomitanteComDav, checkFormaNaoConcomitanteComPreVenda,
             checkFormaNaoConcomitanteComContaCliente, checkFormaDavSemImpressao, checkFormaDavImpressoraNaoFiscal, checkFormaDavImpressoEcf;
+
+    @FXML
+    private CheckBox checkTratamentoRecuperacao, checkTratamentoCancelamento, checkTratamentoBloqueio;
+
+    @FXML
+    private CheckBox checkMeioGeracaoPaf, checkMeioGeracaoRetaguarda, checkMeioGeracaoPed;
 
     @FXML
     public void initialize() {
@@ -47,12 +54,12 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
 
     @FXML
     private void handleCheckBoxTratamentoInterrupcaoAction() {
-
+        verificaTratamentoInterrupcao = checkTratamentoRecuperacao.isSelected() || checkTratamentoCancelamento.isSelected() || checkTratamentoBloqueio.isSelected();
     }
 
     @FXML
     private void handleCheckBoxMeioGeracaoAction() {
-
+        verificaMeioGeracao = checkMeioGeracaoPaf.isSelected() || checkMeioGeracaoRetaguarda.isSelected() || checkMeioGeracaoPed.isSelected();
     }
 
     private List<String> getListTipoDesenvolvimento() {
@@ -73,7 +80,8 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
         return Arrays.asList(
                 "Pelo PAF-ECF",
                 "Pelo sistema de Retaguarda",
-                "Pelo sistema PED ou EFD");
+                "Pelo sistema PED ou EFD",
+                "Pela Retaguarda e PED ou EFD");
     }
 
     @Override
@@ -86,22 +94,29 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
         myController.setScreen(IScreens.ID_SISTEMA_PAF);
     }
 
-	@Override
-	protected void nextScreen() {
-		myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
-	}
+    @Override
+    protected void nextScreen() {
+        integracaoPafValue = choiceIntegracaoPaf.getValue();
+        System.out.println(integracaoPafValue);
+        myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
+    }
 
-	@Override
-	protected boolean isValido() {
-		if (!verificaFormaImpressao) {
-			ValidationFields.validacao("É preciso selecionar pelo menos uma opção em Forma de Impresso");
-			return false;
-		}
-		return true;
-	}
+    @Override
+    protected boolean isValido() {
+        if (verificaFormaImpressao && verificaTratamentoInterrupcao && verificaMeioGeracao) {
+            return true;
+        } else {
+            ValidationFields.validacao("É preciso selecionar pelo menos uma opção em Forma de Impresso");
+            return false;
+        }
+    }
 
-	@Override
-	protected void salvar() {
-		// TODO falta implementar a parte de salvar
-	}
+    @Override
+    protected void salvar() {
+        // TODO falta implementar a parte de salvar
+    }
+
+    public static String getIntegracaoPafValue() {
+        return integracaoPafValue;
+    }
 }

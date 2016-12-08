@@ -40,6 +40,7 @@ public class WizardLaudoInicialCtrl extends AbstractWizardCtrl implements Contro
 
     @Override
     protected void salvar() {
-        setNomeLaudo(nomeLaudo.getText());
+//        setNomeLaudo(nomeLaudo.getText());
+//        getMensagem().setNumero(nomeLaudo.getText());
     }
 }

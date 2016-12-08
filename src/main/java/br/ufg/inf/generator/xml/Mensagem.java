@@ -17,37 +17,37 @@ public class Mensagem extends LaudoBase {
 
     @Element(name = "Otc", required = true)
     private Otc otc;
-    
-    @Element(name ="IdentificacaoPaf", required = true)
+
+    @Element(name = "IdentificacaoPaf", required = true)
     private IdentificacaoPaf identificacaoPaf;
 
-    @Element(name ="CaracteristicasPaf", required = true)
+    @Element(name = "CaracteristicasPaf", required = true)
     private CaracteristicasPaf caracteristicasPaf;
-    
+
     @ElementList(name = "SistemasGestao", required = true)
     private ArrayList<SistemaGestao> sistemasGestao;
-    
+
     @ElementList(name = "SistemasPed", required = true)
     private ArrayList<SistemaPed> sistemasPed;
-    
+
     @ElementList(name = "SistemasPedNfe", required = true)
     private ArrayList<SistemaPedNfe> sistemasPedNfe;
-    
+
     @ElementList(name = "EcfAnaliseFuncional", required = true)
     private ArrayList<MarcaModelo> ecfAnaliseFuncional;
-    
-    @ElementList(name ="MarcasModelosCompativeis", required = true)
+
+    @ElementList(name = "MarcasModelosCompativeis", required = true)
     private ArrayList<MarcaModelo> marcasModelosCompativeis;
-    
+
     @Element(name = "VersaoErPaf", required = true)
     private String versaoErPaf;
 
-    @Element(name="RoteiroAnalise", required = true)
+    @Element(name = "RoteiroAnalise", required = true)
     private RoteiroAnalise roteiroAnalise;
-    
-    @ElementList(name ="NaoConformidades", required = true)
+
+    @ElementList(name = "NaoConformidades", required = true)
     private ArrayList<NaoConformidade> naoConformidades;
-    
+
     @Element(name = "ComentarioOtc", required = true)
     private String comentarioOtc;
 
@@ -199,19 +199,19 @@ public class Mensagem extends LaudoBase {
         this.emissao = emissao;
     }
 
-	public ExecucaoTestes getExecucaoTestes() {
-		return execucaoTestes;
-	}
+    public ExecucaoTestes getExecucaoTestes() {
+        return execucaoTestes;
+    }
 
-	public void setExecucaoTestes(ExecucaoTestes execucaoTestes) {
-		this.execucaoTestes = execucaoTestes;
-	}
+    public void setExecucaoTestes(ExecucaoTestes execucaoTestes) {
+        this.execucaoTestes = execucaoTestes;
+    }
 
-	public AprovacaoRelatorio getAprovacaoRelatorio() {
-		return aprovacaoRelatorio;
-	}
+    public AprovacaoRelatorio getAprovacaoRelatorio() {
+        return aprovacaoRelatorio;
+    }
 
-	public void setAprovacaoRelatorio(AprovacaoRelatorio aprovacaoRelatorio) {
-		this.aprovacaoRelatorio = aprovacaoRelatorio;
-	}
+    public void setAprovacaoRelatorio(AprovacaoRelatorio aprovacaoRelatorio) {
+        this.aprovacaoRelatorio = aprovacaoRelatorio;
+    }
 }

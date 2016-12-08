@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 
 public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-	private ScreensController myController;
+    private ScreensController myController;
 
     @FXML
     public void initialize() {
@@ -24,19 +24,19 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
     }
 
     @Override
-	protected void nextScreen() {
-    	myController.setScreen(IScreens.ID_SISTEMA_PAF);
-	}
+    protected void nextScreen() {
+        myController.setScreen(IScreens.ID_SISTEMA_PAF);
+    }
 
-	@Override
-	protected boolean isValido() {
-		// TODO falta implementar validacao
-		return true;
-	}
+    @Override
+    protected boolean isValido() {
+        // TODO falta implementar validacao
+        return true;
+    }
 
-	@Override
-	protected void salvar() {
-		System.out.println(getMensagem().toString());
-		// TODO falta implementar a parte de salvar
-	}
+    @Override
+    protected void salvar() {
+//        System.out.println(getMensagem().toString());
+        // TODO falta implementar a parte de salvar
+    }
 }
