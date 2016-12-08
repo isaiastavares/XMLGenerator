@@ -9,14 +9,14 @@ import javafx.scene.control.TextField;
 
 public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-	@FXML
-	private TextField txtRazaoSocial, txtCnpj, txtInscEstad;
-	@FXML
-	private TextField txtRua, txtNumero, txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep;
-	@FXML
-	private TextField txtNome, txtCpf, txtEmail, txtTelefone, txtResponsavel;
+    @FXML
+    private TextField txtRazaoSocial, txtCnpj, txtInscEstad;
+    @FXML
+    private TextField txtRua, txtNumero, txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep;
+    @FXML
+    private TextField txtNome, txtCpf, txtEmail, txtTelefone, txtResponsavel;
 
-	private ScreensController myController;
+    private ScreensController myController;
 
     @FXML
     public void initialize() {
@@ -35,48 +35,48 @@ public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implemen
         myController.setScreen(IScreens.ID_LAUDO_INICIAL);
     }
 
-	@Override
-	protected void nextScreen() {
-		myController.setScreen(IScreens.ID_OTC);
-	}
+    @Override
+    protected void nextScreen() {
+        myController.setScreen(IScreens.ID_OTC);
+    }
 
-	@Override
-	protected boolean isValido() {
-		return ValidationFields.checkEmptyFields(txtRazaoSocial, txtCnpj, txtInscEstad, txtRua, txtNumero,
-				txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep, txtNome, txtCpf, txtEmail, txtTelefone,
-				txtResponsavel);
-	}
+    @Override
+    protected boolean isValido() {
+        return ValidationFields.checkEmptyFields(txtRazaoSocial, txtCnpj, txtInscEstad, txtRua, txtNumero,
+                txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep, txtNome, txtCpf, txtEmail, txtTelefone,
+                txtResponsavel);
+    }
 
-	@Override
-	protected void salvar() {
-		Desenvolvedora desenvolvedora = new Desenvolvedora();
-		desenvolvedora.setRazaoSocial(txtRazaoSocial.getText());
-		desenvolvedora.setCnpj(txtCnpj.getText());
-		desenvolvedora.setInscricaoEstadual(txtInscEstad.getText());
-		desenvolvedora.setEndereco(getEndereco());
-		desenvolvedora.setContato(getContato());
-		desenvolvedora.setRespAcompTestes(txtResponsavel.getText());
-		getMensagem().setDesenvolvedora(desenvolvedora);
-	}
+    @Override
+    protected void salvar() {
+        Desenvolvedora desenvolvedora = new Desenvolvedora();
+        desenvolvedora.setRazaoSocial(txtRazaoSocial.getText());
+        desenvolvedora.setCnpj(txtCnpj.getText());
+        desenvolvedora.setInscricaoEstadual(txtInscEstad.getText());
+        desenvolvedora.setEndereco(getEndereco());
+        desenvolvedora.setContato(getContato());
+        desenvolvedora.setRespAcompTestes(txtResponsavel.getText());
+        getMensagem().setDesenvolvedora(desenvolvedora);
+    }
 
-	private Endereco getEndereco() {
-		Endereco endereco = new Endereco();
-		endereco.setLogradouro(txtRua.getText());
-		endereco.setNumero(txtNumero.getText());
-		endereco.setComplemento(txtComplemento.getText());
-		endereco.setBairro(txtBairro.getText());
-		endereco.setMunicipio(txtMunicipio.getText());
-		endereco.setUf(txtUf.getText());
-		endereco.setCep(txtCep.getText());
-		return endereco;
-	}
+    private Endereco getEndereco() {
+        Endereco endereco = new Endereco();
+        endereco.setLogradouro(txtRua.getText());
+        endereco.setNumero(txtNumero.getText());
+        endereco.setComplemento(txtComplemento.getText());
+        endereco.setBairro(txtBairro.getText());
+        endereco.setMunicipio(txtMunicipio.getText());
+        endereco.setUf(txtUf.getText());
+        endereco.setCep(txtCep.getText());
+        return endereco;
+    }
 
-	private Contato getContato() {
-		Contato contato = new Contato();
-		contato.setNome(txtNome.getText());
-		contato.setCpf(txtCpf.getText());
-		contato.setTelefone(txtTelefone.getText());
-		contato.setEmail(txtEmail.getText());
-		return contato;
-	}
+    private Contato getContato() {
+        Contato contato = new Contato();
+        contato.setNome(txtNome.getText());
+        contato.setCpf(txtCpf.getText());
+        contato.setTelefone(txtTelefone.getText());
+        contato.setEmail(txtEmail.getText());
+        return contato;
+    }
 }

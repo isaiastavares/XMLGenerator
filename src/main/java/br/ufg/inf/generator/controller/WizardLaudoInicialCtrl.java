@@ -28,19 +28,18 @@ public class WizardLaudoInicialCtrl extends AbstractWizardCtrl implements Contro
         // Do Nothing
     }
 
-	@Override
-	protected void nextScreen() {
-		myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
-	}
+    @Override
+    protected void nextScreen() {
+        myController.setScreen(IScreens.ID_EMPRESA_DESENVOLVEDORA);
+    }
 
-	@Override
-	protected boolean isValido() {
-		return ValidationFields.checkEmptyFields(nomeLaudo);
-	}
+    @Override
+    protected boolean isValido() {
+        return ValidationFields.checkEmptyFields(nomeLaudo);
+    }
 
-	@Override
-	protected void salvar() {
-		setNomeLaudo(nomeLaudo.getText());
-	}
-
+    @Override
+    protected void salvar() {
+        setNomeLaudo(nomeLaudo.getText());
+    }
 }

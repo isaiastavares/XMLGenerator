@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 
 public abstract class AbstractWizardCtrl {
 
-	private static Mensagem mensagem;
+    private static Mensagem mensagem;
     private static String nomeLaudo;
 
     @FXML
@@ -19,21 +19,21 @@ public abstract class AbstractWizardCtrl {
     private Button finishButton;
 
     public Mensagem getMensagem() {
-    	if (mensagem == null) {
-    		mensagem = new Mensagem();
-    	}
-    	return mensagem;
+        if (mensagem == null) {
+            mensagem = new Mensagem();
+        }
+        return mensagem;
     }
 
     public String getNomeLaudo() {
-		return nomeLaudo;
-	}
+        return nomeLaudo;
+    }
 
-	public void setNomeLaudo(String nomeLaudo) {
-		AbstractWizardCtrl.nomeLaudo = nomeLaudo;
-	}
+    public void setNomeLaudo(String nomeLaudo) {
+        AbstractWizardCtrl.nomeLaudo = nomeLaudo;
+    }
 
-	protected Button getBackButton() {
+    protected Button getBackButton() {
         return backButton;
     }
 
@@ -48,10 +48,10 @@ public abstract class AbstractWizardCtrl {
     protected abstract void back();
 
     protected void next() {
-    	if (isValido()) {
-    		salvar();
-    		nextScreen();
-    	}
+        if (isValido()) {
+            salvar();
+            nextScreen();
+        }
     }
 
     protected abstract void nextScreen();
