@@ -123,11 +123,11 @@
         </dependency>
 
         <!-- Apache Commons IO -->
-		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-io</artifactId>
-		    <version>${commons-io.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
     </dependencies>
 
     <reporting>

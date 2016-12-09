@@ -2,7 +2,7 @@ package br.ufg.inf.generator.xml.estrutura.sistemasgestao;
 
 import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavel;
-import java.util.ArrayList;
+import java.util.List;
 import org.simpleframework.xml.Element;
 
 public class Sistemas extends LaudoBase {
@@ -14,7 +14,7 @@ public class Sistemas extends LaudoBase {
     private EmpresaDesenvolvedora empresaDesenvolvedora;
 
     @Element(name = "ArquivosExecutaveis", required = false)
-    private ArrayList<ArquivoExecutavel> arquivosExecutaveis;
+    private List<ArquivoExecutavel> arquivosExecutaveis;
 
     public String getNome() {
         return nome;
@@ -32,11 +32,11 @@ public class Sistemas extends LaudoBase {
         this.empresaDesenvolvedora = empresaDesenvolvedora;
     }
 
-    public ArrayList<ArquivoExecutavel> getArquivosExecutaveis() {
+    public List<ArquivoExecutavel> getArquivosExecutaveis() {
         return arquivosExecutaveis;
     }
 
-    public void setArquivosExecutaveis(ArrayList<ArquivoExecutavel> arquivosExecutaveis) {
+    public void setArquivosExecutaveis(List<ArquivoExecutavel> arquivosExecutaveis) {
         this.arquivosExecutaveis = arquivosExecutaveis;
     }
 

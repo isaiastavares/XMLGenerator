@@ -3,7 +3,6 @@ package br.ufg.inf.generator.xml.estrutura.mensagem;
 import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.AplicacaoEspecial;
 import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.Modo;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.simpleframework.xml.Element;
@@ -27,19 +26,19 @@ public class CaracteristicasPaf extends LaudoBase {
     private String tipoFuncionamento;
 
     @ElementList(name = "MeioGeracaoArquivoSintegraEfd", required = true)
-    private ArrayList<Modo> meioGeracaoArquivoStintegraEfd;
+    private List<Modo> meioGeracaoArquivoStintegraEfd;
 
     @Element(name = "IntegracaoPaf", required = true)
     private String integracaoPaf;
 
     @ElementList(name = "FormaImpressao", required = true)
-    private ArrayList<Modo> formaImpressao;
+    private List<Modo> formaImpressao;
 
     @ElementList(name = "TratamentoInterrupcao", required = true)
-    private ArrayList<Modo> tratamentoInterrupcao;
+    private List<Modo> tratamentoInterrupcao;
 
     @ElementList(name = "AplicacoesEspeciais", required = true)
-    private ArrayList<AplicacaoEspecial> aplicacoesEspeciais;
+    private List<AplicacaoEspecial> aplicacoesEspeciais;
 
     public String getLinguagemProgramacao() {
         return linguagemProgramacao;
@@ -81,11 +80,11 @@ public class CaracteristicasPaf extends LaudoBase {
         this.tipoFuncionamento = tipoFuncionamento;
     }
 
-    public ArrayList<Modo> getMeioGeracaoArquivoStintegraEfd() {
+    public List<Modo> getMeioGeracaoArquivoStintegraEfd() {
         return meioGeracaoArquivoStintegraEfd;
     }
 
-    public void setMeioGeracaoArquivoStintegraEfd(ArrayList<Modo> meioGeracaoArquivoStintegraEfd) {
+    public void setMeioGeracaoArquivoStintegraEfd(List<Modo> meioGeracaoArquivoStintegraEfd) {
         this.meioGeracaoArquivoStintegraEfd = meioGeracaoArquivoStintegraEfd;
     }
 
@@ -97,27 +96,27 @@ public class CaracteristicasPaf extends LaudoBase {
         this.integracaoPaf = integracaoPaf;
     }
 
-    public ArrayList<Modo> getFormaImpressao() {
+    public List<Modo> getFormaImpressao() {
         return formaImpressao;
     }
 
-    public void setFormaImpressao(ArrayList<Modo> formaImpressao) {
+    public void setFormaImpressao(List<Modo> formaImpressao) {
         this.formaImpressao = formaImpressao;
     }
 
-    public ArrayList<Modo> getTratamentoInterrupcao() {
+    public List<Modo> getTratamentoInterrupcao() {
         return tratamentoInterrupcao;
     }
 
-    public void setTratamentoInterrupcao(ArrayList<Modo> tratamentoInterrupcao) {
+    public void setTratamentoInterrupcao(List<Modo> tratamentoInterrupcao) {
         this.tratamentoInterrupcao = tratamentoInterrupcao;
     }
 
-    public ArrayList<AplicacaoEspecial> getAplicacoesEspeciais() {
+    public List<AplicacaoEspecial> getAplicacoesEspeciais() {
         return aplicacoesEspeciais;
     }
 
-    public void setAplicacoesEspeciais(ArrayList<AplicacaoEspecial> aplicacoesEspeciais) {
+    public void setAplicacoesEspeciais(List<AplicacaoEspecial> aplicacoesEspeciais) {
         this.aplicacoesEspeciais = aplicacoesEspeciais;
     }
 

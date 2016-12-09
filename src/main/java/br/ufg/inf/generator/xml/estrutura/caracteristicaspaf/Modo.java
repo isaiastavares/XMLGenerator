@@ -6,13 +6,13 @@ import org.simpleframework.xml.Text;
 public class Modo extends LaudoBase {
 
     @Text(required = true)
-    private String modo;
+    private String modoGeraArquivo;
 
     public String getModo() {
-        return modo;
+        return modoGeraArquivo;
     }
 
     public void setModo(String modo) {
-        this.modo = modo;
+        this.modoGeraArquivo = modo;
     }
 }

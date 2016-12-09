@@ -7,9 +7,10 @@ import br.ufg.inf.generator.xml.md5.ArquivoRelacaoExecutaveis;
 import br.ufg.inf.generator.xml.md5.ArquivoOutro;
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavelPrincipal;
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavel;
+import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -21,10 +22,10 @@ public class IdentificacaoPafTest {
     private static String VERSAO;
     private static ArquivoExecutavelPrincipal ARQUIVOEXECUTAVELPRINCIPAL;
     private static ArquivoRelacaoExecutaveis ARQUIVORELACAOEXECUTAVEIS;
-    private static ArrayList<ArquivoExecutavel> ARQUIVOSEXECUTAVEIS;
-    private static ArrayList<ArquivoOutro> ARQUIVOSOUTROS;
+    private static List<ArquivoExecutavel> ARQUIVOSEXECUTAVEIS;
+    private static List<ArquivoOutro> ARQUIVOSOUTROS;
     private static EnvelopeSeguranca ENVELOPESEGURANCA;
-    private static ArrayList<PerfilRequisito> PERFISREQUISITOS;
+    private static List<PerfilRequisito> PERFISREQUISITOS;
 
     @Before
     public void beforeMethod() {
@@ -99,7 +100,7 @@ public class IdentificacaoPafTest {
     public void testArquivosExecutaveisValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setArquivosExecutaveis(ARQUIVOSEXECUTAVEIS);
-        ArrayList<ArquivoExecutavel> result = instance.getArquivosExecutaveis();
+        List<ArquivoExecutavel> result = instance.getArquivosExecutaveis();
         assertEquals(ARQUIVOSEXECUTAVEIS, result);
     }
 
@@ -107,7 +108,7 @@ public class IdentificacaoPafTest {
     public void testArquivosOutrosValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setArquivosOutros(ARQUIVOSOUTROS);
-        ArrayList<ArquivoOutro> result = instance.getArquivosOutros();
+        List<ArquivoOutro> result = instance.getArquivosOutros();
         assertEquals(ARQUIVOSOUTROS, result);
     }
 
@@ -123,7 +124,7 @@ public class IdentificacaoPafTest {
     public void testPerfisRequisitoValido() {
         IdentificacaoPaf instance = new IdentificacaoPaf();
         instance.setPerfisRequisito(PERFISREQUISITOS);
-        ArrayList<PerfilRequisito> result = instance.getPerfisRequisito();
+        List<PerfilRequisito> result = instance.getPerfisRequisito();
         assertEquals(PERFISREQUISITOS, result);
     }
 

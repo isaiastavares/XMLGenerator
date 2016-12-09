@@ -12,7 +12,7 @@ import br.ufg.inf.generator.xml.estrutura.mensagem.Otc;
 import br.ufg.inf.generator.xml.estrutura.mensagem.Desenvolvedora;
 import br.ufg.inf.generator.xml.estrutura.comum.MarcaModelo;
 import br.ufg.inf.generator.xml.estrutura.comum.MarcasModelosCompativeis;
-import java.util.ArrayList;
+import java.util.List;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
@@ -38,16 +38,16 @@ public class Mensagem extends LaudoBase {
     private CaracteristicasPaf caracteristicasPaf;
 
     @ElementList(name = "SistemasGestao", required = true)
-    private ArrayList<Sistemas> sistemasGestao;
+    private List<Sistemas> sistemasGestao;
 
     @ElementList(name = "SistemasPed", required = true)
-    private ArrayList<Sistemas> sistemasPed;
+    private List<Sistemas> sistemasPed;
 
     @ElementList(name = "SistemasPedNfe", required = true)
-    private ArrayList<Sistemas> sistemasPedNfe;
+    private List<Sistemas> sistemasPedNfe;
 
     @ElementList(name = "EcfAnaliseFuncional", required = true)
-    private ArrayList<MarcaModelo> ecfAnaliseFuncional;
+    private List<MarcaModelo> ecfAnaliseFuncional;
 
     @Element(required = true)
     private MarcasModelosCompativeis marcasModelosCompativeis;
@@ -59,7 +59,7 @@ public class Mensagem extends LaudoBase {
     private RoteiroAnalise roteiroAnalise;
 
     @ElementList(name = "NaoConformidades", required = true)
-    private ArrayList<NaoConformidade> naoConformidades;
+    private List<NaoConformidade> naoConformidades;
 
     @Element(name = "ComentarioOtc", required = true)
     private String comentarioOtc;
@@ -124,35 +124,35 @@ public class Mensagem extends LaudoBase {
         this.caracteristicasPaf = caracteristicasPaf;
     }
 
-    public ArrayList<Sistemas> getSistemasGestao() {
+    public List<Sistemas> getSistemasGestao() {
         return sistemasGestao;
     }
 
-    public void setSistemasGestao(ArrayList<Sistemas> sistemasGestao) {
+    public void setSistemasGestao(List<Sistemas> sistemasGestao) {
         this.sistemasGestao = sistemasGestao;
     }
 
-    public ArrayList<Sistemas> getSistemasPed() {
+    public List<Sistemas> getSistemasPed() {
         return sistemasPed;
     }
 
-    public void setSistemasPed(ArrayList<Sistemas> sistemasPed) {
+    public void setSistemasPed(List<Sistemas> sistemasPed) {
         this.sistemasPed = sistemasPed;
     }
 
-    public ArrayList<Sistemas> getSistemasPedNfe() {
+    public List<Sistemas> getSistemasPedNfe() {
         return sistemasPedNfe;
     }
 
-    public void setSistemasPedNfe(ArrayList<Sistemas> sistemasPedNfe) {
+    public void setSistemasPedNfe(List<Sistemas> sistemasPedNfe) {
         this.sistemasPedNfe = sistemasPedNfe;
     }
 
-    public ArrayList<MarcaModelo> getEcfAnaliseFuncional() {
+    public List<MarcaModelo> getEcfAnaliseFuncional() {
         return ecfAnaliseFuncional;
     }
 
-    public void setEcfAnaliseFuncional(ArrayList<MarcaModelo> ecfAnaliseFuncional) {
+    public void setEcfAnaliseFuncional(List<MarcaModelo> ecfAnaliseFuncional) {
         this.ecfAnaliseFuncional = ecfAnaliseFuncional;
     }
 
@@ -180,11 +180,11 @@ public class Mensagem extends LaudoBase {
         this.roteiroAnalise = roteiroAnalise;
     }
 
-    public ArrayList<NaoConformidade> getNaoConformidades() {
+    public List<NaoConformidade> getNaoConformidades() {
         return naoConformidades;
     }
 
-    public void setNaoConformidades(ArrayList<NaoConformidade> naoConformidades) {
+    public void setNaoConformidades(List<NaoConformidade> naoConformidades) {
         this.naoConformidades = naoConformidades;
     }
 

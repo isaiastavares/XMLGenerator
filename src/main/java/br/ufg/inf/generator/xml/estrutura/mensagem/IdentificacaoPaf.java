@@ -7,7 +7,7 @@ import br.ufg.inf.generator.xml.md5.ArquivoOutro;
 import br.ufg.inf.generator.xml.md5.ArquivoRelacaoExecutaveis;
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavelPrincipal;
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavel;
-import java.util.ArrayList;
+import java.util.List;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
@@ -27,16 +27,16 @@ public class IdentificacaoPaf extends LaudoBase {
     private ArquivoRelacaoExecutaveis arquivoRelacaoExecutaveis;
 
     @ElementList(name = "ArquivosExecutaveis", required = true)
-    private ArrayList<ArquivoExecutavel> arquivosExecutaveis;
+    private List<ArquivoExecutavel> arquivosExecutaveis;
 
     @ElementList(name = "ArquivosOutros", required = true)
-    private ArrayList<ArquivoOutro> arquivosOutros;
+    private List<ArquivoOutro> arquivosOutros;
 
     @Element(name = "EnvelopeSeguranca", required = true)
     private EnvelopeSeguranca envelopeSeguranca;
 
     @ElementList(name = "PerfisRequisito", required = true)
-    private ArrayList<PerfilRequisito> perfisRequisito;
+    private List<PerfilRequisito> perfisRequisito;
 
     public String getNomeComercial() {
         return nomeComercial;
@@ -70,19 +70,19 @@ public class IdentificacaoPaf extends LaudoBase {
         this.arquivoExecutavelPrincipal = arquivoExecutavelPrincipal;
     }
 
-    public ArrayList<ArquivoExecutavel> getArquivosExecutaveis() {
+    public List<ArquivoExecutavel> getArquivosExecutaveis() {
         return arquivosExecutaveis;
     }
 
-    public void setArquivosExecutaveis(ArrayList<ArquivoExecutavel> arquivosExecutaveis) {
+    public void setArquivosExecutaveis(List<ArquivoExecutavel> arquivosExecutaveis) {
         this.arquivosExecutaveis = arquivosExecutaveis;
     }
 
-    public ArrayList<ArquivoOutro> getArquivosOutros() {
+    public List<ArquivoOutro> getArquivosOutros() {
         return arquivosOutros;
     }
 
-    public void setArquivosOutros(ArrayList<ArquivoOutro> arquivosOutros) {
+    public void setArquivosOutros(List<ArquivoOutro> arquivosOutros) {
         this.arquivosOutros = arquivosOutros;
     }
 
@@ -94,11 +94,11 @@ public class IdentificacaoPaf extends LaudoBase {
         this.envelopeSeguranca = envelopeSeguranca;
     }
 
-    public ArrayList<PerfilRequisito> getPerfisRequisito() {
+    public List<PerfilRequisito> getPerfisRequisito() {
         return perfisRequisito;
     }
 
-    public void setPerfisRequisito(ArrayList<PerfilRequisito> perfisRequisito) {
+    public void setPerfisRequisito(List<PerfilRequisito> perfisRequisito) {
         this.perfisRequisito = perfisRequisito;
     }
 
