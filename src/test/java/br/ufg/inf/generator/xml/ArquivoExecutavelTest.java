@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.md5.ArquivoExecutavel;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

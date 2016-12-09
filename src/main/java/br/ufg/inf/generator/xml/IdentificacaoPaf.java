@@ -1,5 +1,9 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.md5.ArquivoOutro;
+import br.ufg.inf.generator.xml.md5.ArquivoRelacaoExecutaveis;
+import br.ufg.inf.generator.xml.md5.ArquivoExecutavelPrincipal;
+import br.ufg.inf.generator.xml.md5.ArquivoExecutavel;
 import java.util.ArrayList;
 
 import org.simpleframework.xml.Element;

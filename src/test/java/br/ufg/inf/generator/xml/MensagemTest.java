@@ -1,5 +1,7 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.marcamodelo.MarcasModelosCompativeis;
+import br.ufg.inf.generator.xml.marcamodelo.MarcaModelo;
 import java.util.ArrayList;
 import org.junit.Assert;
 import org.junit.Test;

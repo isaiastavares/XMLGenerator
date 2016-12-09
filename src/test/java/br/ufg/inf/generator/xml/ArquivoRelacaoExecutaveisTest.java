@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.md5.ArquivoRelacaoExecutaveis;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;

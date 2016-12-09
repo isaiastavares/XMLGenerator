@@ -1,5 +1,7 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.marcamodelo.MarcaModelo;
+import br.ufg.inf.generator.xml.marcamodelo.MarcasModelosCompativeis;
 import java.util.ArrayList;
 
 import org.simpleframework.xml.Element;

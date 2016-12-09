@@ -1,5 +1,6 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.marcamodelo;
 
+import br.ufg.inf.generator.xml.LaudoBase;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
