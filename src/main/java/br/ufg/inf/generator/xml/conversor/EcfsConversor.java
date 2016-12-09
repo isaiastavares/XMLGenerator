@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.parsers;
+package br.ufg.inf.generator.xml.conversor;
 
 import java.io.File;
 
@@ -8,13 +8,13 @@ import org.simpleframework.xml.core.Persister;
 import br.ufg.inf.generator.xml.estrutura.comum.MarcasModelosCompativeis;
 import br.ufg.inf.generator.xml.transformers.LaudoRegistryMatcher;
 
-public class ECFsParser {
+public class EcfsConversor {
 
-	private static final Logger LOG = Logger.getLogger(ECFsParser.class);
+	private static final Logger LOG = Logger.getLogger(EcfsConversor.class);
 
     private final Persister persister;
 
-    public ECFsParser() {
+    public EcfsConversor() {
         this.persister = new Persister(new LaudoRegistryMatcher());
     }
 

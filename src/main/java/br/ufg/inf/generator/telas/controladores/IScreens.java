@@ -32,4 +32,6 @@ public interface IScreens {
     String VIEW_ANALISE_FUNCIONAL = "AnaliseFuncional.fxml";
     String ID_APROVACAO_LAUDO = "aprovacaoLaudo";
     String VIEW_APROVACAO_LAUDO = "AprovacaoLaudo.fxml";
+    String ID_LAUDO_FINAL = "laudoFinal";
+    String VIEW_LAUDO_FINAL = "LaudoFinal.fxml";
 }

@@ -35,6 +35,7 @@ public class XMLGeneratorMain extends Application {
         mainContainer.loadScreen(IScreens.ID_ECF_COMPATIVEL, IScreens.VIEW_ECF_COMPATIVEL);
         mainContainer.loadScreen(IScreens.ID_ANALISE_FUNCIONAL, IScreens.VIEW_ANALISE_FUNCIONAL);
         mainContainer.loadScreen(IScreens.ID_APROVACAO_LAUDO, IScreens.VIEW_APROVACAO_LAUDO);
+        mainContainer.loadScreen(IScreens.ID_LAUDO_FINAL, IScreens.VIEW_LAUDO_FINAL);
 
         mainContainer.setScreen(IScreens.ID_LAUDO_INICIAL);
 
