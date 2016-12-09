@@ -2,14 +2,14 @@ package br.ufg.inf.generator.telas.controladores;
 
 import javafx.fxml.FXML;
 
-public class WizardAprovacaoLaudoEcfCtrl extends AbstractWizardCtrl implements ControlledScreen {
+public class WizardLaudoFinalEcfCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     private ScreensController myController;
 
     @FXML
     public void initialize() {
-        getNextButton().setOnAction(event -> next());
-        getBackButton().setOnAction(event -> back());
+        getNextButton().setVisible(false);
+        getBackButton().setVisible(false);
         initializeFinishButton();
     }
 
@@ -20,12 +20,12 @@ public class WizardAprovacaoLaudoEcfCtrl extends AbstractWizardCtrl implements C
 
     @Override
     protected void back() {
-        myController.setScreen(IScreens.ID_ANALISE_FUNCIONAL);
+        // Do Nothing
     }
 
     @Override
     protected void nextScreen() {
-        myController.setScreen(IScreens.ID_LAUDO_FINAL);
+        // Do Nothing
     }
 
     @Override
