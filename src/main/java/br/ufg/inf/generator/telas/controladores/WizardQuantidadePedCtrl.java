@@ -9,7 +9,9 @@ public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements Contr
     private ScreensController myController;
 
     @FXML
-    private TextField txtQuantPed, txtQuantPedNfe;
+    private TextField txtQuantPed;
+    @FXML
+    private TextField txtQuantPedNfe;
 
     private static int quantPed, quantPedNfe;
 
@@ -56,13 +58,11 @@ public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements Contr
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao
         return true;
     }
 
     @Override
     protected void salvar() {
-        // TODO falta implementar a parte de salvar
     }
 
     public static int getQuantPed() {

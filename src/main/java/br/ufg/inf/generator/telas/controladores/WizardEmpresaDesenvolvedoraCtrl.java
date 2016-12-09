@@ -1,20 +1,44 @@
 package br.ufg.inf.generator.telas.controladores;
 
 import br.ufg.inf.generator.validadores.valores.ValidationFields;
+import br.ufg.inf.generator.xml.estrutura.comum.Endereco;
 import br.ufg.inf.generator.xml.estrutura.desenvolvedora.Contato;
 import br.ufg.inf.generator.xml.estrutura.mensagem.Desenvolvedora;
-import br.ufg.inf.generator.xml.estrutura.comum.Endereco;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
 public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     @FXML
-    private TextField txtRazaoSocial, txtCnpj, txtInscEstad;
+    private TextField txtRazaoSocial;
     @FXML
-    private TextField txtRua, txtNumero, txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep;
+    private TextField txtCnpj;
     @FXML
-    private TextField txtNome, txtCpf, txtEmail, txtTelefone, txtResponsavel;
+    private TextField txtInscEstad;
+    @FXML
+    private TextField txtRua;
+    @FXML
+    private TextField txtNumero;
+    @FXML
+    private TextField txtComplemento;
+    @FXML
+    private TextField txtBairro;
+    @FXML
+    private TextField txtMunicipio;
+    @FXML
+    private TextField txtUf;
+    @FXML
+    private TextField txtCep;
+    @FXML
+    private TextField txtNome;
+    @FXML
+    private TextField txtCpf;
+    @FXML
+    private TextField txtEmail;
+    @FXML
+    private TextField txtTelefone;
+    @FXML
+    private TextField txtResponsavel;
 
     private ScreensController myController;
 

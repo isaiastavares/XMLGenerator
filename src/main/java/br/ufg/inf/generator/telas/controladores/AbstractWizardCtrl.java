@@ -11,10 +11,8 @@ public abstract class AbstractWizardCtrl {
 
     @FXML
     private Button backButton;
-
     @FXML
     private Button nextButton;
-
     @FXML
     private Button finishButton;
 

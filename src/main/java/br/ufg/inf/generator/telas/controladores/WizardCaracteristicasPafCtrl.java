@@ -19,17 +19,37 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
     private static String integracaoPafValue;
 
     @FXML
-    private ChoiceBox<String> choiceTipoDesenvolvimento, choiceIntegracaoPaf, choiceTipoFuncionamento;
-
+    private ChoiceBox<String> choiceTipoDesenvolvimento;
     @FXML
-    private CheckBox checkFormaConcomitante, checkFormaNaoConcomitanteComDav, checkFormaNaoConcomitanteComPreVenda,
-            checkFormaNaoConcomitanteComContaCliente, checkFormaDavSemImpressao, checkFormaDavImpressoraNaoFiscal, checkFormaDavImpressoEcf;
-
+    private ChoiceBox<String> choiceIntegracaoPaf;
     @FXML
-    private CheckBox checkTratamentoRecuperacao, checkTratamentoCancelamento, checkTratamentoBloqueio;
-
+    private ChoiceBox<String> choiceTipoFuncionamento;
     @FXML
-    private CheckBox checkMeioGeracaoPaf, checkMeioGeracaoRetaguarda, checkMeioGeracaoPed;
+    private CheckBox checkFormaConcomitante;
+    @FXML
+    private CheckBox checkFormaNaoConcomitanteComDav;
+    @FXML
+    private CheckBox checkFormaNaoConcomitanteComPreVenda;
+    @FXML
+    private CheckBox checkFormaNaoConcomitanteComContaCliente;
+    @FXML
+    private CheckBox checkFormaDavSemImpressao;
+    @FXML
+    private CheckBox checkFormaDavImpressoraNaoFiscal;
+    @FXML
+    private CheckBox checkFormaDavImpressoEcf;
+    @FXML
+    private CheckBox checkTratamentoRecuperacao;
+    @FXML
+    private CheckBox checkTratamentoCancelamento;
+    @FXML
+    private CheckBox checkTratamentoBloqueio;
+    @FXML
+    private CheckBox checkMeioGeracaoPaf;
+    @FXML
+    private CheckBox checkMeioGeracaoRetaguarda;
+    @FXML
+    private CheckBox checkMeioGeracaoPed;
 
     @FXML
     public void initialize() {
@@ -112,7 +132,6 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
 
     @Override
     protected void salvar() {
-        // TODO falta implementar a parte de salvar
     }
 
     public synchronized static String getIntegracaoPafValue() {

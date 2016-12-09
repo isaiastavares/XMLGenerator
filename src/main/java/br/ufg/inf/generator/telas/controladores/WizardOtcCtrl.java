@@ -11,13 +11,31 @@ import javafx.scene.control.TextField;
 public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     @FXML
-    private TextField txtRazaoSocial, txtCnpj, txtInscEstad;
+    private TextField txtRazaoSocial;
     @FXML
-    private TextField txtRua, txtNumero, txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep;
+    private TextField txtCnpj;
+    @FXML
+    private TextField txtInscEstad;
+    @FXML
+    private TextField txtRua;
+    @FXML
+    private TextField txtNumero;
+    @FXML
+    private TextField txtComplemento;
+    @FXML
+    private TextField txtBairro;
+    @FXML
+    private TextField txtMunicipio;
+    @FXML
+    private TextField txtUf;
+    @FXML
+    private TextField txtCep;
     @FXML
     private TextField txtVersAtoCotepe;
     @FXML
-    private DatePicker dateInicio, dateFim;
+    private DatePicker dateInicio;
+    @FXML
+    private DatePicker dateFim;
 
     private ScreensController myController;
 

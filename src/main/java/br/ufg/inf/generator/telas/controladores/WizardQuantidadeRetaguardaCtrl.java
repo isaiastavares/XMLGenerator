@@ -31,7 +31,6 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
 
     @Override
     protected void nextScreen() {
-//        quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.toString());
         quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.getText());
         decQuantRetaguarda();
         myController.setScreen(IScreens.ID_INFORMACOES_RETAGUARDA);
@@ -39,13 +38,11 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao, inclusive de > 0
         return true;
     }
 
     @Override
     protected void salvar() {
-        // TODO falta implementar a parte de salvar
     }
 
     public static int getQuantRetaguarda() {

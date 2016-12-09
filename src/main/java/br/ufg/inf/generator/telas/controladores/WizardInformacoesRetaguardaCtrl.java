@@ -42,12 +42,10 @@ public class WizardInformacoesRetaguardaCtrl extends AbstractWizardCtrl implemen
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao
         return true;
     }
 
     @Override
     protected void salvar() {
-        // TODO falta implementar a parte de salvar
     }
 }

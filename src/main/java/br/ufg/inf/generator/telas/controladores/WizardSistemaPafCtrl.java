@@ -30,12 +30,10 @@ public class WizardSistemaPafCtrl extends AbstractWizardCtrl implements Controll
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao
         return true;
     }
 
     @Override
     protected void salvar() {
-        // TODO falta implementar a parte de salvar
     }
 }

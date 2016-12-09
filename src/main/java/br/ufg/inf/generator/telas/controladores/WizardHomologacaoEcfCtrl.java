@@ -36,16 +36,14 @@ public class WizardHomologacaoEcfCtrl extends AbstractWizardCtrl implements Cont
 
     @Override
     protected void nextScreen() {
-//        myController.setScreen(IScreens.ID_OTC);
     }
 
     @Override
     protected boolean isValido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return true;
     }
 
     @Override
     protected void salvar() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
