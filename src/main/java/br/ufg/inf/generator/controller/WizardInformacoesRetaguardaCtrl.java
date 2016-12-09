@@ -27,8 +27,8 @@ public class WizardInformacoesRetaguardaCtrl extends AbstractWizardCtrl implemen
     protected void nextScreen() {
 
         switch (WizardCaracteristicasPafCtrl.getIntegracaoPafValue()) {
-            case "Pelo sistema PED ou EFD":
-                myController.setScreen(IScreens.ID_INFORMACOES_PED);
+            case "Pela Retaguarda e PED ou EFD":
+                myController.setScreen(IScreens.ID_QUANTIDADE_PED);
                 break;
             default:
                 myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
