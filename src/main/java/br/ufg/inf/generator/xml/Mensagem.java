@@ -1,7 +1,17 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generator.xml.marcamodelo.MarcaModelo;
-import br.ufg.inf.generator.xml.marcamodelo.MarcasModelosCompativeis;
+import br.ufg.inf.generator.xml.estrutura.mensagem.AprovacaoRelatorio;
+import br.ufg.inf.generator.xml.estrutura.mensagem.ExecucaoTestes;
+import br.ufg.inf.generator.xml.estrutura.mensagem.NaoConformidade;
+import br.ufg.inf.generator.xml.estrutura.mensagem.Emissao;
+import br.ufg.inf.generator.xml.estrutura.mensagem.RoteiroAnalise;
+import br.ufg.inf.generator.xml.estrutura.comum.Sistemas;
+import br.ufg.inf.generator.xml.estrutura.mensagem.CaracteristicasPaf;
+import br.ufg.inf.generator.xml.estrutura.mensagem.IdentificacaoPaf;
+import br.ufg.inf.generator.xml.estrutura.mensagem.Otc;
+import br.ufg.inf.generator.xml.estrutura.mensagem.Desenvolvedora;
+import br.ufg.inf.generator.xml.estrutura.comum.MarcaModelo;
+import br.ufg.inf.generator.xml.estrutura.comum.MarcasModelosCompativeis;
 import java.util.ArrayList;
 
 import org.simpleframework.xml.Element;

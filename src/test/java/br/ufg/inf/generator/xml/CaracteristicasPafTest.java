@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.estrutura.mensagem.CaracteristicasPaf;
 import java.util.ArrayList;
 import java.util.List;
 import static org.junit.Assert.assertEquals;

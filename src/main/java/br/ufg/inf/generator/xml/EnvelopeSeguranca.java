@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generator.xml.marcamodelo.MarcaModelo;
+import br.ufg.inf.generator.xml.estrutura.comum.MarcaModelo;
 import org.simpleframework.xml.Element;
 
 public class EnvelopeSeguranca extends MarcaModelo {
