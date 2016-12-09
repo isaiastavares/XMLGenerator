@@ -1,6 +1,5 @@
 package br.ufg.inf.generator.xml.estrutura;
 
-import br.ufg.inf.generator.xml.estrutura.Mensagem;
 import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorAprovacaoRelatorio;
 import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorExecucaoTestes;
 import br.ufg.inf.generator.xml.estrutura.mensagem.NaoConformidade;
@@ -39,6 +38,7 @@ public class MensagemTest {
     private static final TestadorExecucaoTestes EXECUCAO_TESTES = new TestadorExecucaoTestes();
     private static final TestadorAprovacaoRelatorio APROVACAO_RELATORIO = new TestadorAprovacaoRelatorio();
 
+    
     @Test
     public void testNumeroValido() {
         final Mensagem msg = new Mensagem();
