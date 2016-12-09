@@ -1,7 +1,7 @@
 package br.ufg.inf.generator.xml.estrutura;
 
-import br.ufg.inf.generator.xml.estrutura.mensagem.AprovacaoRelatorio;
-import br.ufg.inf.generator.xml.estrutura.mensagem.ExecucaoTestes;
+import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorAprovacaoRelatorio;
+import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorExecucaoTestes;
 import br.ufg.inf.generator.xml.estrutura.mensagem.NaoConformidade;
 import br.ufg.inf.generator.xml.estrutura.mensagem.Emissao;
 import br.ufg.inf.generator.xml.estrutura.mensagem.RoteiroAnalise;
@@ -71,10 +71,10 @@ public class Mensagem extends LaudoBase {
     private Emissao emissao;
 
     @Element(name = "ExecucaoTestes", required = true)
-    private ExecucaoTestes execucaoTestes;
+    private TestadorExecucaoTestes execucaoTestes;
 
     @Element(name = "AprovacaoRelatorio", required = true)
-    private AprovacaoRelatorio aprovacaoRelatorio;
+    private TestadorAprovacaoRelatorio aprovacaoRelatorio;
 
     public String getNumero() {
         return numero;
@@ -212,19 +212,19 @@ public class Mensagem extends LaudoBase {
         this.emissao = emissao;
     }
 
-    public ExecucaoTestes getExecucaoTestes() {
+    public TestadorExecucaoTestes getExecucaoTestes() {
         return execucaoTestes;
     }
 
-    public void setExecucaoTestes(ExecucaoTestes execucaoTestes) {
+    public void setExecucaoTestes(TestadorExecucaoTestes execucaoTestes) {
         this.execucaoTestes = execucaoTestes;
     }
 
-    public AprovacaoRelatorio getAprovacaoRelatorio() {
+    public TestadorAprovacaoRelatorio getAprovacaoRelatorio() {
         return aprovacaoRelatorio;
     }
 
-    public void setAprovacaoRelatorio(AprovacaoRelatorio aprovacaoRelatorio) {
+    public void setAprovacaoRelatorio(TestadorAprovacaoRelatorio aprovacaoRelatorio) {
         this.aprovacaoRelatorio = aprovacaoRelatorio;
     }
 }

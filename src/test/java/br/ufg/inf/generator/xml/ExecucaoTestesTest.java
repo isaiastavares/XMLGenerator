@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generator.xml.estrutura.mensagem.ExecucaoTestes;
+import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorExecucaoTestes;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -13,7 +13,7 @@ public class ExecucaoTestesTest {
 
     @Test
     public void testNomeValido() {
-        final ExecucaoTestes exTestes = new ExecucaoTestes();
+        final TestadorExecucaoTestes exTestes = new TestadorExecucaoTestes();
         exTestes.setNome(NOME);
         String resultado = exTestes.getNome();
         assertEquals(NOME, resultado);
@@ -21,7 +21,7 @@ public class ExecucaoTestesTest {
 
     @Test
     public void testCargoValido() {
-        final ExecucaoTestes exTestes = new ExecucaoTestes();
+        final TestadorExecucaoTestes exTestes = new TestadorExecucaoTestes();
         exTestes.setCargo(CARGO);
         String resultado = exTestes.getCargo();
         assertEquals(CARGO, resultado);
@@ -29,7 +29,7 @@ public class ExecucaoTestesTest {
 
     @Test
     public void testCpfValido() {
-        final ExecucaoTestes exTestes = new ExecucaoTestes();
+        final TestadorExecucaoTestes exTestes = new TestadorExecucaoTestes();
         exTestes.setCpf(CPF);
         String resultado = exTestes.getCpf();
         assertEquals(CPF, resultado);
@@ -37,7 +37,7 @@ public class ExecucaoTestesTest {
 
     @Test(expected = IllegalStateException.class)
     public void testNomeInvalido() {
-        final ExecucaoTestes exTestes = new ExecucaoTestes();
+        final TestadorExecucaoTestes exTestes = new TestadorExecucaoTestes();
         exTestes.setCargo(CARGO);
         exTestes.setCpf(CPF);
         exTestes.toString();
@@ -45,7 +45,7 @@ public class ExecucaoTestesTest {
 
     @Test(expected = IllegalStateException.class)
     public void testCargoInvalido() {
-        final ExecucaoTestes exTestes = new ExecucaoTestes();
+        final TestadorExecucaoTestes exTestes = new TestadorExecucaoTestes();
         exTestes.setNome(NOME);
         exTestes.setCpf(CPF);
         exTestes.toString();
@@ -53,7 +53,7 @@ public class ExecucaoTestesTest {
 
     @Test(expected = IllegalStateException.class)
     public void testCpfInvalido() {
-        final ExecucaoTestes exTestes = new ExecucaoTestes();
+        final TestadorExecucaoTestes exTestes = new TestadorExecucaoTestes();
         exTestes.setNome(NOME);
         exTestes.setCargo(CARGO);
         exTestes.toString();

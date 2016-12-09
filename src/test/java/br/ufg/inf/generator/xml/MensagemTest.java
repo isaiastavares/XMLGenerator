@@ -1,8 +1,8 @@
 package br.ufg.inf.generator.xml;
 
 import br.ufg.inf.generator.xml.estrutura.Mensagem;
-import br.ufg.inf.generator.xml.estrutura.mensagem.AprovacaoRelatorio;
-import br.ufg.inf.generator.xml.estrutura.mensagem.ExecucaoTestes;
+import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorAprovacaoRelatorio;
+import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorExecucaoTestes;
 import br.ufg.inf.generator.xml.estrutura.mensagem.NaoConformidade;
 import br.ufg.inf.generator.xml.estrutura.mensagem.Emissao;
 import br.ufg.inf.generator.xml.estrutura.mensagem.RoteiroAnalise;
@@ -36,8 +36,8 @@ public class MensagemTest {
     private static final String COMENTARIO_OTC = "teste";
     private static final String DECLARACAO = "teste";
     private static final Emissao EMISSAO = new Emissao();
-    private static final ExecucaoTestes EXECUCAO_TESTES = new ExecucaoTestes();
-    private static final AprovacaoRelatorio APROVACAO_RELATORIO = new AprovacaoRelatorio();
+    private static final TestadorExecucaoTestes EXECUCAO_TESTES = new TestadorExecucaoTestes();
+    private static final TestadorAprovacaoRelatorio APROVACAO_RELATORIO = new TestadorAprovacaoRelatorio();
 
     @Test
     public void testNumeroValido() {
