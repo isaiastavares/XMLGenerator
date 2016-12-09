@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.desenvolvedora;
 
 import br.ufg.inf.generator.xml.estrutura.desenvolvedora.Contato;
 import static org.junit.Assert.assertEquals;

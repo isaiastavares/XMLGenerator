@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.mensagem;
 
 import br.ufg.inf.generator.xml.estrutura.identificacaopaf.PerfilRequisito;
 import br.ufg.inf.generator.xml.estrutura.identificacaopaf.EnvelopeSeguranca;
