@@ -30,7 +30,6 @@ public class WizardAnaliseFuncionalEcfCtrl extends AbstractWizardCtrl implements
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao
         return true;
     }
 
