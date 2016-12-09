@@ -10,7 +10,14 @@ public class AvaliadorTest {
     private static final String CPF = "12345667";
     
     @Test
-    public void testNomeValido() {
+    public void testGetNome() {
+        final Avaliador av = new Avaliador();
+        av.setNome(NOME);
+        assertEquals(NOME, av.getNome());
+    }
+    
+    @Test
+    public void testSetNome() {
         final Avaliador av = new Avaliador();
         av.setNome(NOME);
         assertEquals(NOME, av.getNome());
