@@ -1,24 +1,33 @@
-package br.ufg.inf.generator.xml.estrutura.md5;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.ufg.inf.generator.xml.md5;
 
-import br.ufg.inf.generator.xml.md5.ArquivoRelacaoExecutaveis;
+import br.ufg.inf.generator.xml.md5.ArquivoExecutavelPrincipal;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
 
-public class ArquivoRelacaoExecutaveisTest {
+/**
+ *
+ * @author Kalyn
+ */
+public class ArquivoExecutavelPrincipalTest {
 
     private static String NOME;
     private static String MD5;
 
     @Before
     public void beforeMethod() {
-        NOME = "Nome.dll";
-        MD5 = "01207371072bb6436b29110542a41927";
+        NOME = "Venda.exe";
+        MD5 = "a1207371072bb6436b29110542a419d5";
     }
 
     @Test
     public void testNomeValido() {
-        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
         instance.setNome(NOME);
         String result = instance.getNome();
         assertEquals(NOME, result);
@@ -26,7 +35,7 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test
     public void testMd5Valido() {
-        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
         instance.setMd5(MD5);
         String result = instance.getMd5();
         assertEquals(MD5, result);
@@ -34,7 +43,7 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test(expected = IllegalStateException.class)
     public void testNomeNulo() {
-        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
         instance.setNome(null);
         instance.setMd5(MD5);
         instance.toString();
@@ -42,9 +51,10 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test(expected = IllegalStateException.class)
     public void testMd5Nulo() {
-        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        ArquivoExecutavelPrincipal instance = new ArquivoExecutavelPrincipal();
         instance.setNome(NOME);
         instance.setMd5(null);
         instance.toString();
     }
+
 }
