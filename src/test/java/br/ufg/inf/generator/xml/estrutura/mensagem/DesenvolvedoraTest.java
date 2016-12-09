@@ -1,9 +1,11 @@
 package br.ufg.inf.generator.xml.estrutura.mensagem;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 import br.ufg.inf.generator.xml.estrutura.comum.Endereco;
 import br.ufg.inf.generator.xml.estrutura.desenvolvedora.Contato;
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
 
 public class DesenvolvedoraTest {
 
@@ -40,6 +42,22 @@ public class DesenvolvedoraTest {
         final Desenvolvedora des = new Desenvolvedora();
         des.setRespAcompTestes(RESP_ACOMP_TESTE);
         assertEquals(RESP_ACOMP_TESTE, des.getRespAcompTestes());
+    }
+
+    @Test
+    public void testEnderecoValido() {
+    	final Desenvolvedora des = new Desenvolvedora();
+    	Endereco endereco = new Endereco();
+        des.setEndereco(endereco);
+        assertEquals(endereco, des.getEndereco());
+    }
+
+    @Test
+    public void testContatoValido() {
+    	final Desenvolvedora des = new Desenvolvedora();
+    	Contato contato = new Contato();
+        des.setContato(contato);
+        assertEquals(contato, des.getContato());
     }
 
     @Test(expected = IllegalStateException.class)
