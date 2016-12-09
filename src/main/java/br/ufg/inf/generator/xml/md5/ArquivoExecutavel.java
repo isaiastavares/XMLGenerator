@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml.md5;
 
-import br.ufg.inf.generator.xml.RequisitoExecutado;
+import br.ufg.inf.generator.xml.estrutura.RequisitoExecutado;
 import java.util.ArrayList;
 
 import org.simpleframework.xml.Element;

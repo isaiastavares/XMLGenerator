@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.telas.controladores;
 
-import br.ufg.inf.generator.xml.Mensagem;
+import br.ufg.inf.generator.xml.estrutura.Mensagem;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
