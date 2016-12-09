@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.estrutura.mensagem;
+package br.ufg.inf.generator.xml;
 
 import br.ufg.inf.generator.xml.estrutura.mensagem.Emissao;
 import static org.junit.Assert.assertEquals;

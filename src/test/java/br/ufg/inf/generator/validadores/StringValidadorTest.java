@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.validadores.valores;
+package br.ufg.inf.generator.validadores;
 
 import br.ufg.inf.generator.validadores.valores.StringValidador;
 import org.junit.Assert;

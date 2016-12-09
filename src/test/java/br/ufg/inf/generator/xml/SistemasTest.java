@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.estrutura.comum;
+package br.ufg.inf.generator.xml;
 
 import br.ufg.inf.generator.xml.estrutura.sistemasgestao.EmpresaDesenvolvedora;
 import br.ufg.inf.generator.xml.estrutura.comum.Sistemas;

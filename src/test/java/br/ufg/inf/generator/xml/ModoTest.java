@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.estrutura.caracteristicaspaf;
+package br.ufg.inf.generator.xml;
 
 import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.Modo;
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.estrutura.otc;
+package br.ufg.inf.generator.xml;
 
 import br.ufg.inf.generator.xml.estrutura.otc.PeriodoAnalise;
 import static org.junit.Assert.assertEquals;

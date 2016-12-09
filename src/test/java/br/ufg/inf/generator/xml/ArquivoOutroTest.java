@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.md5;
+package br.ufg.inf.generator.xml;
 
 import br.ufg.inf.generator.xml.md5.ArquivoOutro;
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.estrutura.comum;
+package br.ufg.inf.generator.xml;
 
 import br.ufg.inf.generator.xml.estrutura.comum.MarcaModelo;
 import static org.junit.Assert.assertEquals;
