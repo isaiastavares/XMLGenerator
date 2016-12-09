@@ -24,5 +24,7 @@ public interface IScreens {
     String VIEW_QUANTIDADE_PED = "QuantidadePED.fxml";
     String ID_INFORMACOES_PED = "informacoesPed";
     String VIEW_INFORMACOES_PED = "InformacoesPED.fxml";
+    String ID_INFORMACOES_PED_NFE = "informacoesPedNfe";
+    String VIEW_INFORMACOES_PED_NFE = "InformacoesPEDNfe.fxml";
 
 }
