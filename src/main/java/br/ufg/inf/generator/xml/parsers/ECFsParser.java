@@ -15,7 +15,7 @@ public class ECFsParser {
         this.persister = new Persister(new LaudoRegistryMatcher());
     }
 
-    public MarcasModelosCompativeis notaParaObjeto(final File xml) {
+    public MarcasModelosCompativeis ecfsParaObjeto(final File xml) {
         try {
             return this.persister.read(MarcasModelosCompativeis.class, xml);
         } catch (final Exception e) {
@@ -23,7 +23,7 @@ public class ECFsParser {
         }
     }
 
-    public MarcasModelosCompativeis notaParaObjeto(final String xml) {
+    public MarcasModelosCompativeis ecfsParaObjeto(final String xml) {
         try {
             return this.persister.read(MarcasModelosCompativeis.class, xml);
         } catch (final Exception e) {

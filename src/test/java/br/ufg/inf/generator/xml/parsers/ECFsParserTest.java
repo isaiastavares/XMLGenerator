@@ -27,7 +27,7 @@ public class ECFsParserTest {
 	@Test
     public void testParserEcfsStringEmObjeto() throws Exception {
 		String conteudoECFs = FileUtils.readFileToString(fileECF, UTF8);
-		MarcasModelosCompativeis ecfs = new ECFsParser().notaParaObjeto(conteudoECFs);
+		MarcasModelosCompativeis ecfs = new ECFsParser().ecfsParaObjeto(conteudoECFs);
 		assertEquals("BEMATECH", ecfs.getMarcasModelos().get(0).getMarca());
 		assertEquals("ECF-IF MP 2000 TH FI", ecfs.getMarcasModelos().get(0).getModelo());
 		assertEquals("BEMATECH", ecfs.getMarcasModelos().get(1).getMarca());
@@ -36,7 +36,7 @@ public class ECFsParserTest {
 
 	@Test
     public void testParserEcfsFileEmObjeto() throws Exception {
-		MarcasModelosCompativeis ecfs = new ECFsParser().notaParaObjeto(fileECF);
+		MarcasModelosCompativeis ecfs = new ECFsParser().ecfsParaObjeto(fileECF);
 		assertEquals("BEMATECH", ecfs.getMarcasModelos().get(0).getMarca());
 		assertEquals("ECF-IF MP 2000 TH FI", ecfs.getMarcasModelos().get(0).getModelo());
 		assertEquals("BEMATECH", ecfs.getMarcasModelos().get(1).getMarca());
