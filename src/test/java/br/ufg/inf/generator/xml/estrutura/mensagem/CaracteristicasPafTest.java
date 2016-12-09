@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.mensagem;
 import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.AplicacaoEspecial;
 import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.Modo;
 import br.ufg.inf.generator.xml.estrutura.mensagem.CaracteristicasPaf;
