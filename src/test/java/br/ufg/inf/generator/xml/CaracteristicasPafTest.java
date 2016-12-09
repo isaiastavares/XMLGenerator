@@ -1,12 +1,14 @@
 package br.ufg.inf.generator.xml;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.ArrayList;
 import java.util.List;
-import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class CaracteristicasPafTest {
-    
+
     CaracteristicasPaf carac = new CaracteristicasPaf();
 
     /**
@@ -54,7 +56,7 @@ public class CaracteristicasPafTest {
      */
     @Test
     public void testGetGerenciadorBancoDados() {
-        List<String> gerenciadorBancoDados = new ArrayList();
+        List<String> gerenciadorBancoDados = new ArrayList<>();
         gerenciadorBancoDados.add("teste1");
         gerenciadorBancoDados.add("teste2");
         gerenciadorBancoDados.add("teste3");
@@ -67,7 +69,7 @@ public class CaracteristicasPafTest {
      */
     @Test
     public void testSetGerenciadorBancoDados() {
-        List<String> gerenciadorBancoDados = new ArrayList();
+        List<String> gerenciadorBancoDados = new ArrayList<>();
         gerenciadorBancoDados.add("teste3");
         gerenciadorBancoDados.add("teste2");
         gerenciadorBancoDados.add("teste1");
@@ -121,7 +123,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testGetMeioGeracaoArquivoStintegraEfd() {
         Modo modo = new Modo();
-        ArrayList<Modo> listModo = new ArrayList();
+        ArrayList<Modo> listModo = new ArrayList<>();
         listModo.add(modo);
         carac.setMeioGeracaoArquivoStintegraEfd(listModo);
         assertEquals(listModo, carac.getMeioGeracaoArquivoStintegraEfd());
@@ -133,7 +135,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testSetMeioGeracaoArquivoStintegraEfd() {
         Modo modo = new Modo();
-        ArrayList<Modo> listModo = new ArrayList();
+        ArrayList<Modo> listModo = new ArrayList<>();
         listModo.add(modo);
         carac.setMeioGeracaoArquivoStintegraEfd(listModo);
         assertEquals(listModo, carac.getMeioGeracaoArquivoStintegraEfd());
@@ -165,7 +167,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testGetFormaImpressao() {
         Modo modo = new Modo();
-        ArrayList<Modo> formaImpressão = new ArrayList();
+        ArrayList<Modo> formaImpressão = new ArrayList<>();
         formaImpressão.add(modo);
         carac.setFormaImpressao(formaImpressão);
         assertEquals(formaImpressão, carac.getFormaImpressao());
@@ -177,7 +179,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testSetFormaImpressao() {
         Modo modo = new Modo();
-        ArrayList<Modo> formaImpressão = new ArrayList();
+        ArrayList<Modo> formaImpressão = new ArrayList<>();
         formaImpressão.add(modo);
         carac.setFormaImpressao(formaImpressão);
         assertEquals(formaImpressão, carac.getFormaImpressao());
@@ -189,7 +191,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testGetTratamentoInterrupcao() {
         Modo modo = new Modo();
-        ArrayList<Modo> tratamentoInterrupcao = new ArrayList();
+        ArrayList<Modo> tratamentoInterrupcao = new ArrayList<>();
         tratamentoInterrupcao.add(modo);
         carac.setTratamentoInterrupcao(tratamentoInterrupcao);
         assertEquals(tratamentoInterrupcao, carac.getTratamentoInterrupcao());
@@ -201,7 +203,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testSetTratamentoInterrupcao() {
         Modo modo = new Modo();
-        ArrayList<Modo> tratamentoInterrupcao = new ArrayList();
+        ArrayList<Modo> tratamentoInterrupcao = new ArrayList<>();
         tratamentoInterrupcao.add(modo);
         carac.setTratamentoInterrupcao(tratamentoInterrupcao);
         assertEquals(tratamentoInterrupcao, carac.getTratamentoInterrupcao());
@@ -213,7 +215,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testGetAplicacoesEspeciais() {
         AplicacaoEspecial aplicacaoEspecial = new AplicacaoEspecial();
-        ArrayList<AplicacaoEspecial> aplicacoesEspeciais = new ArrayList();
+        ArrayList<AplicacaoEspecial> aplicacoesEspeciais = new ArrayList<>();
         aplicacoesEspeciais.add(aplicacaoEspecial);
         carac.setAplicacoesEspeciais(aplicacoesEspeciais);
         assertEquals(aplicacoesEspeciais, carac.getAplicacoesEspeciais());
@@ -225,7 +227,7 @@ public class CaracteristicasPafTest {
     @Test
     public void testSetAplicacoesEspeciais() {
         AplicacaoEspecial aplicacaoEspecial = new AplicacaoEspecial();
-        ArrayList<AplicacaoEspecial> aplicacoesEspeciais = new ArrayList();
+        ArrayList<AplicacaoEspecial> aplicacoesEspeciais = new ArrayList<>();
         aplicacoesEspeciais.add(aplicacaoEspecial);
         carac.setAplicacoesEspeciais(aplicacoesEspeciais);
         assertEquals(aplicacoesEspeciais, carac.getAplicacoesEspeciais());
