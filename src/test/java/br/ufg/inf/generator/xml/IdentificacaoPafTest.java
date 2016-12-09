@@ -12,10 +12,7 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- *
- * @author Kalyn
- */
+
 public class IdentificacaoPafTest {
 
     private static String NOMECOMERCIAL;

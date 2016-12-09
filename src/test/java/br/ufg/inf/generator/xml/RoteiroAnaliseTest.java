@@ -5,10 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
 
-/**
- *
- * @author Kalyn
- */
 public class RoteiroAnaliseTest {
 
     private static String VERSAOROTEIRO;

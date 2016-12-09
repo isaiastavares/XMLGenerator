@@ -6,13 +6,13 @@ import org.junit.Test;
 
 public class ModoTest {
 
-    private static final String MODO = "Recuperação de dados";
+    private static final String MODO_RECUPERACAO = "Recuperação de dados";
 
     @Test
     public void testModoValido() {
         Modo instance = new Modo();
-        instance.setModo(MODO);
-        assertEquals(instance.getModo(), MODO);
+        instance.setModo(MODO_RECUPERACAO);
+        assertEquals(instance.getModo(), MODO_RECUPERACAO);
     }
 
     @Test(expected = IllegalStateException.class)

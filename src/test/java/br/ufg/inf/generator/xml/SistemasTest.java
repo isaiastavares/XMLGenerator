@@ -11,49 +11,49 @@ import org.junit.Test;
 public class SistemasTest {
 
     private static final String NOME = "dfkjdsfjkds";
-    private static final EmpresaDesenvolvedora empresa = new EmpresaDesenvolvedora();
-    private static final ArrayList<ArquivoExecutavel> arquivosExe = new ArrayList<ArquivoExecutavel>();
-    private final Sistemas sistemas = new Sistemas();
+    private static final EmpresaDesenvolvedora EMPRESA = new EmpresaDesenvolvedora();
+    private static final ArrayList<ArquivoExecutavel> ARQUIVO_EXE = new ArrayList<ArquivoExecutavel>();
+    private final Sistemas SISTEMAS = new Sistemas();
 
     @Test(expected = IllegalStateException.class)
     public void testNomeNulo() {
-        sistemas.setNome(null);
-        sistemas.setEmpresaDesenvolvedora(empresa);
-        sistemas.setArquivosExecutaveis(arquivosExe);
-        sistemas.toString();
+        SISTEMAS.setNome(null);
+        SISTEMAS.setEmpresaDesenvolvedora(EMPRESA);
+        SISTEMAS.setArquivosExecutaveis(ARQUIVO_EXE);
+        SISTEMAS.toString();
     }
 
     @Test(expected = IllegalStateException.class)
     public void testEmpresaDesenvolvedoraNulo() {
-        sistemas.setNome("nomeEmpresaDesenvolvedora");
-        sistemas.setEmpresaDesenvolvedora(null);
-        sistemas.setArquivosExecutaveis(arquivosExe);
-        sistemas.toString();
+        SISTEMAS.setNome("nomeEmpresaDesenvolvedora");
+        SISTEMAS.setEmpresaDesenvolvedora(null);
+        SISTEMAS.setArquivosExecutaveis(ARQUIVO_EXE);
+        SISTEMAS.toString();
     }
 
     @Test(expected = IllegalStateException.class)
     public void testArquivosExecutaveisNulo() {
-        sistemas.setNome("nomeEmpresaDesenvolvedora");
-        sistemas.setEmpresaDesenvolvedora(empresa);
-        sistemas.setArquivosExecutaveis(null);
-        sistemas.toString();
+        SISTEMAS.setNome("nomeEmpresaDesenvolvedora");
+        SISTEMAS.setEmpresaDesenvolvedora(EMPRESA);
+        SISTEMAS.setArquivosExecutaveis(null);
+        SISTEMAS.toString();
     }
 
     @Test
     public void testNomeValido() {
-        sistemas.setNome(NOME);
-        assertEquals(NOME, sistemas.getNome());
+        SISTEMAS.setNome(NOME);
+        assertEquals(NOME, SISTEMAS.getNome());
     }
 
     @Test
     public void testEmpresaValido() {
-        sistemas.setEmpresaDesenvolvedora(empresa);
-        assertEquals(empresa, sistemas.getEmpresaDesenvolvedora());
+        SISTEMAS.setEmpresaDesenvolvedora(EMPRESA);
+        assertEquals(EMPRESA, SISTEMAS.getEmpresaDesenvolvedora());
     }
 
     @Test
     public void testArquivosValido() {
-        sistemas.setArquivosExecutaveis(arquivosExe);
-        assertEquals(arquivosExe, sistemas.getArquivosExecutaveis());
+        SISTEMAS.setArquivosExecutaveis(ARQUIVO_EXE);
+        assertEquals(ARQUIVO_EXE, SISTEMAS.getArquivosExecutaveis());
     }
 }
