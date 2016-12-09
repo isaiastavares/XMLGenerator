@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
-import br.ufg.inf.generator.xml.transformers.LaudoRegistryMatcher;
+import br.ufg.inf.generator.xml.transformadores.LaudoRegistryMatcher;
 
 public abstract class LaudoBase {
 
