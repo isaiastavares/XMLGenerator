@@ -1,2 +1,2 @@
 # XMLGenerator
-XML Generator for PAF-ECF programs
+XML Generator for PAF-ECF programs Test
