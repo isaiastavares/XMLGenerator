@@ -2,7 +2,8 @@ package br.ufg.inf.generator.xml;
 
 import static org.junit.Assert.assertEquals;
 
-import org.joda.time.LocalDate;
+import java.time.LocalDate;
+
 import org.junit.Test;
 
 public class PeriodoAnaliseTest {
@@ -10,7 +11,7 @@ public class PeriodoAnaliseTest {
 	@Test
     public void testDataInicioCorreto() {
 		final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
-		LocalDate localDate = new LocalDate(2016, 8, 11);
+		LocalDate localDate = LocalDate.of(2016, 8, 11);
         periodoAnalise.setDataInicio(localDate);
         assertEquals(localDate, periodoAnalise.getDataInicio());
     }
@@ -19,14 +20,14 @@ public class PeriodoAnaliseTest {
     public void testDataInicioNulo() {
         final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
         periodoAnalise.setDataInicio(null);
-        periodoAnalise.setDataFim(new LocalDate(2016, 8, 11));
+        periodoAnalise.setDataFim(LocalDate.of(2016, 8, 11));
         periodoAnalise.toString();
     }
 
     @Test
     public void testDataFimCorreto() {
 		final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
-		LocalDate localDate = new LocalDate(2016, 8, 11);
+		LocalDate localDate = LocalDate.of(2016, 8, 11);
         periodoAnalise.setDataFim(localDate);
         assertEquals(localDate, periodoAnalise.getDataFim());
     }
@@ -34,7 +35,7 @@ public class PeriodoAnaliseTest {
     @Test(expected = IllegalStateException.class)
     public void testDataFimNulo() {
         final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
-        periodoAnalise.setDataInicio(new LocalDate(2016, 8, 11));
+        periodoAnalise.setDataInicio(LocalDate.of(2016, 8, 11));
         periodoAnalise.setDataFim(null);
         periodoAnalise.toString();
     }
