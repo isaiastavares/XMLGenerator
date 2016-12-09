@@ -26,13 +26,13 @@ public class Mensagem extends LaudoBase {
     private CaracteristicasPaf caracteristicasPaf;
 
     @ElementList(name = "SistemasGestao", required = true)
-    private ArrayList<SistemaGestao> sistemasGestao;
+    private ArrayList<Sistemas> sistemasGestao;
 
     @ElementList(name = "SistemasPed", required = true)
-    private ArrayList<SistemaPed> sistemasPed;
+    private ArrayList<Sistemas> sistemasPed;
 
     @ElementList(name = "SistemasPedNfe", required = true)
-    private ArrayList<SistemaPedNfe> sistemasPedNfe;
+    private ArrayList<Sistemas> sistemasPedNfe;
 
     @ElementList(name = "EcfAnaliseFuncional", required = true)
     private ArrayList<MarcaModelo> ecfAnaliseFuncional;
@@ -112,27 +112,27 @@ public class Mensagem extends LaudoBase {
         this.caracteristicasPaf = caracteristicasPaf;
     }
 
-    public ArrayList<SistemaGestao> getSistemasGestao() {
+    public ArrayList<Sistemas> getSistemasGestao() {
         return sistemasGestao;
     }
 
-    public void setSistemasGestao(ArrayList<SistemaGestao> sistemasGestao) {
+    public void setSistemasGestao(ArrayList<Sistemas> sistemasGestao) {
         this.sistemasGestao = sistemasGestao;
     }
 
-    public ArrayList<SistemaPed> getSistemasPed() {
+    public ArrayList<Sistemas> getSistemasPed() {
         return sistemasPed;
     }
 
-    public void setSistemasPed(ArrayList<SistemaPed> sistemasPed) {
+    public void setSistemasPed(ArrayList<Sistemas> sistemasPed) {
         this.sistemasPed = sistemasPed;
     }
 
-    public ArrayList<SistemaPedNfe> getSistemasPedNfe() {
+    public ArrayList<Sistemas> getSistemasPedNfe() {
         return sistemasPedNfe;
     }
 
-    public void setSistemasPedNfe(ArrayList<SistemaPedNfe> sistemasPedNfe) {
+    public void setSistemasPedNfe(ArrayList<Sistemas> sistemasPedNfe) {
         this.sistemasPedNfe = sistemasPedNfe;
     }
 

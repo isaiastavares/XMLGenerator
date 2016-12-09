@@ -3,14 +3,14 @@ package br.ufg.inf.generator.xml;
 import java.util.ArrayList;
 import org.simpleframework.xml.Element;
 
-public class SistemaPedNfe extends LaudoBase {
+public class Sistemas extends LaudoBase {
 
-    @Element(name = "Nome", required = false)
+    @Element(name = "Nome", required = true)
     private String nome;
 
     @Element(name = "EmpresaDesenvolvedora", required = false)
-    private EmpresaDesenvolvedora empresaDesenvolvedora = new EmpresaDesenvolvedora();
-
+    private EmpresaDesenvolvedora empresaDesenvolvedora;
+    
     @Element(name = "ArquivosExecutaveis", required = false)
     private ArrayList<ArquivoExecutavel> arquivosExecutaveis;
 
@@ -37,4 +37,5 @@ public class SistemaPedNfe extends LaudoBase {
     public void setArquivosExecutaveis(ArrayList<ArquivoExecutavel> arquivosExecutaveis) {
         this.arquivosExecutaveis = arquivosExecutaveis;
     }
+    
 }
