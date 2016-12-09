@@ -49,14 +49,14 @@ public class WizardEmpresaDesenvolvedoraCtrl extends AbstractWizardCtrl implemen
 
     @Override
     protected void salvar() {
-//        Desenvolvedora desenvolvedora = new Desenvolvedora();
-//        desenvolvedora.setRazaoSocial(txtRazaoSocial.getText());
-//        desenvolvedora.setCnpj(txtCnpj.getText());
-//        desenvolvedora.setInscricaoEstadual(txtInscEstad.getText());
-//        desenvolvedora.setEndereco(getEndereco());
-//        desenvolvedora.setContato(getContato());
-//        desenvolvedora.setRespAcompTestes(txtResponsavel.getText());
-//        getMensagem().setDesenvolvedora(desenvolvedora);
+        Desenvolvedora desenvolvedora = new Desenvolvedora();
+        desenvolvedora.setRazaoSocial(txtRazaoSocial.getText());
+        desenvolvedora.setCnpj(txtCnpj.getText());
+        desenvolvedora.setInscricaoEstadual(txtInscEstad.getText());
+        desenvolvedora.setEndereco(getEndereco());
+        desenvolvedora.setContato(getContato());
+        desenvolvedora.setRespAcompTestes(txtResponsavel.getText());
+        getMensagem().setDesenvolvedora(desenvolvedora);
     }
 
     private Endereco getEndereco() {
