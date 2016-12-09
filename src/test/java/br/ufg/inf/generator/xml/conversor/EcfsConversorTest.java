@@ -33,7 +33,7 @@ public class EcfsConversorTest {
     @Test
     public void testParserEcfsStringEmObjeto() throws Exception {
         String conteudoECFs = FileUtils.readFileToString(fileECF, UTF8);
-        MarcasModelosCompativeis ecfs = new ECFsParser().ecfsParaObjeto(conteudoECFs);
+        MarcasModelosCompativeis ecfs = new EcfsConversor().ecfsParaObjeto(conteudoECFs);
         assertEquals("BEMATECH", ecfs.getMarcasModelos().get(0).getMarca());
         assertEquals("ECF-IF MP 2000 TH FI", ecfs.getMarcasModelos().get(0).getModelo());
         assertEquals("BEMATECH", ecfs.getMarcasModelos().get(1).getMarca());
@@ -43,13 +43,13 @@ public class EcfsConversorTest {
     @Test(expected = IllegalArgumentException.class)
     public void testParserEcfsStringInvalido() throws IOException {
         String conteudoECFs = FileUtils.readFileToString(fileECFInvalido, UTF8);
-        MarcasModelosCompativeis ecfs = new ECFsParser().ecfsParaObjeto(conteudoECFs);
+        MarcasModelosCompativeis ecfs = new EcfsConversor().ecfsParaObjeto(conteudoECFs);
         System.out.println(ecfs.toString());
     }
 
     @Test
     public void testParserEcfsFileEmObjeto() throws Exception {
-        MarcasModelosCompativeis ecfs = new ECFsParser().ecfsParaObjeto(fileECF);
+        MarcasModelosCompativeis ecfs = new EcfsConversor().ecfsParaObjeto(fileECF);
         assertEquals("BEMATECH", ecfs.getMarcasModelos().get(0).getMarca());
         assertEquals("ECF-IF MP 2000 TH FI", ecfs.getMarcasModelos().get(0).getModelo());
         assertEquals("BEMATECH", ecfs.getMarcasModelos().get(1).getMarca());
@@ -58,7 +58,7 @@ public class EcfsConversorTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testParserEcfsFileInvalido() {
-        new ECFsParser().ecfsParaObjeto(fileECFInvalido);
+        new EcfsConversor().ecfsParaObjeto(fileECFInvalido);
     }
 
 }
