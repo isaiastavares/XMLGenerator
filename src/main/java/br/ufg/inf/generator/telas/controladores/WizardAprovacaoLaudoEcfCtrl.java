@@ -2,7 +2,7 @@ package br.ufg.inf.generator.telas.controladores;
 
 import javafx.fxml.FXML;
 
-public class WizardEcfCompativelCtrl extends AbstractWizardCtrl implements ControlledScreen {
+public class WizardAprovacaoLaudoEcfCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     private ScreensController myController;
 
@@ -20,20 +20,22 @@ public class WizardEcfCompativelCtrl extends AbstractWizardCtrl implements Contr
 
     @Override
     protected void back() {
-        myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
-    }
-
-    @Override
-    protected void nextScreen() {
         myController.setScreen(IScreens.ID_ANALISE_FUNCIONAL);
     }
 
     @Override
+    protected void nextScreen() {
+//        myController.setScreen(IScreens.);
+    }
+
+    @Override
     protected boolean isValido() {
+        // TODO falta implementar validacao
         return true;
     }
 
     @Override
     protected void salvar() {
+        // TODO falta implementar a parte de salvar
     }
 }

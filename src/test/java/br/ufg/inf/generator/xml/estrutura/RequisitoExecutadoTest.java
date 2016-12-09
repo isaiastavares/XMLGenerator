@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura;
 
 import br.ufg.inf.generator.xml.estrutura.RequisitoExecutado;
 import static org.junit.Assert.assertEquals;

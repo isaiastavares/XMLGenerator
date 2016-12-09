@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generator.xml.estrutura.mensagem.AprovacaoRelatorio;
+import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorAprovacaoRelatorio;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -25,7 +25,7 @@ public class AprovacaoRelatorioTest {
 
     @Test
     public void testNomeValido() {
-        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        TestadorAprovacaoRelatorio instance = new TestadorAprovacaoRelatorio();
         instance.setNome(NOME);
         String result = instance.getNome();
         assertEquals(NOME, result);
@@ -33,7 +33,7 @@ public class AprovacaoRelatorioTest {
 
     @Test
     public void testCargoValido() {
-        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        TestadorAprovacaoRelatorio instance = new TestadorAprovacaoRelatorio();
         instance.setCargo(CARGO);
         String result = instance.getCargo();
         assertEquals(CARGO, result);
@@ -41,7 +41,7 @@ public class AprovacaoRelatorioTest {
 
     @Test
     public void testCpfValido() {
-        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        TestadorAprovacaoRelatorio instance = new TestadorAprovacaoRelatorio();
         instance.setCpf(CPF);
         String result = instance.getCpf();
         assertEquals(CPF, result);
@@ -49,7 +49,7 @@ public class AprovacaoRelatorioTest {
 
     @Test(expected = IllegalStateException.class)
     public void testNomeNulo() {
-        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        TestadorAprovacaoRelatorio instance = new TestadorAprovacaoRelatorio();
         instance.setNome(null);
         instance.setCargo(CARGO);
         instance.setCpf(CPF);
@@ -58,7 +58,7 @@ public class AprovacaoRelatorioTest {
 
     @Test(expected = IllegalStateException.class)
     public void testCargoNulo() {
-        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        TestadorAprovacaoRelatorio instance = new TestadorAprovacaoRelatorio();
         instance.setNome(NOME);
         instance.setCargo(null);
         instance.setCpf(CPF);
@@ -67,7 +67,7 @@ public class AprovacaoRelatorioTest {
 
     @Test(expected = IllegalStateException.class)
     public void testCpfNulo() {
-        AprovacaoRelatorio instance = new AprovacaoRelatorio();
+        TestadorAprovacaoRelatorio instance = new TestadorAprovacaoRelatorio();
         instance.setNome(NOME);
         instance.setCargo(CARGO);
         instance.setCpf(null);
