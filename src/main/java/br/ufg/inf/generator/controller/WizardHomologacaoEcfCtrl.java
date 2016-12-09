@@ -26,10 +26,10 @@ public class WizardHomologacaoEcfCtrl extends AbstractWizardCtrl implements Cont
                 myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
                 break;
             case "Pelo sistema de Retaguarda":
-                myController.setScreen(IScreens.ID_INFORMACOES_RETAGUARDA);
+                myController.setScreen(IScreens.ID_QUANTIDADE_RETAGUARDA);
                 break;
             default:
-                myController.setScreen(IScreens.ID_INFORMACOES_PED);
+                myController.setScreen(IScreens.ID_QUANTIDADE_PED);
                 break;
         }
     }

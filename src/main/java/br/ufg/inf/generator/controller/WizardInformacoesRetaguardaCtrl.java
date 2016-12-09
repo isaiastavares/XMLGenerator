@@ -25,14 +25,18 @@ public class WizardInformacoesRetaguardaCtrl extends AbstractWizardCtrl implemen
 
     @Override
     protected void nextScreen() {
-
-        switch (WizardCaracteristicasPafCtrl.getIntegracaoPafValue()) {
-            case "Pela Retaguarda e PED ou EFD":
-                myController.setScreen(IScreens.ID_QUANTIDADE_PED);
-                break;
-            default:
-                myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
-                break;
+        if (WizardQuantidadeRetaguardaCtrl.getQuantRetaguarda() != 0) {
+            WizardQuantidadeRetaguardaCtrl.decQuantRetaguarda();
+            myController.setScreen(IScreens.ID_INFORMACOES_RETAGUARDA);
+        } else {
+            switch (WizardCaracteristicasPafCtrl.getIntegracaoPafValue()) {
+                case "Pela Retaguarda e PED ou EFD":
+                    myController.setScreen(IScreens.ID_QUANTIDADE_PED);
+                    break;
+                default:
+                    myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
+                    break;
+            }
         }
     }
 

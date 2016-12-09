@@ -8,11 +8,9 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
     private ScreensController myController;
 
     @FXML
-    TextField txtQuantidadeRetaguarda;
+    private TextField txtQuantidadeRetaguarda;
 
-    int quantRetaguarda;
-
-    String quantRetStr;
+    private static int quantRetaguarda;
 
     @FXML
     public void initialize() {
@@ -21,10 +19,6 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
         initializeFinishButton();
     }
 
-//    @FXML
-//    private void handleTextFieldFormaImpressaoAction() {
-//        quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.toString());
-//    }
     @Override
     public void setScreenParent(ScreensController screenPage) {
         myController = screenPage;
@@ -38,18 +32,27 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
     @Override
     protected void nextScreen() {
 //        quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.toString());
-//        System.out.println(quantRetaguarda);
+        quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.getText());
+        decQuantRetaguarda();
         myController.setScreen(IScreens.ID_INFORMACOES_RETAGUARDA);
     }
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao
+        // TODO falta implementar validacao, inclusive de > 0
         return true;
     }
 
     @Override
     protected void salvar() {
         // TODO falta implementar a parte de salvar
+    }
+
+    public static int getQuantRetaguarda() {
+        return quantRetaguarda;
+    }
+
+    public static void decQuantRetaguarda() {
+        WizardQuantidadeRetaguardaCtrl.quantRetaguarda--;
     }
 }

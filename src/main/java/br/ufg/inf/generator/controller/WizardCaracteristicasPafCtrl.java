@@ -97,7 +97,6 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
     @Override
     protected void nextScreen() {
         integracaoPafValue = choiceIntegracaoPaf.getValue();
-        System.out.println(integracaoPafValue);
         myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
     }
 

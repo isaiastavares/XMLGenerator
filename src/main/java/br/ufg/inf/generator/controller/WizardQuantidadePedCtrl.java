@@ -1,10 +1,17 @@
 package br.ufg.inf.generator.controller;
 
+import br.ufg.inf.generator.validadores.ValidationFields;
 import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
 
 public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     private ScreensController myController;
+
+    @FXML
+    private TextField txtQuantPed, txtQuantPedNfe;
+
+    private static int quantPed, quantPedNfe;
 
     @FXML
     public void initialize() {
@@ -32,7 +39,22 @@ public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements Contr
 
     @Override
     protected void nextScreen() {
-        myController.setScreen(IScreens.ID_INFORMACOES_PED);
+//        quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.getText());
+//        decQuantRetaguarda();
+
+        System.out.println(txtQuantPed.getText());
+        quantPed = Integer.parseInt(txtQuantPed.getText());
+        quantPedNfe = Integer.parseInt(txtQuantPedNfe.getText());
+
+        if (quantPed > 0) {
+            decQuantPed();
+            myController.setScreen(IScreens.ID_INFORMACOES_PED);
+        } else if (quantPedNfe > 0) {
+            decQuantPedNfe();
+            myController.setScreen(IScreens.ID_INFORMACOES_PED_NFE);
+        } else {
+            ValidationFields.validacao("Os campos Ped e PedNfe não podem ter o valor 0 em ambos.");
+        }
     }
 
     @Override
@@ -44,5 +66,21 @@ public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements Contr
     @Override
     protected void salvar() {
         // TODO falta implementar a parte de salvar
+    }
+
+    public static int getQuantPed() {
+        return quantPed;
+    }
+
+    public static int getQuantPedNfe() {
+        return quantPedNfe;
+    }
+
+    public static void decQuantPed() {
+        WizardQuantidadePedCtrl.quantPed--;
+    }
+
+    public static void decQuantPedNfe() {
+        WizardQuantidadePedCtrl.quantPedNfe--;
     }
 }

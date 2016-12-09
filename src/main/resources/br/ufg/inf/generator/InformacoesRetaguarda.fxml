@@ -14,17 +14,19 @@
             <Font size="23.0" />
          </font>
       </Text>
-      <Text fill="#757070" layoutX="358.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora" textAlignment="CENTER">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
+      <Separator layoutX="9.0" layoutY="64.0" prefHeight="10.0" prefWidth="892.0" />
       <Text layoutX="405.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do Sistema">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
       <TextField fx:id="txtRazaoSocial" layoutX="284.0" layoutY="126.0" prefHeight="24.0" prefWidth="342.0" />
+      <Separator layoutX="14.0" layoutY="178.0" prefHeight="10.0" prefWidth="892.0" />
+      <Text fill="#757070" layoutX="358.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
       <Text layoutX="314.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -37,12 +39,12 @@
          </font>
       </Text>
       <TextField fx:id="txtCnpj" layoutX="473.0" layoutY="285.0" prefHeight="25.0" prefWidth="186.0" />
-      <Text layoutX="401.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requisito Executado">
+      <Separator layoutX="2.0" layoutY="349.0" prefHeight="10.0" prefWidth="892.0" />
+      <Text fill="#757070" layoutX="381.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arquivo Executável" textAlignment="CENTER">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <TextField fx:id="txtRequisito" layoutX="360.0" layoutY="552.0" prefHeight="25.0" prefWidth="197.0" />
       <Text layoutX="332.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -55,14 +57,12 @@
          </font>
       </Text>
       <TextField fx:id="txtMd5" layoutX="473.0" layoutY="463.0" prefHeight="29.0" prefWidth="186.0" />
-      <Text fill="#757070" layoutX="381.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arquivo Executável" textAlignment="CENTER">
+      <Text layoutX="401.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requisito Executado">
          <font>
-            <Font name="System Bold" size="17.0" />
+            <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Separator layoutX="9.0" layoutY="64.0" prefHeight="10.0" prefWidth="892.0" />
-      <Separator layoutX="14.0" layoutY="178.0" prefHeight="10.0" prefWidth="892.0" />
-      <Separator layoutX="2.0" layoutY="349.0" prefHeight="10.0" prefWidth="892.0" />
+      <TextField fx:id="txtRequisito" layoutX="360.0" layoutY="552.0" prefHeight="25.0" prefWidth="197.0" />
       <HBox alignment="BOTTOM_RIGHT" layoutX="671.0" layoutY="609.0" spacing="12.0">
          <children>
             <Button fx:id="backButton" text="Anterior" />
