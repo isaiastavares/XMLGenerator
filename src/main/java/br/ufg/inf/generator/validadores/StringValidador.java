@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class StringValidador {
+public final class StringValidador {
 
     private StringValidador() {
     	// Do nothing
