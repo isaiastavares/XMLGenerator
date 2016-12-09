@@ -11,7 +11,19 @@
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="113.0" layoutY="56.0" text="Laudo gerado com sucesso!" />
-      <Button fx:id="btnOk" layoutX="154.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="OK" />
+      <Label layoutX="240.0" layoutY="284.0" text="Laudo gerado com sucesso!">
+         <font>
+            <Font size="35.0" />
+         </font></Label>
+      <HBox alignment="BOTTOM_RIGHT" layoutX="670.0" layoutY="611.0" spacing="12.0">
+         <children>
+            <Button fx:id="backButton" text="Anterior" />
+            <Button fx:id="nextButton" text="Próximo" />
+            <Button fx:id="finishButton" text="Finalizar" />
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </padding>
+      </HBox>
    </children>
 </Pane>

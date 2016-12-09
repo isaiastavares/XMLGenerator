@@ -25,7 +25,7 @@ public class WizardAnaliseFuncionalEcfCtrl extends AbstractWizardCtrl implements
 
     @Override
     protected void nextScreen() {
-//        myController.setScreen(IScreens.);
+        myController.setScreen(IScreens.ID_APROVACAO_LAUDO);
     }
 
     @Override
