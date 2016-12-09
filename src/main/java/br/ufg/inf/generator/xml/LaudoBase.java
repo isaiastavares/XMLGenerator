@@ -10,7 +10,7 @@ import br.ufg.inf.generator.xml.transformers.LaudoRegistryMatcher;
 
 public abstract class LaudoBase {
 
-	private static final Logger LOG = Logger.getLogger(LaudoBase.class);
+    private static final Logger LOG = Logger.getLogger(LaudoBase.class);
 
     private static final String CABECALHO = "<?xml version=\"1.0\" encoding= \"UTF-8\"?>";
 
@@ -21,7 +21,7 @@ public abstract class LaudoBase {
             persister.write(this, writer);
             return writer.toString();
         } catch (final Exception e) {
-        	LOG.error(e.getMessage(), e);
+            LOG.error(e.getMessage(), e);
             throw new IllegalStateException(e.getMessage());
         }
     }
