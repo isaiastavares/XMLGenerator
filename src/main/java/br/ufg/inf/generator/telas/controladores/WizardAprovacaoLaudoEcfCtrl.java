@@ -30,7 +30,6 @@ public class WizardAprovacaoLaudoEcfCtrl extends AbstractWizardCtrl implements C
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao
         return true;
     }
 

@@ -11,12 +11,12 @@ import javafx.scene.control.ChoiceBox;
 
 public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-    private ScreensController myController;
+	private static String integracaoPafValue;
 
+	private ScreensController myController;
     private boolean verificaFormaImpressao = false;
     private boolean verificaTratamentoInterrupcao = false;
     private boolean verificaMeioGeracao = false;
-    private static String integracaoPafValue;
 
     @FXML
     private ChoiceBox<String> choiceTipoDesenvolvimento;

@@ -49,9 +49,8 @@ public class ValidationFields {
         for (Node componente : arrayToList(itemToCheck)) {
             if (componente instanceof TextField) {
                 TextField textField = (TextField) componente;
-                textField.textProperty().addListener((observable, oldValue, newValue) -> {
-                    removeToolTipAndBorderColor(textField, TOOLTIP);
-                });
+                textField.textProperty().addListener((observable, oldValue, newValue)
+                		-> removeToolTipAndBorderColor(textField, TOOLTIP));
                 if (StringUtils.isBlank(textField.getText())) {
                     failedFields.add(componente);
                     addToolTipAndBorderColor(textField, TOOLTIP);
@@ -60,9 +59,8 @@ public class ValidationFields {
                 }
             } else if (componente instanceof ComboBox) {
                 ComboBox comboBox = (ComboBox) componente;
-                comboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
-                    removeToolTipAndBorderColor(comboBox, TOOLTIP);
-                });
+                comboBox.valueProperty().addListener((observable, oldValue, newValue)
+                		-> removeToolTipAndBorderColor(comboBox, TOOLTIP));
                 if (comboBox.getValue() == null) {
                     failedFields.add(componente);
                     addToolTipAndBorderColor(comboBox, TOOLTIP);
@@ -71,9 +69,8 @@ public class ValidationFields {
                 }
             } else if (componente instanceof TextArea) {
                 TextArea textArea = (TextArea) componente;
-                textArea.textProperty().addListener((observable, oldValue, newValue) -> {
-                    removeToolTipAndBorderColor(textArea, TOOLTIP);
-                });
+                textArea.textProperty().addListener((observable, oldValue, newValue)
+                		-> removeToolTipAndBorderColor(textArea, TOOLTIP));
                 if (StringUtils.isBlank(textArea.getText())) {
                     failedFields.add(componente);
                     addToolTipAndBorderColor(textArea, TOOLTIP);
