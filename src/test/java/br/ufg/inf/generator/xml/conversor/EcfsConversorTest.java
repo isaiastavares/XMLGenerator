@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.parsers;
+package br.ufg.inf.generator.xml.conversor;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import br.ufg.inf.generator.xml.estrutura.comum.MarcasModelosCompativeis;
 
-public class ECFsParserTest {
+public class EcfsConversorTest {
 
     private static final String ARQUIVO_ECF = "ecfs.xml";
     private static final String ARQUIVO_ECF_INVALIDO = "ecfs-invalido.xml";
