@@ -132,6 +132,7 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
 
     @Override
     protected void salvar() {
+    	//TODO falta implementar a parte de salvar
     }
 
     public synchronized static String getIntegracaoPafValue() {

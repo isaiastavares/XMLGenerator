@@ -63,6 +63,7 @@ public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements Contr
 
     @Override
     protected void salvar() {
+    	//TODO falta implementar a parte de salvar
     }
 
     public static int getQuantPed() {

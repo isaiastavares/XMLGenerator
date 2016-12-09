@@ -41,11 +41,11 @@ public class WizardHomologacaoEcfCtrl extends AbstractWizardCtrl implements Cont
 
     @Override
     protected boolean isValido() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         return true;
     }
 
     @Override
     protected void salvar() {
+    	//TODO falta implementar a parte de salvar
     }
 }
