@@ -1,21 +1,21 @@
 package br.ufg.inf.generator.xml.transformers;
 
-import org.joda.time.LocalDate;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.simpleframework.xml.transform.Transform;
 
-class LocalDateTransformer implements Transform<LocalDate> {
+public class LocalDateTransformer implements Transform<LocalDate> {
 
-    private static final DateTimeFormatter DATETIME_FORMATTER = DateTimeFormat.forPattern("yyyy-MM-dd");
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     @Override
     public LocalDate read(final String data) throws Exception {
-        return LocalDate.parse(data, LocalDateTransformer.DATETIME_FORMATTER);
+    	return LocalDate.parse(data, DATE_FORMATTER);
     }
 
     @Override
     public String write(final LocalDate data) throws Exception {
-        return LocalDateTransformer.DATETIME_FORMATTER.print(data);
+    	return data.toString();
     }
 }

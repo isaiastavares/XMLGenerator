@@ -1,6 +1,7 @@
 package br.ufg.inf.generator.xml;
 
-import org.joda.time.LocalDate;
+import java.time.LocalDate;
+
 import org.simpleframework.xml.Element;
 
 public class Emissao extends LaudoBase {

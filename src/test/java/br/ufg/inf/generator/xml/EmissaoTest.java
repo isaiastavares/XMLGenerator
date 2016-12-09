@@ -2,7 +2,8 @@ package br.ufg.inf.generator.xml;
 
 import static org.junit.Assert.assertEquals;
 
-import org.joda.time.LocalDate;
+import java.time.LocalDate;
+
 import org.junit.Test;
 
 public class EmissaoTest {
@@ -12,7 +13,7 @@ public class EmissaoTest {
 	@Test
     public void testDataValida() {
         final Emissao emissao = new Emissao();
-        LocalDate localDate = new LocalDate(2016, 8, 11);
+        LocalDate localDate = LocalDate.of(2016, 8, 11);
         emissao.setData(localDate);
         assertEquals(localDate, emissao.getData());
     }
@@ -35,7 +36,7 @@ public class EmissaoTest {
     @Test(expected = IllegalStateException.class)
     public void testLocalNulo() {
         final Emissao emissao = new Emissao();
-        emissao.setData(new LocalDate(2016, 8, 11));
+        emissao.setData(LocalDate.of(2016, 8, 11));
         emissao.setLocal(null);
         emissao.toString();
     }

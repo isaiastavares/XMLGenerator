@@ -1,6 +1,7 @@
 package br.ufg.inf.generator.xml.transformers;
 
-import org.joda.time.LocalDate;
+import java.time.LocalDate;
+
 import org.simpleframework.xml.transform.RegistryMatcher;
 
 public class LaudoRegistryMatcher extends RegistryMatcher {

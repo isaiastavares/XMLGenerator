@@ -1,6 +1,7 @@
 package br.ufg.inf.generator.xml;
 
 import java.util.ArrayList;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 
@@ -36,8 +37,8 @@ public class Mensagem extends LaudoBase {
     @ElementList(name = "EcfAnaliseFuncional", required = true)
     private ArrayList<MarcaModelo> ecfAnaliseFuncional;
 
-    @ElementList(name = "MarcasModelosCompativeis", required = true)
-    private ArrayList<MarcaModelo> marcasModelosCompativeis;
+    @Element(required = true)
+    private MarcasModelosCompativeis marcasModelosCompativeis;
 
     @Element(name = "VersaoErPaf", required = true)
     private String versaoErPaf;
@@ -143,11 +144,11 @@ public class Mensagem extends LaudoBase {
         this.ecfAnaliseFuncional = ecfAnaliseFuncional;
     }
 
-    public ArrayList<MarcaModelo> getMarcasModelosCompativeis() {
+    public MarcasModelosCompativeis getMarcasModelosCompativeis() {
         return marcasModelosCompativeis;
     }
 
-    public void setMarcasModelosCompativeis(ArrayList<MarcaModelo> marcasModelosCompativeis) {
+    public void setMarcasModelosCompativeis(MarcasModelosCompativeis marcasModelosCompativeis) {
         this.marcasModelosCompativeis = marcasModelosCompativeis;
     }
 
