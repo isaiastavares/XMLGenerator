@@ -29,7 +29,7 @@ public class WizardAplicacoesEspeciaisCtrl extends AbstractWizardCtrl implements
             case "Pelo PAF-ECF":
                 myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
                 break;
-            case "Pelo sistema PED ou EFD":
+            case "Pelo sistema PED ou EFD":        
                 myController.setScreen(IScreens.ID_QUANTIDADE_PED);
                 break;
             default:

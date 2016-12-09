@@ -39,9 +39,6 @@ public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements Contr
 
     @Override
     protected void nextScreen() {
-//        quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.getText());
-//        decQuantRetaguarda();
-
         System.out.println(txtQuantPed.getText());
         quantPed = Integer.parseInt(txtQuantPed.getText());
         quantPedNfe = Integer.parseInt(txtQuantPedNfe.getText());

@@ -25,8 +25,15 @@ public class WizardInformacoesPedCtrl extends AbstractWizardCtrl implements Cont
 
     @Override
     protected void nextScreen() {
-        //TODO verificação se PED-NFE foi implementado
-        myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
+        if (WizardQuantidadePedCtrl.getQuantPed() != 0) {
+            WizardQuantidadePedCtrl.decQuantPed();
+            myController.setScreen(IScreens.ID_INFORMACOES_PED);
+        } else if (WizardQuantidadePedCtrl.getQuantPedNfe() != 0) {
+            WizardQuantidadePedCtrl.decQuantPedNfe();
+            myController.setScreen(IScreens.ID_INFORMACOES_PED_NFE);
+        } else {
+            myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
+        }
     }
 
     @Override

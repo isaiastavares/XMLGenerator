@@ -25,8 +25,12 @@ public class WizardInformacoesPedNfeCtrl extends AbstractWizardCtrl implements C
 
     @Override
     protected void nextScreen() {
-        //TODO verificação se PED-NFE foi implementado
-        myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
+        if (WizardQuantidadePedCtrl.getQuantPedNfe() != 0) {
+            WizardQuantidadePedCtrl.decQuantPedNfe();
+            myController.setScreen(IScreens.ID_INFORMACOES_PED_NFE);
+        } else {
+            myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
+        }
     }
 
     @Override
