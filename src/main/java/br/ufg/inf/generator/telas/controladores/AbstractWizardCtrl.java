@@ -18,7 +18,7 @@ public abstract class AbstractWizardCtrl {
     @FXML
     private Button finishButton;
 
-    public Mensagem getMensagem() {
+    public synchronized Mensagem getMensagem() {
         if (mensagem == null) {
             mensagem = new Mensagem();
         }
@@ -29,7 +29,7 @@ public abstract class AbstractWizardCtrl {
         return nomeLaudo;
     }
 
-    public void setNomeLaudo(String nomeLaudo) {
+    public synchronized void setNomeLaudo(String nomeLaudo) {
         AbstractWizardCtrl.nomeLaudo = nomeLaudo;
     }
 

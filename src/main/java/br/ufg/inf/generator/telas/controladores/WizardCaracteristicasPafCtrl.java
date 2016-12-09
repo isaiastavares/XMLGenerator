@@ -115,7 +115,7 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
         // TODO falta implementar a parte de salvar
     }
 
-    public static String getIntegracaoPafValue() {
+    public synchronized static String getIntegracaoPafValue() {
         return integracaoPafValue;
     }
 }
