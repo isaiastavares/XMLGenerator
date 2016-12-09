@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.validadores.xsd;
 
+import br.ufg.inf.generator.validadores.xml.XMLValidador;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;

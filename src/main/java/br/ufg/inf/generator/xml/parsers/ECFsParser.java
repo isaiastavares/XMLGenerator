@@ -4,7 +4,7 @@ import java.io.File;
 
 import org.simpleframework.xml.core.Persister;
 
-import br.ufg.inf.generator.xml.marcamodelo.MarcasModelosCompativeis;
+import br.ufg.inf.generator.xml.estrutura.comum.MarcasModelosCompativeis;
 import br.ufg.inf.generator.xml.transformers.LaudoRegistryMatcher;
 
 public class ECFsParser {

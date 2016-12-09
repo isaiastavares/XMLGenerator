@@ -10,7 +10,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.ufg.inf.generator.xml.marcamodelo.MarcasModelosCompativeis;
+import br.ufg.inf.generator.xml.estrutura.comum.MarcasModelosCompativeis;
 
 public class ECFsParserTest {
 

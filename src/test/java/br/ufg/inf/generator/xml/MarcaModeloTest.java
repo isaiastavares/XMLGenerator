@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generator.xml.marcamodelo.MarcaModelo;
+import br.ufg.inf.generator.xml.estrutura.comum.MarcaModelo;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
