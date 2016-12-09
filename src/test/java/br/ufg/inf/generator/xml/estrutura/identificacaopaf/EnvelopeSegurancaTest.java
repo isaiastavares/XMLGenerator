@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.identificacaopaf;
 
 import br.ufg.inf.generator.xml.estrutura.identificacaopaf.EnvelopeSeguranca;
 import static org.junit.Assert.assertEquals;

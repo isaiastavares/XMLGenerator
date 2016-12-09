@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.md5;
 
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavelPrincipal;
 import org.junit.Test;

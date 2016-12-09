@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.mensagem;
 
 import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorAprovacaoRelatorio;
 import static org.junit.Assert.assertEquals;
@@ -10,7 +10,7 @@ import org.junit.Test;
  *
  * @author Kalyn
  */
-public class AprovacaoRelatorioTest {
+public class TestadorAprovacaoRelatorioTest {
 
     private static String NOME;
     private static String CARGO;

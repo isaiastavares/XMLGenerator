@@ -1,11 +1,11 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.mensagem;
 
 import br.ufg.inf.generator.xml.estrutura.mensagem.TestadorExecucaoTestes;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class ExecucaoTestesTest {
+public class TestadorExecucaoTestesTest {
 
     private static final String NOME = "Nome Teste";
     private static final String CARGO = "Gerente de testes";
