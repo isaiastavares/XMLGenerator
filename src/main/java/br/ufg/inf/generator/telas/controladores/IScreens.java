@@ -26,4 +26,10 @@ public interface IScreens {
     String VIEW_INFORMACOES_PED = "InformacoesPED.fxml";
     String ID_INFORMACOES_PED_NFE = "informacoesPedNfe";
     String VIEW_INFORMACOES_PED_NFE = "InformacoesPEDNfe.fxml";
+    String ID_ECF_COMPATIVEL = "ecfCompativel";
+    String VIEW_ECF_COMPATIVEL = "EcfCompativel.fxml";
+    String ID_ANALISE_FUNCIONAL = "analiseFuncional";
+    String VIEW_ANALISE_FUNCIONAL = "AnaliseFuncional.fxml";
+    String ID_APROVACAO_LAUDO = "aprovacaoLaudo";
+    String VIEW_APROVACAO_LAUDO = "AprovacaoLaudo.fxml";
 }
