@@ -1,5 +1,7 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.estrutura.identificacaopaf.PerfilRequisito;
+import br.ufg.inf.generator.xml.estrutura.identificacaopaf.EnvelopeSeguranca;
 import br.ufg.inf.generator.xml.estrutura.mensagem.IdentificacaoPaf;
 import br.ufg.inf.generator.xml.md5.ArquivoRelacaoExecutaveis;
 import br.ufg.inf.generator.xml.md5.ArquivoOutro;

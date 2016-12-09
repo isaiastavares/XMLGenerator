@@ -1,8 +1,8 @@
 package br.ufg.inf.generator.xml.estrutura.mensagem;
 
-import br.ufg.inf.generator.xml.AplicacaoEspecial;
+import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.AplicacaoEspecial;
 import br.ufg.inf.generator.xml.LaudoBase;
-import br.ufg.inf.generator.xml.Modo;
+import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.Modo;
 import java.util.ArrayList;
 import java.util.List;
 

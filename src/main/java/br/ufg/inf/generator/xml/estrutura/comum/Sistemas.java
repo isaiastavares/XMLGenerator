@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml.estrutura.comum;
 
-import br.ufg.inf.generator.xml.EmpresaDesenvolvedora;
+import br.ufg.inf.generator.xml.estrutura.sistemasgestao.EmpresaDesenvolvedora;
 import br.ufg.inf.generator.xml.LaudoBase;
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavel;
 import java.util.ArrayList;

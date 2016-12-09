@@ -1,7 +1,7 @@
 package br.ufg.inf.generator.telas.controladores;
 
 import br.ufg.inf.generator.validadores.valores.ValidationFields;
-import br.ufg.inf.generator.xml.estrutura.desenvolvedora.Endereco;
+import br.ufg.inf.generator.xml.estrutura.comum.Endereco;
 import br.ufg.inf.generator.xml.estrutura.mensagem.Otc;
 import br.ufg.inf.generator.xml.estrutura.otc.PeriodoAnalise;
 import javafx.fxml.FXML;

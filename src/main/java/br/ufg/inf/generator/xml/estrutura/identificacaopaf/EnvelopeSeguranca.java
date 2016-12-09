@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.identificacaopaf;
 
 import br.ufg.inf.generator.xml.estrutura.comum.MarcaModelo;
 import org.simpleframework.xml.Element;

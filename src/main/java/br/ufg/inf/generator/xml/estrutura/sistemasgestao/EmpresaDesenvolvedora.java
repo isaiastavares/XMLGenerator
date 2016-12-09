@@ -1,5 +1,6 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.sistemasgestao;
 
+import br.ufg.inf.generator.xml.LaudoBase;
 import org.simpleframework.xml.Element;
 
 public class EmpresaDesenvolvedora extends LaudoBase {

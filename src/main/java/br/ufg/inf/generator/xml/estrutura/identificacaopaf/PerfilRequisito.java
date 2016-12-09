@@ -1,5 +1,6 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura.identificacaopaf;
 
+import br.ufg.inf.generator.xml.LaudoBase;
 import org.simpleframework.xml.Text;
 
 public class PerfilRequisito extends LaudoBase {

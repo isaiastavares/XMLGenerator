@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml;
 
-import br.ufg.inf.generator.xml.estrutura.desenvolvedora.Endereco;
+import br.ufg.inf.generator.xml.estrutura.comum.Endereco;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

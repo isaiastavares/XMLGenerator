@@ -1,8 +1,8 @@
 package br.ufg.inf.generator.xml.estrutura.mensagem;
 
-import br.ufg.inf.generator.xml.EnvelopeSeguranca;
+import br.ufg.inf.generator.xml.estrutura.identificacaopaf.EnvelopeSeguranca;
 import br.ufg.inf.generator.xml.LaudoBase;
-import br.ufg.inf.generator.xml.PerfilRequisito;
+import br.ufg.inf.generator.xml.estrutura.identificacaopaf.PerfilRequisito;
 import br.ufg.inf.generator.xml.md5.ArquivoOutro;
 import br.ufg.inf.generator.xml.md5.ArquivoRelacaoExecutaveis;
 import br.ufg.inf.generator.xml.md5.ArquivoExecutavelPrincipal;

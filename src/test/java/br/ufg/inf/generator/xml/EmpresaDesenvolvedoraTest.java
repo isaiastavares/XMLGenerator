@@ -1,5 +1,6 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.estrutura.sistemasgestao.EmpresaDesenvolvedora;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
