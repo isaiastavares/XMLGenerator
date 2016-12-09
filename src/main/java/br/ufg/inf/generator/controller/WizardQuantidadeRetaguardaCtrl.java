@@ -25,7 +25,7 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
 
     @Override
     protected void nextScreen() {
-
+        myController.setScreen(IScreens.ID_INFORMACOES_RETAGUARDA);
     }
 
     @Override

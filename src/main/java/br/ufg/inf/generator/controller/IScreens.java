@@ -18,4 +18,11 @@ public interface IScreens {
     String VIEW_HOMOLOGACAO_ECF = "HomologacaoECF.fxml";
     String ID_QUANTIDADE_RETAGUARDA = "quantidadeRetaguardas";
     String VIEW_QUANTIDADE_RETAGUARDA = "QuantidadeRetaguardas.fxml";
+    String ID_INFORMACOES_RETAGUARDA = "informacoesRetaguarda";
+    String VIEW_INFORMACOES_RETAGUARDA = "InformacoesRetaguarda.fxml";
+    String ID_QUANTIDADE_PED = "quantidadePed";
+    String VIEW_QUANTIDADE_PED = "QuantidadePED.fxml";
+    String ID_INFORMACOES_PED = "informacoesPed";
+    String VIEW_INFORMACOES_PED = "InformacoesPED.fxml";
+
 }

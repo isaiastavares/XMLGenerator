@@ -8,10 +8,10 @@ public class SistemaGestao extends LaudoBase {
     @Element(name = "Nome", required = true)
     private String nome;
 
-    @Element(name = "EmpresaDesenvolvedora", required = true)
+    @Element(name = "EmpresaDesenvolvedora", required = false)
     private EmpresaDesenvolvedora empresaDesenvolvedora;
     
-    @Element(name = "ArquivosExecutaveis", required = true)
+    @Element(name = "ArquivosExecutaveis", required = false)
     private ArrayList<ArquivoExecutavel> arquivosExecutaveis;
 
     public String getNome() {

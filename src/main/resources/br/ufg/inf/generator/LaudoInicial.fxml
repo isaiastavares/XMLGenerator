@@ -9,7 +9,7 @@
    <children>
       <Label layoutX="335.0" layoutY="110.0" text="Digite o número do laudo. Ex.: &quot;UFG0012016&quot;" />
       <TextField fx:id="nomeLaudo" layoutX="262.0" layoutY="224.0" prefHeight="25.0" prefWidth="386.0" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="639.0" layoutY="579.0" spacing="12.0">
+      <HBox alignment="BOTTOM_RIGHT" layoutX="671.0" layoutY="609.0" spacing="12.0">
          <children>
             <Button fx:id="backButton" text="Anterior" />
             <Button fx:id="nextButton" text="Próximo" />

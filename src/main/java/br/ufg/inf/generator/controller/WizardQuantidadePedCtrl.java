@@ -2,7 +2,7 @@ package br.ufg.inf.generator.controller;
 
 import javafx.fxml.FXML;
 
-public class WizardAplicacoesEspeciaisCtrl extends AbstractWizardCtrl implements ControlledScreen {
+public class WizardQuantidadePedCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
     private ScreensController myController;
 
@@ -20,22 +20,19 @@ public class WizardAplicacoesEspeciaisCtrl extends AbstractWizardCtrl implements
 
     @Override
     protected void back() {
-        myController.setScreen(IScreens.ID_CARACTERISTICAS_PAF);
+        switch (WizardCaracteristicasPafCtrl.getIntegracaoPafValue()) {
+            case "Pela Retaguarda e PED ou EFD":
+                myController.setScreen(IScreens.ID_INFORMACOES_RETAGUARDA);
+                break;
+            default:
+                myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
+                break;
+        }
     }
 
     @Override
     protected void nextScreen() {
-        switch (WizardCaracteristicasPafCtrl.getIntegracaoPafValue()) {
-            case "Pelo PAF-ECF":
-                myController.setScreen(IScreens.ID_HOMOLOGACAO_ECF);
-                break;
-            case "Pelo sistema PED ou EFD":
-                myController.setScreen(IScreens.ID_QUANTIDADE_PED);
-                break;
-            default:
-                myController.setScreen(IScreens.ID_QUANTIDADE_RETAGUARDA);
-                break;
-        }
+        myController.setScreen(IScreens.ID_INFORMACOES_PED);
     }
 
     @Override

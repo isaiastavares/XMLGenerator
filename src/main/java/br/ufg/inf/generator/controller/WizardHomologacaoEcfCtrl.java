@@ -20,7 +20,18 @@ public class WizardHomologacaoEcfCtrl extends AbstractWizardCtrl implements Cont
 
     @Override
     protected void back() {
-        myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
+
+        switch (WizardCaracteristicasPafCtrl.getIntegracaoPafValue()) {
+            case "Pelo PAF-ECF":
+                myController.setScreen(IScreens.ID_APLICACOES_ESPECIAIS);
+                break;
+            case "Pelo sistema de Retaguarda":
+                myController.setScreen(IScreens.ID_INFORMACOES_RETAGUARDA);
+                break;
+            default:
+                myController.setScreen(IScreens.ID_INFORMACOES_PED);
+                break;
+        }
     }
 
     @Override
