@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml.transformers;
+package br.ufg.inf.generator.xml.transformadores;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

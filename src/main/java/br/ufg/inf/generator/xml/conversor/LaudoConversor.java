@@ -1,4 +1,3 @@
-
 package br.ufg.inf.generator.xml.conversor;
 
 import java.io.File;

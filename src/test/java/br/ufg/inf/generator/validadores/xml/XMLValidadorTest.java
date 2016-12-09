@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.validadores.xsd;
+package br.ufg.inf.generator.validadores.xml;
 
 import br.ufg.inf.generator.validadores.xml.XMLValidador;
 import org.junit.Assert;
