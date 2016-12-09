@@ -2,9 +2,9 @@ package br.ufg.inf.generator.xml;
 
 import org.simpleframework.xml.Text;
 
-public class RequisitoExecutado {
+public class RequisitoExecutado extends LaudoBase {
 
-    @Text
+	@Text(required = true)
     private String requisitoExecutado;
 
     public String getRequisitoExecutado() {
