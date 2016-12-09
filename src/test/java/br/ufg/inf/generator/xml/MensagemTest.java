@@ -89,6 +89,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -112,6 +113,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -135,6 +137,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -158,6 +161,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -181,6 +185,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -204,6 +209,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -227,6 +233,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -250,6 +257,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -273,6 +281,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -296,6 +305,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -319,6 +329,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -342,6 +353,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -365,6 +377,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -388,6 +401,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -411,6 +425,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -434,6 +449,7 @@ public class MensagemTest {
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -457,6 +473,7 @@ public class MensagemTest {
         msg.setDeclaracao(DECLARACAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -480,6 +497,7 @@ public class MensagemTest {
         msg.setDeclaracao(DECLARACAO);
         msg.setEmissao(EMISSAO);
         msg.setAprovacaoRelatorio(APROVACAO_RELATORIO);
+        msg.toString();
     }
 
     @Test(expected = IllegalStateException.class)
@@ -503,6 +521,7 @@ public class MensagemTest {
         msg.setDeclaracao(DECLARACAO);
         msg.setEmissao(EMISSAO);
         msg.setExecucaoTestes(EXECUCAO_TESTES);
+        msg.toString();
     }
 
 }
