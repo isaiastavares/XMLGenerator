@@ -8,27 +8,27 @@
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardAplicacoesEspeciaisCtrl">
    <children>
-      <Text layoutX="211.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicações Especiais do PAF" textAlignment="CENTER" wrappingWidth="303.521484375">
+      <Text layoutX="211.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicações Especiais do PAF" textAlignment="CENTER" wrappingWidth="303.521484375">
          <font>
             <Font size="23.0" />
          </font>
       </Text>
       <Separator layoutX="12.0" layoutY="48.0" prefHeight="9.0" prefWidth="888.0" />
-      <RadioButton layoutX="33.0" layoutY="87.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="191.0" text="Posto de Pedágio" />
-      <RadioButton layoutX="33.0" layoutY="125.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="191.0" text="Transporte de Passageiro" />
-      <RadioButton layoutX="33.0" layoutY="161.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="162.0" text="Farmácia de Manipulação" />
-      <RadioButton layoutX="34.0" layoutY="196.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="248.0" text="Oficina de Conserto com  DAV-OS" />
-      <RadioButton layoutX="34.0" layoutY="234.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="262.0" text="Oficina de Conserto com conta de cliente" />
-      <RadioButton layoutX="35.0" layoutY="269.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="328.0" text="Prestador de serviço de Cinema, Espetáculos e similares" />
-      <RadioButton layoutX="33.0" layoutY="307.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="248.0" selected="true" text="Demais atividades" />
-      <RadioButton layoutX="381.0" layoutY="87.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Estacionamentos, Motéis e similares que utilizam controle de tráfego de veículos e pessoas" />
-      <RadioButton layoutX="381.0" layoutY="126.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e Balança interligada" />
-      <RadioButton layoutX="381.0" layoutY="165.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e SEM Balança interligada" />
-      <RadioButton layoutX="381.0" layoutY="203.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Posto revendedor de combustível COM Sistema de Interligação de Bombas" />
-      <RadioButton layoutX="382.0" layoutY="239.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Estabelecimento enquadrado no Simples Nacional ( Art 5° do Ato COTEPE da ER-PAF ECF )" />
-      <RadioButton layoutX="382.0" layoutY="278.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="514.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e Balança interligada" />
-      <RadioButton layoutX="382.0" layoutY="317.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="514.0" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e SEM Balança interligada" />
-      <RadioButton layoutX="382.0" layoutY="355.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="504.0" text="Posto revendedor de combustível SEM Sistema de Interligação de Bombas" />
+      <CheckBox layoutX="29.0" layoutY="87.0" mnemonicParsing="false" text="Posto de Pedágio" />
+      <CheckBox layoutX="29.0" layoutY="125.0" mnemonicParsing="false" text="Transporte de Passageiro" />
+      <CheckBox layoutX="29.0" layoutY="163.0" mnemonicParsing="false" text="Farmácia de Manipulação" />
+      <CheckBox layoutX="28.0" layoutY="200.0" mnemonicParsing="false" text="Oficina de Conserto com  DAV-OS" />
+      <CheckBox layoutX="28.0" layoutY="233.0" mnemonicParsing="false" text="Oficina de Conserto com conta de cliente" />
+      <CheckBox layoutX="28.0" layoutY="264.0" mnemonicParsing="false" text="Prestador de serviço de Cinema, Espetáculos e similares" />
+      <CheckBox layoutX="28.0" layoutY="299.0" mnemonicParsing="false" selected="true" text="Demais atividades" />
+      <CheckBox layoutX="392.0" layoutY="88.0" mnemonicParsing="false" text="Estacionamentos, Motéis e similares que utilizam controle de tráfego de veículos e pessoas" />
+      <CheckBox layoutX="392.0" layoutY="126.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e Balança interligada" />
+      <CheckBox layoutX="392.0" layoutY="164.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e SEM Balança interligada" />
+      <CheckBox layoutX="391.0" layoutY="201.0" mnemonicParsing="false" text="Posto revendedor de combustível COM Sistema de Interligação de Bombas" />
+      <CheckBox layoutX="391.0" layoutY="234.0" mnemonicParsing="false" text="Estabelecimento enquadrado no Simples Nacional ( Art 5° do Ato COTEPE da ER-PAF ECF )" />
+      <CheckBox layoutX="391.0" layoutY="265.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e Balança interligada" />
+      <CheckBox layoutX="391.0" layoutY="297.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e SEM Balança interligada" />
+      <CheckBox layoutX="390.0" layoutY="329.0" mnemonicParsing="false" text="Posto revendedor de combustível SEM Sistema de Interligação de Bombas" />
       <HBox alignment="BOTTOM_RIGHT" layoutX="655.0" layoutY="589.0" spacing="12.0">
          <children>
             <Button fx:id="backButton" text="Anterior" />
