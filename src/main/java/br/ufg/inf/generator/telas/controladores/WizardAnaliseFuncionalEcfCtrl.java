@@ -25,12 +25,10 @@ public class WizardAnaliseFuncionalEcfCtrl extends AbstractWizardCtrl implements
 
     @Override
     protected void nextScreen() {
-//        myController.setScreen(IScreens.);
     }
 
     @Override
     protected boolean isValido() {
-        // TODO falta implementar validacao
         return true;
     }
 
