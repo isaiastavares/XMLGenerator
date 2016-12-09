@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardEmpresaDesenvolvedoraCtrl">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardEmpresaDesenvolvedoraCtrl">
    <children>
       <Text layoutX="271.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora Requerente">
          <font>

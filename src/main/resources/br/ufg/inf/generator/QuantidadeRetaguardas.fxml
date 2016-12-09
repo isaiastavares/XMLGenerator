@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardQuantidadeRetaguardaCtrl">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardQuantidadeRetaguardaCtrl">
    <children>
       <Text layoutX="365.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de retaguardas">
          <font>

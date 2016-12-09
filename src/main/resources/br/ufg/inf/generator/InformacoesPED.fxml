@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardInformacoesPedCtrl">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardInformacoesPedCtrl">
    <children>
       <Text layoutX="392.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema PED">
          <font>

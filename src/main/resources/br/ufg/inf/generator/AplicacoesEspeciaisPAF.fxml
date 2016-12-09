@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.controller.WizardAplicacoesEspeciaisCtrl">
+<Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardAplicacoesEspeciaisCtrl">
    <children>
       <Text layoutX="211.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicações Especiais do PAF" textAlignment="CENTER" wrappingWidth="303.521484375">
          <font>
