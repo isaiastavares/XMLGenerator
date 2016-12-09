@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml.estrutura.comum;
 
-import br.ufg.inf.generator.xml.LaudoBase;
+import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import java.util.List;
 
 import org.simpleframework.xml.ElementList;

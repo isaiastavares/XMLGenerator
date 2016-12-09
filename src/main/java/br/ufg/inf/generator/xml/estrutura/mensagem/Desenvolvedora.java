@@ -2,7 +2,7 @@ package br.ufg.inf.generator.xml.estrutura.mensagem;
 
 import br.ufg.inf.generator.xml.estrutura.desenvolvedora.Contato;
 import br.ufg.inf.generator.xml.estrutura.comum.Endereco;
-import br.ufg.inf.generator.xml.LaudoBase;
+import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import org.simpleframework.xml.Element;
 
 public class Desenvolvedora extends LaudoBase {

@@ -1,5 +1,7 @@
 package br.ufg.inf.generator.xml;
 
+import br.ufg.inf.generator.xml.estrutura.Mensagem;
+import br.ufg.inf.generator.xml.estrutura.Laudo;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

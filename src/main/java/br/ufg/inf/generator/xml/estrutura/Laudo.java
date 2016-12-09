@@ -1,4 +1,4 @@
-package br.ufg.inf.generator.xml;
+package br.ufg.inf.generator.xml.estrutura;
 
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;

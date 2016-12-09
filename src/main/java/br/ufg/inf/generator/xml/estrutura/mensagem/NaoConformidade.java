@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml.estrutura.mensagem;
 
-import br.ufg.inf.generator.xml.LaudoBase;
+import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import org.simpleframework.xml.Element;
 
 public class NaoConformidade extends LaudoBase {

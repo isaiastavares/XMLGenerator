@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml.estrutura.desenvolvedora;
 
-import br.ufg.inf.generator.xml.LaudoBase;
+import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import org.simpleframework.xml.Element;
 
 public class Contato extends LaudoBase {

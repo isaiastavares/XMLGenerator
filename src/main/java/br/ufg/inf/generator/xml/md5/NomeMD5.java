@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml.md5;
 
-import br.ufg.inf.generator.xml.LaudoBase;
+import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import org.simpleframework.xml.Element;
 
 public class NomeMD5 extends LaudoBase {

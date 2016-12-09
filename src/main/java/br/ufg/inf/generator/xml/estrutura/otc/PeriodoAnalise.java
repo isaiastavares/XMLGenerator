@@ -1,6 +1,6 @@
 package br.ufg.inf.generator.xml.estrutura.otc;
 
-import br.ufg.inf.generator.xml.LaudoBase;
+import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import java.time.LocalDate;
 
 import org.simpleframework.xml.Element;

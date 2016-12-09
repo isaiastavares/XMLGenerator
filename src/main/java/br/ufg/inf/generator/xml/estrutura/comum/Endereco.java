@@ -3,7 +3,7 @@ package br.ufg.inf.generator.xml.estrutura.comum;
 import org.simpleframework.xml.Element;
 
 import br.ufg.inf.generator.validadores.valores.StringValidador;
-import br.ufg.inf.generator.xml.LaudoBase;
+import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 
 public class Endereco extends LaudoBase {
 
