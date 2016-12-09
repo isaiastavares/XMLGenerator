@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.ufg.inf.generator.xml.conversor;
 
-/**
- *
- * @author alunoinf
- */
 public class LaudoConversor {
-    
+     public void salvarLaudo(Laudo laudo) {
+        Serializer serializer = new Persister();
+        String nome = laudo.getMensagem().getNumero();
+        File result = new File(nome + ".xml");
+
+
+        try {
+            serializer.write(laudo, result);
+        } catch (Exception ex) {
+            Logger.getLogger(LaudoParser.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }
