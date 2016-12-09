@@ -16,7 +16,7 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
     private boolean verificaFormaImpressao = false;
     private boolean verificaTratamentoInterrupcao = false;
     private boolean verificaMeioGeracao = false;
-    static String integracaoPafValue;
+    private static String integracaoPafValue;
 
     @FXML
     private ChoiceBox<String> choiceTipoDesenvolvimento, choiceIntegracaoPaf, choiceTipoFuncionamento;

@@ -29,7 +29,7 @@ public abstract class AbstractWizardCtrl {
         return nomeLaudo;
     }
 
-    public synchronized void setNomeLaudo(String nomeLaudo) {
+    public void setNomeLaudo(String nomeLaudo) {
         AbstractWizardCtrl.nomeLaudo = nomeLaudo;
     }
 
