@@ -6,10 +6,10 @@ import org.junit.Test;
 
 public class LaudoTest {
 
-	@Test
+    @Test
     public void testMensagemCorreto() {
-		final Laudo laudo = new Laudo();
-		Mensagem mensagem = new Mensagem();
+        final Laudo laudo = new Laudo();
+        Mensagem mensagem = new Mensagem();
         laudo.setMensagem(mensagem);
         assertEquals(mensagem, laudo.getMensagem());
     }

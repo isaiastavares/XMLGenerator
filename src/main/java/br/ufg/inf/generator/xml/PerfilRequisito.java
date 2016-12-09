@@ -4,7 +4,7 @@ import org.simpleframework.xml.Text;
 
 public class PerfilRequisito extends LaudoBase {
 
-	@Text(required = true)
+    @Text(required = true)
     private String perfil;
 
     public String getPerfil() {

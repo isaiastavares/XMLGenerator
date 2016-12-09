@@ -8,9 +8,9 @@ import org.junit.Test;
 
 public class EmissaoTest {
 
-	private static final String NOME_LOCAL = "Local Teste";
+    private static final String NOME_LOCAL = "Local Teste";
 
-	@Test
+    @Test
     public void testDataValida() {
         final Emissao emissao = new Emissao();
         LocalDate localDate = LocalDate.of(2016, 8, 11);

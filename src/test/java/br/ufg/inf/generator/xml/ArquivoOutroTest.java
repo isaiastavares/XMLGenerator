@@ -27,15 +27,15 @@ public class ArquivoOutroTest {
 
     @Test
     public void testNomeValido() {
-    	final ArquivoOutro arquivoOutro = new ArquivoOutro();
+        final ArquivoOutro arquivoOutro = new ArquivoOutro();
         arquivoOutro.setNome(NOME);
         assertEquals(NOME, arquivoOutro.getNome());
     }
 
     @Test
     public void testMD5Valido() {
-    	final ArquivoOutro arquivoOutro = new ArquivoOutro();
-    	arquivoOutro.setMd5(MD5);
+        final ArquivoOutro arquivoOutro = new ArquivoOutro();
+        arquivoOutro.setMd5(MD5);
         assertEquals(MD5, arquivoOutro.getMd5());
     }
 }

@@ -8,10 +8,10 @@ import org.junit.Test;
 
 public class PeriodoAnaliseTest {
 
-	@Test
+    @Test
     public void testDataInicioCorreto() {
-		final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
-		LocalDate localDate = LocalDate.of(2016, 8, 11);
+        final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
+        LocalDate localDate = LocalDate.of(2016, 8, 11);
         periodoAnalise.setDataInicio(localDate);
         assertEquals(localDate, periodoAnalise.getDataInicio());
     }
@@ -26,8 +26,8 @@ public class PeriodoAnaliseTest {
 
     @Test
     public void testDataFimCorreto() {
-		final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
-		LocalDate localDate = LocalDate.of(2016, 8, 11);
+        final PeriodoAnalise periodoAnalise = new PeriodoAnalise();
+        LocalDate localDate = LocalDate.of(2016, 8, 11);
         periodoAnalise.setDataFim(localDate);
         assertEquals(localDate, periodoAnalise.getDataFim());
     }

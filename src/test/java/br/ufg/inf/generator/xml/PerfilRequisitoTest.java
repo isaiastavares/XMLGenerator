@@ -6,18 +6,18 @@ import org.junit.Test;
 
 public class PerfilRequisitoTest {
 
-	private static final String PERFIL_REQUISITO = "V";
+    private static final String PERFIL_REQUISITO = "V";
 
-	@Test
+    @Test
     public void testPerfilValido() {
-		PerfilRequisito instance = new PerfilRequisito();
-		instance.setPerfil(PERFIL_REQUISITO);
+        PerfilRequisito instance = new PerfilRequisito();
+        instance.setPerfil(PERFIL_REQUISITO);
         assertEquals(instance.getPerfil(), PERFIL_REQUISITO);
     }
 
-	@Test(expected = IllegalStateException.class)
+    @Test(expected = IllegalStateException.class)
     public void testPerfilNulo() {
-		PerfilRequisito instance = new PerfilRequisito();
+        PerfilRequisito instance = new PerfilRequisito();
         instance.setPerfil(null);
         instance.toString();
     }

@@ -11,7 +11,7 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
     TextField txtQuantidadeRetaguarda;
 
     int quantRetaguarda;
-    
+
     String quantRetStr;
 
     @FXML
@@ -25,7 +25,6 @@ public class WizardQuantidadeRetaguardaCtrl extends AbstractWizardCtrl implement
 //    private void handleTextFieldFormaImpressaoAction() {
 //        quantRetaguarda = Integer.parseInt(txtQuantidadeRetaguarda.toString());
 //    }
-
     @Override
     public void setScreenParent(ScreensController screenPage) {
         myController = screenPage;

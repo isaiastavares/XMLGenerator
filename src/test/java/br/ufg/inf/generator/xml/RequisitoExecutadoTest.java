@@ -6,18 +6,18 @@ import org.junit.Test;
 
 public class RequisitoExecutadoTest {
 
-	private static final String REQUISITO_EXECUTADO = "XXVIII";
+    private static final String REQUISITO_EXECUTADO = "XXVIII";
 
-	@Test
+    @Test
     public void testRequisitoExecutadoValido() {
-		RequisitoExecutado instance = new RequisitoExecutado();
-		instance.setRequisitoExecutado(REQUISITO_EXECUTADO);
+        RequisitoExecutado instance = new RequisitoExecutado();
+        instance.setRequisitoExecutado(REQUISITO_EXECUTADO);
         assertEquals(instance.getRequisitoExecutado(), REQUISITO_EXECUTADO);
     }
 
-	@Test(expected = IllegalStateException.class)
+    @Test(expected = IllegalStateException.class)
     public void testRequisitoExecutadoNulo() {
-		RequisitoExecutado instance = new RequisitoExecutado();
+        RequisitoExecutado instance = new RequisitoExecutado();
         instance.setRequisitoExecutado(null);
         instance.toString();
     }

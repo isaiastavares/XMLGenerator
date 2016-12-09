@@ -27,15 +27,15 @@ public class ArquivoExecutavelTest {
 
     @Test
     public void testNomeValido() {
-    	final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
+        final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
         arquivoExecutavel.setNome(NOME);
         assertEquals(NOME, arquivoExecutavel.getNome());
     }
 
     @Test
     public void testMD5Valido() {
-    	final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
-    	arquivoExecutavel.setMd5(MD5);
+        final ArquivoExecutavel arquivoExecutavel = new ArquivoExecutavel();
+        arquivoExecutavel.setMd5(MD5);
         assertEquals(MD5, arquivoExecutavel.getMd5());
     }
 }

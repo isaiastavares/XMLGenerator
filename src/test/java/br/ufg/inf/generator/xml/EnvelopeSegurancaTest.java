@@ -39,21 +39,21 @@ public class EnvelopeSegurancaTest {
 
     @Test
     public void testMarcaCorreto() {
-    	final EnvelopeSeguranca envelopeSeguranca = new EnvelopeSeguranca();
+        final EnvelopeSeguranca envelopeSeguranca = new EnvelopeSeguranca();
         envelopeSeguranca.setMarca(MARCA);
         assertEquals(MARCA, envelopeSeguranca.getMarca());
     }
 
     @Test
     public void testModeloCorreto() {
-    	final EnvelopeSeguranca envelopeSeguranca = new EnvelopeSeguranca();
+        final EnvelopeSeguranca envelopeSeguranca = new EnvelopeSeguranca();
         envelopeSeguranca.setModelo(MODELO);
         assertEquals(MODELO, envelopeSeguranca.getModelo());
     }
 
     @Test
     public void testNumeroCorreto() {
-    	final EnvelopeSeguranca envelopeSeguranca = new EnvelopeSeguranca();
+        final EnvelopeSeguranca envelopeSeguranca = new EnvelopeSeguranca();
         envelopeSeguranca.setNumero(NUMERO);
         assertEquals(NUMERO, envelopeSeguranca.getNumero());
     }

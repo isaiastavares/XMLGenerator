@@ -10,16 +10,16 @@ import javafx.scene.control.TextField;
 
 public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-	@FXML
-	private TextField txtRazaoSocial, txtCnpj, txtInscEstad;
-	@FXML
-	private TextField txtRua, txtNumero, txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep;
-	@FXML
-	private TextField txtVersAtoCotepe;
-	@FXML
-	private DatePicker dateInicio, dateFim;
+    @FXML
+    private TextField txtRazaoSocial, txtCnpj, txtInscEstad;
+    @FXML
+    private TextField txtRua, txtNumero, txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep;
+    @FXML
+    private TextField txtVersAtoCotepe;
+    @FXML
+    private DatePicker dateInicio, dateFim;
 
-	private ScreensController myController;
+    private ScreensController myController;
 
     @FXML
     public void initialize() {
@@ -43,40 +43,40 @@ public class WizardOtcCtrl extends AbstractWizardCtrl implements ControlledScree
         myController.setScreen(IScreens.ID_SISTEMA_PAF);
     }
 
-	@Override
-	protected boolean isValido() {
-		return ValidationFields.checkEmptyFields(txtRazaoSocial, txtCnpj, txtInscEstad, txtRua, txtNumero,
-				txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep, txtVersAtoCotepe);
-	}
+    @Override
+    protected boolean isValido() {
+        return ValidationFields.checkEmptyFields(txtRazaoSocial, txtCnpj, txtInscEstad, txtRua, txtNumero,
+                txtComplemento, txtBairro, txtMunicipio, txtUf, txtCep, txtVersAtoCotepe);
+    }
 
-	@Override
-	protected void salvar() {
-		Otc otc = new Otc();
-		otc.setRazaoSocial(txtRazaoSocial.getText());
-		otc.setCnpj(txtCnpj.getText());
-		otc.setInscricaoEstadual(txtInscEstad.getText());
-		otc.setEndereco(getEndereco());
-		otc.setPeriodoAnalise(getPeriodoAnalise());
-		otc.setVersaoCotepe(txtVersAtoCotepe.getText());
-		getMensagem().setOtc(otc);
-	}
+    @Override
+    protected void salvar() {
+        Otc otc = new Otc();
+        otc.setRazaoSocial(txtRazaoSocial.getText());
+        otc.setCnpj(txtCnpj.getText());
+        otc.setInscricaoEstadual(txtInscEstad.getText());
+        otc.setEndereco(getEndereco());
+        otc.setPeriodoAnalise(getPeriodoAnalise());
+        otc.setVersaoCotepe(txtVersAtoCotepe.getText());
+        getMensagem().setOtc(otc);
+    }
 
-	private Endereco getEndereco() {
-		Endereco endereco = new Endereco();
-		endereco.setLogradouro(txtRua.getText());
-		endereco.setNumero(txtNumero.getText());
-		endereco.setComplemento(txtComplemento.getText());
-		endereco.setBairro(txtBairro.getText());
-		endereco.setMunicipio(txtMunicipio.getText());
-		endereco.setUf(txtUf.getText());
-		endereco.setCep(txtCep.getText());
-		return endereco;
-	}
+    private Endereco getEndereco() {
+        Endereco endereco = new Endereco();
+        endereco.setLogradouro(txtRua.getText());
+        endereco.setNumero(txtNumero.getText());
+        endereco.setComplemento(txtComplemento.getText());
+        endereco.setBairro(txtBairro.getText());
+        endereco.setMunicipio(txtMunicipio.getText());
+        endereco.setUf(txtUf.getText());
+        endereco.setCep(txtCep.getText());
+        return endereco;
+    }
 
-	private PeriodoAnalise getPeriodoAnalise() {
-		PeriodoAnalise periodoAnalise = new PeriodoAnalise();
-		periodoAnalise.setDataInicio(dateInicio.getValue());
-		periodoAnalise.setDataFim(dateFim.getValue());
-		return periodoAnalise;
-	}
+    private PeriodoAnalise getPeriodoAnalise() {
+        PeriodoAnalise periodoAnalise = new PeriodoAnalise();
+        periodoAnalise.setDataInicio(dateInicio.getValue());
+        periodoAnalise.setDataFim(dateFim.getValue());
+        return periodoAnalise;
+    }
 }

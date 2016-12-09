@@ -4,13 +4,13 @@ import org.simpleframework.xml.Element;
 
 public class NaoConformidade extends LaudoBase {
 
-    @Element (name = "Requisito", required = true)
+    @Element(name = "Requisito", required = true)
     private String requisito;
 
-    @Element (name = "Item", required = true)
+    @Element(name = "Item", required = true)
     private int item;
 
-    @Element (name = "Descrição", required = true)
+    @Element(name = "Descrição", required = true)
     private String descricao;
 
     public String getRequisito() {

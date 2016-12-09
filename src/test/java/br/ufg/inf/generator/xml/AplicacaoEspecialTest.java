@@ -6,18 +6,18 @@ import org.junit.Test;
 
 public class AplicacaoEspecialTest {
 
-	private static final String APLICACAO_ESPECIAL = "Demais atividades";
+    private static final String APLICACAO_ESPECIAL = "Demais atividades";
 
-	@Test
+    @Test
     public void testAplicacaoEspecialValido() {
-		AplicacaoEspecial instance = new AplicacaoEspecial();
-		instance.setAplicacao(APLICACAO_ESPECIAL);
+        AplicacaoEspecial instance = new AplicacaoEspecial();
+        instance.setAplicacao(APLICACAO_ESPECIAL);
         assertEquals(instance.getAplicacao(), APLICACAO_ESPECIAL);
     }
 
-	@Test(expected = IllegalStateException.class)
+    @Test(expected = IllegalStateException.class)
     public void testAplicacaoEspecialNulo() {
-		AplicacaoEspecial instance = new AplicacaoEspecial();
+        AplicacaoEspecial instance = new AplicacaoEspecial();
         instance.setAplicacao(null);
         instance.toString();
     }

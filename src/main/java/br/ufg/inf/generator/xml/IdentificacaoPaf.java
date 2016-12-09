@@ -95,6 +95,4 @@ public class IdentificacaoPaf extends LaudoBase {
         this.perfisRequisito = perfisRequisito;
     }
 
-
-
 }

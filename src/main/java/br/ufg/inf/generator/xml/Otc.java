@@ -62,11 +62,11 @@ public class Otc extends LaudoBase {
         this.periodoAnalise = periodoAnalise;
     }
 
-	public String getVersaoCotepe() {
-		return versaoCotepe;
-	}
+    public String getVersaoCotepe() {
+        return versaoCotepe;
+    }
 
-	public void setVersaoCotepe(String versaoCotepe) {
-		this.versaoCotepe = versaoCotepe;
-	}
+    public void setVersaoCotepe(String versaoCotepe) {
+        this.versaoCotepe = versaoCotepe;
+    }
 }

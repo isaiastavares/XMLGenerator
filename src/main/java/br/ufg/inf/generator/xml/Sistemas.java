@@ -10,7 +10,7 @@ public class Sistemas extends LaudoBase {
 
     @Element(name = "EmpresaDesenvolvedora", required = false)
     private EmpresaDesenvolvedora empresaDesenvolvedora;
-    
+
     @Element(name = "ArquivosExecutaveis", required = false)
     private ArrayList<ArquivoExecutavel> arquivosExecutaveis;
 
@@ -37,5 +37,5 @@ public class Sistemas extends LaudoBase {
     public void setArquivosExecutaveis(ArrayList<ArquivoExecutavel> arquivosExecutaveis) {
         this.arquivosExecutaveis = arquivosExecutaveis;
     }
-    
+
 }

@@ -4,7 +4,7 @@ import org.simpleframework.xml.Text;
 
 public class RequisitoExecutado extends LaudoBase {
 
-	@Text(required = true)
+    @Text(required = true)
     private String requisitoExecutado;
 
     public String getRequisitoExecutado() {

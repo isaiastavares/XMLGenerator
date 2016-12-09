@@ -26,15 +26,15 @@ public class CaracteristicasPaf extends LaudoBase {
     @ElementList(name = "MeioGeracaoArquivoSintegraEfd", required = true)
     private ArrayList<Modo> meioGeracaoArquivoStintegraEfd;
 
-    @Element(name ="IntegracaoPaf", required = true)
+    @Element(name = "IntegracaoPaf", required = true)
     private String integracaoPaf;
-    
+
     @ElementList(name = "FormaImpressao", required = true)
     private ArrayList<Modo> formaImpressao;
-    
+
     @ElementList(name = "TratamentoInterrupcao", required = true)
     private ArrayList<Modo> tratamentoInterrupcao;
-    
+
     @ElementList(name = "AplicacoesEspeciais", required = true)
     private ArrayList<AplicacaoEspecial> aplicacoesEspeciais;
 
@@ -117,5 +117,5 @@ public class CaracteristicasPaf extends LaudoBase {
     public void setAplicacoesEspeciais(ArrayList<AplicacaoEspecial> aplicacoesEspeciais) {
         this.aplicacoesEspeciais = aplicacoesEspeciais;
     }
-    
+
 }

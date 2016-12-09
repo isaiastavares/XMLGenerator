@@ -7,7 +7,7 @@ import org.junit.Test;
 public class EnderecoTest {
 
     private static final String VAZIO = "";
-	private static final String LOGRADOURO = "NKwaAJ5ZJ49aQYmqBvxMhBzkGUqvtXnqusGEtjDzKCXPGwrEZCS8LGKHyBbV";
+    private static final String LOGRADOURO = "NKwaAJ5ZJ49aQYmqBvxMhBzkGUqvtXnqusGEtjDzKCXPGwrEZCS8LGKHyBbV";
     private static final String NUMERO = "ll8DABEZYq9OrSPlxxYlfUN94";
     private static final String COMPLEMENTO = "Fr3gSvoAeKbGpQD3r98KFeB50P3Gq14XBVsv5fpiaBvJ3HTOpREiwYGs20Xw";
     private static final String BAIRRO = "67LQFlXOBK0JqAE1rFi2CEyUGW5Z8QmmHhzmZ9GABVLKa9AbV0uFR0onl7nU";
@@ -21,62 +21,62 @@ public class EnderecoTest {
 
     @Test(expected = IllegalStateException.class)
     public void testLogradouroComTamanhoMaiorQue255() {
-    	new Endereco().setLogradouro(STRING_TAMANHO_256);
+        new Endereco().setLogradouro(STRING_TAMANHO_256);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testLogradouroVazio() {
-    	new Endereco().setLogradouro(VAZIO);
+        new Endereco().setLogradouro(VAZIO);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testNumeroComTamanhoMaiorQue25() {
-    	new Endereco().setNumero(STRING_TAMANHO_26);
+        new Endereco().setNumero(STRING_TAMANHO_26);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testNumeroVazio() {
-    	new Endereco().setNumero(VAZIO);
+        new Endereco().setNumero(VAZIO);
     }
 
     @Test
     public void testComplementoVazio() {
-    	new Endereco().setComplemento(VAZIO);
+        new Endereco().setComplemento(VAZIO);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testComplementoComTamanhoMaiorQue255() {
-    	new Endereco().setComplemento(STRING_TAMANHO_256);
+        new Endereco().setComplemento(STRING_TAMANHO_256);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testBairroComTamanhoMaiorQue255() {
-    	new Endereco().setBairro(STRING_TAMANHO_256);
+        new Endereco().setBairro(STRING_TAMANHO_256);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testBairroVazio() {
-    	new Endereco().setBairro(VAZIO);
+        new Endereco().setBairro(VAZIO);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testMunicipioComTamanhoMaiorQue255() {
-    	new Endereco().setMunicipio(STRING_TAMANHO_256);
+        new Endereco().setMunicipio(STRING_TAMANHO_256);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testMunicipioVazio() {
-    	new Endereco().setMunicipio(VAZIO);
+        new Endereco().setMunicipio(VAZIO);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testCepComTamanhoMaiorQue8() {
-    	new Endereco().setCep(STRING_TAMANHO_9);
+        new Endereco().setCep(STRING_TAMANHO_9);
     }
 
     @Test(expected = IllegalStateException.class)
     public void testCepVazio() {
-    	new Endereco().setCep(VAZIO);
+        new Endereco().setCep(VAZIO);
     }
 
     @Test(expected = IllegalStateException.class)
@@ -171,49 +171,49 @@ public class EnderecoTest {
 
     @Test
     public void testLogradouroCorreto() {
-    	final Endereco endereco = new Endereco();
+        final Endereco endereco = new Endereco();
         endereco.setLogradouro(LOGRADOURO);
         assertEquals(LOGRADOURO, endereco.getLogradouro());
     }
 
     @Test
     public void testNumeroCorreto() {
-    	final Endereco endereco = new Endereco();
+        final Endereco endereco = new Endereco();
         endereco.setNumero(NUMERO);
         assertEquals(NUMERO, endereco.getNumero());
     }
 
     @Test
     public void testComplementoCorreto() {
-    	final Endereco endereco = new Endereco();
+        final Endereco endereco = new Endereco();
         endereco.setComplemento(COMPLEMENTO);
         assertEquals(COMPLEMENTO, endereco.getComplemento());
     }
 
     @Test
     public void testBairroCorreto() {
-    	final Endereco endereco = new Endereco();
+        final Endereco endereco = new Endereco();
         endereco.setBairro(BAIRRO);
         assertEquals(BAIRRO, endereco.getBairro());
     }
 
     @Test
     public void testMunicipioCorreto() {
-    	final Endereco endereco = new Endereco();
+        final Endereco endereco = new Endereco();
         endereco.setMunicipio(MUNICIPIO);
         assertEquals(MUNICIPIO, endereco.getMunicipio());
     }
 
     @Test
     public void testUfCorreto() {
-    	final Endereco endereco = new Endereco();
+        final Endereco endereco = new Endereco();
         endereco.setUf(UF);
         assertEquals("GO", endereco.getUf());
     }
 
     @Test
     public void testCepCorreto() {
-    	final Endereco endereco = new Endereco();
+        final Endereco endereco = new Endereco();
         endereco.setCep(CEP);
         assertEquals(CEP, endereco.getCep());
     }

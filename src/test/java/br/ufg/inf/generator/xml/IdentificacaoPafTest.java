@@ -23,7 +23,7 @@ public class IdentificacaoPafTest {
     private static ArrayList<PerfilRequisito> PERFISREQUISITOS;
 
     @Before
-    public void beforeMethod(){
+    public void beforeMethod() {
         NOMECOMERCIAL = "PAF-ECF";
 
         VERSAO = "1.0";
@@ -56,7 +56,7 @@ public class IdentificacaoPafTest {
         PerfilRequisito perfil = new PerfilRequisito();
         perfil.setPerfil("V");
         PERFISREQUISITOS = new ArrayList<>();
-        PERFISREQUISITOS .add(perfil);
+        PERFISREQUISITOS.add(perfil);
     }
 
     @Test

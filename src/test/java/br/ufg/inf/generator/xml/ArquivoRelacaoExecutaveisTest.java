@@ -21,7 +21,7 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test
     public void testNomeValido() {
-    	final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
         instance.setNome(NOME);
         String result = instance.getNome();
         assertEquals(NOME, result);
@@ -29,7 +29,7 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test
     public void testMd5Valido() {
-    	final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
         instance.setMd5(MD5);
         String result = instance.getMd5();
         assertEquals(MD5, result);
@@ -37,7 +37,7 @@ public class ArquivoRelacaoExecutaveisTest {
 
     @Test(expected = IllegalStateException.class)
     public void testNomeNulo() {
-    	final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
+        final ArquivoRelacaoExecutaveis instance = new ArquivoRelacaoExecutaveis();
         instance.setNome(null);
         instance.setMd5(MD5);
         instance.toString();

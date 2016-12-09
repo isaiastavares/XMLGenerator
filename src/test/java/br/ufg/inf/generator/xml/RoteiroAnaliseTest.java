@@ -16,7 +16,7 @@ public class RoteiroAnaliseTest {
     private static String ANO;
 
     @Before
-    public void beforeMethod(){
+    public void beforeMethod() {
         VERSAOROTEIRO = "1";
         VERSAOERPAF = "1";
         MES = "12";
@@ -56,7 +56,7 @@ public class RoteiroAnaliseTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void testVersaoRoteiroNulo(){
+    public void testVersaoRoteiroNulo() {
         RoteiroAnalise instance = new RoteiroAnalise();
         instance.setVersaoRoteiro(null);
         instance.setVersaoErPaf(VERSAOERPAF);
@@ -66,7 +66,7 @@ public class RoteiroAnaliseTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void testVersaoErPafNulo(){
+    public void testVersaoErPafNulo() {
         RoteiroAnalise instance = new RoteiroAnalise();
         instance.setVersaoRoteiro(VERSAOROTEIRO);
         instance.setVersaoErPaf(null);
@@ -76,7 +76,7 @@ public class RoteiroAnaliseTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void testMesNulo(){
+    public void testMesNulo() {
         RoteiroAnalise instance = new RoteiroAnalise();
         instance.setVersaoRoteiro(VERSAOROTEIRO);
         instance.setVersaoErPaf(VERSAOERPAF);
@@ -86,7 +86,7 @@ public class RoteiroAnaliseTest {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void testAnoNulo(){
+    public void testAnoNulo() {
         RoteiroAnalise instance = new RoteiroAnalise();
         instance.setVersaoRoteiro(VERSAOROTEIRO);
         instance.setVersaoErPaf(VERSAOERPAF);

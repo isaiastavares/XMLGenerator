@@ -16,7 +16,7 @@ public class AprovacaoRelatorioTest {
     private static String CPF;
 
     @Before
-    public void beforeMethod(){
+    public void beforeMethod() {
         NOME = "Nome";
         CARGO = "Cargo";
         CPF = "11111111111";
