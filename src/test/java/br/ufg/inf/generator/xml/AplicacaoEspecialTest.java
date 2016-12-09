@@ -16,7 +16,7 @@ public class AplicacaoEspecialTest {
     }
 
 	@Test(expected = IllegalStateException.class)
-    public void testNomeNulo() {
+    public void testAplicacaoEspecialNulo() {
 		AplicacaoEspecial instance = new AplicacaoEspecial();
         instance.setAplicacao(null);
         instance.toString();

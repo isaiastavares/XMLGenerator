@@ -17,7 +17,7 @@ public class EmpresaDesenvolvedoraTest {
     }
 
 	@Test
-    public void testCnpj() {
+    public void testCnpjValido() {
 		EmpresaDesenvolvedora instance = new EmpresaDesenvolvedora();
 		instance.setCnpj(CNPJ);
         assertEquals(instance.getCnpj(), CNPJ);
