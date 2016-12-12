@@ -8,42 +8,42 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardQuantidadePedCtrl">
-   <children>
-      <Text layoutX="371.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de Sistemas PED">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Text layoutX="315.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Sistemas Ped" textAlignment="CENTER" wrappingWidth="319.521484375">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="10.0" layoutY="73.0" prefHeight="10.0" prefWidth="892.0" />
-      <TextField fx:id="txtQuantPed" layoutX="356.0" layoutY="193.0" prefHeight="25.0" prefWidth="237.0" />
-      <Separator layoutX="8.0" layoutY="260.0" prefHeight="10.0" prefWidth="892.0" />
-      <TextField fx:id="txtQuantPedNfe" layoutX="356.0" layoutY="497.0" prefHeight="25.0" prefWidth="237.0" />
-      <Separator layoutX="10.0" layoutY="391.0" prefHeight="10.0" prefWidth="892.0" />
-      <Text layoutX="296.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Sistemas Ped-Nfe" textAlignment="CENTER" wrappingWidth="383.521484375">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Text layoutX="370.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de Sistemas PED-NFE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Separator layoutX="8.0" layoutY="264.0" prefHeight="10.0" prefWidth="892.0" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="681.0" layoutY="619.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="371.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de Sistemas PED">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text layoutX="315.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Sistemas Ped" textAlignment="CENTER" wrappingWidth="319.521484375">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="10.0" layoutY="73.0" prefHeight="10.0" prefWidth="892.0" />
+        <TextField fx:id="txtQuantPed" layoutX="356.0" layoutY="193.0" prefHeight="25.0" prefWidth="237.0" />
+        <Separator layoutX="8.0" layoutY="260.0" prefHeight="10.0" prefWidth="892.0" />
+        <TextField fx:id="txtQuantPedNfe" layoutX="356.0" layoutY="497.0" prefHeight="25.0" prefWidth="237.0" />
+        <Separator layoutX="10.0" layoutY="391.0" prefHeight="10.0" prefWidth="892.0" />
+        <Text layoutX="296.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade de Sistemas Ped-Nfe" textAlignment="CENTER" wrappingWidth="383.521484375">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text layoutX="370.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite a quantidade de Sistemas PED-NFE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Separator layoutX="8.0" layoutY="264.0" prefHeight="10.0" prefWidth="892.0" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="681.0" layoutY="619.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

@@ -8,114 +8,117 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardOtcCtrl">
-   <children>
-      <Text layoutX="299.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Órgao Tecnico Credenciado (OTC)">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="9.0" layoutY="47.0" prefHeight="7.0" prefWidth="892.0" />
-      <Text layoutX="390.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do OTC">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font></Text>
-      <Text layoutX="26.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtRazaoSocial" layoutX="26.0" layoutY="129.0" prefHeight="24.0" prefWidth="342.0" promptText="UNIVERSIDADE FEDERAL DE GOIAS - CENTRO TECNOLOGICO DE SOFTWARE - INF/UFG" text="UNIVERSIDADE FEDERAL DE GOIAS - CENTRO TECNOLOGICO DE SOFTWARE - INF/UFG" />
-      <Text layoutX="474.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtCnpj" layoutX="472.0" layoutY="128.0" text="01567601000143" />
-      <Text layoutX="714.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IE - Inscrição Estadual">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtInscEstad" layoutX="712.0" layoutY="128.0" text="Isento" />
-      <Separator layoutX="5.0" layoutY="172.0" prefHeight="7.0" prefWidth="892.0" />
-      <Text layoutX="377.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de endereço">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font></Text>
-      <Text layoutX="38.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtRua" layoutX="39.0" layoutY="269.0" prefHeight="25.0" prefWidth="197.0" text="Rua Alameda Palmeiras" />
-      <Text layoutX="301.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtNumero" layoutX="299.0" layoutY="266.0" prefHeight="25.0" prefWidth="57.0" text="1" />
-      <Text layoutX="474.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtComplemento" layoutX="472.0" layoutY="268.0" prefHeight="25.0" prefWidth="197.0" text="Quadra D - Campus II Samambaia" />
-      <Text layoutX="718.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtBairro" layoutX="716.0" layoutY="266.0" prefHeight="29.0" prefWidth="157.0" text="Itatiaia" />
-      <Text layoutX="42.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Município">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtMunicipio" layoutX="39.0" layoutY="349.0" prefHeight="29.0" prefWidth="197.0" text="Goiania" />
-      <Text layoutX="300.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtUf" layoutX="299.0" layoutY="344.0" prefHeight="29.0" prefWidth="57.0" text="GO" />
-      <Text layoutX="474.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="21.24609375">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtCep" layoutX="472.0" layoutY="347.0" prefHeight="29.0" prefWidth="157.0" text="74001970" />
-      <Separator layoutX="9.0" layoutY="416.0" prefHeight="7.0" prefWidth="892.0" />
-      <Text layoutX="353.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Período de Realização da Análise">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font></Text>
-      <Text layoutX="107.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Início">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <DatePicker fx:id="dateInicio" layoutX="107.0" layoutY="514.0" />
-      <Text layoutX="428.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Fim">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <DatePicker fx:id="dateFim" layoutX="426.0" layoutY="514.0" />
-      <Text layoutX="698.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do Ato Cotepe">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtVersAtoCotepe" layoutX="700.0" layoutY="510.0" prefHeight="29.0" prefWidth="80.0" text="02.04" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="645.0" layoutY="591.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="299.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Órgao Tecnico Credenciado (OTC)">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="9.0" layoutY="47.0" prefHeight="7.0" prefWidth="892.0" />
+        <Text layoutX="390.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do OTC">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="26.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRazaoSocial" layoutX="26.0" layoutY="129.0" prefHeight="24.0" prefWidth="342.0" promptText="UNIVERSIDADE FEDERAL DE GOIAS - CENTRO TECNOLOGICO DE SOFTWARE - INF/UFG" text="UNIVERSIDADE FEDERAL DE GOIAS - CENTRO TECNOLOGICO DE SOFTWARE - INF/UFG" />
+        <Text layoutX="474.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtCnpj" layoutX="472.0" layoutY="128.0" text="01567601000143" />
+        <Text layoutX="714.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IE - Inscrição Estadual">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtInscEstad" layoutX="712.0" layoutY="128.0" text="Isento" />
+        <Separator layoutX="5.0" layoutY="172.0" prefHeight="7.0" prefWidth="892.0" />
+        <Text layoutX="377.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de endereço">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="38.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRua" layoutX="39.0" layoutY="269.0" prefHeight="25.0" prefWidth="197.0" text="Rua Alameda Palmeiras" />
+        <Text layoutX="301.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtNumero" layoutX="299.0" layoutY="266.0" prefHeight="25.0" prefWidth="57.0" text="1" />
+        <Text layoutX="474.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtComplemento" layoutX="472.0" layoutY="268.0" prefHeight="25.0" prefWidth="197.0" text="Quadra D - Campus II Samambaia" />
+        <Text layoutX="718.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtBairro" layoutX="716.0" layoutY="266.0" prefHeight="29.0" prefWidth="157.0" text="Itatiaia" />
+        <Text layoutX="42.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Município">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtMunicipio" layoutX="39.0" layoutY="349.0" prefHeight="29.0" prefWidth="197.0" text="Goiania" />
+        <Text layoutX="300.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtUf" layoutX="299.0" layoutY="344.0" prefHeight="29.0" prefWidth="57.0" text="GO" />
+        <Text layoutX="474.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="21.24609375">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtCep" layoutX="472.0" layoutY="347.0" prefHeight="29.0" prefWidth="157.0" text="74001970" />
+        <Separator layoutX="9.0" layoutY="416.0" prefHeight="7.0" prefWidth="892.0" />
+        <Text layoutX="353.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Período de Realização da Análise">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="107.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Início">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <DatePicker fx:id="dateInicio" layoutX="107.0" layoutY="514.0" />
+        <Text layoutX="428.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Fim">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <DatePicker fx:id="dateFim" layoutX="426.0" layoutY="514.0" />
+        <Text layoutX="698.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do Ato Cotepe">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtVersAtoCotepe" layoutX="700.0" layoutY="510.0" prefHeight="29.0" prefWidth="80.0" text="02.04" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="645.0" layoutY="591.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

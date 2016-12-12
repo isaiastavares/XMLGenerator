@@ -11,9 +11,9 @@ import javafx.scene.control.ChoiceBox;
 
 public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements ControlledScreen {
 
-	private static String integracaoPafValue;
+    private static String integracaoPafValue;
 
-	private ScreensController myController;
+    private ScreensController myController;
     private boolean verificaFormaImpressao = false;
     private boolean verificaTratamentoInterrupcao = false;
     private boolean verificaMeioGeracao = false;
@@ -132,7 +132,7 @@ public class WizardCaracteristicasPafCtrl extends AbstractWizardCtrl implements 
 
     @Override
     protected void salvar() {
-    	//TODO falta implementar a parte de salvar
+        //TODO falta implementar a parte de salvar
     }
 
     public synchronized static String getIntegracaoPafValue() {

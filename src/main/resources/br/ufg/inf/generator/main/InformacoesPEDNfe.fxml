@@ -8,70 +8,70 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardInformacoesPedNfeCtrl">
-   <children>
-      <Text layoutX="379.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema PED - NFE">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Text fill="#757070" layoutX="358.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora" textAlignment="CENTER">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Text layoutX="405.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do Sistema">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtRazaoSocial" layoutX="284.0" layoutY="168.0" prefHeight="24.0" prefWidth="342.0" />
-      <Text layoutX="314.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtRazaoDesenvolvedora" layoutX="251.0" layoutY="324.0" prefHeight="25.0" prefWidth="197.0" />
-      <Text layoutX="551.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtCnpj" layoutX="473.0" layoutY="324.0" prefHeight="25.0" prefWidth="186.0" />
-      <Text layoutX="442.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtFuncao" layoutX="363.0" layoutY="571.0" prefHeight="25.0" prefWidth="197.0" />
-      <Text layoutX="335.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtNomeArquivo" layoutX="254.0" layoutY="482.0" prefHeight="29.0" prefWidth="197.0" />
-      <Text layoutX="553.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD-5">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtMd5" layoutX="476.0" layoutY="482.0" prefHeight="29.0" prefWidth="186.0" />
-      <Text fill="#757070" layoutX="384.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arquivo Executável" textAlignment="CENTER">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <HBox alignment="BOTTOM_RIGHT" layoutX="681.0" layoutY="619.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-      <Separator layoutX="9.0" layoutY="85.0" prefHeight="10.0" prefWidth="892.0" />
-      <Separator layoutX="12.0" layoutY="217.0" prefHeight="10.0" prefWidth="892.0" />
-      <Separator layoutX="12.0" layoutY="376.0" prefHeight="10.0" prefWidth="892.0" />
-   </children>
+    <children>
+        <Text layoutX="379.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema PED - NFE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text fill="#757070" layoutX="358.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="405.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do Sistema">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRazaoSocial" layoutX="284.0" layoutY="168.0" prefHeight="24.0" prefWidth="342.0" />
+        <Text layoutX="314.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRazaoDesenvolvedora" layoutX="251.0" layoutY="324.0" prefHeight="25.0" prefWidth="197.0" />
+        <Text layoutX="551.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtCnpj" layoutX="473.0" layoutY="324.0" prefHeight="25.0" prefWidth="186.0" />
+        <Text layoutX="442.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtFuncao" layoutX="363.0" layoutY="571.0" prefHeight="25.0" prefWidth="197.0" />
+        <Text layoutX="335.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtNomeArquivo" layoutX="254.0" layoutY="482.0" prefHeight="29.0" prefWidth="197.0" />
+        <Text layoutX="553.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MD-5">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtMd5" layoutX="476.0" layoutY="482.0" prefHeight="29.0" prefWidth="186.0" />
+        <Text fill="#757070" layoutX="384.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arquivo Executável" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <HBox alignment="BOTTOM_RIGHT" layoutX="681.0" layoutY="619.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+        <Separator layoutX="9.0" layoutY="85.0" prefHeight="10.0" prefWidth="892.0" />
+        <Separator layoutX="12.0" layoutY="217.0" prefHeight="10.0" prefWidth="892.0" />
+        <Separator layoutX="12.0" layoutY="376.0" prefHeight="10.0" prefWidth="892.0" />
+    </children>
 </Pane>

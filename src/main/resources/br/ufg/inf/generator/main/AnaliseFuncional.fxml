@@ -8,63 +8,63 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardAnaliseFuncionalEcfCtrl">
-   <children>
-      <Text layoutX="348.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roteiro de Análise Funcional">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="4.0" layoutY="64.0" prefHeight="10.0" prefWidth="902.0" />
-      <Text layoutX="207.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do ER (Ato Cotepe)">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtVersaoER" layoutX="203.0" layoutY="150.0" prefHeight="25.0" prefWidth="166.0" />
-      <Text layoutX="465.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do Roteiro de Análise Funcional">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtVersaoRoteiro" layoutX="477.0" layoutY="151.0" prefHeight="25.0" prefWidth="197.0" />
-      <Text layoutX="198.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mês de Lançamento do Roteiro">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <MenuButton layoutX="251.0" layoutY="267.0" mnemonicParsing="false" text="Janeiro">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-      </MenuButton>
-      <Text layoutX="489.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento do Roteiro">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtAnoRoteiro" layoutX="482.0" layoutY="267.0" prefHeight="25.0" prefWidth="186.0" />
-      <Text layoutX="285.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa apresentou declaração referente ao requisito XXXI?">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <Text layoutX="351.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obs.: Integridade de Banco de Dados">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <RadioButton fx:id="radioSim" layoutX="401.0" layoutY="452.0" mnemonicParsing="false" text="Sim" />
-      <RadioButton fx:id="radioNao" layoutX="495.0" layoutY="452.0" mnemonicParsing="false" text="Não" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="660.0" layoutY="601.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="348.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roteiro de Análise Funcional">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="4.0" layoutY="64.0" prefHeight="10.0" prefWidth="902.0" />
+        <Text layoutX="207.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do ER (Ato Cotepe)">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtVersaoER" layoutX="203.0" layoutY="150.0" prefHeight="25.0" prefWidth="166.0" />
+        <Text layoutX="465.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Versão do Roteiro de Análise Funcional">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtVersaoRoteiro" layoutX="477.0" layoutY="151.0" prefHeight="25.0" prefWidth="197.0" />
+        <Text layoutX="198.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mês de Lançamento do Roteiro">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <MenuButton layoutX="251.0" layoutY="267.0" mnemonicParsing="false" text="Janeiro">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+            </items>
+        </MenuButton>
+        <Text layoutX="489.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ano de lançamento do Roteiro">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtAnoRoteiro" layoutX="482.0" layoutY="267.0" prefHeight="25.0" prefWidth="186.0" />
+        <Text layoutX="285.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa apresentou declaração referente ao requisito XXXI?">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text layoutX="351.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obs.: Integridade de Banco de Dados">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <RadioButton fx:id="radioSim" layoutX="401.0" layoutY="452.0" mnemonicParsing="false" text="Sim" />
+        <RadioButton fx:id="radioNao" layoutX="495.0" layoutY="452.0" mnemonicParsing="false" text="Não" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="660.0" layoutY="601.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

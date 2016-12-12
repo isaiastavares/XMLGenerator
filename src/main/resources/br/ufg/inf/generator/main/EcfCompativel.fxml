@@ -7,39 +7,39 @@
 <?import javafx.scene.text.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardEcfCompativelCtrl">
-   <children>
-      <Text layoutX="260.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECFs Compatíveis com o Sistema PAF" textAlignment="CENTER" wrappingWidth="392.521484375">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="5.0" layoutY="54.0" prefHeight="10.0" prefWidth="902.0" />
-      <Text layoutX="139.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECFs carregados do arquivo XML" />
-      <TableView layoutX="55.0" layoutY="114.0" prefHeight="432.0" prefWidth="342.0">
-        <columns>
-          <TableColumn prefWidth="177.0" text="Marca" />
-          <TableColumn prefWidth="164.0" text="Modelo" />
-        </columns>
-      </TableView>
-      <Text layoutX="600.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECFs compatíveis com o sistema" />
-      <TableView layoutX="516.0" layoutY="114.0" prefHeight="432.0" prefWidth="342.0">
-         <columns>
-            <TableColumn prefWidth="177.0" text="Marca" />
-            <TableColumn prefWidth="164.0" text="Modelo" />
-         </columns>
-      </TableView>
-      <Button layoutX="417.0" layoutY="215.0" mnemonicParsing="false" text="Adicionar ECF" />
-      <Button layoutX="418.0" layoutY="349.0" mnemonicParsing="false" text="Remover ECF" />
-      <Button layoutX="181.0" layoutY="566.0" mnemonicParsing="false" text="Carregar ECFs" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="681.0" layoutY="619.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="260.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECFs Compatíveis com o Sistema PAF" textAlignment="CENTER" wrappingWidth="392.521484375">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="5.0" layoutY="54.0" prefHeight="10.0" prefWidth="902.0" />
+        <Text layoutX="139.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECFs carregados do arquivo XML" />
+        <TableView layoutX="55.0" layoutY="114.0" prefHeight="432.0" prefWidth="342.0">
+            <columns>
+                <TableColumn prefWidth="177.0" text="Marca" />
+                <TableColumn prefWidth="164.0" text="Modelo" />
+            </columns>
+        </TableView>
+        <Text layoutX="600.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECFs compatíveis com o sistema" />
+        <TableView layoutX="516.0" layoutY="114.0" prefHeight="432.0" prefWidth="342.0">
+            <columns>
+                <TableColumn prefWidth="177.0" text="Marca" />
+                <TableColumn prefWidth="164.0" text="Modelo" />
+            </columns>
+        </TableView>
+        <Button layoutX="417.0" layoutY="215.0" mnemonicParsing="false" text="Adicionar ECF" />
+        <Button layoutX="418.0" layoutY="349.0" mnemonicParsing="false" text="Remover ECF" />
+        <Button layoutX="181.0" layoutY="566.0" mnemonicParsing="false" text="Carregar ECFs" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="681.0" layoutY="619.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

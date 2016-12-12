@@ -7,105 +7,105 @@
 <?import javafx.scene.control.*?>
 
 <AnchorPane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardSistemaPafCtrl">
-   <children>
-      <Text layoutX="218.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do Sistema PAF">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <SplitPane dividerPositions="0.4724025974025974" layoutX="189.0" layoutY="52.0" orientation="VERTICAL" prefHeight="405.0" prefWidth="725.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="723.0">
-               <children>
-                  <SplitPane dividerPositions="0.6031746031746031" layoutX="273.0" layoutY="-3.0" prefHeight="153.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="263.0" prefWidth="453.0">
-                           <children>
-                              <Label layoutX="37.0" layoutY="14.0" text="Retaguarda / .dll = &quot;relacaoexe.txt&quot;">
-                                 <font>
-                                    <Font name="System Bold" size="14.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="24.0" layoutY="56.0" text="Nome:" />
-                              <TextField layoutX="73.0" layoutY="52.0" prefHeight="25.0" prefWidth="270.0" />
-                              <Label layoutX="24.0" layoutY="91.0" text="MD-5:" />
-                              <TextField layoutX="73.0" layoutY="87.0" prefHeight="25.0" prefWidth="270.0" />
-                              <Button fx:id="bttnAddRetaguarda" layoutX="373.0" layoutY="48.0" mnemonicParsing="false" text="ADD" />
-                              <Button fx:id="bttnRemoveRetaguarda" layoutX="364.0" layoutY="87.0" mnemonicParsing="false" text="Remove" />
-                              <TableView layoutX="8.0" layoutY="126.0" prefHeight="156.0" prefWidth="443.0">
-                                <columns>
-                                  <TableColumn prefWidth="275.0" text="Nome" />
-                                  <TableColumn minWidth="0.0" prefWidth="167.0" text="MD-5" />
-                                </columns>
-                              </TableView>
-                           </children>
-                        </AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                           <children>
-                              <Label layoutX="117.0" layoutY="14.0" text="Perfis de Requisito">
-                                 <font>
-                                    <Font name="System Bold" size="14.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="18.0" layoutY="57.0" text="Perfil:" />
-                              <TextField layoutX="67.0" layoutY="53.0" prefHeight="25.0" prefWidth="212.0" />
-                              <Button fx:id="bttnAddPerfilRequisito" layoutX="76.0" layoutY="94.0" mnemonicParsing="false" text="ADD" />
-                              <Button fx:id="bttnRemovePerfilRequisito" layoutX="165.0" layoutY="94.0" mnemonicParsing="false" text="Remove" />
-                              <TableView layoutX="5.0" layoutY="128.0" prefHeight="156.0" prefWidth="289.0">
-                                <columns>
-                                  <TableColumn prefWidth="288.0" text="Perfil" />
-                                </columns>
-                              </TableView>
-                           </children>
-                        </AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="758.0">
-               <children>
-                  <Label layoutX="32.0" layoutY="33.0" text="Arquivo da relação dos executáveis &quot;lista.txt&quot;">
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="15.0" layoutY="67.0" text="Nome" />
-                  <TextField fx:id="txtNomeLista" layoutX="14.0" layoutY="88.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label layoutX="199.0" layoutY="65.0" text="MD-5" />
-                  <TextField fx:id="txtMdLista" layoutX="199.0" layoutY="86.0" prefHeight="25.0" prefWidth="178.0" />
-                  <Label layoutX="435.0" layoutY="33.0" text="Informações do arquivo &quot;relacaoexe.txt&quot;">
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="419.0" layoutY="66.0" text="Nome" />
-                  <TextField fx:id="txtNomeRelacaoExe" layoutX="418.0" layoutY="87.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label layoutX="603.0" layoutY="64.0" text="MD-5" />
-                  <TextField fx:id="txtMdRelacaoExe" layoutX="594.0" layoutY="88.0" prefHeight="25.0" prefWidth="150.0" />
-                  <Label layoutX="306.0" layoutY="136.0" text="Informações do envelope">
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="123.0" layoutY="182.0" text="Marca" />
-                  <TextField fx:id="txtMarcaEnvelope" layoutX="122.0" layoutY="203.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label layoutX="320.0" layoutY="180.0" text="Modelo" />
-                  <TextField fx:id="txtModeloEnvelope" layoutX="319.0" layoutY="201.0" prefHeight="25.0" prefWidth="166.0" />
-                  <Label layoutX="518.0" layoutY="180.0" text="Número" />
-                  <TextField fx:id="txtNumeroEnvelope" layoutX="517.0" layoutY="201.0" prefHeight="25.0" prefWidth="124.0" />
-                  <HBox alignment="BOTTOM_RIGHT" layoutX="641.0" layoutY="249.0" spacing="12.0">
-                     <children>
-                        <Button fx:id="backButton" text="Anterior" />
-                        <Button fx:id="nextButton" text="Próximo" />
-                        <Button fx:id="finishButton" text="Cancelar" />
-                     </children>
-                     <padding>
-                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-                     </padding>
-                  </HBox>
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
-   </children>
+    <children>
+        <Text layoutX="218.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações do Sistema PAF">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <SplitPane dividerPositions="0.4724025974025974" layoutX="189.0" layoutY="52.0" orientation="VERTICAL" prefHeight="405.0" prefWidth="725.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="723.0">
+                    <children>
+                        <SplitPane dividerPositions="0.6031746031746031" layoutX="273.0" layoutY="-3.0" prefHeight="153.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="263.0" prefWidth="453.0">
+                                    <children>
+                                        <Label layoutX="37.0" layoutY="14.0" text="Retaguarda / .dll = &quot;relacaoexe.txt&quot;">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="24.0" layoutY="56.0" text="Nome:" />
+                                        <TextField layoutX="73.0" layoutY="52.0" prefHeight="25.0" prefWidth="270.0" />
+                                        <Label layoutX="24.0" layoutY="91.0" text="MD-5:" />
+                                        <TextField layoutX="73.0" layoutY="87.0" prefHeight="25.0" prefWidth="270.0" />
+                                        <Button fx:id="bttnAddRetaguarda" layoutX="373.0" layoutY="48.0" mnemonicParsing="false" text="ADD" />
+                                        <Button fx:id="bttnRemoveRetaguarda" layoutX="364.0" layoutY="87.0" mnemonicParsing="false" text="Remove" />
+                                        <TableView layoutX="8.0" layoutY="126.0" prefHeight="156.0" prefWidth="443.0">
+                                            <columns>
+                                                <TableColumn prefWidth="275.0" text="Nome" />
+                                                <TableColumn minWidth="0.0" prefWidth="167.0" text="MD-5" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <Label layoutX="117.0" layoutY="14.0" text="Perfis de Requisito">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="18.0" layoutY="57.0" text="Perfil:" />
+                                        <TextField layoutX="67.0" layoutY="53.0" prefHeight="25.0" prefWidth="212.0" />
+                                        <Button fx:id="bttnAddPerfilRequisito" layoutX="76.0" layoutY="94.0" mnemonicParsing="false" text="ADD" />
+                                        <Button fx:id="bttnRemovePerfilRequisito" layoutX="165.0" layoutY="94.0" mnemonicParsing="false" text="Remove" />
+                                        <TableView layoutX="5.0" layoutY="128.0" prefHeight="156.0" prefWidth="289.0">
+                                            <columns>
+                                                <TableColumn prefWidth="288.0" text="Perfil" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="308.0" prefWidth="758.0">
+                    <children>
+                        <Label layoutX="32.0" layoutY="33.0" text="Arquivo da relação dos executáveis &quot;lista.txt&quot;">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="15.0" layoutY="67.0" text="Nome" />
+                        <TextField fx:id="txtNomeLista" layoutX="14.0" layoutY="88.0" prefHeight="25.0" prefWidth="166.0" />
+                        <Label layoutX="199.0" layoutY="65.0" text="MD-5" />
+                        <TextField fx:id="txtMdLista" layoutX="199.0" layoutY="86.0" prefHeight="25.0" prefWidth="178.0" />
+                        <Label layoutX="435.0" layoutY="33.0" text="Informações do arquivo &quot;relacaoexe.txt&quot;">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="419.0" layoutY="66.0" text="Nome" />
+                        <TextField fx:id="txtNomeRelacaoExe" layoutX="418.0" layoutY="87.0" prefHeight="25.0" prefWidth="166.0" />
+                        <Label layoutX="603.0" layoutY="64.0" text="MD-5" />
+                        <TextField fx:id="txtMdRelacaoExe" layoutX="594.0" layoutY="88.0" prefHeight="25.0" prefWidth="150.0" />
+                        <Label layoutX="306.0" layoutY="136.0" text="Informações do envelope">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="123.0" layoutY="182.0" text="Marca" />
+                        <TextField fx:id="txtMarcaEnvelope" layoutX="122.0" layoutY="203.0" prefHeight="25.0" prefWidth="166.0" />
+                        <Label layoutX="320.0" layoutY="180.0" text="Modelo" />
+                        <TextField fx:id="txtModeloEnvelope" layoutX="319.0" layoutY="201.0" prefHeight="25.0" prefWidth="166.0" />
+                        <Label layoutX="518.0" layoutY="180.0" text="Número" />
+                        <TextField fx:id="txtNumeroEnvelope" layoutX="517.0" layoutY="201.0" prefHeight="25.0" prefWidth="124.0" />
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="641.0" layoutY="249.0" spacing="12.0">
+                            <children>
+                                <Button fx:id="backButton" text="Anterior" />
+                                <Button fx:id="nextButton" text="Próximo" />
+                                <Button fx:id="finishButton" text="Cancelar" />
+                            </children>
+                            <padding>
+                                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
 </AnchorPane>

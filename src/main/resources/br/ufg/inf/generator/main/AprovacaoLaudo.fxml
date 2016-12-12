@@ -8,75 +8,75 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardAprovacaoLaudoEcfCtrl">
-   <children>
-      <Text layoutX="334.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprovação do Laudo">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="14.0" layoutY="74.0" prefHeight="10.0" prefWidth="902.0" />
-      <Text fill="#757070" layoutX="405.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local e Data" textAlignment="CENTER">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Text layoutX="57.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <DatePicker layoutX="57.0" layoutY="148.0" />
-      <Text layoutX="588.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtLocal" layoutX="588.0" layoutY="147.0" prefHeight="25.0" prefWidth="122.0" />
-      <Separator layoutX="3.0" layoutY="196.0" prefHeight="10.0" prefWidth="902.0" />
-      <Text fill="#757070" layoutX="399.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerente de Teste" textAlignment="CENTER">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Text layoutX="68.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtLocal1" layoutX="111.0" layoutY="261.0" prefHeight="25.0" prefWidth="459.0" />
-      <Text layoutX="70.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtLocal2" layoutX="111.0" layoutY="310.0" prefHeight="25.0" prefWidth="233.0" />
-      <Separator layoutX="4.0" layoutY="364.0" prefHeight="10.0" prefWidth="902.0" />
-      <Text fill="#757070" layoutX="300.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprovação do Relatório - Coordenador" textAlignment="CENTER">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Text layoutX="68.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtLocal11" layoutX="111.0" layoutY="448.0" prefHeight="25.0" prefWidth="459.0" />
-      <Text layoutX="70.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtLocal21" layoutX="111.0" layoutY="486.0" prefHeight="25.0" prefWidth="233.0" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="670.0" layoutY="611.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="334.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprovação do Laudo">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="14.0" layoutY="74.0" prefHeight="10.0" prefWidth="902.0" />
+        <Text fill="#757070" layoutX="405.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local e Data" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="57.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <DatePicker layoutX="57.0" layoutY="148.0" />
+        <Text layoutX="588.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtLocal" layoutX="588.0" layoutY="147.0" prefHeight="25.0" prefWidth="122.0" />
+        <Separator layoutX="3.0" layoutY="196.0" prefHeight="10.0" prefWidth="902.0" />
+        <Text fill="#757070" layoutX="399.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerente de Teste" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="68.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtLocal1" layoutX="111.0" layoutY="261.0" prefHeight="25.0" prefWidth="459.0" />
+        <Text layoutX="70.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtLocal2" layoutX="111.0" layoutY="310.0" prefHeight="25.0" prefWidth="233.0" />
+        <Separator layoutX="4.0" layoutY="364.0" prefHeight="10.0" prefWidth="902.0" />
+        <Text fill="#757070" layoutX="300.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprovação do Relatório - Coordenador" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="68.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtLocal11" layoutX="111.0" layoutY="448.0" prefHeight="25.0" prefWidth="459.0" />
+        <Text layoutX="70.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtLocal21" layoutX="111.0" layoutY="486.0" prefHeight="25.0" prefWidth="233.0" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="670.0" layoutY="611.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

@@ -7,86 +7,86 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardCaracteristicasPafCtrl">
-   <children>
-      <Text layoutX="344.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Características do PAF">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="9.0" layoutY="44.0" prefHeight="9.0" prefWidth="864.0" />
-      <Text layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Linguagem de programação">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtLinguagemProgramacao" layoutX="14.0" layoutY="81.0" prefHeight="25.0" prefWidth="236.0" />
-      <Text layoutX="341.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema Operacional">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtSistemaOperacional" layoutX="341.0" layoutY="80.0" prefHeight="25.0" prefWidth="223.0" />
-      <Text layoutX="632.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banco de Dados">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtBancoDados" layoutX="632.0" layoutY="80.0" prefHeight="25.0" prefWidth="216.0" />
-      <Text layoutX="17.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de desenvolvimento">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <ChoiceBox fx:id="choiceTipoDesenvolvimento" layoutX="16.0" layoutY="156.0" prefWidth="150.0" />
-      <Text layoutX="20.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de funcionamento">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <ChoiceBox fx:id="choiceTipoFuncionamento" layoutX="18.0" layoutY="231.0" prefWidth="150.0" />
-      <Text layoutX="19.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Integração do PAF">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <ChoiceBox fx:id="choiceIntegracaoPaf" layoutX="18.0" layoutY="303.0" prefWidth="150.0" />
-      <Text layoutX="294.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forma de impressão no CF">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Text>
-      <CheckBox fx:id="checkFormaConcomitante" layoutX="298.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Concomitante" />
-      <CheckBox fx:id="checkFormaNaoConcomitanteComDav" layoutX="298.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Nao Concomitante, C/ emissao de DAV" />
-      <CheckBox fx:id="checkFormaNaoConcomitanteComPreVenda" layoutX="298.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Nao Concomitante, C/ controle de pré-venda" />
-      <CheckBox fx:id="checkFormaNaoConcomitanteComContaCliente" layoutX="298.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Nao Concomitante, C/ controle de conta de cliente" />
-      <CheckBox fx:id="checkFormaDavSemImpressao" layoutX="297.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="DAV emitido sem possibilidade de impressão" />
-      <CheckBox fx:id="checkFormaDavImpressoraNaoFiscal" layoutX="298.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="DAV impresso em impressora não fiscal" />
-      <CheckBox fx:id="checkFormaDavImpressoEcf" layoutX="297.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="DAV impresso em ECF" />
-      <Text layoutX="612.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tratamento de Interrupções">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Text>
-      <CheckBox fx:id="checkTratamentoRecuperacao" layoutX="616.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCheckBoxTratamentoInterrupcaoAction" text="Recuperação de dados" />
-      <CheckBox fx:id="checkTratamentoCancelamento" layoutX="616.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleCheckBoxTratamentoInterrupcaoAction" text="Cancelamento Automático" />
-      <CheckBox fx:id="checkTratamentoBloqueio" layoutX="616.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleCheckBoxTratamentoInterrupcaoAction" text="Bloqueio de Funções" />
-      <Text layoutX="618.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meio de Geração do Sped/Sintegra">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <CheckBox fx:id="checkMeioGeracaoPaf" layoutX="617.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleCheckBoxMeioGeracaoAction" text="Pelo paf-ecf" />
-      <CheckBox fx:id="checkMeioGeracaoRetaguarda" layoutX="618.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleCheckBoxMeioGeracaoAction" text="Pelo sistema de Retaguarda" />
-      <CheckBox fx:id="checkMeioGeracaoPed" layoutX="617.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleCheckBoxMeioGeracaoAction" text="Pelo sistema ped ou efd" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="651.0" layoutY="589.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="344.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Características do PAF">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="9.0" layoutY="44.0" prefHeight="9.0" prefWidth="864.0" />
+        <Text layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Linguagem de programação">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtLinguagemProgramacao" layoutX="14.0" layoutY="81.0" prefHeight="25.0" prefWidth="236.0" />
+        <Text layoutX="341.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema Operacional">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtSistemaOperacional" layoutX="341.0" layoutY="80.0" prefHeight="25.0" prefWidth="223.0" />
+        <Text layoutX="632.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Banco de Dados">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtBancoDados" layoutX="632.0" layoutY="80.0" prefHeight="25.0" prefWidth="216.0" />
+        <Text layoutX="17.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de desenvolvimento">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="choiceTipoDesenvolvimento" layoutX="16.0" layoutY="156.0" prefWidth="150.0" />
+        <Text layoutX="20.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de funcionamento">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="choiceTipoFuncionamento" layoutX="18.0" layoutY="231.0" prefWidth="150.0" />
+        <Text layoutX="19.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Integração do PAF">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="choiceIntegracaoPaf" layoutX="18.0" layoutY="303.0" prefWidth="150.0" />
+        <Text layoutX="294.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forma de impressão no CF">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <CheckBox fx:id="checkFormaConcomitante" layoutX="298.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Concomitante" />
+        <CheckBox fx:id="checkFormaNaoConcomitanteComDav" layoutX="298.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Nao Concomitante, C/ emissao de DAV" />
+        <CheckBox fx:id="checkFormaNaoConcomitanteComPreVenda" layoutX="298.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Nao Concomitante, C/ controle de pré-venda" />
+        <CheckBox fx:id="checkFormaNaoConcomitanteComContaCliente" layoutX="298.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="Nao Concomitante, C/ controle de conta de cliente" />
+        <CheckBox fx:id="checkFormaDavSemImpressao" layoutX="297.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="DAV emitido sem possibilidade de impressão" />
+        <CheckBox fx:id="checkFormaDavImpressoraNaoFiscal" layoutX="298.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="DAV impresso em impressora não fiscal" />
+        <CheckBox fx:id="checkFormaDavImpressoEcf" layoutX="297.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleCheckBoxFormaImpressaoAction" text="DAV impresso em ECF" />
+        <Text layoutX="612.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tratamento de Interrupções">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Text>
+        <CheckBox fx:id="checkTratamentoRecuperacao" layoutX="616.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCheckBoxTratamentoInterrupcaoAction" text="Recuperação de dados" />
+        <CheckBox fx:id="checkTratamentoCancelamento" layoutX="616.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleCheckBoxTratamentoInterrupcaoAction" text="Cancelamento Automático" />
+        <CheckBox fx:id="checkTratamentoBloqueio" layoutX="616.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleCheckBoxTratamentoInterrupcaoAction" text="Bloqueio de Funções" />
+        <Text layoutX="618.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meio de Geração do Sped/Sintegra">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <CheckBox fx:id="checkMeioGeracaoPaf" layoutX="617.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleCheckBoxMeioGeracaoAction" text="Pelo paf-ecf" />
+        <CheckBox fx:id="checkMeioGeracaoRetaguarda" layoutX="618.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleCheckBoxMeioGeracaoAction" text="Pelo sistema de Retaguarda" />
+        <CheckBox fx:id="checkMeioGeracaoPed" layoutX="617.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleCheckBoxMeioGeracaoAction" text="Pelo sistema ped ou efd" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="651.0" layoutY="589.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

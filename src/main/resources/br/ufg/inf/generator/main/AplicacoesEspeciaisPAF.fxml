@@ -7,37 +7,37 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardAplicacoesEspeciaisCtrl">
-   <children>
-      <Text layoutX="211.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicações Especiais do PAF" textAlignment="CENTER" wrappingWidth="303.521484375">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="12.0" layoutY="48.0" prefHeight="9.0" prefWidth="888.0" />
-      <CheckBox layoutX="29.0" layoutY="87.0" mnemonicParsing="false" text="Posto de Pedágio" />
-      <CheckBox layoutX="29.0" layoutY="125.0" mnemonicParsing="false" text="Transporte de Passageiro" />
-      <CheckBox layoutX="29.0" layoutY="163.0" mnemonicParsing="false" text="Farmácia de Manipulação" />
-      <CheckBox layoutX="28.0" layoutY="200.0" mnemonicParsing="false" text="Oficina de Conserto com  DAV-OS" />
-      <CheckBox layoutX="28.0" layoutY="233.0" mnemonicParsing="false" text="Oficina de Conserto com conta de cliente" />
-      <CheckBox layoutX="28.0" layoutY="264.0" mnemonicParsing="false" text="Prestador de serviço de Cinema, Espetáculos e similares" />
-      <CheckBox layoutX="28.0" layoutY="299.0" mnemonicParsing="false" selected="true" text="Demais atividades" />
-      <CheckBox layoutX="392.0" layoutY="88.0" mnemonicParsing="false" text="Estacionamentos, Motéis e similares que utilizam controle de tráfego de veículos e pessoas" />
-      <CheckBox layoutX="392.0" layoutY="126.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e Balança interligada" />
-      <CheckBox layoutX="392.0" layoutY="164.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e SEM Balança interligada" />
-      <CheckBox layoutX="391.0" layoutY="201.0" mnemonicParsing="false" text="Posto revendedor de combustível COM Sistema de Interligação de Bombas" />
-      <CheckBox layoutX="391.0" layoutY="234.0" mnemonicParsing="false" text="Estabelecimento enquadrado no Simples Nacional ( Art 5° do Ato COTEPE da ER-PAF ECF )" />
-      <CheckBox layoutX="391.0" layoutY="265.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e Balança interligada" />
-      <CheckBox layoutX="391.0" layoutY="297.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e SEM Balança interligada" />
-      <CheckBox layoutX="390.0" layoutY="329.0" mnemonicParsing="false" text="Posto revendedor de combustível SEM Sistema de Interligação de Bombas" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="655.0" layoutY="589.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="211.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicações Especiais do PAF" textAlignment="CENTER" wrappingWidth="303.521484375">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="12.0" layoutY="48.0" prefHeight="9.0" prefWidth="888.0" />
+        <CheckBox layoutX="29.0" layoutY="87.0" mnemonicParsing="false" text="Posto de Pedágio" />
+        <CheckBox layoutX="29.0" layoutY="125.0" mnemonicParsing="false" text="Transporte de Passageiro" />
+        <CheckBox layoutX="29.0" layoutY="163.0" mnemonicParsing="false" text="Farmácia de Manipulação" />
+        <CheckBox layoutX="28.0" layoutY="200.0" mnemonicParsing="false" text="Oficina de Conserto com  DAV-OS" />
+        <CheckBox layoutX="28.0" layoutY="233.0" mnemonicParsing="false" text="Oficina de Conserto com conta de cliente" />
+        <CheckBox layoutX="28.0" layoutY="264.0" mnemonicParsing="false" text="Prestador de serviço de Cinema, Espetáculos e similares" />
+        <CheckBox layoutX="28.0" layoutY="299.0" mnemonicParsing="false" selected="true" text="Demais atividades" />
+        <CheckBox layoutX="392.0" layoutY="88.0" mnemonicParsing="false" text="Estacionamentos, Motéis e similares que utilizam controle de tráfego de veículos e pessoas" />
+        <CheckBox layoutX="392.0" layoutY="126.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e Balança interligada" />
+        <CheckBox layoutX="392.0" layoutY="164.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Rest e SEM Balança interligada" />
+        <CheckBox layoutX="391.0" layoutY="201.0" mnemonicParsing="false" text="Posto revendedor de combustível COM Sistema de Interligação de Bombas" />
+        <CheckBox layoutX="391.0" layoutY="234.0" mnemonicParsing="false" text="Estabelecimento enquadrado no Simples Nacional ( Art 5° do Ato COTEPE da ER-PAF ECF )" />
+        <CheckBox layoutX="391.0" layoutY="265.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e Balança interligada" />
+        <CheckBox layoutX="391.0" layoutY="297.0" mnemonicParsing="false" text="Bar, Restaurante e estabelecimento similar que utiliza ECF-Normal e SEM Balança interligada" />
+        <CheckBox layoutX="390.0" layoutY="329.0" mnemonicParsing="false" text="Posto revendedor de combustível SEM Sistema de Interligação de Bombas" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="655.0" layoutY="589.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

@@ -3,8 +3,8 @@ package br.ufg.inf.generator.xml.estrutura.mensagem;
 import br.ufg.inf.generator.xml.estrutura.LaudoBase;
 import org.simpleframework.xml.Element;
 
-public class Avaliador extends LaudoBase{
-    
+public class Avaliador extends LaudoBase {
+
     @Element(name = "Nome", required = true)
     private String nome;
 

@@ -7,129 +7,129 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardEmpresaDesenvolvedoraCtrl">
-   <children>
-      <Text layoutX="271.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora Requerente">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </Text>
-      <Separator layoutX="19.0" layoutY="51.0" prefHeight="11.0" prefWidth="879.0" />
-      <Text layoutX="301.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações da empresa desenvolvedora">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Text layoutX="16.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtRazaoSocial" layoutX="16.0" layoutY="126.0" prefHeight="24.0" prefWidth="342.0" />
-      <Text layoutX="458.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtCnpj" layoutX="456.0" layoutY="125.0" />
-      <Text layoutX="708.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IE - Inscrição Estadual">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtInscEstad" layoutX="706.0" layoutY="125.0" />
-      <Separator layoutX="16.0" layoutY="166.0" prefHeight="1.0" prefWidth="879.0" />
-      <Text layoutX="341.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de endereço">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Text layoutX="16.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtRua" layoutX="17.0" layoutY="237.0" prefHeight="25.0" prefWidth="197.0" />
-      <Text layoutX="303.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtNumero" layoutX="301.0" layoutY="235.0" prefHeight="25.0" prefWidth="57.0" />
-      <Text layoutX="475.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtComplemento" layoutX="473.0" layoutY="230.0" prefHeight="25.0" prefWidth="197.0" />
-      <Text layoutX="704.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtBairro" layoutX="702.0" layoutY="233.0" prefHeight="29.0" prefWidth="157.0" />
-      <Text layoutX="20.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Município">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtMunicipio" layoutX="17.0" layoutY="293.0" prefHeight="29.0" prefWidth="197.0" />
-      <Text layoutX="302.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtUf" layoutX="301.0" layoutY="292.0" prefHeight="29.0" prefWidth="57.0" />
-      <Text layoutX="475.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="21.24609375">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtCep" layoutX="473.0" layoutY="288.0" prefHeight="29.0" prefWidth="157.0" />
-      <Separator layoutX="15.0" layoutY="338.0" prefHeight="0.0" prefWidth="883.0" />
-      <Text layoutX="361.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de contato">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Text layoutX="16.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtNome" layoutX="14.0" layoutY="416.0" prefHeight="25.0" prefWidth="342.0" />
-      <Text layoutX="612.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtCpf" layoutX="610.0" layoutY="416.0" prefHeight="25.0" prefWidth="142.0" />
-      <Text layoutX="16.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtEmail" layoutX="13.0" layoutY="481.0" prefHeight="25.0" prefWidth="342.0" />
-      <Text layoutX="615.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtTelefone" layoutX="612.0" layoutY="487.0" prefHeight="25.0" prefWidth="142.0" />
-      <Text layoutX="309.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsavel pelo acompanhamento de testes">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtResponsavel" layoutX="293.0" layoutY="567.0" prefHeight="25.0" prefWidth="300.0" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="661.0" layoutY="599.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Text layoutX="271.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empresa Desenvolvedora Requerente">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Separator layoutX="19.0" layoutY="51.0" prefHeight="11.0" prefWidth="879.0" />
+        <Text layoutX="301.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações da empresa desenvolvedora">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="16.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRazaoSocial" layoutX="16.0" layoutY="126.0" prefHeight="24.0" prefWidth="342.0" />
+        <Text layoutX="458.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtCnpj" layoutX="456.0" layoutY="125.0" />
+        <Text layoutX="708.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IE - Inscrição Estadual">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtInscEstad" layoutX="706.0" layoutY="125.0" />
+        <Separator layoutX="16.0" layoutY="166.0" prefHeight="1.0" prefWidth="879.0" />
+        <Text layoutX="341.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de endereço">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="16.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRua" layoutX="17.0" layoutY="237.0" prefHeight="25.0" prefWidth="197.0" />
+        <Text layoutX="303.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtNumero" layoutX="301.0" layoutY="235.0" prefHeight="25.0" prefWidth="57.0" />
+        <Text layoutX="475.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtComplemento" layoutX="473.0" layoutY="230.0" prefHeight="25.0" prefWidth="197.0" />
+        <Text layoutX="704.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtBairro" layoutX="702.0" layoutY="233.0" prefHeight="29.0" prefWidth="157.0" />
+        <Text layoutX="20.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Município">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtMunicipio" layoutX="17.0" layoutY="293.0" prefHeight="29.0" prefWidth="197.0" />
+        <Text layoutX="302.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtUf" layoutX="301.0" layoutY="292.0" prefHeight="29.0" prefWidth="57.0" />
+        <Text layoutX="475.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="21.24609375">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtCep" layoutX="473.0" layoutY="288.0" prefHeight="29.0" prefWidth="157.0" />
+        <Separator layoutX="15.0" layoutY="338.0" prefHeight="0.0" prefWidth="883.0" />
+        <Text layoutX="361.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações de contato">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="16.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtNome" layoutX="14.0" layoutY="416.0" prefHeight="25.0" prefWidth="342.0" />
+        <Text layoutX="612.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtCpf" layoutX="610.0" layoutY="416.0" prefHeight="25.0" prefWidth="142.0" />
+        <Text layoutX="16.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtEmail" layoutX="13.0" layoutY="481.0" prefHeight="25.0" prefWidth="342.0" />
+        <Text layoutX="615.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtTelefone" layoutX="612.0" layoutY="487.0" prefHeight="25.0" prefWidth="142.0" />
+        <Text layoutX="309.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsavel pelo acompanhamento de testes">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtResponsavel" layoutX="293.0" layoutY="567.0" prefHeight="25.0" prefWidth="300.0" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="661.0" layoutY="599.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

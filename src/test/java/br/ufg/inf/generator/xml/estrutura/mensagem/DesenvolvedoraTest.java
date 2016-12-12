@@ -46,16 +46,16 @@ public class DesenvolvedoraTest {
 
     @Test
     public void testEnderecoValido() {
-    	final Desenvolvedora des = new Desenvolvedora();
-    	Endereco endereco = new Endereco();
+        final Desenvolvedora des = new Desenvolvedora();
+        Endereco endereco = new Endereco();
         des.setEndereco(endereco);
         assertEquals(endereco, des.getEndereco());
     }
 
     @Test
     public void testContatoValido() {
-    	final Desenvolvedora des = new Desenvolvedora();
-    	Contato contato = new Contato();
+        final Desenvolvedora des = new Desenvolvedora();
+        Contato contato = new Contato();
         des.setContato(contato);
         assertEquals(contato, des.getContato());
     }

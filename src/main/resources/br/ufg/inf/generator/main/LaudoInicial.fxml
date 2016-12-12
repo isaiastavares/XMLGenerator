@@ -6,18 +6,18 @@
 <?import javafx.scene.layout.*?>
 
 <Pane prefHeight="670.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufg.inf.generator.telas.controladores.WizardLaudoInicialCtrl">
-   <children>
-      <Label layoutX="335.0" layoutY="110.0" text="Digite o número do laudo. Ex.: &quot;UFG0012016&quot;" />
-      <TextField fx:id="nomeLaudo" layoutX="262.0" layoutY="224.0" prefHeight="25.0" prefWidth="386.0" />
-      <HBox alignment="BOTTOM_RIGHT" layoutX="671.0" layoutY="609.0" spacing="12.0">
-         <children>
-            <Button fx:id="backButton" text="Anterior" />
-            <Button fx:id="nextButton" text="Próximo" />
-            <Button fx:id="finishButton" text="Cancelar" />
-         </children>
-         <padding>
-            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
-         </padding>
-      </HBox>
-   </children>
+    <children>
+        <Label layoutX="335.0" layoutY="110.0" text="Digite o número do laudo. Ex.: &quot;UFG0012016&quot;" />
+        <TextField fx:id="nomeLaudo" layoutX="262.0" layoutY="224.0" prefHeight="25.0" prefWidth="386.0" />
+        <HBox alignment="BOTTOM_RIGHT" layoutX="671.0" layoutY="609.0" spacing="12.0">
+            <children>
+                <Button fx:id="backButton" text="Anterior" />
+                <Button fx:id="nextButton" text="Próximo" />
+                <Button fx:id="finishButton" text="Cancelar" />
+            </children>
+            <padding>
+                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            </padding>
+        </HBox>
+    </children>
 </Pane>

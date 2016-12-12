@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class OtcTest {
 
     Otc otc = new Otc();
-    
+
     /**
      * Test of getRazaoSocial method, of class Otc.
      */
@@ -132,5 +132,5 @@ public class OtcTest {
         otc.setVersaoCotepe(versaoCotepe);
         assertEquals(versaoCotepe, otc.getVersaoCotepe());
     }
-    
+
 }

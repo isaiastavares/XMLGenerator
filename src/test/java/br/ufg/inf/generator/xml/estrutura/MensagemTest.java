@@ -38,7 +38,6 @@ public class MensagemTest {
     private static final TestadorExecucaoTestes EXECUCAO_TESTES = new TestadorExecucaoTestes();
     private static final TestadorAprovacaoRelatorio APROVACAO_RELATORIO = new TestadorAprovacaoRelatorio();
 
-    
     @Test
     public void testNumeroValido() {
         final Mensagem msg = new Mensagem();

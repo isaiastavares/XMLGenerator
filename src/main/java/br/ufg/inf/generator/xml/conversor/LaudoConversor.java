@@ -11,9 +11,9 @@ import br.ufg.inf.generator.xml.estrutura.Laudo;
 
 public class LaudoConversor {
 
-	private static final Logger LOG = Logger.getLogger(ScreensController.class);
+    private static final Logger LOG = Logger.getLogger(ScreensController.class);
 
-     public void salvarLaudo(Laudo laudo) {
+    public void salvarLaudo(Laudo laudo) {
         Serializer serializer = new Persister();
         String nome = laudo.getMensagem().getNumero();
         File result = new File(nome + ".xml");
@@ -21,7 +21,7 @@ public class LaudoConversor {
         try {
             serializer.write(laudo, result);
         } catch (Exception ex) {
-        	LOG.error(ex.getMessage(), ex);
+            LOG.error(ex.getMessage(), ex);
         }
     }
 }

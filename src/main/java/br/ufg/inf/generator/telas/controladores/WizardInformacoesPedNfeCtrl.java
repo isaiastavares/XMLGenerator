@@ -40,6 +40,6 @@ public class WizardInformacoesPedNfeCtrl extends AbstractWizardCtrl implements C
 
     @Override
     protected void salvar() {
-    	//TODO falta implementar a parte de salvar
+        //TODO falta implementar a parte de salvar
     }
 }

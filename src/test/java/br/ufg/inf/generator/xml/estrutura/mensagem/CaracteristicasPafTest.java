@@ -1,4 +1,5 @@
 package br.ufg.inf.generator.xml.estrutura.mensagem;
+
 import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.AplicacaoEspecial;
 import br.ufg.inf.generator.xml.estrutura.caracteristicaspaf.Modo;
 import br.ufg.inf.generator.xml.estrutura.mensagem.CaracteristicasPaf;
@@ -119,7 +120,8 @@ public class CaracteristicasPafTest {
     }
 
     /**
-     * Test of getMeioGeracaoArquivoStintegraEfd method, of class CaracteristicasPaf.
+     * Test of getMeioGeracaoArquivoStintegraEfd method, of class
+     * CaracteristicasPaf.
      */
     @Test
     public void testGetMeioGeracaoArquivoStintegraEfd() {
@@ -131,7 +133,8 @@ public class CaracteristicasPafTest {
     }
 
     /**
-     * Test of setMeioGeracaoArquivoStintegraEfd method, of class CaracteristicasPaf.
+     * Test of setMeioGeracaoArquivoStintegraEfd method, of class
+     * CaracteristicasPaf.
      */
     @Test
     public void testSetMeioGeracaoArquivoStintegraEfd() {
